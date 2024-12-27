@@ -1,0 +1,347 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/SubDashboard.css" rel="stylesheet" />
+<link href="/contents/css/Pages/Dashboard.css" rel="stylesheet" />
+<!-- Header
+============================================= -->
+<div ng-controller="SubDashboardController">
+    <header class="irs-main-header IndexData ng-scope" style="display: block;">
+        <div class="irs-header-nav scrollingto-fixed scroll-to-fixed-fixed dash_header" >
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="padding-0 col-sm-12">
+                        <nav class="navbar navbar navbar-fixed-top">
+                            <div class="container">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+
+                                </div>
+
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" ui-sref="Dashboard" href="#!/Dashboard">
+                                        <img class="home_logo" src="/contents/images/sbtet_ap_latest_logo.png" alt="">
+                                    </a>
+                                </div>
+                                <div class=" padding-0 col-md-7 col-sm-12">
+                                    <h4 class="logo-heading text-center">STATE BOARD OF TECHNICAL EDUCATION &amp; TRAINING</h4>
+                                    <h5 class="logo-heading1 text-center"> ANDHRA PRADESH</h5>
+                                </div>
+                                <div class="collapse in navbar-collapse" id="bs-navbar-collapse-1" aria-expanded="true">
+                                    <ul class="nav navbar-nav">
+                                     <!--   <li><a href="" ui-sref="index.ChangePassword">Change Password</a></li>-->
+                                        <!--  <li><a ui-sref="index.ChangePassword">Change Password</a></li>-->
+                                        <li><button class="btn btn-primary btn_login" ng-click="ChangePassword()">Change Password</button></li>
+                                        <li><button class="btn btn-primary btn_login" disabled title="User">{{UserName}}</button></li>
+                                        <li><button class="btn btn-primary btn_login" ng-click="Logout()">Logout</button></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </nav>
+                    </div>
+                    <!--<div class="col-md-1 col-sm-12">
+                        <div class="irs-log-reg" ui-sref="Dashboard">
+                            <a ui-sref="Dashboard">Login</a>
+
+                        </div>
+                    </div>-->
+                    <!--  <button  ui-sref="Dashboard">Login</button>-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <ui-view>
+
+        <div class="breadcrumb-header">
+            <!-- breadcrumb Open -->
+            <div class="container">
+                <section class="content-header">
+                    <h5 class="header-text">Dashboard</h5>
+
+                </section>
+            </div>
+            <!-- breadcrumb Close -->
+        </div>
+
+        <div class="container">
+     
+            <div class="col-md-12">
+                <button class="btn btn-primary" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="xs-spacer"></div>
+            <div class="card1s" ng-show="CardType==1">
+                <div class="card1 card1-1" ui-sref="Dashboard.SubDashboard.LatestNews" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">LatestNews</h5>
+
+                </div>
+                <div class="card1 card1-2" ui-sref="Dashboard.SubDashboard.CorouselSettings" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Slider Settings</h5>
+
+                </div>
+
+                <div class="card1 card1-8" ui-sref="Dashboard.SubDashboard.CollegeWiseBranches" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Collegewise NBA Settings</h5>
+
+                </div>
+                <div class="card1 card1-3" ui-sref="Dashboard.SubDashboard.Events" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Events</h5>
+
+                </div>
+                <div class="card1 card1-4" ui-sref="Dashboard.SubDashboard.Notifications" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Notifications</h5>
+
+                </div>
+                
+                <div class="card1 card1-8" ui-sref="Dashboard.SubDashboard.Counts" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Counter Settings</h5>
+
+                </div>
+                <div class="card1 card1-6" ui-sref="Dashboard.SubDashboard.Gallery" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Gallery Settings</h5>
+
+                </div>
+                <div class="card1 card1-5" ui-sref="Dashboard.SubDashboard.CourseSetting" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Course Settings</h5>
+
+                </div>
+                <div class="card1 card1-6" ui-sref="Dashboard.SubDashboard.SyllabusSettings" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Syllabus Settings</h5>
+
+                </div>
+                <div class="card1 card1-7" ui-sref="Dashboard.SubDashboard.QuestionPapersSettings" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Question Papers Settings</h5>
+
+                </div>
+                <div class="card1 card1-8" ui-sref="Dashboard.SubDashboard.TimeTableSettings" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Time Tables Settings</h5>
+
+                </div>
+                <div class="card1 card1-9" ui-sref="Dashboard.SubDashboard.CollegeDetails" ng-show="UserTypeID=='2'">
+
+                    <h5 class="card1__title">College Details</h5>
+
+                </div>
+                <div class="card1 card1-1" ui-sref="Dashboard.SubDashboard.CollegeLabs" ng-show="UserTypeID=='2'">
+
+                    <h5 class="card1__title">College Labs</h5>
+
+                </div>
+                <div class="card1 card1-8" ui-sref="Dashboard.SubDashboard.IndustryConnect" ng-show="UserTypeID=='2'">
+
+                    <h5 class="card1__title">Industry Connect</h5>
+
+                </div>
+
+                <div class="card1 card1-2" ui-sref="Dashboard.SubDashboard.LabSettings" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Labs Settings</h5>
+
+                </div>
+                <div class="card1 card1-7" ui-sref="Dashboard.SubDashboard.AcademicCalenderSettings" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Academic Calender Settings</h5>
+
+                </div>
+
+                <div class="card1 card1-8" ui-sref="Dashboard.SubDashboard.AdminFeedbackList" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Feedback Data</h5>
+
+                </div>
+
+
+                <div class="card1 card1-3" ui-sref="Dashboard.SubDashboard.CollegeIndustrialTraining" ng-show="UserTypeID=='2'">
+
+                    <h5 class="card1__title">Industrial Training</h5>
+
+                </div>
+                <div class="card1 card1-5" ui-sref="Dashboard.SubDashboard.CollegePlacements" ng-show="UserTypeID=='2'">
+
+                    <h5 class="card1__title">College Placements</h5>
+
+                </div>
+
+                <div class="card1 card1-4" ui-sref="Dashboard.SubDashboard.CollegeJournal" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title"> Journal</h5>
+
+                </div>
+                <div class="card1 card1-3" ui-sref="Dashboard.SubDashboard.TestimonialSettings" ng-show="UserTypeID=='2'">
+
+                    <h5 class="card1__title">Testimonials</h5>
+
+                </div>
+                <div class="card1 card1-6" ui-sref="Dashboard.SubDashboard.IndustryInteractions" ng-show="UserTypeID=='2'">
+
+                    <h5 class="card1__title">Industry Interactions</h5>
+
+                </div>
+                <div class="card1 card1-1" ui-sref="Dashboard.SubDashboard.StaffDetails" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Staff Details</h5>
+
+                </div>
+                <div class="card1 card1-7" ui-sref="Dashboard.SubDashboard.IPSGMMaster" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">IPSGM Master</h5>
+
+                </div>
+                <div class="card1 card1-1" ui-sref="Dashboard.SubDashboard.SportsMaster" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Sports Master</h5>
+
+                </div>
+                <div class="card1 card1-9" ui-sref="Dashboard.SubDashboard.TechFestMaster" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Tech Fest Master</h5>
+
+                </div>
+                <div class="card1 card1-8" ui-sref="Dashboard.SubDashboard.IPSGMSettings" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">IPSGM </h5>
+
+                </div>
+                <div class="card1 card1-1" ui-sref="Dashboard.SubDashboard.AdminFDP" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">FDP Settings</h5>
+
+                </div>
+                <div class="card1 card1-9" ui-sref="Dashboard.SubDashboard.TechFest" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Tech Fest</h5>
+
+                </div>
+                <div class="card1 card1-4" ui-sref="Dashboard.SubDashboard.CollegeStaffList" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">College Staff List</h5>
+
+                </div>
+                <div class="card1 card1-8" ui-sref="Dashboard.SubDashboard.ResetPassword" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Reset Password</h5>
+
+                </div>
+
+                <div class="card1 card1-4" ui-sref="Dashboard.SubDashboard.CollegeStaffDetails" ng-show="UserTypeID=='2'">
+
+                    <h5 class="card1__title">College Staff</h5>
+
+                </div>
+
+                <div class="card1 card1-3" ui-sref="Dashboard.SubDashboard.Links" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Add Links</h5>
+
+                </div>
+                <div class="card1 card1-2" ui-sref="Dashboard.SubDashboard.PopupSettings" ng-show="UserTypeID=='1'">
+
+                    <h5 class="card1__title">Popup Settings</h5>
+
+                </div>
+
+
+                <div class="card1 card1-4" ui-sref="Dashboard.SubDashboard.OtherLinks" ng-show="UserTypeID=='2'">
+
+                    <h5 class="card1__title">Other Links</h5>
+
+                </div>
+            </div>
+            <div class="card1s" ng-show="CardType==2">
+               
+
+                <div class="card1 card1-4" ui-sref="Dashboard.SubDashboard.OtherLinks" ng-show="UserTypeID=='2'">
+
+                    <h5 class="card1__title">Other Links</h5>
+
+                </div>
+            </div>
+
+
+            <!--<div class="card1 card1-3">
+        <div class="card1__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card1__exit"><i class="fas fa-times"></i></p>
+        <h4 class="card1__title">Ut enim ad minim veniam.</h4>
+        <p class="card1__apply">
+            <a class="card1__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+        </p>
+    </div>
+    <div class="card1 card1-4">
+        <div class="card1__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card1__exit"><i class="fas fa-times"></i></p>
+        <h4 class="card1__title">Quis nostrud exercitation ullamco laboris nisi.</h4>
+        <p class="card1__apply">
+            <a class="card1__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+        </p>
+    </div>
+    <div class="card1 card1-5">
+        <div class="card1__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card1__exit"><i class="fas fa-times"></i></p>
+        <h4 class="card1__title">Ut aliquip ex ea commodo consequat. Duis aute irure dolor.</h4>
+        <p class="card1__apply">
+            <a class="card1__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+        </p>
+    </div>
+    <div class="card1 card1-1">
+        <div class="card1__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card1__exit"><i class="fas fa-times"></i></p>
+        <h4 class="card1__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        <p class="card1__apply">
+            <a class="card1__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+        </p>
+    </div>-->
+        </div>
+
+
+
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+
+
+
+
+
+
+    </ui-view>
+    <section class="irs-copyright-field">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="irs-copyright">
+                        <p>
+                            Copyright © This is the official website of State Board of Technical Education & Training, Andhra Pradesh. <a href="https://themeforest.net/user/irs_soft">All Rights Reserved</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- script start from here -->
+</div>

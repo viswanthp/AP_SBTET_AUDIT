@@ -1,0 +1,95 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/Placements/Testimonial.css" rel="stylesheet" />
+<div ng-controller="TestimonialController">
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2> Student Testimonials</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a> &gt; <a ui-sref="index.Placements">Placements</a> &gt; <a ui-sref="index.Testimonial">Student Testimonials</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="irs-courses-field irs-courses-single">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12" ng-show="Data">
+                    <div class="panel-bar1 text-center ">Student Testimonials</div>
+                </div>
+                <div class="col-md-12" ng-show="Data">
+                    <table class="table manage-candidates-top mb-0">
+                        <thead>
+                            <tr>
+                                <th>Testimonials</th>
+                                <!-- <th class="text-center">More Details</th>-->
+                                <!--  <th class="action text-right">Action</th>-->
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class="candidates-list" ng-repeat="data in TestimonialData">
+                                <td class="title card">
+
+                                    <div class="col-md-2 photo_col">
+                                        <div class="thumb">
+                                            <img class="img-fluid  img-responsive center-block" ng-src="{{data.Photo}}" alt="">
+                                        </div>
+                                        <div class="candidate-list-details">
+                                            <div class="candidate-list-info">
+                                                <div class="candidate-list-title">
+                                                    <!--    <h3 class="mb-0"><b>Name </b><a class="Name_css" href="">: {{data.Name}}</a></h3>-->
+                                                </div>
+                                                <div class="candidate-list-option">
+                                                    <ul class="list_css">
+                                                        <li class="desig_font text-center"><b class="clr_blk">PIN</b>: {{data.PIN}}</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-10 Testi_card">
+                                        <p>{{data.TestimonialDetails}}</p>
+                                    </div>
+                                    <div class="col-md-12 candidate-list">
+                                        <div class="candidate-list-option">
+                                            <ul class="list_css">
+                                                <span class="desig_font"><span class="clr_blk">Name </span>: {{data.Name}}, </span>
+                                                <span class="desig_font"><span class="clr_blk">Studied during</span> : {{data.FromYear}} - {{data.ToYear}} </span>
+                                                <span class="desig_font"><span class="clr_blk">in </span> : {{data.CollegeAddress}}, </span>
+                                                <span class="desig_font"><span class="clr_blk">and Appointmented in the year </span>: {{data.PIN}} </span>
+                                                <span class="desig_font"><span class="clr_blk">through </span> : {{data.FromYear}} - {{data.ToYear}}, </span>
+                                                <span class="desig_font"><span class="clr_blk">with Annual Package of Rs. </span> : {{data.CollegeAddress}}, </span>
+                                                <span class="desig_font"><span class="clr_blk">in </span> : {{data.CompanyNameAddress}}</span>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="col-md-12" ng-show="Loading">
+                    <!--  <div class="xs-spacer"></div>-->
+                    <center><img class="LoadingImage" src="/contents/images/preloader.gif" /></center>
+                </div>
+                <div class="col-md-12">
+                    <center ng-show="NoData"><h3 class="btn-danger NoDataCss">No Data Found</h3></center>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

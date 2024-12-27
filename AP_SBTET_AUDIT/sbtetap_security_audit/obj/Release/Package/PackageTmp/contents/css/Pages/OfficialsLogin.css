@@ -1,0 +1,32 @@
+form.white-popup-block label {
+    float: left;
+    color: #1F497D;
+    font-weight: bold;
+}
+
+.login-Sidepanel {
+    /*color: #fff;*/
+    background: linear-gradient(90deg, rgba(237,245,255,1) 0%, rgba(204,223,247,1) 100%);
+    /* background: linear-gradient(to bottom right, rgba(237,245,255,1), rgba(204,223,247,1));*/
+    padding: 30px;
+    padding-bottom: 182px;
+}
+
+.img-login-logo {
+    height: 100px;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.clr_blue {
+    color: #1F497D;
+}
+
+h4.fee_class {
+    color: #1F497D;
+}
+
+form.white-popup-block .lost-pass-link {
+    float: right;
+    margin-top: 20px;
+}

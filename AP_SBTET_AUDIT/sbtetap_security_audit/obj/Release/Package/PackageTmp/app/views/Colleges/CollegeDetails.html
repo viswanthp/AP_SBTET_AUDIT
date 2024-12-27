@@ -1,0 +1,102 @@
+﻿<!--<style>
+
+</style>
+<style>
+
+
+</style>-->
+<link href="/contents/css/Pages/Colleges/CollegeDetails.css" rel="stylesheet" />
+
+<div ng-controller="CollegeDetailsController">
+    <!-- Inner page hedaing start -->
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2>Diploma Colleges</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a> &gt; <a ui-sref="index.CollegesList">Colleges</a>&gt; <a ui-sref="index.DiplomaColleges">Diploma Colleges</a>&gt; <a ui-sref="index.CollegeDetails">College Details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Inner page hedaing end -->
+    <!-- courses start -->
+    <section class="irs-courses-field irs-courses-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="irs-courses-col irs-courses-col-single">
+                        <div class="irs-courses-img">
+                            <img ng-src="{{CollegeData.CollegePhoto}}" alt="">
+                            <!--<div class="irs-time">
+                                <p>
+                                    <a href="#">10:00 pm - 4:00 pm</a>
+                                </p>
+                            </div>-->
+                            <div class="irs-courses-img-text">
+                                <ul class="clearfix">
+                                    <li>
+                                        <p><i class="zmdi zmdi-calendar-alt"></i> 3 years</p>
+                                    </li>
+                                    <li class="pull-right">
+                                        <!--  <p><i class="zmdi zmdi-money"></i> 290</p>-->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="irs-courses-content">
+                        <h4><a>College Details</a></h4>
+                        <div><label>Name of the Institution </label><span> : {{CollegeData.CollegeName}}</span></div>
+                        <div><label>Year of Establishment </label><span ng-show="CollegeData.YearOfEstablishment==null"> : 1981</span> <span ng-show="CollegeData.YearOfEstablishment!=null"> : {{CollegeData.YearOfEstablishment}}</span></div>
+                        <div>
+                            <label>Address </label><span ng-show="CollegeData.CollegeAddress==null">
+                                : Seshadri Rao Knowledge Village,
+                                Gudlavalleru – 521 356, Krishna District,
+                                Andhra Pradesh.
+                            </span>
+                            <span ng-show="CollegeData.CollegeAddress!=null"> : {{CollegeData.CollegeAddress}}</span>
+                        </div>
+                        <div><label>Institution Type </label><span> : Private</span> </div>
+                        <div><label>Name of the principal </label><span></span> <span ng-show="CollegeData.PrinciaplName==null"> : SRI G.V.V.SATYANARAYANA, M.Tech.</span> <span ng-show="CollegeData.PrinciaplName!=null"> : {{CollegeData.PrinciaplName}}</span></div>
+                        <div><label>Phone Number </label><span ng-show="CollegeData.PhoneNumber==null"> : 08674 273366</span><span ng-show="CollegeData.PhoneNumber!=null"> : {{CollegeData.PhoneNumber}}</span></div>
+                        <!--<div><label>Mobile </label><span> : 9912342030</span></div>-->
+                        <div><label>Email </label><span ng-show="CollegeData.CollegeEmail==null"> : poly.gvl@gmail.com</span><span ng-show="CollegeData.CollegeEmail!=null"> : {{CollegeData.CollegeEmail}}</span></div>
+                        <div>
+                            <label>Visit College </label><span ng-show="CollegeData.CollegeWebSie==null"> : <a href="http://112.133.228.49/" target="_blank">www.112.133.228.49</a></span><span ng-show="CollegeData.CollegeWebSie!=null"> : <a href="{{CollegeData.CollegeWebSie}}" target="_blank">{{CollegeData.CollegeWebSie}}</a></span>
+                            <!--        <span ng-show="CollegeData.CollegeEmail!=null"> : <a ng-href="{{CollegeData.CollegeEmail}}" target="_blank">{{CollegeData.CollegeEmail}}</a></span></div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th width="20%">Comitee </th>
+                                <th> Members</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>AntiRagging Commitee</td><td>{{CollegeData.AntiRaggingCommitee}}</td></tr>
+                            <tr><td>Grievance CellCommitee</td><td>{{CollegeData.GrievanceCellCommitee}}</td></tr>
+                            <tr><td>Industry Connect and PlacementCell</td><td>{{CollegeData.IndustryConnectandPlacementCell}}</td></tr>
+                            <tr><td>Parents Commitee</td><td>{{CollegeData.ParentsCommitee}}</td></tr>
+                            <tr><td>Women Empowerment Cell Commitee</td><td>{{CollegeData.WomenEmpowermentCellCommitee}}</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- courses end -->
+</div>

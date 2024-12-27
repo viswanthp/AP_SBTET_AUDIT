@@ -1,0 +1,81 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/HomeNotifications.css" rel="stylesheet" />
+<script>
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });</script>
+<div ng-controller="HomeNotificationsController">
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2>Notifications</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a> &gt; <a href="#">Notifications</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+           
+
+    <div class="container">
+        <div class="sm-spacer" ng-show="Loading"></div>
+        <div ng-show="Loading">
+            <center><img class="img_loading" src="/contents/images/preloader.gif"></center>
+        </div>
+        <div class="form-group" ng-show="items.length>0">
+            <label>Search</label>
+            <input type="text" ng-model="searching" ng-change="search()" class="form-control" placeholder="Search" style="width:311px">
+        </div>
+        <!--   <h2><span class="top_head"> Notifications</span></h2>-->
+        <div class="xs-spacer"></div>
+
+        <div class="table-responsive table-custom-tables-tb" ng-show="items.length>0">
+
+            <table class="table table-bordered table-hover table-striped table-rounded">
+                <thead>
+
+                    <tr>
+                        <th width="5%">S.No</th>
+                        <th class="id" custom-sort order="'id'" sort="sort">Notification </th>
+                        <th width="5%">File</th>
+
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr ng-repeat="data in items |  filter: searching">
+                        <td>{{$index+1}}</td>
+                        <td>
+                            <div class="event-item">
+
+
+                                <div class="not_css">
+                                    <i class="icofont  icofont-ui-calendar cal_date"></i> <b class="cal_date">{{data.NotificationDate|date:'dd-MM-yyyy'}}</b> <br>{{data.NotificationText}}
+                                </div>
+
+                            </div>
+                        </td>
+                        <td><a href="{{data.NotificationFilePath}}" download><button class="btn download_file pull-right"><i class="fa fa-download" aria-hidden="true"></i></button></a></td>
+
+                    </tr>
+
+
+                </tbody>
+
+
+            </table>
+
+        </div>
+    </div>
+
+</div>

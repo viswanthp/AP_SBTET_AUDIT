@@ -1,0 +1,12 @@
+.irs-courses-content {
+    padding: 0px;
+}
+
+.irs-courses-img img {
+    height: 400px;
+    width: 100%;
+}
+
+.table {
+    border-top: 2px solid #ddd;
+}

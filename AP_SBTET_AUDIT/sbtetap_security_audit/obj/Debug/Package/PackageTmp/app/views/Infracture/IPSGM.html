@@ -1,0 +1,183 @@
+﻿<!--<style>
+
+</style>
+<style >
+
+</style>-->
+<link href="/contents/css/Pages/Infracture/IPSGM.css" rel="stylesheet" />
+<div ng-controller="IPSGMController">
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2>IPSGM</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a> &gt; <a ui-sref="index.InfrastructureDetails">Infrastructure</a> &gt; <a ui-sref="index.IPSGM">IPSGM</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="irs-courses-field irs-courses-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="irs-courses-col irs-courses-col-single">
+                        <div class="irs-courses-img">
+                            <img src="/contents/images/infracture/IPSGM.png" alt="">
+                            <!--<div class="irs-time">
+                                <p>
+                                    <a href="#">10:00 pm - 4:00 pm</a>
+                                </p>
+                            </div>-->
+                            <div class="irs-courses-img-text">
+                                <ul class="clearfix">
+                                    <li>
+                                        <p><i class="zmdi zmdi-calendar-alt"></i> 3 years</p>
+                                    </li>
+                                    <li class="pull-right">
+                                        <!--  <p><i class="zmdi zmdi-money"></i> 290</p>-->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="sm-spacer"></div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>AcademicYear </label>
+                                <select class="form-control " id="selSession" ng-model="AcademicYear" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetAcademicYearsList">
+                                    <option value="" selected>Select AcademicYear</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Levels</label>
+                                <select class="form-control" ng-model="IPSGMLevel" name="Semester" required="">
+                                    <option value="" selected="selected">Select Level</option>
+                                    <!-- ngRepeat: data in Shifts -->
+                                    <option value="{{data.Value}}" ng-repeat="data in Levels" class="ng-binding ng-scope">
+                                        {{data.Value}}
+                                    </option><!-- end ngRepeat: data in Shifts -->
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3" ng-show="IPSGMLevel=='District'">
+                            <label>District </label>
+                            <div class="form-group">
+                                <select class="form-control " id="selSession1" ng-model="District" ng-options="data.DistrictID  as data.DistrictName   for data in GetDistrictsList">
+                                    <option value="" selected>Select District</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-success btn-sm bt_sub_marg" ng-click="FilterIPSGM()">Submit</button>
+                        </div>
+                        <!--<div class="col-md-3" ng-show="Level==2">
+                            <div class="form-group">
+                                <label>Districts</label>
+                                <select class="form-control" ng-model="District" name="District" required="">
+                                    <option value="" selected="selected">Select District</option>
+
+                                    <option value="{{data.Id}}" ng-repeat="data in Districts" class="ng-binding ng-scope">
+                                        {{data.Value}}
+                                    </option>
+
+                                </select>
+                            </div>
+                        </div>-->
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="irs-courses-content">
+                        <h4 class="Head_Infra">IPSGM</h4>
+                        <div>
+
+                            The department firmly believes that nurturing physically, mentally, emotionally, and a
+                            socially competent individual leads to real-world success and happiness. To support this
+                            belief, the department actively promotes physical activities.
+
+                            <br />
+
+                            In line with its commitment, the Department of Technical Education organizes the INTER
+                            POLYTECHNIC SPORTS AND GAMES MEET (IPSGM) annually. The IPSGM serves as a platform
+                            that offers abundant opportunities for students to engage in physical fitness, skill
+                            development, teamwork, sportsmanship, mental well-being, social interaction, spirit, and
+                            personal growth. This year, 2022-23, the IPSGM at regional level is conducted in all the 13
+                            districts of Andhra Pradesh during January, 2023. Following that, the state-level IPSGM
+                            event is organized at Govt. Polytechnic, Vijayawada in the month of February, 2023. And
+                            students from various polytechnics have participated in various sports and made the event
+                            grand successful.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="panel-bar1 text-center" ng-show="GetIPSGMList.length>0">IPSGM</div>
+                <div class="irs-accordion-two">
+                    <div class="irs-accordion-two" ng-show="GetIPSGMList.length>0">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne{{$index}}" aria-expanded="false" aria-controls="collapseOne{{$index}}">
+                                            <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                            <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                            {{LatestAcademicYear}}
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne{{$index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne{{$index}}">
+                                    <div class="panel-body">
+                                        <div class="col-md-3"><b>Hosted at :<span class="text-warning"> {{Venue}}</span></b></div>
+                                        <div class="col-md-3"><b>From :<span class="text-warning"> {{FromDate}}</span></b></div>
+                                        <div class="col-md-3"><b>To :<span class="text-warning"> {{ToDate}}</span></b></div>
+                                        <p>
+                                            <table class="table table-striped table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>S.No</th>
+                                                        <th>Place</th>
+                                                        <th>Name of the Sport</th>
+                                                        <th>College </th>
+                                                        <th>Team Members </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr ng-repeat="data in GetIPSGMList" ng-class="{'text-success': data.WinningPlace =='WINNER'}">
+                                                        <td> {{$index+1}}</td>
+                                                        <td>{{data.WinningPlace}} </td>
+                                                        <td>{{data.NameofSport}}</td>
+                                                        <td>{{data.CollegeName}}, {{data.CollegeAddress}}</td>
+                                                        <td>{{data.TeamMembers}}</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div ng-show="GetIPSGMList.length<1">
+                        <div class="">
+                            <h4 class="no-results text-center">No data Found</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

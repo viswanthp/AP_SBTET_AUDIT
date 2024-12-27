@@ -1,0 +1,134 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/CollegePages/CollegeLabs.css" rel="stylesheet" />
+<script>
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });</script>
+<div ng-controller="CollegeLabsController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">College Details</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="pannel-bar"> Add College Labs</div>
+        <div class="card">
+            <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Labs </label>
+                            <select class="form-control " id="selSession" ng-model="Lab" ng-options="data.Id  as data.Lab   for data in GetLabsList">
+                                <option value="" selected>Select Lab</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label>Major Equipments</label>
+                        <div class="form-group">
+                            <input ng-model="MajorEquipments" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Remarks</label>
+                        <div class="form-group">
+                            <input ng-model="Remarks" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Lab Cost</label>
+                        <div class="form-group">
+                            <input ng-model="LabCost" maxlength="10" type="text" onkeypress="return /[0-9]/i.test(event.key)" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" ng-show="AddDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddLab()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-2" ng-show="UpdateDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="UpdateCollegeLab()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container " ng-show="GetCollegeLabsList.length>0">
+            <div class="col-md-12">
+                <div class="cl-details">
+                    <h2>College Details</h2>
+                </div>
+
+                <div class="table-responsive table-custom-tables-tb">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                            <tr class="cb-1">
+                                <th>S.No</th>
+                                <th class="text-center">Lab Name</th>
+                                <th class="text-center">Major Equipment</th>
+                                <th class="text-center">LabTotalCost</th>
+                                <th class="text-center">Remarks</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #fff!important;" ng-repeat="data in GetCollegeLabsList">
+                                <td class="text-left">{{$index + 1}}</td>
+                                <td class="text-left">{{data.LabName}}</td>
+                                <td class="text-left">{{data.MajorEquipment}}</td>
+                                <td class="text-left">{{data.LabTotalCost}}</td>
+                                <td class="text-left">{{data.Remarks}}</td>
+                                <td class="text-center">
+                                    <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="GetCollegeLabsById(data.CollegeLabID)">
+                                        Edit
+                                    </button>
+                                    <button class="btn-xs btn btn-primary" style="width: 70px;" ng-show="!edit" ng-click="UpdateCollegeLab(data.CollegeLabID)">
+                                        Update
+                                    </button>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="" ng-show="GetCollegeLabsList.length<1">
+            <div class="">
+                <h4 class="no-results text-center">No data Found</h4>
+            </div>
+        </div>
+    </div>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

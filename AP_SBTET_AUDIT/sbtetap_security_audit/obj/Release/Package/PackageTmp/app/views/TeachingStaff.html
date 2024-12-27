@@ -1,0 +1,75 @@
+﻿<div ng-controller="TeachingStaffController">
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2>Teaching Staff</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a>&gt; <a ui-sref="index.TeachingStaff">Teaching Staff</a>
+                           
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="xs-spacer"></div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container " ng-show="GetCollegeStaffList.length>0">
+            <div class="col-md-12">
+              
+                <div class="panel-bar1 text-center" ng-show="GetCollegeStaffList.length>0">Teaching Staff</div>
+                <div class="table-responsive table-custom-tables-tb">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                            <tr class="cb-1">
+                                <th>S.No</th>
+                                <th class="text-center"> Name of the Staff Member</th>
+                                <th class="text-center">Designation</th>
+                                <th class="text-center">Working AT</th>
+                                <th class="text-center">Branch</th>
+                                <th class="text-center">Email</th>
+                                <th class="text-center">DeputedTo</th>
+
+                                <!--   <th class="text-center">Action</th>-->
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr style="background-color: #fff!important;" ng-repeat="data in GetCollegeStaffList">
+                                <td class="text-left">{{$index + 1}}</td>
+                                <td class="text-left">{{data.StaffName}}</td>
+                                <td class="text-left">{{data.DesignationName}}</td>
+                                <td class="text-left">{{data.CollegeName}}</td>
+                                <td class="text-left">{{data.CourseName}}</td>
+                                <td class="text-left">{{data.Email}}</td>
+                                <td class="text-left">{{data.DeputedTo}}</td>
+
+
+                                <!--<td class="text-center">
+                        <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="GetCollegeStaffDetailsById(data.CollegeStaffID)">
+                            Edit
+                        </button>
+
+
+                    </td>-->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="" ng-show="GetCollegeStaffList.length<1">
+            <div class="">
+                <h4 class="no-results text-center">No data Found</h4>
+            </div>
+        </div>
+    </div>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

@@ -1,0 +1,187 @@
+﻿<!--<style>
+
+</style>
+<style>
+
+</style>-->
+<link href="/contents/css/Pages/index.css" rel="stylesheet" />
+<div ng-controller="VirtualClassRoomsController">
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2>Virtual Class Room</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a> &gt; <a ui-sref="index.InfrastructureDetails">Infrastructure</a> &gt; <a ui-sref="index.VirtualClassRoom">Virtual Class Room</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="irs-courses-field irs-courses-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="irs-courses-col irs-courses-col-single">
+                        <div class="irs-courses-img">
+                            <img src="/contents/images/infracture/VirtualClassRoom.png" alt="">
+                            <!--<div class="irs-time">
+                                <p>
+                                    <a href="#">10:00 pm - 4:00 pm</a>
+                                </p>
+                            </div>-->
+                            <div class="irs-courses-img-text">
+                                <ul class="clearfix">
+                                    <li>
+                                        <p><i class="zmdi zmdi-calendar-alt"></i> 3 years</p>
+                                    </li>
+                                    <li class="pull-right">
+                                        <!--  <p><i class="zmdi zmdi-money"></i> 290</p>-->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Region</label>
+                                    <select class="form-control" ng-model="Region" name="Semester" ng-change="GetDistricts()" required="">
+                                        <option value="" selected="selected">Select Region</option>
+                                        <!-- ngRepeat: data in Shifts -->
+                                        <option value="{{data.RegionID}}" ng-repeat="data in Regions" class="ng-binding ng-scope">
+                                            {{data.RegionName}}
+                                        </option><!-- end ngRepeat: data in Shifts -->
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>District</label>
+                                    <select class="form-control" ng-model="District" name="Semester" required="">
+                                        <option value="" selected="selected">Select District </option>
+                                        <!-- ngRepeat: data in Shifts -->
+                                        <option value="{{data.DistrictID}}" ng-repeat="data in Districts" class="ng-binding ng-scope">
+                                            {{data.DistrictName}}
+                                        </option><!-- end ngRepeat: data in Shifts -->
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>College Type</label>
+
+                                    <select class="form-control" ng-model="CollegeType" name="Semester" ng-change="FilterVirtualClassRooms()" required="">
+                                        <option value="" selected="selected">Select College Type{{CollegeType}} </option>
+                                        <!-- ngRepeat: data in Shifts -->
+                                        <option value="{{data.CollegeTypeID}}" ng-repeat="data in CollegeTypes" class="ng-binding ng-scope">
+                                            {{data.CollegeTypeName}}
+                                        </option><!-- end ngRepeat: data in Shifts -->
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-success" style=" margin-top: 30px; " ng-click="FilterVirtualClassRooms()">Submit</button>
+                            </div>
+                        </div>
+                        <!--<table class="table">
+                            <thead>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>College Name</th>
+                                    <th>No Of Virtual Class Rooms</th>
+                                    <th>Remarks</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="data in pagedItems[currentPage] | orderBy:sort.sortingOrder:sort.reverse">
+                                    <td>{{$index+1}}</td>
+                                    <td>{{data.CollegeCode}} -  {{data.CollegeName}},{{data.CollegeAddress}}</td>
+                                    <td>{{data.NoOfClassrooms}}</td>
+                                    <td>{{data.Remarks}}</td>
+                            </tbody>
+                        </table>
+                        <div class="pagination pull-right" ng-show="pagedItems.length>1">
+                            <ul class="ul_page">
+                                <li class="page_li1" ng-class="{disabled: currentPage == 0}">
+
+                                    <a class="page" ng-click="prevPage()">« Prev</a>
+
+                                </li>
+
+                                <li class="page_li" ng-repeat="n in range(pagedItems.length, currentPage, currentPage + gap) "
+                                    ng-class="{active: n == currentPage}"
+                                    ng-click="setPage()">
+                                    <a class="page" ng-bind="n + 1">1</a>
+                                </li>
+
+                                <li class="page_li3" ng-class="{disabled: (currentPage) == pagedItems.length - 1}">
+                                    <a class="page" ng-click="nextPage()">Next »</a>
+                                </li>
+                            </ul>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="irs-courses-content">
+                        <h4 class="Head_Infra">Virtual Class Room</h4>
+                        <div>
+                            Virtual classrooms typically involve the use of video conferencing, multimedia presentations, chat features, and other interactive tools to facilitate communication and educational activities.
+
+                            <br />
+
+                            Video Conferencing: Virtual classrooms often incorporate video conferencing capabilities, allowing participants to see and hear each other in real-time.
+
+                            <br />
+
+                            Interactive Whiteboards: These digital whiteboards enable teachers to share presentations, write notes, draw diagrams, and illustrate concepts in real-time.
+
+                            <br />
+
+                            Virtual classrooms offer several advantages, such as flexibility in scheduling, access to a wider range
+                            of educational resources, the ability to engage with students from different geographical locations,
+                            and the opportunity for personalized learning. However, they also present challenges, such as the
+                            need for reliable internet connectivity and technical proficiency, and the potential for decreased
+                            social interaction compared to traditional classrooms.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="panel-bar1 text-center" ng-show="CollegeList.length>0">VIRTUAL CLASSROOMS</div>
+                <table class="table table-striped table-hover" ng-show="CollegeList.length>0">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>College Name</th>
+                            <th>No Of Digital Class Rooms</th>
+                            <th>Major Equipment</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="data in CollegeList">
+                            <td>{{$index+1}}</td>
+                            <td>{{data.CollegeCode}} -  {{data.CollegeName}},{{data.CollegeAddress}}</td>
+                            <td>{{data.NoOfClassrooms}}</td>
+                            <td>{{data.MajorEquipment}}</td>
+                            <td>{{data.Remarks}}</td>
+                    </tbody>
+                </table>
+                <div class="" ng-show="CollegeList.length<1">
+                    <div class="">
+                        <h4 class="no-results text-center">No data Found</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>

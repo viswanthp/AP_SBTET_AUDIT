@@ -1,0 +1,58 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/Feedback.css" rel="stylesheet" />
+<div ng-controller="FeedbackController">
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <section class="irs-account-field">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="irs-account-col card">
+                        <div class="cls_crd">
+                            <h3 class="text-center">FEEDBACK / GRIEVANCE</h3>
+                            <form name="contact_form" novalidate="novalidate">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Who ? </label>
+                                            <select class="form-control" ng-model="Type" name="Type" required="">
+                                                <option value="" selected="selected">Select Type</option>
+                                                <option value="{{data.Name}}" ng-repeat="data in FeedbackTypes" class="ng-binding ng-scope">
+                                                    {{data.Name}}
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>Name</label>
+                                        <input name="Name" class="form-control" placeholder="Name" ng-model="Name" type="text">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>Mobile</label>
+                                        <input name="Mobile" type="text" maxlength="10" onkeypress="return /[0-9]/i.test(event.key)" class="form-control" ng-model="Mobile" placeholder="Mobile">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>Email</label>
+                                        <input name="Email" type="text" class="form-control" ng-model="Email" placeholder="Email">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label>Feedback / Grievance</label>
+                                        <textarea name="Email" type="Feedback" rows="3" class="form-control" ng-model="Feedback" placeholder="Feedback"></textarea>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <button class="btn btn-default pull-right irs-big-btn" ng-click="SubmitFeedback()">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</div>

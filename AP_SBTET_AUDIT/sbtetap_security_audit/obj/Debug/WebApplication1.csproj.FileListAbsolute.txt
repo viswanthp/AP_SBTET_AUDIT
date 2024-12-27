@@ -1,0 +1,372 @@
+F:\testpolycet\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+F:\testpolycet\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+F:\testpolycet\WebApplication1\bin\WebApplication1.dll.config
+F:\testpolycet\WebApplication1\bin\WebApplication1.dll
+F:\testpolycet\WebApplication1\bin\WebApplication1.pdb
+F:\testpolycet\WebApplication1\bin\roslyn\csc.exe
+F:\testpolycet\WebApplication1\bin\roslyn\csc.exe.config
+F:\testpolycet\WebApplication1\bin\roslyn\csc.rsp
+F:\testpolycet\WebApplication1\bin\roslyn\csi.exe
+F:\testpolycet\WebApplication1\bin\roslyn\csi.exe.config
+F:\testpolycet\WebApplication1\bin\roslyn\csi.rsp
+F:\testpolycet\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\testpolycet\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\testpolycet\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\testpolycet\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\testpolycet\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\testpolycet\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\testpolycet\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\testpolycet\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\testpolycet\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\testpolycet\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+F:\testpolycet\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\testpolycet\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.AppContext.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Console.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.IO.Compression.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.ValueTuple.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+F:\testpolycet\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\testpolycet\WebApplication1\bin\roslyn\vbc.exe
+F:\testpolycet\WebApplication1\bin\roslyn\vbc.exe.config
+F:\testpolycet\WebApplication1\bin\roslyn\vbc.rsp
+F:\testpolycet\WebApplication1\bin\roslyn\VBCSCompiler.exe
+F:\testpolycet\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+F:\testpolycet\WebApplication1\bin\Newtonsoft.Json.xml
+F:\testpolycet\WebApplication1\bin\RestSharp.xml
+F:\testpolycet\WebApplication1\bin\System.Net.Http.Formatting.xml
+F:\testpolycet\WebApplication1\bin\System.Web.Http.xml
+F:\testpolycet\WebApplication1\bin\System.Web.Http.WebHost.xml
+F:\testpolycet\WebApplication1\bin\System.Web.Mvc.xml
+F:\testpolycet\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+F:\testpolycet\WebApplication1\obj\Debug\WebApplication1.dll
+F:\testpolycet\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Dell\Downloads\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\Dell\Downloads\WebApplication1\bin\WebApplication1.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\csc.exe
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\csc.exe.config
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\csc.rsp
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\csi.exe
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\csi.exe.config
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\csi.rsp
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.AppContext.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Console.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.IO.Compression.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.ValueTuple.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\vbc.rsp
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Dell\Downloads\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Dell\Downloads\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\Dell\Downloads\WebApplication1\bin\RestSharp.xml
+C:\Users\Dell\Downloads\WebApplication1\bin\System.Net.Http.Formatting.xml
+C:\Users\Dell\Downloads\WebApplication1\bin\System.Web.Http.xml
+C:\Users\Dell\Downloads\WebApplication1\bin\System.Web.Http.WebHost.xml
+C:\Users\Dell\Downloads\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\Dell\Downloads\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+C:\Users\Dell\Downloads\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Downloads\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Users\Dell\Downloads\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Dell\Downloads\WebApplication1\obj\Debug\WebApplication1.pdb
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\WebApplication1.dll.config
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\WebApplication1.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\WebApplication1.pdb
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\csc.exe
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\csc.exe.config
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\csc.rsp
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\csi.exe
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\csi.exe.config
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\csi.rsp
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\Microsoft.Managed.Core.targets
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.AppContext.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Collections.Immutable.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Console.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Globalization.Calendars.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.IO.Compression.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.IO.FileSystem.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Net.Sockets.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Reflection.Metadata.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.ValueTuple.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Xml.XmlDocument.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Xml.XPath.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\vbc.exe
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\vbc.exe.config
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\vbc.rsp
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\VBCSCompiler.exe
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\roslyn\VBCSCompiler.exe.config
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\Newtonsoft.Json.xml
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\RestSharp.xml
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\System.Net.Http.Formatting.xml
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\System.Web.Http.xml
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\System.Web.Http.WebHost.xml
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\bin\System.Web.Mvc.xml
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\obj\Debug\WebApplication1.csproj.CopyComplete
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\obj\Debug\WebApplication1.dll
+F:\testpolycet\TSPolycet-master\TSPolycet-master\TSPolycet\obj\Debug\WebApplication1.pdb
+E:\Polycet_Project_New\TSPolycet\bin\WebApplication1.dll.config
+E:\Polycet_Project_New\TSPolycet\bin\WebApplication1.dll
+E:\Polycet_Project_New\TSPolycet\bin\WebApplication1.pdb
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\csc.exe
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\csc.exe.config
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\csc.rsp
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\csi.exe
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\csi.exe.config
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\csi.rsp
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.AppContext.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.Collections.Immutable.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.Console.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.Globalization.Calendars.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.IO.Compression.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.IO.FileSystem.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.Net.Sockets.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.Reflection.Metadata.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.ValueTuple.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.Xml.XPath.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\vbc.exe
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\vbc.exe.config
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\vbc.rsp
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\VBCSCompiler.exe
+E:\Polycet_Project_New\TSPolycet\bin\roslyn\VBCSCompiler.exe.config
+E:\Polycet_Project_New\TSPolycet\bin\Newtonsoft.Json.xml
+E:\Polycet_Project_New\TSPolycet\bin\RestSharp.xml
+E:\Polycet_Project_New\TSPolycet\bin\System.Net.Http.Formatting.xml
+E:\Polycet_Project_New\TSPolycet\bin\System.Web.Http.xml
+E:\Polycet_Project_New\TSPolycet\bin\System.Web.Http.WebHost.xml
+E:\Polycet_Project_New\TSPolycet\bin\System.Web.Mvc.xml
+E:\Polycet_Project_New\TSPolycet\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+E:\Polycet_Project_New\TSPolycet\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+E:\Polycet_Project_New\TSPolycet\obj\Debug\WebApplication1.csproj.CopyComplete
+E:\Polycet_Project_New\TSPolycet\obj\Debug\WebApplication1.dll
+E:\Polycet_Project_New\TSPolycet\obj\Debug\WebApplication1.pdb
+E:\Polycet_Project_New\TSPolycet\bin\BouncyCastle.Crypto.dll
+E:\Polycet_Project_New\TSPolycet\bin\MailKit.xml
+E:\Polycet_Project_New\TSPolycet\bin\MimeKit.pdb
+E:\Polycet_Project_New\TSPolycet\bin\MimeKit.xml
+C:\Users\Dell\Desktop\TSPolycet\bin\WebApplication1.dll.config
+C:\Users\Dell\Desktop\TSPolycet\bin\WebApplication1.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\WebApplication1.pdb
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\csc.exe
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\csc.exe.config
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\csc.rsp
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\csi.exe
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\csi.exe.config
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\csi.rsp
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.AppContext.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.Console.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.IO.Compression.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.ValueTuple.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\vbc.exe
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\vbc.exe.config
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\vbc.rsp
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\VBCSCompiler.exe
+C:\Users\Dell\Desktop\TSPolycet\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Dell\Desktop\TSPolycet\bin\BouncyCastle.Crypto.dll
+C:\Users\Dell\Desktop\TSPolycet\bin\MailKit.xml
+C:\Users\Dell\Desktop\TSPolycet\bin\MimeKit.pdb
+C:\Users\Dell\Desktop\TSPolycet\bin\MimeKit.xml
+C:\Users\Dell\Desktop\TSPolycet\bin\Newtonsoft.Json.xml
+C:\Users\Dell\Desktop\TSPolycet\bin\RestSharp.xml
+C:\Users\Dell\Desktop\TSPolycet\bin\System.Net.Http.Formatting.xml
+C:\Users\Dell\Desktop\TSPolycet\bin\System.Web.Http.xml
+C:\Users\Dell\Desktop\TSPolycet\bin\System.Web.Http.WebHost.xml
+C:\Users\Dell\Desktop\TSPolycet\bin\System.Web.Mvc.xml
+C:\Users\Dell\Desktop\TSPolycet\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+C:\Users\Dell\Desktop\TSPolycet\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\TSPolycet\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Users\Dell\Desktop\TSPolycet\obj\Debug\WebApplication1.dll
+C:\Users\Dell\Desktop\TSPolycet\obj\Debug\WebApplication1.pdb
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\WebApplication1.dll.config
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\WebApplication1.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\WebApplication1.pdb
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\csc.exe
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\csc.exe.config
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\csc.rsp
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\csi.exe
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\csi.exe.config
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\csi.rsp
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.AppContext.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.Console.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.IO.Compression.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.ValueTuple.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\vbc.exe
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\vbc.exe.config
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\vbc.rsp
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\VBCSCompiler.exe
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\BouncyCastle.Crypto.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\TSPolycet - Copy\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Users\Dell\Desktop\TSPolycet - Copy\obj\Debug\WebApplication1.dll
+C:\Users\Dell\Desktop\TSPolycet - Copy\obj\Debug\WebApplication1.pdb
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\MailKit.xml
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\MimeKit.pdb
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\MimeKit.xml
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\Newtonsoft.Json.xml
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\RestSharp.xml
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\System.Net.Http.Formatting.xml
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\System.Web.Http.xml
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\System.Web.Http.WebHost.xml
+C:\Users\Dell\Desktop\TSPolycet - Copy\bin\System.Web.Mvc.xml
+C:\Users\Dell\Desktop\TSPolycet - Copy\obj\Debug\WebApplication1.csproj.AssemblyReference.cache

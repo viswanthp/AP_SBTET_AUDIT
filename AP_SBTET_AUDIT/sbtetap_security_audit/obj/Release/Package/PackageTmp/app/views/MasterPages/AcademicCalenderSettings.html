@@ -1,0 +1,151 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/MasterPages/AcademicCalenderSettings.css" rel="stylesheet" />
+<script>
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+
+    });
+
+    $(function () {
+        $('#datepicker1').datepicker({
+            changeMonth: false,
+            changeYear: true,
+            showButtonPanel: false,
+            dateFormat: 'yyyy',
+
+            format: " yyyy", // Notice the Extra space at the beginning
+            viewMode: "years",
+            minViewMode: "years",
+            autoclose: true,
+            onClose: function (dateText, inst) {
+                $(this).datepicker('setDate', new Date('2017'));
+            }
+        }).focus(function () {
+            $(".ui-datepicker-month").hide();
+            $(".ui-datepicker-calendar").hide();
+        });
+    });
+</script>
+<div ng-controller="AcademicCalenderSetingsController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">Academic Calender</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="pannel-bar"> Add Academic Calender</div>
+        <div class="card">
+            <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Academic Year </label>
+                            <select class="form-control " id="selSession" ng-model="AcademicYear" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetAcademicYearsList">
+                                <option value="" selected>Select Academic Year</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Academic Calender Name</label>
+                        <div class="form-group">
+                            <input ng-model="Name" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Academic Calender Path</label>
+                        <div class="form-group">
+                            <input class="form-control" id="PdfFile" type="file" placeholder="" maxlength="10" onchange="angular.element(this).scope().uploadPdf()" accept=".doc,.docx,.pdf,.zip,.7zip,.rar,.RAR,.ZIP,.PDF,.DOC,.DOCX,.7ZIP" ng-model="Photo" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 pull-right" ng-show="AddDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddAcademicCalender()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pull-right" ng-show="UpdateDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="UpdateAcademicCalender()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container " ng-show="GetAcademicCalenderList.length > 0">
+            <div class="col-md-12">
+                <div class="cl-details">
+                    <h2>Academic Calender</h2>
+                </div>
+
+                <div class="table-responsive table-custom-tables-tb">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                            <tr class="cb-1">
+                                <th>S.No</th>
+                                <th class="text-center">Calendar Name</th>
+                                <th class="text-center">Academic Year</th>
+                                <th class="text-center">Path</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #fff!important;" ng-repeat="data in GetAcademicCalenderList">
+                                <td class="text-left">{{$index + 1}}</td>
+                                <td class="text-left">{{data.CalendarName}}</td>
+                                <td class="text-left">{{data.AcademicYear}}</td>
+                                <td class="text-left">{{data.CalendarDownloadPath}}</td>
+
+                                <td class="text-center">
+                                    <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="GetAcademicCalenderById(data.AcademicCalenderID)">
+                                        Edit
+                                    </button>
+                                    <button class="btn-xs btn btn-primary" style="width: 70px;" ng-show="!edit" ng-click="UpdateCollegeLab(data.AcademicCalenderID)">
+                                        Update
+                                    </button>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="" ng-show="GetAcademicCalenderList.length<1">
+            <div class="">
+                <h4 class="no-results text-center">No data Found</h4>
+            </div>
+        </div>
+    </div>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

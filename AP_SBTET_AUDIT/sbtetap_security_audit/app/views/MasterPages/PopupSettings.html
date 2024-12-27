@@ -1,0 +1,205 @@
+﻿<style>
+    img#stdPhotoImg {
+        height: 200px;
+        width: 150px;
+    }
+    .popup_Img_css {
+        height: 80px;
+        width: 60px;
+    }
+  
+</style>
+<Popup href="/contents/css/Pages/MasterPages/Popups.css" rel="stylesheet" />
+<script>
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+
+    });
+
+    //$(function () {
+    //    $('#datepicker1').datepicker({
+    //        changeMonth: false,
+    //        changeYear: true,
+    //        showButtonPanel: false,
+    //        dateFormat: 'dd-mm-yyyy',
+
+    //        format: "dd-mm-yyyy", // Notice the Extra space at the beginning
+
+    //        autoclose: true,
+    //        onClose: function (dateText, inst) {
+    //            $(this).datepicker('setDate', new Date('2017'));
+    //        }
+    //    }).focus(function () {
+    //        $(".ui-datepicker-month").hide();
+    //        $(".ui-datepicker-calendar").hide();
+    //    });
+    //    $('#datepicker2').datepicker({
+    //        changeMonth: false,
+    //        changeYear: true,
+    //        showButtonPanel: false,
+    //        dateFormat: 'dd-mm-yyyy',
+
+    //        format: "dd-mm-yyyy", // Notice the Extra space at the beginning
+
+    //        autoclose: true,
+    //        onClose: function (dateText, inst) {
+    //            $(this).datepicker('setDate', new Date('2017'));
+    //        }
+    //    }).focus(function () {
+    //        $(".ui-datepicker-month").hide();
+    //        $(".ui-datepicker-calendar").hide();
+    //    });
+    //});
+</script>
+<div ng-controller="PopupSettingsController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">Popup Settings</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="pannel-bar"> Add Popup</div>
+        <div class="card">
+            <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <label>Popup Date</label>
+                        <div class="form-group">
+                            <input ng-model="PopupDate" type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Popup Name</label>
+                        <div class="form-group">
+                            <input ng-model="PopupName" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+                  
+                    <div class="col-md-3">
+                        <label>Popup Image</label>
+                        <div class="form-group">
+                            <input class="" id="stdPhotoFile" type="file" placeholder="" maxlength="10" onchange="angular.element(this).scope().uploadPhoto()" accept="image/*" ng-model="Photo" />
+                            <img ng-src="{{userPhoto}}" class="" id="stdPhotoImg" />
+                        </div>
+                    </div>
+                    <div class="col-md-2 pull-right">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddPopup()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                            </button>
+                        </div>
+                    </div>
+                    <!--<div class="col-md-2 pull-right" ng-show="UpdateDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="UpdatePopup()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                            </button>
+                        </div>
+                    </div>-->
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container " ng-show="GetPopupsList.length>0">
+            <div class="col-md-12">
+                <div class="cl-details">
+                    <h2>Popups Settings</h2>
+                </div>
+
+                <div class="table-responsive table-custom-tables-tb">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                            <tr class="cb-1">
+                                <th>S.No</th>
+                                <th class="text-center">Date</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-center">Popup Description</th>
+                                <th class="text-center">Popup Image</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #fff!important;" ng-repeat="data in GetPopupsList">
+                                <td class="text-left">{{$index + 1}}</td>
+                                <td>{{data.PopupDate| date:'dd-MMM-yyyy'}}</td>
+                                <td class="text-left">{{data.Active == true ? "Active" : "Inactive"}}</td>
+                                <td class="text-left">{{data.PopupText}}</td>
+                                <td class="text-left"><img src="{{data.PopupImage}}" class="popup_Img_css"></td>
+
+                                <td class="text-center">
+
+
+                                    <button class="btn-xs btn btn-info" ng-click="EditPopup(data.PopupID)"><i class="fa fa-pencil-square-o" title="Edit" aria-hidden="true"></i></button>
+                                    <button class="btn-xs btn btn-danger" ng-click="DeletePopup(data,data.PopupID)"><i class="fa fa-trash" title="Delete" aria-hidden="true"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="" ng-show="GetPopupsList.length<1">
+            <div class="">
+                <h4 class="no-results text-center">No data Found</h4>
+            </div>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div id="id01" class="modal">
+        <div class="container">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                <form class="modal-content modal_content">
+                    <div class="">
+                        <!-- <h2>Delete </h2>-->
+                        <h3>Are you sure you want to delete Popup?</h3>
+                        <hr />
+                        <div><b>{{PopupText1}}</b> </div>
+                        <div> {{PopupName1}} </div>
+                        <br />
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-success">Cancel</button>
+                            <button type="button" ng-click="DeletePopupConfirm()" class="btn btn-danger pull-right">Delete</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

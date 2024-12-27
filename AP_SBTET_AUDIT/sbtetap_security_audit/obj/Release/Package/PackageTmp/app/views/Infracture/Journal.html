@@ -1,0 +1,137 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/Infracture/Journal.css" rel="stylesheet" />
+<div ng-controller="JournalController">
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2>Journal</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a> &gt; <a ui-sref="index.InfrastructureDetails">Infrastructure</a> &gt; <a ui-sref="index.Journal">Journal</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="irs-courses-field irs-courses-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="irs-courses-col irs-courses-col-single">
+                        <div class="irs-courses-img">
+                            <img src="/contents/images/infracture/Journal.png" alt="">
+                            <!--<div class="irs-time">
+                                <p>
+                                    <a href="#">10:00 pm - 4:00 pm</a>
+                                </p>
+                            </div>-->
+                            <div class="irs-courses-img-text">
+                                <ul class="clearfix">
+                                    <li>
+                                        <p><i class="zmdi zmdi-calendar-alt"></i> 3 years</p>
+                                    </li>
+                                    <li class="pull-right">
+                                        <!--  <p><i class="zmdi zmdi-money"></i> 290</p>-->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Publish Year</label>
+                                    <select class="form-control" ng-model="PublishYear" name="Semester" ng-change="GetDistricts()" required="">
+                                        <option value="" selected="selected">Select Publish Year</option>
+                                        <!-- ngRepeat: data in Shifts -->
+                                        <option value="{{data.YearID}}" ng-repeat="data in GetYearsList" class="ng-binding ng-scope">
+                                            {{data.Year}}
+                                        </option><!-- end ngRepeat: data in Shifts -->
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button class="btn btn-success" style=" margin-top: 30px; " ng-click="FilterJournal()">Submit</button>
+                            </div>
+                        </div>
+                        <div class="panel-bar1 text-center">JOURNAL</div>
+                        <table class="table" ng-show="Data">
+                            <thead>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Academic Year</th>
+                                    <th>Edition</th>
+                                    <th>Major Topics</th>
+                                    <th> Journal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="data in FilterJournalData">
+                                    <td>{{$index+1}}</td>
+                                    <td>{{data.Year}}</td>
+                                    <td>{{data.Eidition}}</td>
+                                    <td>{{data.MajorTopics}}</td>
+                                    <td><a target="_blank" style="cursor:pointer;" download="">Preview & Download</a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div ng-show="NoData">
+                            <div class="">
+                                <h4 class="no-results text-center">No data Found</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="irs-courses-content">
+                        <h4 class="Head_Infra">Journal</h4>
+                        <div>
+                            Journals play a crucial role in the academic and research community by providing a platform
+                            for researchers to share their findings, theories, methodologies, and insights with their
+                            peers and the broader scholarly community. They serve as a means of communication,
+                            dissemination, and documentation of scholarly research and contribute to the advancement
+                            of knowledge in specific fields.
+
+                            <br />
+
+                            They provide an opportunity to the staff and students of various Polytechnics , to publish
+                            their articles, projects and innovative ideas in the form of essays.
+
+                            <br />
+
+                            They are often peer-reviewed, articles undergo rigorous evaluation by experts before they
+                            are published. Journals serve as a platform for researchers, scholars, and professionals to
+                            share their original research, analysis, and insights with the wider community.
+
+                            <br />
+
+                            Overall, journals are crucial for the advancement of knowledge, quality control, and the
+                            development of academic and professional communities.
+
+                            {{FilterJournalData[0].JournalPath}}
+                        </div>
+                    </div>
+                    <!--<embed ng-src="https://docs.google.com/gview?url=http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true" style="width:200px;height:200px;"></embed>-->
+                    <!-- <iframe ng-src="https://docs.google.com/gview?url=http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>-->
+                    <!--<iframe src="{{File| trustAsResourceUrl}}"  style="width:600px; height:500px;">
+                        <p style="font-size: 110%;">
+                            <em>
+                                <strong>ERROR: </strong>
+                                An &#105;frame should be displayed here but your browser version does not support &#105;frames.
+                            </em>Please update your browser to its most recent version and try again.
+                        </p>
+                    </iframe>-->
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>

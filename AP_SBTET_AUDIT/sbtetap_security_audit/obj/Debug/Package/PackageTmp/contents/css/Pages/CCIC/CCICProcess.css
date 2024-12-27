@@ -1,0 +1,17 @@
+
+
+
+li.myLst {
+    list-style: inherit;
+}
+.pad_30 {
+    padding: 30px;
+    background-color: #e6fffb;
+}
+.txt_head {
+    color: #1f497d;
+    font-weight: 600;
+}
+.li_css {
+    font-size: 15px;
+}

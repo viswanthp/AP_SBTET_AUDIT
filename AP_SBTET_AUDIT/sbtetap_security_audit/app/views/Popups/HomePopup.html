@@ -1,0 +1,26 @@
+﻿<style>
+    .modal-body{
+        padding:0px!important;
+    }
+    .modal-dialog.modal-xlg {
+        width:500px!important;
+    }
+    .modal-footer {
+        padding: 5px!important;
+    }
+</style>
+<div class="modal-content">
+    <!--<div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Edit Details</h2>
+        <button type="button" class="close" ng-click="closeModal()" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>-->
+    <div class="modal-body">
+<img class="popupimg" height="600" width="100%" src="{{data.PopupImage}}" ng-show="data.Active==true"  ng-repeat="data in GetPopupsList"/>
+    </div>
+    <div class="modal-footer">
+        <center><button type="button" class="btn btn-success btn-sm" ng-click="closeModal()">OK</button></center>
+    </div>
+</div>
+

@@ -1,0 +1,134 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/Dashboard.css" rel="stylesheet" />
+<ui-view>
+    <div ng-controller="DashboardController">
+        <header class="irs-main-header IndexData ng-scope" style="display: block;">
+            <div class="irs-header-nav scrollingto-fixed scroll-to-fixed-fixed" style="z-index: 1000; position: relative; top: 0px; margin-left: 0px; width: 1519px; left: 0px;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 padding-0">
+                            <nav class="navbar navbar navbar-fixed-top">
+                                <div class="container">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+
+                                    </div>
+
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" ui-sref="Dashboard" href="#!/Dashboard">
+                                            <img class="home_logo" src="/contents/images/sbtet_ap_latest_logo.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class=" padding-0 col-md-8 col-sm-12">
+                                        <h4 class="logo-heading text-center">STATE BOARD OF TECHNICAL EDUCATION &amp; TRAINING</h4>
+                                        <h5 class="logo-heading1 text-center"> ANDHRA PRADESH</h5>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="">Dashboard</a></li>
+
+                                            <li><button class="btn btn-primary btn_login" disabled title="User">{{UserName}}</button></li>
+                                            <li><button class="btn btn-primary btn_login" ng-click="Logout()">Logout</button></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </nav>
+                        </div>
+                        <!--<div class="col-md-1 col-sm-12">
+                            <div class="irs-log-reg" ui-sref="Dashboard">
+                                <a ui-sref="Dashboard">Login</a>
+
+                            </div>
+                        </div>-->
+                        <!--  <button  ui-sref="Dashboard">Login</button>-->
+                    </div>
+                </div>
+            </div><div style="display: block; width: 1519.2px; height: 45px; float: none;"></div>
+        </header>
+        <!-- End Header -->
+
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container">
+            <div class="card1s">
+                <div class="card1 card1-1" ng-click="OpenModule()">
+
+                    <h4 class="card1__title">Settings</h4>
+
+                </div>
+
+                <!--<div class="card1 card1-3">
+                    <div class="card1__icon"><i class="fas fa-bolt"></i></div>
+                    <p class="card1__exit"><i class="fas fa-times"></i></p>
+                    <h4 class="card1__title">Ut enim ad minim veniam.</h4>
+                    <p class="card1__apply">
+                        <a class="card1__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                    </p>
+                </div>
+                <div class="card1 card1-4">
+                    <div class="card1__icon"><i class="fas fa-bolt"></i></div>
+                    <p class="card1__exit"><i class="fas fa-times"></i></p>
+                    <h4 class="card1__title">Quis nostrud exercitation ullamco laboris nisi.</h4>
+                    <p class="card1__apply">
+                        <a class="card1__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                    </p>
+                </div>
+                <div class="card1 card1-5">
+                    <div class="card1__icon"><i class="fas fa-bolt"></i></div>
+                    <p class="card1__exit"><i class="fas fa-times"></i></p>
+                    <h4 class="card1__title">Ut aliquip ex ea commodo consequat. Duis aute irure dolor.</h4>
+                    <p class="card1__apply">
+                        <a class="card1__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                    </p>
+                </div>
+                <div class="card1 card1-1">
+                    <div class="card1__icon"><i class="fas fa-bolt"></i></div>
+                    <p class="card1__exit"><i class="fas fa-times"></i></p>
+                    <h4 class="card1__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                    <p class="card1__apply">
+                        <a class="card1__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                    </p>
+                </div>-->
+            </div>
+        </div>
+        <div class="spacer"></div>
+
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+    </div>
+    <div class="sm-spacer"></div>
+
+
+    <section class="irs-copyright-field">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="irs-copyright">
+                        <p>
+                            Copyright © This is the official website of State Board of Technical Education & Training, Andhra Pradesh. <a href="https://themeforest.net/user/irs_soft">All Rights Reserved</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</ui-view>
+
+
+
+<!-- script start from here -->

@@ -1,0 +1,184 @@
+﻿<!--<style>
+
+</style>
+<style>
+
+</style>-->
+<link href="/contents/css/Pages/Infracture/FDP.css" rel="stylesheet" />
+<div ng-controller="FDPController">
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2>FDP</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a> &gt; <a ui-sref="index.InfrastructureDetails">Infracture</a> &gt; <a ui-sref="index.FDP">FDP</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="irs-courses-field irs-courses-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="irs-courses-col irs-courses-col-single">
+                        <div class="irs-courses-img">
+                            <img src="/contents/images/infracture/FDP.png" alt="">
+                            <!--<div class="irs-time">
+                                <p>
+                                    <a href="#">10:00 pm - 4:00 pm</a>
+                                </p>
+                            </div>-->
+                            <div class="irs-courses-img-text">
+                                <ul class="clearfix">
+                                    <li>
+                                        <p><i class="zmdi zmdi-calendar-alt"></i> 3 years</p>
+                                    </li>
+                                    <li class="pull-right">
+                                        <!--  <p><i class="zmdi zmdi-money"></i> 290</p>-->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="irs-courses-content">
+                        <h4 class="Head_Infra">FDP</h4>
+                        <div>
+                            These programs aim to provide faculty with the knowledge, skills, resources, and support
+                            needed to excel in their roles as educators, researchers, and contributors to the academic
+                            community.
+
+                            <br />
+
+                            Faculty development programs can vary in scope and focus, but they typically offer a
+                            combination of workshops, seminars, training sessions, mentoring, and other professional
+                            development activities. These programs may be organized at the institutional level,
+                            department level, or through specialized centers dedicated to faculty development.
+
+                            <br />
+
+                            Faculty development programs often focus on enhancing teaching effectiveness and
+                            pedagogical strategies. They provide faculty members , workshops, and training sessions to
+                            improve their instructional methods, curriculum design, assessment techniques. These
+                            programs help faculty members stay updated with innovative teaching practices, engage
+                            students more effectively, and create an enriching learning environment.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="panel-bar1 text-center">FDP Academic Calender</div>
+                    <div class="irs-accordion-two" ng-show="GetFDPCalendersList.length >0">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default" ng-repeat="i in AcademicYears">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne{{$index}}" aria-expanded="false" aria-controls="collapseOne{{$index}}">
+                                            <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                            <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                            {{i.AcademicYear}}
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne{{$index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne{{$index}}">
+                                    <div class="panel-body">
+                                        <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                                            <thead>
+                                                <tr class="cb-1">
+                                                    <th>S.No</th>
+                                                    <th class="text-center">Academic Year</th>
+                                                    <th class="text-center">Program Name</th>
+                                                    <th class="text-center">Venue</th>
+                                                    <th class="text-center">Planned Strength</th>
+                                                    <th class="text-center">Offered By</th>
+                                                    <th class="text-center">Mentor Name</th>
+                                                    <th class="text-center">Planned From</th>
+                                                    <th class="text-center">Planned To</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr style="background-color: #fff!important;" ng-show="i.AcademicYearID=data.AcademicYearID" ng-repeat="data in GetFDPCalendersList">
+                                                    <td class="text-left">{{$index + 1}}</td>
+                                                    <td class="text-left">{{data.AcademicYear}}</td>
+                                                    <td class="text-left">{{data.ProgramName}}</td>
+                                                    <td class="text-left">{{data.Venue}}</td>
+                                                    <td class="text-left">{{data.PlannedStrength == null ?'-':data.PlannedStrength}}</td>
+                                                    <td class="text-left">{{data.OfferedBy}}</td>
+                                                    <td class="text-left">{{data.MentorName}}</td>
+                                                    <td class="text-left">{{data.PlannedFrom}}</td>
+                                                    <td class="text-left">{{data.PlannedTo}}</td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="GetFDPCalendersList<1">
+                        <div class="">
+                            <h4 class="no-results text-center">No data Found</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="panel-bar1 text-center">FDP Training</div>
+                    <div class="irs-accordion-two" ng-show="GetFDPTrainingsList.length>0">
+                        <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default" ng-repeat="i in AcademicYears1">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1{{$index}}" aria-expanded="false" aria-controls="collapseOne1{{$index}}">
+                                            <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                            <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                            {{i.AcademicYear}}
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne1{{$index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne1$index}}">
+                                    <div class="panel-body">
+
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>S.No</th>
+                                                    <th>Program</th>
+                                                    <th>No Of Teachers Trained</th>
+                                                    <th>Place of Training</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr ng-show="i.AcademicYearID=data.AcademicYearID" ng-repeat="data in GetFDPTrainingsList">
+                                                    <td>{{$index+1}}</td>
+                                                    <td>{{data.ProgramName}}</td>
+                                                    <td>{{data.ActualStrength}}</td>
+                                                    <td>{{data.Venue}}</td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="GetFDPTrainingsListlengh<1">
+                        <div class="">
+                            <h4 class="no-results text-center">No data Found</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--</div>-->
+        </div>
+    </section>
+</div>

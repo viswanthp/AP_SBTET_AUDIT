@@ -1,0 +1,182 @@
+﻿<!--<style>
+
+</style>
+<style>
+
+</style>-->
+<link href="/contents/css/Pages/MasterPages/QuestionPapersSettings.css" rel="stylesheet" />
+<div ng-controller="QuestionPapersSettingsController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">Question Papers</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="pannel-bar"> Add Question Papers</div>
+        <div class="card">
+            <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Scheme</label>
+                            <select class="form-control" ng-model="Scheme" name="Scheme" required="">
+                                <option value="" selected="selected">Select Scheme</option>
+                                <option value="{{data.SchemeID}}" ng-repeat="data in GetSchemesList" class="ng-binding ng-scope">{{data.Scheme}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Branch</label>
+                            <select class="form-control" ng-model="Branch" name="Branch" required="">
+                                <option value="" selected="selected">Select Branch</option>
+                                <option value="{{data.CourseID}}" ng-repeat="data in GetBranchsList" class="ng-binding ng-scope">{{data.CourseName}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Exam Month Years</label>
+                            <select class="form-control" ng-model="ExamMonthYear" name="ExamMonthYears" required="">
+                                <option value="" selected="selected">Select Exam Month Year</option>
+                                <option value="{{data.ExamMonthYearID}}" ng-repeat="data in GetExamMonthYearsList" class="ng-binding ng-scope">{{data.ExamMonthYear}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Question Papers Date</label>
+                        <div class="form-group">
+                            <input ng-model="QuestionPaperDate" type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <label>Question Papers Text</label>
+                        <div class="form-group">
+                            <input ng-model="ImageText" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Question Papers</label>
+                        <div class="form-group">
+                            <input class="form-control" id="PdfFile" type="file" placeholder="" maxlength="10" onchange="angular.element(this).scope().uploadPdf()" accept=".doc,.docx,.pdf,.zip,.7zip,.rar,.RAR,.ZIP,.PDF,.DOC,.DOCX,.7ZIP" ng-model="Photo" />
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="Add()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="sm-spacer"></div>
+        <div ng-show="Loading">
+            <center><img class="img_loading" src="/contents/images/preloader.gif"></center>
+        </div>
+        <div class="sm-spacer"></div>
+
+        <div class=" " ng-show="GetQuestionPaperList.length>0">
+
+            <div class="cl-details">
+                <div class="pannel-bar1">Question Papers</div>
+            </div>
+
+            <div class="table-responsive table-custom-tables-tb">
+                <table class="table table-bordered table-hover table-striped table-rounded">
+                    <thead>
+                        <tr class="cb-1">
+                            <th width="5%">S.No</th>
+                            <th width="10%">Scheme</th>
+                            <th width="10%">Branch</th>
+                            <th width="10%">Exam Spell</th>
+                            <th width="50%">Question Papers Text</th>
+                            <!-- -->
+                            <th>Question Papers Date</th>
+                            <th>Active</th>
+                            <!--<th width="10%">Added on</th>-->
+                            <th width="10%" style="text-align:center;">Action </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="data in GetQuestionPaperList">
+                            <td>{{$index+1}}</td>
+                            <td>{{data.Scheme}}</td>
+                            <td>{{data.Branch}}</td>
+                            <td>{{data.ExamMonthYear}}</td>
+                            <td>{{data.QuestionPaperText}}</td>
+
+                            <td>{{data.QuestionPaperDate| date:'dd-MMM-yyyy'}}</td>
+                            <td class="text-center"><span class="text-success" ng-if="data.Active== true"><b>Yes</b></span><span ng-if="data.Active== false" class="text-danger"><b>No</b></span></td>
+
+                            <td style="text-align:center">
+
+                                <!-- <button class="btn-xs btn btn-success" ng-click="ViewQuestionPaper(data.QuestionPaperID)" title="View"><i class="fa fa-eye"  aria-hidden="true"></i></button>-->
+                                <button class="btn-xs btn btn-info" ng-click="EditQuestionPaper(data.QuestionPaperID)" title="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                <button class="btn-xs btn btn-danger" ng-show="data.Active== false" ng-click="DeleteQuestionPaperConfirm(data,data.QuestionPaperID)" >InActive</button>
+                                <button class="btn-xs btn btn-success" ng-show="data.Active== true" ng-click="DeleteQuestionPaperConfirm(data,data.QuestionPaperID)" >Active</button>
+
+                            </td>
+                            <!-- <button class="btn-xs btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>-->
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+    <!--<div id="id01" class="modal">
+        <div class="container">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                <form class="modal-content modal_content">
+                    <div class="">-->
+                        <!-- <h2>Delete </h2>-->
+                        <!--<h3>Are you sure you want to delete Question Papers?</h3>
+                        <hr />
+                        <div><b>{{QuestionPaperDate1| date:'dd-MMM-yyyy'}}</b> </div>
+                        <div> {{QuestionPaperText1}} </div>
+                        <br />
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-success">Cancel</button>
+                            <button type="button" ng-click="DeleteQuestionPaperConfirm()" class="btn btn-danger pull-right">Delete</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>-->
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

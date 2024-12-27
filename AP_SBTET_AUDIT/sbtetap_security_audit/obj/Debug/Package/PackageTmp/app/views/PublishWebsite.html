@@ -1,0 +1,162 @@
+﻿<style>
+    /*.pub_btn {
+        border-radius: 30px;
+        font-weight: bold;
+        margin-top:20px;
+    }
+    .hed_tcxt{
+        color:darkgreen;
+    }
+    .yt-container {
+        position: absolute;*/ /* Postion relative to section */
+    /* Make it full size ↓ */
+    /*bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        overflow: hidden;*/ /* Prevent video overflow */
+    /*pointer-events: none;*/ /* Prevent user interaction */
+    /*z-index: -2;*/ /* Make YouTube container underneath section content */
+    /*}
+
+    .yt-background {
+        position: absolute;*/ /* Postion relative to .yt-container */
+    /* center it ↓ */
+    /*top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);*/
+    /* make it full height ↓ */
+    /*height: 100%;
+    }*/
+
+    /* Make a hidden sizer SVG to take up full size of the .yt-background */
+    /*.yt-sizer {
+        display: inline-block;
+        width: auto;
+        max-width: none;
+        height: 100%;
+        border: none;
+        vertical-align: top;
+    }*/
+
+    .res_bg {
+        width: 750PX;
+        height: 500PX;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      
+        /*width: 50%;*/
+    }
+
+    .txt-center {
+        text-align: center;
+        color: darkgreen;
+        font-weight: 600;
+    }
+    .sb_head {
+     
+        text-align: center;
+        font-weight: 600;
+        font-size: 36px;
+        background: -webkit-linear-gradient(#fb0d0d, #1f497d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .btn_publish {
+        margin-top: 100px;
+        margin-bottom: 500px;
+    }
+    .bg_img {
+        background-image: url("/contents/images/launch_bg.jpg");
+    }
+    .bg_image{
+        height:100px;
+    }
+    .btn {
+        flex: 1 1 auto;
+        margin: 10px;
+        padding: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+    }
+        .btn:hover {
+            background-position: right center; /* change the direction of the change here */
+        }
+
+    .btn-1 {      
+        background-image: linear-gradient(to right, #6def00 0%, #f67d53 51%, #72ea03 100%);
+        margin-top: 250px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+    .bg_image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /*margin-top: 250px;*/
+    }
+    .bg_web {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #eeebf7;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        background-color: #fff;
+        /*border: 4px solid #92e7f8;*/
+        margin-top: 70px;
+
+    }
+    .container-fluid {
+        padding-right: 15px;
+        padding-left: 0px;
+    }
+</style>
+<div ng-controller="PublishWebsiteController">
+    <!--<h3 class="text-center hed_tcxt">click below button to publish polycet 2022 results</h3>
+    <div class="col-md-4"></div>
+    <div class="col-md-4 text-center"> <button class="btn btn-circle text-center btn-info pub_btn" ng-click="releaseresults()">publish results</button></div>
+    <div class="col-md-4"></div>-->
+    <div class="container-fluid" ng-show="Publish==0">
+        <img class="bg_image" src="/contents/images/launch_bg.jpg" />
+    </div>
+
+    <div class="container">
+
+        <div class="row" ng-show="Publish==0">
+            <div class="bg_img">
+                <div class="col-md-2 col-md-offset-5">
+                    <button class="btn btn-success text-center btn-1" ng-click="LaunchWebsite()"> Launch Website</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid " ng-show="Publish==1">
+        <img class="bg_image" src="/contents/images/launch2.jpg" />
+
+        <div class="container">
+
+            <div class="col-md-10 col-md-offset-1">
+                <div class="card">
+                    <div >
+                        <h3 class="sb_head">SBTET Website Launched Successfully</h3>
+                        <img class="res_bg" src="/contents/images/Release.gif" />
+                        <h3 class="txt-center">Please wait redirecting to Website . . .</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,44 @@
+﻿<div class="modal-content">
+    <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Edit Details</h2>
+        <button type="button" class="close" ng-click="closeModal()" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+
+        <form>
+
+            <strong class="course-label">Course:</strong>
+            <span class="text-muted fl-right">
+                {{EditData.CourseName}}
+            </span>
+            <hr>
+
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Intake:</label>
+                <input type="text" maxlength="100" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" class="form-control" id="recipient-name" ng-model="EditData.Intake">
+            </div>
+
+            <div class="form-group">
+                <label>NBA </label>
+                <select class="form-control " id="selSession" ng-model="EditData.NBA" ng-options="data.Id  as data.Value   for data in NBAValues">
+                    <option value="" selected>Select NBA</option>
+                </select>
+
+            </div>
+
+            <div class="col-md-1">
+                <label for="checkbox" class="col-form-label">Active:</label>
+
+                <input type="checkbox" ng-model="EditData.Active" />
+            </div>
+            <!--</div>-->
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" ng-click="UpdateCourse(EditData)">Update</button>
+        <button type="button" class="btn btn-secondary" ng-click="closeModal()">Cancel</button>
+    </div>
+</div>
+

@@ -1,0 +1,80 @@
+﻿<div ng-controller="AdminFeedbackListController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">Feedback List</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container " ng-show="GetFeedbackList.length>0">
+            <div class="col-md-12">
+                <div class="cl-details">
+                    <div class="pannel-bar1">Feedback Recieved from Public</div>
+                </div>
+
+                <div class="table-responsive table-custom-tables-tb">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                         
+                            <tr class="cb-1">
+                                <th>S.No</th>
+                                <th class="text-center">Who ?</th>
+                                <th class="text-center">Name</th>
+                                <th class="text-center">Mobile </th>
+                                <th class="text-center">Email</th>
+                                <th class="text-center">FeedBack </th>
+                                <th class="text-center">FeedBack Date</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #fff!important;" ng-repeat="data in GetFeedbackList | orderBy:'-InsertedOn'">
+                                <td class="text-left">{{$index + 1}}</td>
+                                <td class="text-left">{{data.FromType}}</td>
+                                <td class="text-left">{{data.Name}}</td>
+                                <td class="text-left">{{data.MobileNumber}}</td>
+                                <td class="text-left">{{data.Email}}</td>
+                                <td class="text-left">{{data.FeedBackDescription}}</td>
+                                <td class="text-left">{{data.InsertedOn |date:'dd-MMM-yyyy hh:mm:ss'}}</td>
+                                <!-- <td class="text-left">{{data.Active}}</td>-->
+                                <!--<td class="text-center">
+                                    <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="GetLabById(data.Id)">
+                                        Edit
+                                    </button>
+                                    <button class="btn-xs btn btn-primary" style="width: 70px;" ng-show="!edit" ng-click="UpdateLab(data.Id)">
+                                        Update
+                                    </button>
+
+                                </td>-->
+                                <td class="text-center">
+                                        <button class="btn-xs btn btn-danger" style="width: 70px;" ng-click="DeleteFeedBackListByID(data.FeedBackID)">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+            <div class="" ng-show="GetFeedbackList.length<1">
+                <div class="">
+                    <h4 class="no-results text-center">No data Found</h4>
+                </div>
+            </div>
+        </div>
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+    </div>

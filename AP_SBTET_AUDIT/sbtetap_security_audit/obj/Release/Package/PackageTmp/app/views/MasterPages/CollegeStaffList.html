@@ -1,0 +1,84 @@
+﻿<div ng-controller="CollegeStaffListController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">College Staff List List</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container " ng-show="GetCollegeStaffList.length>0">
+            <div class="col-md-12">
+                <div class="cl-details">
+                    <div class="pannel-bar1">College Staff List</div>
+                </div>
+
+                <div class="table-responsive table-custom-tables-tb">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                            <tr class="cb-1">
+                                <th>S.No</th>
+                                <th class="text-center">EmployeeID</th>
+                                <th class="text-center">CFMSId</th>
+                                <th class="text-center">StaffName</th>
+                                <th class="text-center">Designation</th>
+                                <th class="text-center">Course</th>
+                                <th class="text-center">Email</th>
+                                <th class="text-center">Mobile</th>
+                                <th class="text-center">DeputedTo</th>
+                                <th class="text-center">Remarks</th>
+                                <th class="text-center">Status</th>
+                             <!--   <th class="text-center">Action</th>-->
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr style="background-color: #fff!important;" ng-repeat="data in GetCollegeStaffList">
+                                <td class="text-left">{{$index + 1}}</td>
+                                <td class="text-left">{{data.EmployeeID}}</td>
+                                <td class="text-left">{{data.CFMSID}}</td>
+                                <td class="text-left">{{data.StaffName}}</td>
+                                <td class="text-left">{{data.DesignationName}}</td>
+                                <td class="text-left">{{data.CourseName}}</td>
+                                <td class="text-left">{{data.Email}}</td>
+                                <td class="text-left">{{data.Mobile}}</td>
+                                <td class="text-left">{{data.DeputedTo}}</td>
+                                <td class="text-left">{{data.Remarks}}</td>
+                                <td class="text-left">
+                                    <span class="text-success" ng-show="data.Active==true">Active </span>
+                                    <span class="text-danger" ng-show="data.Active==false"> InActive</span>
+                                </td>
+
+                                <!--<td class="text-center">
+                                    <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="GetCollegeStaffDetailsById(data.CollegeStaffID)">
+                                        Edit
+                                    </button>
+
+
+                                </td>-->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="" ng-show="GetCollegeStaffList.length<1">
+            <div class="">
+                <h4 class="no-results text-center">No data Found</h4>
+            </div>
+        </div>
+    </div>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

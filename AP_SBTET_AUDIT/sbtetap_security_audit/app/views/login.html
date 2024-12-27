@@ -1,0 +1,48 @@
+<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/login.css" rel="stylesheet" />
+<div ng-controller="LoginController">
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <section class="irs-account-field">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="irs-account-col card">
+                        <div class="cls_crd">
+                            <h3 class="text-center">LOGIN</h3>
+                            <form name="contact_form" novalidate="novalidate">
+                                <label>User Name*</label>
+                                <input name="form_user_name" class="form-control" placeholder="User Name*" ng-model="UserName" type="text">
+                                <label>Password</label>
+                                <input name="user_password" type="password" class="form-control" ng-model="Password" placeholder="Password*">
+                                <!--<label>
+                                    <input id="password_remember" name="rememberme" type="checkbox" value=""> Remember Me
+                                </label>-->
+                                <!--  <br>-->
+                                <button class="btn btn-default irs-big-btn" ng-click="Login()">login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-6">
+                    <div class="irs-account-col">
+                        <h3>create a new account</h3>
+                        <form id="contact_form_two" name="contact_form" action="includes/contact.php" method="post" novalidate="novalidate">
+                            <input id="form_first_name" name="form_first_name" class="form-control" placeholder="First Name*" required="required" data-error="First Name." type="text">
+                            <input id="form_last_name" name="form_last_name" class="form-control" placeholder="Last Name*" required="required" data-error="Last Name." type="text">
+                            <input id="form_user_name2" name="form_user_name2" class="form-control" placeholder="User Name*" required="required" data-error="User Name." type="text">
+                            <input id="user_password2" name="user_password2" type="password" class="form-control" placeholder="Password*" required="required" data-error="User Name." value="">
+                            <input id="user_password_confirm" name="user_password_confirm" type="password" class="form-control" placeholder="Password Confirm*" required="required" data-error="Password Confirm." value="">
+                            <input id="form_email" name="form_email" class="form-control" placeholder="Email*" required="required" data-error="Email Name." type="text">
+                            <input id="form_website" name="form_website" class="form-control" placeholder="Website (optional)" required="required" data-error="Website." type="text">
+                            <button class="btn btn-default irs-big-btn" type="submit">register</button>
+                        </form>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+</div>

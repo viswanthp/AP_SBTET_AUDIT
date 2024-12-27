@@ -1,0 +1,62 @@
+﻿<!--<style>
+
+</style>-->
+
+<link href="/contents/css/Pages/Popups/ViewDistCentresPopup.css" rel="stylesheet" />
+
+
+<div class="modal-content">
+    <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">View Details</h2>
+        <button type="button" class="close" ng-click="closeModal()" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+
+        <form>
+            <div class="row">
+
+                <div class="col-sm-6 col-md-9">
+                    <div class="box box-primary">
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <!--<strong class="course-label">Subject:  {{EditData.LatestNewsSubject}}</strong>
+
+                            <hr>-->
+
+                            <strong class="course-label">Message:</strong>
+                            <p class="text-muted word-break fl-right">
+                                {{EditData.LatestNewsText}}
+                            </p>
+                            <hr>
+
+                            <strong class="course-label">Added On:</strong>
+                            <p class="text-muted fl-right">
+                                {{EditData.InsertedOn| date:'dd-MMM-yyyy'}}
+                            </p>
+                            <hr>
+
+                            <strong class="course-label">Active Status:</strong>
+                            <p class="text-muted fl-right">
+
+                                <button class="btn btn-success btn-xs" ng-show="EditData.Active == true">Yes</button>
+                                <button class="btn btn-danger btn-xs" ng-show="EditData.Active == false">No</button>
+                            </p>
+                            <hr>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="modal-footer">
+        <!--<button type="button" class="btn btn-primary" ng-click="UpdateDetails(EditData)">Update</button>-->
+        <button type="button" class="btn btn-secondary" ng-click="closeModal()">Close</button>
+    </div>
+</div>
+

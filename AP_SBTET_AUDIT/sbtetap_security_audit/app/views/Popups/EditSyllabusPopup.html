@@ -1,0 +1,60 @@
+﻿<div class="modal-content">
+    <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Edit Details</h2>
+        <button type="button" class="close" ng-click="closeModal()" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+
+        <form>
+
+            <div class="form-group">
+                <label>Scheme</label>
+                <select class="form-control " id="selSession" ng-model="EditData.SchemeID" ng-options="data.SchemeID  as data.Scheme   for data in GetSchemesList">
+                    <option value="" selected>Select Scheme</option>
+                </select>
+                <!--<select class="form-control" ng-model="EditData.SchemeID" name="Scheme" required="">
+                    <option value="" selected="selected">Select Scheme</option>
+                    <option value="{{data.SchemeID}}" ng-repeat="data in GetSchemesList" class="ng-binding ng-scope">{{data.Scheme}}</option>
+                </select>-->
+            </div>
+            <div class="form-group">
+                <label>Branch</label>
+                <select class="form-control " id="selSession" ng-model="EditData.CourseID" ng-options="data.CourseID  as data.CourseName   for data in GetBranchsList">
+                    <option value="" selected>Select Branch</option>
+                </select>
+                <!--<select class="form-control" ng-model="EditData.CourseID" name="Branch" required="">
+        <option value="" selected="selected">Select Branch</option>
+        <option value="{{data.CourseID}}" ng-repeat="data in GetBranchsList" class="ng-binding ng-scope">{{data.CourseName}}</option>
+    </select>-->
+            </div>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Syllabus Date:</label>
+                <input type="text" class="form-control" ng-model="EditData.SyllabusDate">
+            </div>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Syllabus Text:</label>
+                <input type="text" class="form-control" ng-model="EditData.SyllabusText">
+            </div>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">File:</label>
+                <input class="form-control" id="PdfFile1" type="file" placeholder="" maxlength="10" onchange="angular.element(this).scope().uploadPdf1()" accept=".zip,.rar,.7zip" ng-model="EditData.file" />
+
+                <!--<img ng-src="{{EditData.SliderImagePath}}" style="border: 2px solid #ddd;" class="img_View1" id="stdPhotoImg1" />-->
+            </div>
+
+            <div class="col-md-1">
+                <label for="checkbox" class="col-form-label">Active:</label>
+
+                <input type="checkbox" ng-model="EditData.Active" />
+            </div>
+            <!--</div>-->
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" ng-click="UpdateSyllabus()">Update</button>
+        <button type="button" class="btn btn-secondary" ng-click="closeModal()">Cancel</button>
+    </div>
+</div>
+

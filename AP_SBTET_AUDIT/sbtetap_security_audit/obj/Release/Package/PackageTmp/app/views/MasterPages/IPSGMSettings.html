@@ -1,0 +1,245 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/MasterPages/IPSGMSettings.css" rel="stylesheet" />
+<script>
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+
+    });
+
+    $(function () {
+        $('#datepicker1').datepicker({
+            changeMonth: false,
+            changeYear: true,
+            showButtonPanel: false,
+            dateFormat: 'dd-mm-yyyy',
+
+            format: "dd-mm-yyyy", // Notice the Extra space at the beginning
+
+            autoclose: true,
+            onClose: function (dateText, inst) {
+                $(this).datepicker('setDate', new Date('2017'));
+            }
+        }).focus(function () {
+            $(".ui-datepicker-month").hide();
+            $(".ui-datepicker-calendar").hide();
+        });
+        $('#datepicker2').datepicker({
+            changeMonth: false,
+            changeYear: true,
+            showButtonPanel: false,
+            dateFormat: 'dd-mm-yyyy',
+
+            format: "dd-mm-yyyy", // Notice the Extra space at the beginning
+
+            autoclose: true,
+            onClose: function (dateText, inst) {
+                $(this).datepicker('setDate', new Date('2017'));
+            }
+        }).focus(function () {
+            $(".ui-datepicker-month").hide();
+            $(".ui-datepicker-calendar").hide();
+        });
+    });
+</script>
+<div ng-controller="IPSGMSettingsController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">IPSGM Settings</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="pannel-bar"> Add IPSGM Settings</div>
+        <div class="card">
+            <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Academic Year </label>
+                            <select class="form-control " id="selSession" ng-disabled="AddData" ng-model="AcademicYear" ng-change="GetIPSGMDetails()" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetAcademicYearsList">
+                                <option value="" selected>Select AcademicYear</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+                        <label>IPSGM Level</label>
+                        <div class="form-group">
+                            <select class="form-control" ng-model="IPSGMLevel" ng-disabled="AddData" ng-change="GetIPSGMDetails()" name="Semester" required="">
+                                <option value="" selected="selected">Select Level</option>
+                                <!-- ngRepeat: data in Shifts -->
+                                <option value="{{data.Value}}" ng-repeat="data in Levels" class="ng-binding ng-scope">
+                                    {{data.Value}}
+                                </option><!-- end ngRepeat: data in Shifts -->
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3" ng-show="IPSGMLevel=='District'">
+                        <label>District</label>
+                        <div class="form-group">
+                            <select class="form-control" ng-model="District" ng-disabled="AddData" ng-change="GetIPSGMDetails()" name="Semester" required="">
+                                <option value="" selected="selected">Select District</option>
+                                <option value="{{data.DistrictID}}" ng-repeat="data in GetDistrictsList" class="ng-binding ng-scope">
+                                    {{data.DistrictName}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3" ng-show="Venue">
+                        <label>Venue</label>
+                        <div class="form-group">
+                            <input ng-model="Venue" maxlength="1000" type="text" disabled class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3" ng-show="FromDate">
+                        <label>From Date</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" autocomplete="off" disabled ng-model="FromDate" id="datepicker1" />
+                        </div>
+                    </div>
+                    <div class="col-md-3" ng-show="ToDate">
+                        <label>To Date</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" autocomplete="off" disabled ng-model="ToDate" id="datepicker2" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Name of Sport/Game </label>
+                        <div class="form-group">
+                            <!--      <input ng-model="NameofSport" maxlength="1000" type="text" class="form-control">-->
+                            <select class="form-control " id="selsSession" ng-model="NameofSport" ng-options="data.Id  as data.Sport   for data in GetSportsList">
+                                <option value="" selected>Select Sport</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label>Winning Place</label>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <select class="form-control " id="selsSession" ng-model="WinningPlace" ng-options="data.WinningPlaceID  as data.WinningPlace   for data in GetPlaces">
+                                    <option value="" selected>Select Winning Place</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Names of Team Members</label>
+                        <div class="form-group">
+                            <textarea ng-model="TeamMembers" maxlength="1000" rows="3" type="text" class="form-control"> </textarea>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Colleges </label>
+                            <select class="form-control " id="selSession" ng-model="College" ng-options="data.Id  as data.CollegeName   for data in GetCollegesList">
+                                <option value="" selected>Select College</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 pull-right" ng-show="AddDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddIPSGM()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pull-right" ng-show="UpdateDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="UpdateIPSGM()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container " ng-show="GetIPSGMList.length>0">
+            <div class="col-md-12">
+                <div class="cl-details">
+                    <h2>IPSGM Settings</h2>
+                </div>
+
+                <div class="table-responsive table-custom-tables-tb">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                            <tr class="cb-1">
+                                <th>S.No</th>
+                                <th class="text-center">AcademicYear</th>
+                                <th class="text-center">College</th>
+                                <th class="text-center">IPSGMLevel</th>
+                                <th class="text-center">District</th>
+                                <th class="text-center">Venue</th>
+                                <th class="text-center">FromDate</th>
+                                <th class="text-center">ToDate</th>
+                                <th class="text-center">NameofSport</th>
+                                <th class="text-center">TeamMembers</th>
+                                <th class="text-center">WinningPlace</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #fff!important;" ng-repeat="data in GetIPSGMList">
+                                <td class="text-left">{{$index + 1}}</td>
+                                <td class="text-left">{{data.AcademicYear}}</td>
+                                <td class="text-left">{{data.CollegeName}}</td>
+                                <td class="text-left">{{data.IPSGMLevel}}</td>
+                                <td class="text-left">{{data.District == null ?'-':data.District}}</td>
+                                <td class="text-left">{{data.Venue}}</td>
+                                <td class="text-left">{{data.FromDate}}</td>
+                                <td class="text-left">{{data.ToDate}}</td>
+                                <td class="text-left">{{data.NameofSport}}</td>
+                                <td class="text-left">{{data.TeamMembers}}</td>
+                                <td class="text-left">{{data.WinningPlace}}</td>
+
+                                <td class="text-center">
+                                    <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="GetIPSGMById(data.IPSGMID)">
+                                        Edit
+                                    </button>
+                                    <button class="btn-xs btn btn-primary" style="width: 70px;" ng-show="!edit" ng-click="UpdateCollegeLab(data.IndustryInteractionID)">
+                                        Update
+                                    </button>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="" ng-show="GetIPSGMList.length<1">
+            <div class="">
+                <h4 class="no-results text-center">No data Found</h4>
+            </div>
+        </div>
+    </div>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

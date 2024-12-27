@@ -1,0 +1,230 @@
+﻿<!--<style>
+
+</style>
+<style>
+
+</style>-->
+<link href="/contents/css/Pages/Infracture/IndustrialTraining.css" rel="stylesheet" />
+<div ng-controller="IndustrialTrainingController">
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2>Industrial Training</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a> &gt; <a ui-sref="index.InfrastructureDetails">Infrastructure</a> &gt; <a ui-sref="index.IndustrialTraining">IndustrialTraining</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="irs-courses-field irs-courses-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="irs-courses-col irs-courses-col-single">
+                        <div class="irs-courses-img">
+                            <img src="/contents/images/infracture/IndustrialTraining.png" alt="">
+                            <!--<div class="irs-time">
+                                <p>
+                                    <a href="#">10:00 pm - 4:00 pm</a>
+                                </p>
+                            </div>-->
+                            <div class="irs-courses-img-text">
+                                <ul class="clearfix">
+                                    <li>
+                                        <p><i class="zmdi zmdi-calendar-alt"></i> 3 years</p>
+                                    </li>
+                                    <li class="pull-right">
+                                        <!--  <p><i class="zmdi zmdi-money"></i> 290</p>-->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="irs-courses-content">
+                        <h4 class="Head_Infra">Industrial Training</h4>
+                        <div>
+
+                            The purpose of industrial training is to provide students with hands-on experience, exposure
+                            to industry practices, and an opportunity to apply their knowledge in a professional
+                            environment. It helps students develop practical skills, gain industry insights.
+
+                            <br />
+
+                            The main objectives of Industrial Training are to:
+
+                            <br />
+
+                            1.Expose to real time working environment
+                            2.Enhance knowledge and skill already learnt in the institution
+                            3.Acquire new skills related to Industry practices
+                            4.Develop qualities like team &amp; work culture, integrity, responsibility
+
+                            <br />
+
+                            Six months mandatory Industrial Training provides an opportunity to gain practical experience
+                            and to apply the knowledge acquired in academics. It offers a platform to develop various
+                            Technical and soft skills such as communication, teamwork, problem-solving, and time
+                            management which will boost the students employability. It is a valuable stepping stone
+                            towards a successful and fulfilling career.
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label>AcademicYear </label>
+                            <select class="form-control " id="selSession" ng-model="AcademicYear" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetAcademicYearsList">
+                                <option value="" selected>Select AcademicYear</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label>Region</label>
+                            <select class="form-control" ng-model="Region" name="Semester" ng-change="GetDistricts()" required="">
+                                <option value="" selected="selected">Select Region</option>
+                                <option value="{{data.RegionID}}" ng-repeat="data in Regions" class="ng-binding ng-scope">
+                                    {{data.RegionName}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label>District</label>
+                            <select class="form-control" ng-model="District" name="Semester" required="">
+                                <option value="" selected="selected">Select District</option>
+                                <!-- ngRepeat: data in Shifts -->
+                                <option value="{{data.DistrictID}}" ng-repeat="data in Districts" class="ng-binding ng-scope">
+                                    {{data.DistrictName}}
+                                </option><!-- end ngRepeat: data in Shifts -->
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label>College Type</label>
+                            <select class="form-control" ng-model="CollegeType" name="Semester" required="">
+                                <option value="" selected="selected">Select College Type</option>
+                                <!-- ngRepeat: data in Shifts -->
+                                <option value="{{data.CollegeTypeID}}" ng-repeat="data in CollegeTypes" class="ng-binding ng-scope">
+                                    {{data.CollegeTypeName}}
+                                </option><!-- end ngRepeat: data in Shifts -->
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-success" style=" margin-top: 30px; " ng-click="GetCollegeList()">Submit</button>
+                    </div>
+                </div>
+                <div class="col-md-12" ng-show="Data">
+                    <div class="panel-bar1 text-center" ng-show="CollegeData.length>0">INDUSTRIAL TRAINING</div>
+                    <div class="irs-accordion-two">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default" ng-repeat="data in CollegeData">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne{{$index}}" aria-expanded="false" aria-controls="collapseOne{{$index}}">
+                                            <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                            <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                            {{data.CollegeName}}
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne{{$index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne{{$index}}">
+                                    <div class="panel-body">
+
+                                        <p>
+                                            <table class="table table-striped table-hover">
+                                                <thead>
+                                                    <tr><th colspan="6" class="text-center">Industrial Training {{AcademicYearName}} (Spell 1)</th></tr>
+                                                    <tr>
+                                                        <th>S.No </th>
+                                                        <th>Course Name</th>
+                                                        <th>No of Students</th>
+                                                        <th>Major Industries Alloted</th>
+                                                        <th>Minimum Stipend</th>
+                                                        <th>Maxmium Stipend</th>
+
+                                                        <!-- <th>Vacant</th>-->
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr ng-show="item.CollegeID==data.CollegeID" ng-repeat="item in Spell1List">
+                                                        <td>{{$index+1}}</td>
+                                                        <td>{{item.CourseName}}</td>
+                                                        <td>{{item.NoofTrained}}</td>
+                                                        <td>{{item.TrainingOfferedIndustries}}</td>
+                                                        <td>{{item.MinimumStipend}}</td>
+                                                        <td>{{item.MaximumStipend}}</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                        </p>
+                                        <p>
+                                            <table class="table table-striped table-hover" ng-show="Spell2List[0].CollegeID==data.CollegeID">
+                                                <thead>
+                                                    <tr><th colspan="6" class="text-center">Industrial Training {{AcademicYearName}} (Spell 2)</th></tr>
+                                                    <tr>
+                                                        <th>S.No </th>
+                                                        <th>Course Name</th>
+                                                        <th>No of Students</th>
+                                                        <th>Major Industries Alloted</th>
+                                                        <th>Minimum Stipend</th>
+                                                        <th>Maxmium Stipend</th>
+
+                                                        <!-- <th>Vacant</th>-->
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr ng-show="i.CollegeID==data.CollegeID" ng-repeat="i in Spell2List">
+                                                        <td>{{$index+1}}</td>
+                                                        <td>{{i.CourseName}}</td>
+                                                        <td>{{i.NoofTrained}}</td>
+                                                        <td>{{i.TrainingOfferedIndustries}}</td>
+                                                        <td>{{i.MinimumStipend}}</td>
+                                                        <td>{{i.MaximumStipend}}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </p>
+                                        <!--<div class="col-md-12">
+                                            <button class="btn-success more_btn pull-right" ng-click="OpenPage(data.CollegeID)">More Details > ></button>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12" ng-show="Loading">
+                    <!--  <div class="xs-spacer"></div>-->
+                    <center><img class="LoadingImage" src="/contents/images/preloader.gif" /></center>
+                </div>
+                <div class="col-md-12">
+                    <center ng-show="NoData"><h3 class="btn-danger NoDataCss">No Data Found</h3></center>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,176 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/MasterPages/SportsMaster.css" rel="stylesheet" />
+<script>
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });</script>
+<div ng-controller="CountsController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">Counts</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="pannel-bar"> Add Counts</div>
+        <div class="card">
+            <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>AcademicYear </label>
+                            <select class="form-control " id="selSession" ng-model="AcademicYear" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetAcademicYearsList">
+                                <option value="" selected>Select AcademicYear</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <Sportel>Faculty</Sportel>
+                        <div class="form-group">
+                            <input ng-model="Faculty" placeholder="Enter Faculty" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <Sportel>Courses</Sportel>
+                        <div class="form-group">
+                            <input ng-model="Courses" placeholder="Enter Courses" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <Sportel>Students</Sportel>
+                        <div class="form-group">
+                            <input ng-model="Students" placeholder="Enter Students" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <Sportel>Institutions</Sportel>
+                        <div class="form-group">
+                            <input ng-model="Institutions" placeholder="Enter Instutions" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <Sportel>OnRolls</Sportel>
+                        <div class="form-group">
+                            <input ng-model="OnRolls" placeholder="Enter OnRolls" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <Sportel>Awards</Sportel>
+                        <div class="form-group">
+                            <input ng-model="Awarded" placeholder="Enter Awards" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-2" ng-show="AddDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddCount()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-2" ng-show="UpdateDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="UpdateCount()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container " ng-show="GetCountsList.length>0">
+            <div class="col-md-12">
+                <div class="cl-details">
+                    <h2>Counts</h2>
+                </div>
+
+                <div class="table-responsive table-custom-tables-tb">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                            <tr class="cb-1">
+                                <th>S.No</th>
+                                <th class="text-center">AcademicYear</th>
+                                <th class="text-center">Faculty</th>
+                                <th class="text-center">Courses</th>
+                                <th class="text-center">Students</th>
+                                <th class="text-center">Instiutions</th>
+                                <th class="text-center">OnRolls</th>
+                                <th class="text-center">Awards</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-center">Action</th>
+                                <th class="text-center">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #fff!important;" ng-repeat="data in GetCountsList">
+                                <td class="text-left">{{$index + 1}}</td>
+                                <td class="text-left">{{data.AcademicYear}}</td>
+                                <td class="text-left">{{data.Faculty}}</td>
+                                <td class="text-left">{{data.Courses}}</td>
+                                <td class="text-left">{{data.Students}}</td>
+                                <td class="text-left">{{data.institutions}}</td>
+                                <td class="text-left">{{data.OnRoll}}</td>
+                                <td class="text-left">{{data.Awarded}}</td>
+                                <td class="text-left">{{data.Active== true ? 'Yes' : 'No'}}</td>
+                                <td class="text-center">
+                                    <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="getCountsById(data.CountID)">
+                                        Edit
+                                    </button>
+                                    <button class="btn-xs btn btn-primary" style="width: 70px;" ng-show="!edit" ng-click="UpdateCount(data.CountID)">
+                                        Update
+                                    </button>
+
+                                </td>
+                                <td class="text-center">
+                                    <button class="btn-xs btn btn-danger" style="width: 70px;" ng-click="DeleteCount(data.CountID)">
+                                        Delete
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="" ng-show="GetCountsList.length<1">
+            <div class="">
+                <h4 class="no-results text-center">No data Found</h4>
+            </div>
+        </div>
+    </div>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

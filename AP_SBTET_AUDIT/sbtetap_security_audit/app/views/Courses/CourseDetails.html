@@ -1,0 +1,274 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/Courses/CourseDetails.css" rel="stylesheet" />
+<div ng-controller="CourseDetailsController">
+    <!-- Inner page hedaing start -->
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2>Course Details</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a> > <a ui-sref="index.DiplomaCourses">Courses</a> > <a ui-sref="index.CourseDetails">Course Details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Inner page hedaing end -->
+    <!-- courses start -->
+    <section class="irs-courses-field irs-courses-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="irs-courses-col irs-courses-col-single">
+                        <div class="irs-courses-img">
+                            <img ng-src="{{Image}}" alt="">
+                            <!--<div class="irs-time">
+                                <p>
+                                    <a href="#">10:00 pm - 4:00 pm</a>
+                                </p>
+                            </div>-->
+
+                               <!--<div class="irs-courses-img-text" ng-show="Image">
+                                <ul class="clearfix">
+                                    <li>
+                                        <p><i class="zmdi zmdi-calendar-alt"></i> </p>
+                                    </li>
+                                    <li class="pull-right">
+                                     <p><i class="zmdi zmdi-money"></i> 290</p>
+                                    </li>
+                                </ul>
+                            </div>-->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Region</label>
+                                    <select class="form-control" ng-model="Region" name="Semester" ng-change="GetDistricts()" required="">
+                                        <option value="" selected="selected">Select Region</option>
+                                        <!-- ngRepeat: data in Shifts -->
+                                        <option value="{{data.RegionID}}" ng-repeat="data in Regions" class="ng-binding ng-scope">
+                                            {{data.RegionName}}
+                                        </option><!-- end ngRepeat: data in Shifts -->
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>District</label>
+                                    <select class="form-control" ng-model="District" name="Semester" required="">
+                                        <option value="" selected="selected">Select District</option>
+                                        <!-- ngRepeat: data in Shifts -->
+                                        <option value="{{data.DistrictID}}" ng-repeat="data in Districts" class="ng-binding ng-scope">
+                                            {{data.DistrictName}}
+                                        </option><!-- end ngRepeat: data in Shifts -->
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>College Type</label>
+                                    <select class="form-control" ng-model="CollegeType" name="Semester" required="">
+                                        <option value="" selected="selected">Select College Type</option>
+                                        <!-- ngRepeat: data in Shifts -->
+                                        <option value="{{data.CollegeTypeID}}" ng-repeat="data in CollegeTypes" class="ng-binding ng-scope">
+                                            {{data.CollegeTypeName}}
+                                        </option><!-- end ngRepeat: data in Shifts -->
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <button class="btn btn-success pull-right" style=" margin-top: 30px; " ng-click="GetCollegeList()">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
+
+                    </div>
+                    <!--<div class="myrow col-md-12">
+                        <div class="col-md-6 pad-0">
+                            <h6>
+                                <a ui-sref="index.CollegeDetails">013	- GOVT.POLYTECHNIC, VIJAYAWADA</a>
+
+                            </h6>
+                        </div>
+                        <div class="col-md-2">
+                            AU
+                        </div>
+                        <div class="col-md-2">
+                            GOV
+                        </div>
+                        <div class="col-md-2">
+                            180
+                        </div>
+                    </div>
+                    <div class="myrow col-md-12">
+                        <div class="col-md-6 pad-0">
+                            <h6>
+                                <a ui-sref="index.CollegeDetails">020 - GOVT POLYTECHNIC, ANANTAPUR</a>
+
+                            </h6>
+                        </div>
+                        <div class="col-md-2">
+                            SU
+                        </div>
+                        <div class="col-md-2">
+                            GOV
+                        </div>
+                        <div class="col-md-2">
+                            120
+                        </div>
+                    </div>
+                    <div class="myrow col-md-12">
+                        <div class="col-md-6 pad-0">
+                            <h6>
+                                <a ui-sref="index.CollegeDetails">039	- D.A GOVT POLYTECHNIC, ONGOLE</a>
+
+                            </h6>
+                        </div>
+                        <div class="col-md-2">
+                            AU
+                        </div>
+                        <div class="col-md-2">
+                            PVT
+                        </div>
+                        <div class="col-md-2">
+                            180
+                        </div>
+                    </div>
+                    <div class="myrow col-md-12">
+                        <div class="col-md-6 pad-0">
+                            <h6>
+                                <a ui-sref="index.CollegeDetails"> 096	- GOVT POLYTECHNIC FOR MINORITIES, GUNTUR</a>
+
+                            </h6>
+                        </div>
+                        <div class="col-md-2">
+                            SU
+                        </div>
+                        <div class="col-md-2">
+                            GOV
+                        </div>
+                        <div class="col-md-2">
+                            120
+                        </div>
+                    </div>
+                    <div class="myrow col-md-12">
+                        <div class="col-md-6 pad-0">
+                            <h6>
+                                <a ui-sref="index.CollegeDetails">098	- GOVT POLYTECHNIC FOR MINORITIES, KURNOOL</a>
+
+                            </h6>
+                        </div>
+                        <div class="col-md-2">
+                            AU
+                        </div>
+                        <div class="col-md-2">
+                            PVT
+                        </div>
+                        <div class="col-md-2">
+                            240
+                        </div>
+                    </div>
+                    <div class="myrow col-md-12">
+                        <div class="col-md-6 pad-0">
+                            <h6>
+                                <a ui-sref="index.CollegeDetails"> 175	- GOVT.POLYTECHNIC, KADIRI </a>
+                            </h6>
+                        </div>
+                        <div class="col-md-2">
+                            AU
+                        </div>
+                        <div class="col-md-2">
+                            GOV
+                        </div>
+                        <div class="col-md-2">
+                            120
+                        </div>
+                    </div>
+                    <div class="myrow col-md-12">
+                        <div class="col-md-6 pad-0">
+                            <h6>
+                                <a ui-sref="index.CollegeDetails">305	- GOVT.POLYTECHNIC, ATMAKUR</a>
+                            </h6>
+                        </div>
+                        <div class="col-md-2">
+                            AU
+                        </div>
+                        <div class="col-md-2">
+                            PVT
+                        </div>
+                        <div class="col-md-2">
+                            180
+                        </div>
+                    </div>-->
+
+                </div>
+                <!--  <div class="xs-spacer"></div>-->
+
+                <div class="col-md-5">
+                    <div class="irs-side-bar">
+                        <div class="irs-courses-content">
+                            <h3><a href="course-single.html" class="course_title">{{Title}}</a></h3>
+                            <p class="course_Description">{{DetailedDescription}}</p>
+                            <div class="row">
+                                <!--<div class="col-md-7">
+
+                                </div>
+                                <div class="col-md-5">
+                                    <img src="images/man.png" alt="">
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <table class="table table-striped table-hover" ng-show="Data">
+                    <thead>
+                        <tr>
+                            <th>Colleges </th>
+                            <th>Region</th>
+                            <th>Type</th>
+                            <th>Intake</th>
+                            <th>NBA</th>
+
+                            <!-- <th>Vacant</th>-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in CollegeList">
+                            <td><a class="hyperlink" ng-click="OpenColegeDetails(item.CollegeID)">{{item.CollegeCode}} -  {{item.CollegeName}},{{item.CollegeAddress}}</a></td>
+                            <td>{{item.RegionName}}</td>
+                            <td>{{item.CollegeTypeName}}</td>
+                            <td>{{item.Intake}}</td>
+                            <td class="text-center">
+                                <span ng-show="item.NBA==true" class="text-success"><b>Yes</b></span>
+                                <span ng-show="item.NBA==false" class="text-danger"><b>No</b></span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="col-md-12" ng-show="Loading">
+                    <!--  <div class="xs-spacer"></div>-->
+                    <center><img class="LoadingImage" src="/contents/images/preloader.gif" /></center>
+                </div>
+                <div class="row">
+                    <center ng-show="NoData"><h3 class="btn-danger NoDataCss">No Data Found</h3></center>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- courses end -->
+</div>

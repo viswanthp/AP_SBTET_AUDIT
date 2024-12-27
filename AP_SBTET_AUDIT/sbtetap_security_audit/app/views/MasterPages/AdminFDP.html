@@ -1,0 +1,389 @@
+﻿<!--<style>
+</style>-->
+<link href="/contents/css/Pages/MasterPages/AdminFDP.css" rel="stylesheet" />
+<div ng-controller="AdminFDPController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">Faculty Development Program</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+
+
+        <div class="sm-spacer"></div>
+
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">FDP Program Entry</a></li>
+            <li><a data-toggle="tab" href="#menu1">FDP Attendees Entry</a></li>
+
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <div class="sm-spacer"></div>
+                <div class="pannel-bar"> Add FDP Program Entry</div>
+                <div class="card">
+                    <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Academic Year </label>
+                                    <select class="form-control " id="selSession" ng-model="AcademicYear" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetAcademicYearsList">
+                                        <option value="" selected>Select AcademicYear</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Program Name</label>
+                                <div class="form-group">
+                                    <input ng-model="ProgramName" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Venue</label>
+                                <div class="form-group">
+                                    <input ng-model="Venue" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Planned Strength</label>
+                                <div class="form-group">
+                                    <input ng-model="PlannedStrength" onkeypress="return /[0-9]/i.test(event.key)" maxlength="6" type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label>Offered By</label>
+                                <div class="form-group">
+                                    <input ng-model="OfferedBy" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Mentor Name</label>
+                                <div class="form-group">
+                                    <input ng-model="MentorName" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Planned From</label>
+                                <div class="form-group">
+                                    <input ng-model="PlannedFrom" ng-blur="SetEndDate(PlannedFrom)" type="date" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Planned To {{enD}}</label>
+                                <div class="form-group">
+                                    <input ng-model="PlannedTo" type="date" min="{{enD}}" class="form-control">
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-2">
+                                <div class="form-group" ng-show="AddDetails=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddFDPCalender()">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                                    </button>
+                                </div>
+                                <div class="form-group" ng-show="UpdateDetails=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="UpdateFDPCalender()">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="sm-spacer"></div>
+                <div class="sm-spacer"></div>
+                <div ng-show="GetFDPCalendersList.length>0">
+                    <div class="col-md-12">
+                        <div class="cl-details">
+                            <div class="pannel-bar1">FDP Program Entry</div>
+                        </div>
+
+                        <div class="table-responsive table-custom-tables-tb">
+                            <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                                <thead>
+                                    <tr class="cb-1">
+                                        <th>S.No</th>
+                                        <th class="text-center">AcademicYear</th>
+                                        <th class="text-center">ProgramName</th>
+                                        <th class="text-center">Venue</th>
+                                        <th class="text-center">PlannedStrength</th>
+                                        <th class="text-center">OfferedBy</th>
+                                        <th class="text-center">MentorName</th>
+                                        <th class="text-center">PlannedFrom</th>
+                                        <th class="text-center">PlannedTo</th>
+                                        <th class="text-center">Status</th>
+                                        <th class="text-center">Action</th>
+                                        <th class="text-center">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="background-color: #fff!important;" ng-repeat="data in GetFDPCalendersList">
+                                        <td class="text-left">{{$index + 1}}</td>
+                                        <td class="text-left">{{data.AcademicYear}}</td>
+                                        <td class="text-left">{{data.ProgramName}}</td>
+                                        <td class="text-left">{{data.Venue}}</td>
+                                        <td class="text-left">{{data.PlannedStrength == null ?'-':data.PlannedStrength}}</td>
+                                        <td class="text-left">{{data.OfferedBy}}</td>
+                                        <td class="text-left">{{data.MentorName}}</td>
+                                        <td class="text-left">{{data.PlannedFrom}}</td>
+                                        <td class="text-left">{{data.PlannedTo}}</td>
+                                        <td class="text-left">
+                                            <span class="text-success" ng-show="data.Active==true">Active </span>
+                                            <span class="text-danger" ng-show="data.Active==false"> InActive</span>
+                                        </td>
+
+                                        <td class="text-center">
+                                            <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="GetFDPCalenderById(data.FDPID)">
+                                                Edit
+                                            </button>
+
+
+                                        </td>
+                                        <td>
+                                            <button class="btn-xs btn btn-danger" style="width: 70px;" ng-click="DeleteFDPCalender(data,data.FDPID)">
+                                                Delete
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="" ng-show="GetFDPCalendersList.length<1">
+                    <div class="">
+                        <h4 class="no-results text-center">No data Found</h4>
+                    </div>
+                </div>
+                <div id="id01" class="modal">
+                    <div class="container">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                            <form class="modal-content modal_content">
+                                <div class="">
+                                    <!-- <h2>Delete </h2>-->
+                                    <h3>Are you sure you want to delete Course?</h3>
+                                    <hr />
+
+                                    <div><b>{{ProgramName1}}</b></div>
+                                    <div><b>{{Venue1}}</b></div>
+                                    <br />
+                                    <div class="clearfix">
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-success">Cancel</button>
+                                        <button type="button" ng-click="DeleteFDPCalenderConfirm()" class="btn btn-danger pull-right">Delete</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('id01');
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+                <div class="sm-spacer"></div>
+
+                <div class="sm-spacer"></div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <div class="sm-spacer"></div>
+                <div class="pannel-bar"> Add FDP Attendees Entry</div>
+                <div class="card">
+                    <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Academic Year </label>
+                                    <select class="form-control " id="selSession" ng-model="TrainingAcademicYear" ng-blur="GetFDPProgramsByAcademicYear()" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetFDPAcademicYearsList">
+                                        <option value="" selected>Select AcademicYear</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Program Name </label>
+                                <div class="form-group">
+                                    <select class="form-control " ng-model="TrainingProgram" id="selSession" ng-options="data.FDPID  as data.ProgramName   for data in GetFDPProgramsList">
+                                        <option value="" selected>Select Program</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Actual Strength</label>
+                                <div class="form-group">
+                                    <input ng-model="ActualStrength" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Conducted From</label>
+                                <div class="form-group">
+                                    <input ng-model="ConductedFrom" ng-blur="SetEndDate(PlannedFrom)" type="date" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Conducted To </label>
+                                <div class="form-group">
+                                    <input ng-model="ConductedTo" type="date" min="{{enD}}" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Remarks</label>
+                                <div class="form-group">
+                                    <input ng-model="Remarks" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-2">
+                                <div class="form-group" ng-show="AddDetails1=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddFDPTraining()">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                                    </button>
+                                </div>
+                                <div class="form-group" ng-show="UpdateDetails1=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="UpdateFDPTraining()">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="sm-spacer"></div>
+                <div class="sm-spacer"></div>
+                <div ng-show="GetFDPTrainingsList.length>0">
+                    <div class="col-md-12">
+                        <div class="cl-details">
+                            <div class="pannel-bar1">FDP Attendees Entry</div>
+                        </div>
+
+                        <div class="table-responsive table-custom-tables-tb">
+                            <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                                <thead>
+                                    <tr class="cb-1">
+                                        <th>S.No</th>
+                                        <th class="text-center">AcademicYear</th>
+                                        <th class="text-center">ProgramName</th>
+                                        <th class="text-center">ActualStrength</th>
+                                        <th class="text-center">ConductedFrom</th>
+                                        <th class="text-center">ConductedTo</th>
+                                        <th class="text-center">Remarks</th>
+                                        <th class="text-center">Status</th>
+                                        <th class="text-center">Action</th>
+                                        <th class="text-center">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="background-color: #fff!important;" ng-repeat="data in GetFDPTrainingsList">
+                                        <td class="text-left">{{$index + 1}}</td>
+                                        <td class="text-left">{{data.AcademicYear}}</td>
+                                        <td class="text-left">{{data.ProgramName}}</td>
+                                        <td class="text-left">{{data.ActualStrength}}</td>
+                                        <td class="text-left">{{data.ConductedFrom}}</td>
+                                        <td class="text-left">{{data.ConductedTo}}</td>
+                                        <td class="text-left">{{data.Remarks}}</td>
+                                        <td class="text-left">
+                                            <span class="text-success" ng-show="data.Active==true">Active </span>
+                                            <span class="text-danger" ng-show="data.Active==false"> InActive</span>
+                                        </td>
+
+                                        <td class="text-center">
+                                            <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="GetFDPTrainingById(data.FDPDetailsID)">
+                                                Edit
+                                            </button>
+
+
+                                        </td>
+                                        <td>
+                                            <button class="btn-xs btn btn-danger" style="width: 70px;" ng-click="DeleteFDPTraining(data,data.FDPDetailsID)">
+                                                Delete
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="" ng-show="GetFDPTrainingsList.length<1">
+                    <div class="">
+                        <h4 class="no-results text-center">No data Found</h4>
+                    </div>
+                </div>
+                <div id="id02" class="modal">
+                    <div class="container">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+                            <form class="modal-content modal_content">
+                                <div class="">
+                                    <!-- <h2>Delete </h2>-->
+                                    <h3>Are you sure you want to delete Course?</h3>
+                                    <hr />
+
+                                    <div><b>{{ProgramName2}}</b></div>
+                                    <div><b>{{Venue2}}</b></div>
+                                    <br />
+                                    <div class="clearfix">
+                                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="btn btn-success">Cancel</button>
+                                        <button type="button" ng-click="DeleteFDPTrainingConfirm()" class="btn btn-danger pull-right">Delete</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('id02');
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+                <div class="sm-spacer"></div>
+
+                <div class="sm-spacer"></div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

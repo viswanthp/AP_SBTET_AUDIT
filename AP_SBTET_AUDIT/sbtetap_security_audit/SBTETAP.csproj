@@ -1,0 +1,2191 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F263893F-2AB8-4692-894C-6ACFFA17E86E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress>false</Use64BitIISExpress>
+    <IISExpressSSLPort>44355</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="DnsClient, Version=1.6.1.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
+      <HintPath>packages\DnsClient.1.6.1\lib\net471\DnsClient.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.19.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>packages\DocumentFormat.OpenXml.2.19.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>packages\MailKit.2.0.0\lib\net45\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit, Version=2.9.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.18.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MongoDB.Bson.2.18.0\lib\net472\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.18.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MongoDB.Driver.2.18.0\lib\net472\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.18.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MongoDB.Driver.Core.2.18.0\lib\net472\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Libmongocrypt, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MongoDB.Libmongocrypt.1.6.0\lib\net472\MongoDB.Libmongocrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.6.10.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>packages\RestSharp.106.6.10\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpCompress, Version=0.30.1.0, Culture=neutral, PublicKeyToken=afb0a02973931d96, processorArchitecture=MSIL">
+      <HintPath>packages\SharpCompress.0.30.1\lib\net461\SharpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="Snappier, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a1b25124e6e13a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Snappier.1.0.0\lib\netstandard2.0\Snappier.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.9\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.X509Certificates.4.3.2\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encoding.CodePages.5.0.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.9\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.9\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="ZstdSharp, Version=0.6.2.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>packages\ZstdSharp.Port.0.6.2\lib\net461\ZstdSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\AdmissionRoutes.js" />
+    <Content Include="app\app.js" />
+    <Content Include="app\controllers\AboutSbtetVideoController.js" />
+    <Content Include="app\controllers\AboutStaffController.js" />
+    <Content Include="app\controllers\AffiliationDetailsController.js" />
+    <Content Include="app\controllers\AffiliationListController.js" />
+    <Content Include="app\controllers\ApplicationController.js" />
+    <Content Include="app\controllers\CCIC\CCICAffiliationListController.js" />
+    <Content Include="app\controllers\CCIC\CCICProcessController.js" />
+    <Content Include="app\controllers\ChangePasswordController.js" />
+    <Content Include="app\controllers\CollegePages\CollegeDetailsController.js" />
+    <Content Include="app\controllers\CollegePages\CollegeIndustrialTrainingController.js" />
+    <Content Include="app\controllers\CollegePages\CollegeIndustryConnectController.js" />
+    <Content Include="app\controllers\CollegePages\CollegeJournalController.js" />
+    <Content Include="app\controllers\CollegePages\CollegeLabsController.js" />
+    <Content Include="app\controllers\CollegePages\CollegePlacementsController.js" />
+    <Content Include="app\controllers\CollegePages\CollegeStaffDetailsController.js" />
+    <Content Include="app\controllers\CollegePages\IndustryInteractionsController.js" />
+    <Content Include="app\controllers\Colleges\CCICCollegesController.js" />
+    <Content Include="app\controllers\Colleges\CollegeDetailsController.js" />
+    <Content Include="app\controllers\Colleges\CollegesListController.js" />
+    <Content Include="app\controllers\Colleges\DiplomaCollegesController.js" />
+    <Content Include="app\controllers\Colleges\TypewritingCollegesController.js" />
+    <Content Include="app\controllers\CommingSoonController.js" />
+    <Content Include="app\controllers\Courses\CCICCoursesController.js" />
+    <Content Include="app\controllers\Courses\CourseDetailsController.js" />
+    <Content Include="app\controllers\Courses\CoursesListController.js" />
+    <Content Include="app\controllers\Courses\DiplomaCoursesController.js" />
+    <Content Include="app\controllers\Courses\TypewritingCoursesController.js" />
+    <Content Include="app\controllers\DashboardController.js" />
+    <Content Include="app\controllers\DefaultController.js" />
+    <Content Include="app\controllers\CorouselSettingsController.js" />
+    <Content Include="app\controllers\DiplomaProcessController.js" />
+    <Content Include="app\controllers\EventsController.js" />
+    <Content Include="app\controllers\FeedbackController.js" />
+    <Content Include="app\controllers\GalleryController.js" />
+    <Content Include="app\controllers\HomeEventsController.js" />
+    <Content Include="app\controllers\HomeLatestNewsController.js" />
+    <Content Include="app\controllers\HomeNotificationsController.js" />
+    <Content Include="app\controllers\Infracture\AcademicCalenderFilterController.js" />
+    <Content Include="app\controllers\Infracture\AcademicYearController.js" />
+    <Content Include="app\controllers\Infracture\DigitalClassRoomsController.js" />
+    <Content Include="app\controllers\Infracture\FDPController.js" />
+    <Content Include="app\controllers\Infracture\IndustrialTrainingController.js" />
+    <Content Include="app\controllers\Infracture\IndustryConnectController.js" />
+    <Content Include="app\controllers\Infracture\IndustryInteractionController.js" />
+    <Content Include="app\controllers\Infracture\IPSGMController.js" />
+    <Content Include="app\controllers\Infracture\JournalController.js" />
+    <Content Include="app\controllers\Infracture\LabsController.js" />
+    <Content Include="app\controllers\Infracture\LMSController.js" />
+    <Content Include="app\controllers\Infracture\TechFestController.js" />
+    <Content Include="app\controllers\Infracture\VirtualClassRoomsController.js" />
+    <Content Include="app\controllers\InfrastructureDetailsController.js" />
+    <Content Include="app\controllers\LatestNewsController.js" />
+    <Content Include="app\controllers\ForgotPageController.js" />
+    <Content Include="app\controllers\IndexController.js" />
+    <Content Include="app\controllers\LoginController.js" />
+    <Content Include="app\controllers\MasterPages\AcademicCalenderSettingsController.js" />
+    <Content Include="app\controllers\MasterPages\AdminFDPController.js" />
+    <Content Include="app\controllers\MasterPages\AdminFeedbackListController.js" />
+    <Content Include="app\controllers\MasterPages\CollegeStaffListController.js" />
+    <Content Include="app\controllers\MasterPages\CollegeWiseBranchesController.js" />
+    <Content Include="app\controllers\MasterPages\CountsController.js" />
+    <Content Include="app\controllers\MasterPages\CourseSettingController.js" />
+    <Content Include="app\controllers\MasterPages\IPSGMMasterController.js" />
+    <Content Include="app\controllers\MasterPages\IPSGMSettingsController.js" />
+    <Content Include="app\controllers\MasterPages\LabSettingsController.js" />
+    <Content Include="app\controllers\MasterPages\LinksController.js" />
+    <Content Include="app\controllers\MasterPages\PopupSettingsController.js" />
+    <Content Include="app\controllers\MasterPages\QuestionPapersSettingsController.js" />
+    <Content Include="app\controllers\MasterPages\SportsMasterController.js" />
+    <Content Include="app\controllers\MasterPages\StaffDetailsController.js" />
+    <Content Include="app\controllers\MasterPages\SyllabusSettingsController.js" />
+    <Content Include="app\controllers\MasterPages\TechFestController.js" />
+    <Content Include="app\controllers\MasterPages\TechFestMasterController.js" />
+    <Content Include="app\controllers\MasterPages\TestimonialSettingsController.js" />
+    <Content Include="app\controllers\MasterPages\TimeTableSettingsController.js" />
+    <Content Include="app\controllers\NotificationsController.js" />
+    <Content Include="app\controllers\OfficialsLoginController.js" />
+    <Content Include="app\controllers\Pages\AboutUsController.js" />
+    <Content Include="app\controllers\Pages\AntiRaggingController.js" />
+    <Content Include="app\controllers\Pages\PrivacyPolicyController.js" />
+    <Content Include="app\controllers\Pages\RefundPolicyController.js" />
+    <Content Include="app\controllers\Pages\TermsController.js" />
+    <Content Include="app\controllers\Pharmacy\PharmacyAffiliationListController.js" />
+    <Content Include="app\controllers\Pharmacy\PharmacyProcessController.js" />
+    <Content Include="app\controllers\PlacementsController.js" />
+    <Content Include="app\controllers\Placements\InstituteWisePlacementsController.js" />
+    <Content Include="app\controllers\Placements\TestimonialController.js" />
+    <Content Include="app\controllers\PublishWebsiteController.js" />
+    <Content Include="app\controllers\QuestionPapersController.js" />
+    <Content Include="app\controllers\Register\RegistrationController.js" />
+    <Content Include="app\controllers\ResetPasswordController.js" />
+    <Content Include="app\controllers\Services\CCICServiceController.js" />
+    <Content Include="app\controllers\Services\DiplomaServiceController.js" />
+    <Content Include="app\controllers\Services\ServiceDetailsController.js" />
+    <Content Include="app\controllers\Services\ServicesListController.js" />
+    <Content Include="app\controllers\Services\SubServicesListController.js" />
+    <Content Include="app\controllers\Services\SyllabusController.js" />
+    <Content Include="app\controllers\Services\TimeTablesController.js" />
+    <Content Include="app\controllers\Services\TypewritingServiceController.js" />
+    <Content Include="app\controllers\StaffDutiesController.js" />
+    <Content Include="app\controllers\SubDashboardController.js" />
+    <Content Include="app\controllers\TeachingStaffController.js" />
+    <Content Include="app\controllers\Typewriting\TypewritingAffiliationListController.js" />
+    <Content Include="app\controllers\Typewriting\TypewritingProcessController.js" />
+    <Content Include="app\Main.js" />
+    <Content Include="app\services\AdminService\AdminService.js" />
+    <Content Include="app\services\AppSettings.js" />
+    <Content Include="app\services\authInterceptorService.js" />
+    <Content Include="app\services\BillDesk\PaymentService.js" />
+    <Content Include="app\services\DataAccessService.js" />
+    <Content Include="app\services\ForgotPasswordService\ForgotPasswordService.js" />
+    <Content Include="app\services\PreExamination\PreExaminationService.js" />
+    <Content Include="app\services\routeResolver.js" />
+    <Content Include="app\services\StudentRegistration\StudentRegistrationService.js" />
+    <Content Include="app\services\SystemAdministrator\ChangePasswordService.js" />
+    <Content Include="app\services\SystemAdministrator\SystemUserService.js" />
+    <Content Include="app\views\AboutSbtetVideo.html" />
+    <Content Include="app\views\AboutStaff.html" />
+    <Content Include="app\views\AffiliationDetails.html" />
+    <Content Include="app\views\AffiliationList.html" />
+    <Content Include="app\views\Application.html" />
+    <Content Include="app\views\CCIC\CCICAffiliationList.html" />
+    <Content Include="app\views\CCIC\CCICProcess.html" />
+    <Content Include="app\views\ChangePassword.html" />
+    <Content Include="app\views\CollegePages\CollegeDetails.html" />
+    <Content Include="app\views\CollegePages\CollegeIndustrialTraining.html" />
+    <Content Include="app\views\CollegePages\CollegeIndustryConnect.html" />
+    <Content Include="app\views\CollegePages\CollegeJournal.html" />
+    <Content Include="app\views\CollegePages\CollegeLabs.html" />
+    <Content Include="app\views\CollegePages\CollegePlacements.html" />
+    <Content Include="app\views\CollegePages\CollegeStaffDetails.html" />
+    <Content Include="app\views\CollegePages\IndustryInteractions.html" />
+    <Content Include="app\views\Colleges\CCICColleges.html" />
+    <Content Include="app\views\Colleges\CollegeDetails.html" />
+    <Content Include="app\views\Colleges\CollegesList.html" />
+    <Content Include="app\views\Colleges\DiplomaColleges.html" />
+    <Content Include="app\views\Colleges\IndustryInteractions.html" />
+    <Content Include="app\views\Colleges\TypewritingColleges.html" />
+    <Content Include="app\views\CommingSoon.html" />
+    <Content Include="app\views\Courses\CCICCourses.html" />
+    <Content Include="app\views\Courses\CourseDetails.html" />
+    <Content Include="app\views\Courses\CoursesList.html" />
+    <Content Include="app\views\Courses\DiplomaCourses.html" />
+    <Content Include="app\views\Courses\TypewritingCourses.html" />
+    <Content Include="app\views\Dashboard.html" />
+    <Content Include="app\views\CorouselSettings.html" />
+    <Content Include="app\views\DiplomaProcess.html" />
+    <Content Include="app\views\Events.html" />
+    <Content Include="app\views\Feedback.html" />
+    <Content Include="app\views\Gallery.html" />
+    <Content Include="app\views\HomeEvents.html" />
+    <Content Include="app\views\HomeLatestNews.html" />
+    <Content Include="app\views\HomeNotifications.html" />
+    <Content Include="app\views\Infracture\AcademicYear.html" />
+    <Content Include="app\views\Infracture\DigitalClassRooms.html" />
+    <Content Include="app\views\Infracture\FDP.html" />
+    <Content Include="app\views\Infracture\IndustrialTraining.html" />
+    <Content Include="app\views\Infracture\IndustryConnect.html" />
+    <Content Include="app\views\Infracture\IndustryInteraction.html" />
+    <Content Include="app\views\Infracture\IPSGM.html" />
+    <Content Include="app\views\Infracture\Journal.html" />
+    <Content Include="app\views\Infracture\Labs.html" />
+    <Content Include="app\views\Infracture\LMS.html" />
+    <Content Include="app\views\Infracture\TechFest.html" />
+    <Content Include="app\views\Infracture\VirtualClassRooms.html" />
+    <Content Include="app\views\InfrastructureDetails.html" />
+    <Content Include="app\views\LatestNews.html" />
+    <Content Include="app\views\ForgotPage.html" />
+    <Content Include="app\views\index.html" />
+    <Content Include="app\views\login.html" />
+    <Content Include="app\views\MasterPages\AcademicCalenderFilter.html" />
+    <Content Include="app\views\MasterPages\AcademicCalenderSettings.html" />
+    <Content Include="app\views\MasterPages\AdminFDP.html" />
+    <Content Include="app\views\MasterPages\AdminFeedbackList.html" />
+    <Content Include="app\views\MasterPages\CollegeStaffList.html" />
+    <Content Include="app\views\MasterPages\CollegeWiseBranches.html" />
+    <Content Include="app\views\MasterPages\Counts.html" />
+    <Content Include="app\views\MasterPages\CourseSetting.html" />
+    <Content Include="app\views\MasterPages\IPSGMMaster.html" />
+    <Content Include="app\views\MasterPages\IPSGMSettings.html" />
+    <Content Include="app\views\MasterPages\LabSettings.html" />
+    <Content Include="app\views\MasterPages\Links.html" />
+    <Content Include="app\views\MasterPages\PopupSettings.html" />
+    <Content Include="app\views\MasterPages\QuestionPapersSettings.html" />
+    <Content Include="app\views\MasterPages\SportsMaster.html" />
+    <Content Include="app\views\MasterPages\StaffDetails.html" />
+    <Content Include="app\views\MasterPages\SyllabusSettings.html" />
+    <Content Include="app\views\MasterPages\TechFest.html" />
+    <Content Include="app\views\MasterPages\TechFestMaster.html" />
+    <Content Include="app\views\MasterPages\TestimonialSettings.html" />
+    <Content Include="app\views\MasterPages\TimeTableSettings.html" />
+    <Content Include="app\views\Notifications.html" />
+    <Content Include="app\views\OfficialsLogin.html" />
+    <Content Include="app\views\Pages\AboutUs.html" />
+    <Content Include="app\views\Pages\AntiRagging.html" />
+    <Content Include="app\views\Pages\PrivacyPolicy.html" />
+    <Content Include="app\views\Pages\RefundPolicy.html" />
+    <Content Include="app\views\Pages\Terms.html" />
+    <Content Include="app\views\Pharmacy\PharmacyAffiliationList.html" />
+    <Content Include="app\views\Pharmacy\PharmacyAffiliationProcess.html" />
+    <Content Include="app\views\Pharmacy\PharmacyProcess.html" />
+    <Content Include="app\views\Placements.html" />
+    <Content Include="app\views\Placements\InstituteWisePlacements.html" />
+    <Content Include="app\views\Placements\Testimonial.html" />
+    <Content Include="app\views\Popups\AddCoursePopup.html" />
+    <Content Include="app\views\Popups\EditCollegeWiseBranchesPopup.html" />
+    <Content Include="app\views\Popups\EditCorouselPopup.html" />
+    <Content Include="app\views\Popups\EditCoursePopup.html" />
+    <Content Include="app\views\Popups\EditDistCentresPopup.html" />
+    <Content Include="app\views\Popups\EditEventsPopup.html" />
+    <Content Include="app\views\Popups\EditGalleryPopup.html" />
+    <Content Include="app\views\Popups\EditLinkPopup.html" />
+    <Content Include="app\views\Popups\EditNotificationPopup.html" />
+    <Content Include="app\views\Popups\EditPopupSettings.html" />
+    <Content Include="app\views\Popups\EditQuestionPaperPopup.html" />
+    <Content Include="app\views\Popups\EditSyllabusPopup.html" />
+    <Content Include="app\views\Popups\EditTimeTablePopup.html" />
+    <Content Include="app\views\Popups\FeePaymentPopup.html" />
+    <Content Include="app\views\Popups\HomePopup.html" />
+    <Content Include="app\views\Popups\ViewCorouselPopup.html" />
+    <Content Include="app\views\Popups\ViewDistCentresPopup.html" />
+    <Content Include="app\views\Popups\ViewEventsPopup.html" />
+    <Content Include="app\views\Popups\ViewGalleryPopup.html" />
+    <Content Include="app\views\PublishWebsite.html" />
+    <Content Include="app\views\QuestionPapers.html" />
+    <Content Include="app\views\Register\Registration.html" />
+    <Content Include="app\views\ResetPassword.html" />
+    <Content Include="app\views\Services\CCICService.html" />
+    <Content Include="app\views\Services\DiplomaService.html" />
+    <Content Include="app\views\Services\ServiceDetails.html" />
+    <Content Include="app\views\Services\ServicesList.html" />
+    <Content Include="app\views\Services\SubServicesList.html" />
+    <Content Include="app\views\Services\Syllabus.html" />
+    <Content Include="app\views\Services\TimeTables.html" />
+    <Content Include="app\views\Services\TypewritingService.html" />
+    <Content Include="app\views\StaffDuties.html" />
+    <Content Include="app\views\SubDashboard.html" />
+    <Content Include="app\views\TeachingStaff.html" />
+    <Content Include="app\views\Typewriting\TypewritingAffiliationList.html" />
+    <Content Include="app\views\Typewriting\TypewritingProcess.html" />
+    <Content Include="assets\cont\css\fontello.css" />
+    <Content Include="assets\cont\font\fontello.svg" />
+    <Content Include="assets\css\animate.css" />
+    <Content Include="assets\css\bootsnav.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\datatables.min.css" />
+    <Content Include="assets\css\elegant-icons.css" />
+    <Content Include="assets\css\ElegantIcons.html" />
+    <Content Include="assets\css\flaticon-set.css" />
+    <Content Include="assets\css\Flaticon.html" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\magnific-popup.css" />
+    <Content Include="assets\css\nav.css" />
+    <Content Include="assets\css\owl.carousel.min.css" />
+    <Content Include="assets\css\owl.theme.default.min.css" />
+    <Content Include="assets\css\owl.video.play.html" />
+    <Content Include="assets\css\polycet.css" />
+    <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\table.css" />
+    <Content Include="assets\fonts\ElegantIcons.svg" />
+    <Content Include="assets\fonts\fa-brands-400.html" />
+    <Content Include="assets\fonts\fa-regular-400.html" />
+    <Content Include="assets\fonts\fa-solid-900.html" />
+    <Content Include="assets\fonts\Flaticon.html" />
+    <Content Include="assets\fonts\Flaticon.svg" />
+    <Content Include="assets\fonts\Flaticond41d.html" />
+    <Content Include="assets\fonts\fonts\fontawesome-webfont93e3.html" />
+    <Content Include="assets\fonts\fonts\fontawesome-webfont93e3.svg" />
+    <Content Include="assets\fonts\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\fonts\fonts\ionicons28b5-2.html" />
+    <Content Include="assets\fonts\fonts\ionicons28b5-3.html" />
+    <Content Include="assets\fonts\fonts\ionicons28b5.html" />
+    <Content Include="assets\fonts\fonts\Simple-Line-Icons-2.html" />
+    <Content Include="assets\fonts\fonts\Simple-Line-Icons-3.html" />
+    <Content Include="assets\fonts\fonts\Simple-Line-Icons.html" />
+    <Content Include="assets\fonts\fonts\Simple-Line-Iconsd41d.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular-2.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular-3.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular-4.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular-5.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regulard41d.html" />
+    <Content Include="assets\img\application.png" />
+    <Content Include="assets\img\application_status.png" />
+    <Content Include="assets\img\banner\1bg.jpg" />
+    <Content Include="assets\img\banner\banner-1.svg" />
+    <Content Include="assets\img\banner\bg_notifications.png" />
+    <Content Include="assets\img\banner\events_bg.jpg" />
+    <Content Include="assets\img\banner\HomeBanner\slide-1.jpg" />
+    <Content Include="assets\img\banner\HomeBanner\slide-2.jpg" />
+    <Content Include="assets\img\banner\HomeBanner\slide-3.jpg" />
+    <Content Include="assets\img\banner\HomeBanner\slide-4.jpg" />
+    <Content Include="assets\img\banner\HomeBanner\slide-5.jpg" />
+    <Content Include="assets\img\banner\HomeBanner\slide-6.jpg" />
+    <Content Include="assets\img\banner\HomeBanner\slide-7.jpg" />
+    <Content Include="assets\img\banner\HomeBanner\slide-8.jpg" />
+    <Content Include="assets\img\banner\pattern_bg2.png" />
+    <Content Include="assets\img\banner\slide1-n.jpg" />
+    <Content Include="assets\img\banner\slide2-n.jpg" />
+    <Content Include="assets\img\banner\slide3-n.jpg" />
+    <Content Include="assets\img\banner\slide4-n.jpg" />
+    <Content Include="assets\img\banner\slide5-n.jpg" />
+    <Content Include="assets\img\category\1.jpg" />
+    <Content Include="assets\img\category\2.jpg" />
+    <Content Include="assets\img\category\3.jpg" />
+    <Content Include="assets\img\category\4.jpg" />
+    <Content Include="assets\img\category\5.jpg" />
+    <Content Include="assets\img\category\6.jpg" />
+    <Content Include="assets\img\category\7.jpg" />
+    <Content Include="assets\img\category\8.jpg" />
+    <Content Include="assets\img\category\ccic.jpg" />
+    <Content Include="assets\img\category\comingsoon.jpg" />
+    <Content Include="assets\img\category\diploma.jpg" />
+    <Content Include="assets\img\category\shorthand.jpg" />
+    <Content Include="assets\img\category\typewriter.jpg" />
+    <Content Include="assets\img\close.png" />
+    <Content Include="assets\img\coming-soon.svg" />
+    <Content Include="assets\img\courses\1.jpg" />
+    <Content Include="assets\img\courses\2.jpg" />
+    <Content Include="assets\img\courses\3.jpg" />
+    <Content Include="assets\img\courses\4.jpg" />
+    <Content Include="assets\img\courses\5.jpg" />
+    <Content Include="assets\img\courses\6.jpg" />
+    <Content Include="assets\img\courses\f1.jpg" />
+    <Content Include="assets\img\courses\f2.jpg" />
+    <Content Include="assets\img\courses\f3.jpg" />
+    <Content Include="assets\img\custom\banner\2.svg" />
+    <Content Include="assets\img\custom\big-logo.png" />
+    <Content Include="assets\img\custom\counter_bg.jpg" />
+    <Content Include="assets\img\custom\ex3.png" />
+    <Content Include="assets\img\custom\ex4.jpg" />
+    <Content Include="assets\img\custom\ex5.jpg" />
+    <Content Include="assets\img\custom\favicon.png" />
+    <Content Include="assets\img\custom\mittal.jpg" />
+    <Content Include="assets\img\custom\sb-1.jpg" />
+    <Content Include="assets\img\custom\sb-1.png" />
+    <Content Include="assets\img\evaluation.png" />
+    <Content Include="assets\img\loading.gif" />
+    <Content Include="assets\img\menu.svg" />
+    <Content Include="assets\img\new-img.gif" />
+    <Content Include="assets\img\next.png" />
+    <Content Include="assets\img\payment.png" />
+    <Content Include="assets\img\popups\Viksit.jpg" />
+    <Content Include="assets\img\preloader.gif" />
+    <Content Include="assets\img\previous.png" />
+    <Content Include="assets\img\printer.png" />
+    <Content Include="assets\img\refresh-button.png" />
+    <Content Include="assets\img\register.png" />
+    <Content Include="assets\img\reload.png" />
+    <Content Include="assets\img\sbtet-logo.jpg" />
+    <Content Include="assets\img\sbtet-logo.png" />
+    <Content Include="assets\img\sbtet_logo.jpg" />
+    <Content Include="assets\img\Secretary.jpeg" />
+    <Content Include="assets\img\Secretary.jpg" />
+    <Content Include="assets\img\Secretary.png" />
+    <Content Include="assets\img\Servces\clg_srvs.jpg" />
+    <Content Include="assets\img\Servces\std_srv.jpg" />
+    <Content Include="assets\jquery.lightbox.css" />
+    <Content Include="assets\jquery.lightbox.js" />
+    <Content Include="assets\js\bootsnav.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\count-to.js" />
+    <Content Include="assets\js\datatables.min.js" />
+    <Content Include="assets\js\equal-height.min.js" />
+    <Content Include="assets\js\imagesloaded.pkgd.min.js" />
+    <Content Include="assets\js\isotope.pkgd.min.js" />
+    <Content Include="assets\js\jquery-1.12.4.min.js" />
+    <Content Include="assets\js\jquery-3.3.1.js" />
+    <Content Include="assets\js\jquery.appear.js" />
+    <Content Include="assets\js\jquery.easing.min.js" />
+    <Content Include="assets\js\jquery.font-accessibility.dev.js" />
+    <Content Include="assets\js\jquery.font-accessibility.min.js" />
+    <Content Include="assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="assets\js\jquery.nice-select.min.js" />
+    <Content Include="assets\js\loopcounter.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\modernizr.custom.13711.js" />
+    <Content Include="assets\js\nav.js" />
+    <Content Include="assets\js\owl.carousel.min.js" />
+    <Content Include="assets\js\pdfmake.min.js" />
+    <Content Include="assets\js\report.js" />
+    <Content Include="assets\js\typed.html" />
+    <Content Include="assets\js\vfs_fonts.js" />
+    <Content Include="assets\js\wow.min.js" />
+    <Content Include="assets\js\YTPlayer.min.html" />
+    <Content Include="assets\Mobileapp-icons\css\animation.css" />
+    <Content Include="assets\Mobileapp-icons\css\fontello-codes.css" />
+    <Content Include="assets\Mobileapp-icons\css\fontello-embedded.css" />
+    <Content Include="assets\Mobileapp-icons\css\fontello-ie7-codes.css" />
+    <Content Include="assets\Mobileapp-icons\css\fontello-ie7.css" />
+    <Content Include="assets\Mobileapp-icons\css\fontello.css" />
+    <Content Include="assets\Mobileapp-icons\demo.html" />
+    <Content Include="assets\Mobileapp-icons\font\fontello.svg" />
+    <Content Include="assets\Mobileapp-icons\README.txt" />
+    <Content Include="assets\site-fonts\demo.html" />
+    <Content Include="assets\site-fonts\stylesheet.css" />
+    <Content Include="assets\style.css" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\MailKit.dll" />
+    <Content Include="bin\MailKit.xml" />
+    <Content Include="bin\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="bin\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\MimeKit.dll" />
+    <Content Include="bin\MimeKit.pdb" />
+    <Content Include="bin\MimeKit.xml" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\Polycet_Project.dll" />
+    <Content Include="bin\Polycet_Project.pdb" />
+    <Content Include="bin\RestSharp.dll" />
+    <Content Include="bin\RestSharp.xml" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\csi.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\roslyn\Microsoft.Win32.Primitives.dll" />
+    <Content Include="bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Console.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\roslyn\System.Globalization.Calendars.dll" />
+    <Content Include="bin\roslyn\System.IO.Compression.dll" />
+    <Content Include="bin\roslyn\System.IO.Compression.ZipFile.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Net.Http.dll" />
+    <Content Include="bin\roslyn\System.Net.Sockets.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="bin\roslyn\System.Text.Encoding.CodePages.dll" />
+    <Content Include="bin\roslyn\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\roslyn\System.ValueTuple.dll" />
+    <Content Include="bin\roslyn\System.Xml.ReaderWriter.dll" />
+    <Content Include="bin\roslyn\System.Xml.XmlDocument.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\System.Buffers.dll" />
+    <Content Include="bin\System.Buffers.xml" />
+    <Content Include="bin\System.Memory.dll" />
+    <Content Include="bin\System.Memory.xml" />
+    <Content Include="bin\System.Net.Http.Formatting.dll" />
+    <Content Include="bin\System.Net.Http.Formatting.xml" />
+    <Content Include="bin\System.Numerics.Vectors.dll" />
+    <Content Include="bin\System.Numerics.Vectors.xml" />
+    <Content Include="bin\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="bin\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="bin\System.Text.Encodings.Web.dll" />
+    <Content Include="bin\System.Text.Encodings.Web.xml" />
+    <Content Include="bin\System.Text.Json.dll" />
+    <Content Include="bin\System.Text.Json.xml" />
+    <Content Include="bin\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="bin\System.ValueTuple.dll" />
+    <Content Include="bin\System.ValueTuple.xml" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Http.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.xml" />
+    <Content Include="bin\System.Web.Http.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\WebApplication1.dll" />
+    <Content Include="bin\WebApplication1.pdb" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="contents\css\animate.min.css" />
+    <Content Include="contents\css\animations.css" />
+    <Content Include="contents\css\bootstrap-slider.css" />
+    <Content Include="contents\css\bootstrap.min.css" />
+    <Content Include="contents\css\fancyBox.css" />
+    <Content Include="contents\css\fancybox_overlay.png" />
+    <Content Include="contents\css\flaticon.css" />
+    <Content Include="contents\css\font-awesome-animation.min.css" />
+    <Content Include="contents\css\font-awesome.min.css" />
+    <Content Include="contents\css\icofont.css" />
+    <Content Include="contents\css\isotop.css" />
+    <Content Include="contents\css\material-design-iconic-font.css" />
+    <Content Include="contents\css\owl.css" />
+    <Content Include="contents\css\Pages\AboutStaff.css" />
+    <Content Include="contents\css\Pages\AffiliationDetails.css" />
+    <Content Include="contents\css\Pages\AffiliationList.css" />
+    <Content Include="contents\css\Pages\Application.css" />
+    <Content Include="contents\css\Pages\CCIC\CCICAffiliationList.css" />
+    <Content Include="contents\css\Pages\CCIC\CCICProcess.css" />
+    <Content Include="contents\css\Pages\ChangePassword.css" />
+    <Content Include="contents\css\Pages\CollegePages\CollegeDetails.css" />
+    <Content Include="contents\css\Pages\CollegePages\CollegeIndustrialTraining.css" />
+    <Content Include="contents\css\Pages\CollegePages\CollegeIndustryConnect.css" />
+    <Content Include="contents\css\Pages\CollegePages\CollegeJournal.css" />
+    <Content Include="contents\css\Pages\CollegePages\CollegeLabs.css" />
+    <Content Include="contents\css\Pages\CollegePages\CollegePlacements.css" />
+    <Content Include="contents\css\Pages\CollegePages\CollegeStaffDetails.css" />
+    <Content Include="contents\css\Pages\CollegePages\IndustryInteractions.css" />
+    <Content Include="contents\css\Pages\Colleges\CCICColleges.css" />
+    <Content Include="contents\css\Pages\Colleges\CollegeDetails.css" />
+    <Content Include="contents\css\Pages\Colleges\CollegesList.css" />
+    <Content Include="contents\css\Pages\Colleges\DiplomaColleges.css" />
+    <Content Include="contents\css\Pages\Colleges\IndustryInteractions.css" />
+    <Content Include="contents\css\Pages\Colleges\TypewritingColleges.css" />
+    <Content Include="contents\css\Pages\CorouselSettings.css" />
+    <Content Include="contents\css\Pages\Courses\CCICCourses.css" />
+    <Content Include="contents\css\Pages\Courses\CourseDetails.css" />
+    <Content Include="contents\css\Pages\Courses\CoursesList.css" />
+    <Content Include="contents\css\Pages\Courses\DiplomaCourses.css" />
+    <Content Include="contents\css\Pages\Courses\TypewritingCourses.css" />
+    <Content Include="contents\css\Pages\Dashboard.css" />
+    <Content Include="contents\css\Pages\Events.css" />
+    <Content Include="contents\css\Pages\Feedback.css" />
+    <Content Include="contents\css\Pages\ForgotPage.css" />
+    <Content Include="contents\css\Pages\HomeEvents.css" />
+    <Content Include="contents\css\Pages\HomeLatestNews.css" />
+    <Content Include="contents\css\Pages\HomeNotifications.css" />
+    <Content Include="contents\css\Pages\index.css" />
+    <Content Include="contents\css\Pages\Infracture\AcademicYear.css" />
+    <Content Include="contents\css\Pages\Infracture\DigitalClassRooms.css" />
+    <Content Include="contents\css\Pages\Infracture\FDP.css" />
+    <Content Include="contents\css\Pages\Infracture\IndustrialTraining.css" />
+    <Content Include="contents\css\Pages\Infracture\IndustryConnect.css" />
+    <Content Include="contents\css\Pages\Infracture\IndustryInteraction.css" />
+    <Content Include="contents\css\Pages\Infracture\IPSGM.css" />
+    <Content Include="contents\css\Pages\Infracture\Journal.css" />
+    <Content Include="contents\css\Pages\Infracture\Labs.css" />
+    <Content Include="contents\css\Pages\Infracture\LMS.css" />
+    <Content Include="contents\css\Pages\Infracture\TechFest.css" />
+    <Content Include="contents\css\Pages\Infracture\VirtualClassRooms.css" />
+    <Content Include="contents\css\Pages\InfrastructureDetails.css" />
+    <Content Include="contents\css\Pages\LatestNews.css" />
+    <Content Include="contents\css\Pages\login.css" />
+    <Content Include="contents\css\Pages\MasterPages\AcademicCalenderFilter.css" />
+    <Content Include="contents\css\Pages\MasterPages\AcademicCalenderSettings.css" />
+    <Content Include="contents\css\Pages\MasterPages\AdminFDP.css" />
+    <Content Include="contents\css\Pages\MasterPages\AdminFeedbackList.css" />
+    <Content Include="contents\css\Pages\MasterPages\CollegeStaffList.css" />
+    <Content Include="contents\css\Pages\MasterPages\CourseSetting.css" />
+    <Content Include="contents\css\Pages\MasterPages\IPSGMMaster.css" />
+    <Content Include="contents\css\Pages\MasterPages\IPSGMSettings.css" />
+    <Content Include="contents\css\Pages\MasterPages\LabSettings.css" />
+    <Content Include="contents\css\Pages\MasterPages\QuestionPapersSettings.css" />
+    <Content Include="contents\css\Pages\MasterPages\SportsMaster.css" />
+    <Content Include="contents\css\Pages\MasterPages\StaffDetails.css" />
+    <Content Include="contents\css\Pages\MasterPages\SyllabusSettings.css" />
+    <Content Include="contents\css\Pages\MasterPages\TechFest.css" />
+    <Content Include="contents\css\Pages\MasterPages\TechFestMaster.css" />
+    <Content Include="contents\css\Pages\MasterPages\TestimonialSettings.css" />
+    <Content Include="contents\css\Pages\MasterPages\TimeTableSettings.css" />
+    <Content Include="contents\css\Pages\Notifications.css" />
+    <Content Include="contents\css\Pages\OfficialsLogin.css" />
+    <Content Include="contents\css\Pages\Pages\AboutUs.css" />
+    <Content Include="contents\css\Pages\Pages\AntiRagging.css" />
+    <Content Include="contents\css\Pages\Pages\PrivacyPolicy.css" />
+    <Content Include="contents\css\Pages\Pages\RefundPolicy.css" />
+    <Content Include="contents\css\Pages\Pages\Terms.css" />
+    <Content Include="contents\css\Pages\Pharmacy\PharmacyAffiliationList.css" />
+    <Content Include="contents\css\Pages\Pharmacy\PharmacyAffiliationProcess.css" />
+    <Content Include="contents\css\Pages\Placements.css" />
+    <Content Include="contents\css\Pages\Placements\InstituteWisePlacements.css" />
+    <Content Include="contents\css\Pages\Placements\Testimonial.css" />
+    <Content Include="contents\css\Pages\Popups\EditCorouselPopup.css" />
+    <Content Include="contents\css\Pages\Popups\EditCoursePopup.css" />
+    <Content Include="contents\css\Pages\Popups\EditDistCentresPopup.css" />
+    <Content Include="contents\css\Pages\Popups\EditEventsPopup.css" />
+    <Content Include="contents\css\Pages\Popups\EditNotificationPopup.css" />
+    <Content Include="contents\css\Pages\Popups\EditSyllabusPopup.css" />
+    <Content Include="contents\css\Pages\Popups\FeePaymentPopup.css" />
+    <Content Include="contents\css\Pages\Popups\ViewCorouselPopup.css" />
+    <Content Include="contents\css\Pages\Popups\ViewDistCentresPopup.css" />
+    <Content Include="contents\css\Pages\Popups\ViewEventsPopup.css" />
+    <Content Include="contents\css\Pages\QuestionPapers.css" />
+    <Content Include="contents\css\Pages\Register\Registration.css" />
+    <Content Include="contents\css\Pages\Services\CCICService.css" />
+    <Content Include="contents\css\Pages\Services\DiplomaService.css" />
+    <Content Include="contents\css\Pages\Services\ServiceDetails.css" />
+    <Content Include="contents\css\Pages\Services\ServicesList.css" />
+    <Content Include="contents\css\Pages\Services\SubServicesList.css" />
+    <Content Include="contents\css\Pages\Services\Syllabus.css" />
+    <Content Include="contents\css\Pages\Services\TimeTables.css" />
+    <Content Include="contents\css\Pages\Services\TypewritingService.css" />
+    <Content Include="contents\css\Pages\StaffDuties.css" />
+    <Content Include="contents\css\Pages\SubDashboard.css" />
+    <Content Include="contents\css\Pages\TeachingStaff.css" />
+    <Content Include="contents\css\Pages\Typewriting\TypewritingAffiliationList.css" />
+    <Content Include="contents\css\Pages\Typewriting\TypewritingProcess.css" />
+    <Content Include="contents\css\responsive.css" />
+    <Content Include="contents\css\Stroke-Gap-Icons.css" />
+    <Content Include="contents\css\style.css" />
+    <Content Include="contents\fonts\Flaticon.svg" />
+    <Content Include="contents\fonts\fontawesome-webfont.svg" />
+    <Content Include="contents\fonts\fonticon\et-line-font\et-line-font\et-line.dev.svg" />
+    <Content Include="contents\fonts\fonticon\et-line-font\et-line-font\fonticon-et-line.css" />
+    <Content Include="contents\fonts\fonticon\et-line-font\et-line-font\fonts\et-line.svg" />
+    <Content Include="contents\fonts\fonticon\et-line-font\et-line-font\index.html" />
+    <Content Include="contents\fonts\fonticon\et-line-font\et-line-font\lte-ie7.js" />
+    <Content Include="contents\fonts\fonticon\et-line-font\et-line-font\Read Me.txt" />
+    <Content Include="contents\fonts\fonticon\et-line-font\et-line-font\style.css" />
+    <Content Include="contents\fonts\fonticon\et-line-font\__MACOSX\et-line-font\._et-line.dev.svg" />
+    <Content Include="contents\fonts\fonticon\et-line-font\__MACOSX\et-line-font\._index.html" />
+    <Content Include="contents\fonts\fonticon\et-line-font\__MACOSX\et-line-font\._lte-ie7.js" />
+    <Content Include="contents\fonts\fonticon\et-line-font\__MACOSX\et-line-font\._Read Me.txt" />
+    <Content Include="contents\fonts\fonticon\et-line-font\__MACOSX\et-line-font\._style.css" />
+    <Content Include="contents\fonts\fonticon\et-line-font\__MACOSX\et-line-font\fonts\._et-line.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Desktop Font\demo-files\demo.css" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Desktop Font\demo-files\demo.js" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Desktop Font\demo-files\liga.js" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Desktop Font\Read Me.txt" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Desktop Font\Reference.html" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\License.txt" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\alarm.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\apartment.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\arrow-down-circle.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\arrow-down.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\arrow-left-circle.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\arrow-left.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\arrow-right-circle.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\arrow-right.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\arrow-up-circle.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\arrow-up.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\bicycle.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\bold.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\book.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\bookmark.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\briefcase.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\bubble.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\bug.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\bullhorn.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\bus.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\calendar-full.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\camera-video.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\camera.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\car.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\cart.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\chart-bars.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\checkmark-circle.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\chevron-down-circle.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\chevron-down.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\chevron-left-circle.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\chevron-left.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\chevron-right-circle.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\chevron-right.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\chevron-up-circle.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\chevron-up.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\circle-minus.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\clock.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\cloud-check.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\cloud-download.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\cloud-sync.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\cloud-upload.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\cloud.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\code.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\coffee-cup.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\cog.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\construction.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\crop.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\cross-circle.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\cross.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\database.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\diamond.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\dice.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\dinner.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\direction-ltr.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\direction-rtl.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\download.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\drop.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\earth.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\enter-down.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\enter.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\envelope.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\exit-up.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\exit.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\eye.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\file-add.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\file-empty.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\film-play.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\flag.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\frame-contract.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\frame-expand.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\funnel.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\gift.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\graduation-hat.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\hand.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\heart-pulse.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\heart.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\highlight.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\history.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\home.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\hourglass.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\inbox.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\indent-decrease.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\indent-increase.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\italic.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\keyboard.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\laptop-phone.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\laptop.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\layers.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\leaf.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\license.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\lighter.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\line-spacing.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\linearicons.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\link.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\list.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\location.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\lock.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\magic-wand.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\magnifier.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\map-marker.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\map.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\menu-circle.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\menu.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\mic.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\moon.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\move.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\music-note.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\mustache.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\neutral.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\page-break.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\paperclip.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\paw.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\pencil.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\phone-handset.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\phone.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\picture.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\pie-chart.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\pilcrow.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\plus-circle.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\pointer-down.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\pointer-left.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\pointer-right.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\pointer-up.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\poop.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\power-switch.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\printer.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\pushpin.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\question-circle.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\redo.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\rocket.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\sad.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\screen.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\select.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\shirt.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\smartphone.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\smile.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\sort-alpha-asc.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\sort-amount-asc.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\spell-check.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\star-empty.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\star-half.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\star.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\store.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\strikethrough.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\sun.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\sync.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\tablet.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\tag.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\text-align-center.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\text-align-justify.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\text-align-left.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\text-align-right.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\text-format-remove.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\text-format.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\text-size.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\thumbs-down.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\thumbs-up.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\train.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\trash.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\underline.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\undo.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\unlink.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\upload.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\user.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\users.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\volume-high.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\volume-low.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\volume-medium.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\volume.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\warning.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\SVG\wheelchair.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Web Font\demo-files\demo.css" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Web Font\demo-files\demo.js" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Web Font\demo.html" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Web Font\fonticon-linearicons.css" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Web Font\fonts\Linearicons-Free.svg" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Web Font\Read Me.txt" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Web Font\style.css" />
+    <Content Include="contents\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="contents\fonts\icofont.svg" />
+    <Content Include="contents\fonts\index.html" />
+    <Content Include="contents\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="contents\images\about\1.jpeg" />
+    <Content Include="contents\images\about\2.jpeg" />
+    <Content Include="contents\images\about\3.jpeg" />
+    <Content Include="contents\images\about\achievements.png" />
+    <Content Include="contents\images\about\Affiliation.png" />
+    <Content Include="contents\images\about\courses.jpg" />
+    <Content Include="contents\images\about\help_desk.jpeg" />
+    <Content Include="contents\images\about\infracture.jpg" />
+    <Content Include="contents\images\about\infrastructure.jpg" />
+    <Content Include="contents\images\about\Placements.png" />
+    <Content Include="contents\images\about\SBTET.png" />
+    <Content Include="contents\images\about\student-services.png" />
+    <Content Include="contents\images\apple-icon.png" />
+    <Content Include="contents\images\ap_logo.png" />
+    <Content Include="contents\images\bg\1.jpg" />
+    <Content Include="contents\images\bg\2.jpg" />
+    <Content Include="contents\images\bg\3.jpg" />
+    <Content Include="contents\images\bg\bg-2.jpg" />
+    <Content Include="contents\images\bg\counter_bg.jpg" />
+    <Content Include="contents\images\bg\help_desk.jpeg" />
+    <Content Include="contents\images\blog\1.jpg" />
+    <Content Include="contents\images\blog\2.jpg" />
+    <Content Include="contents\images\blog\3.jpg" />
+    <Content Include="contents\images\blog\ccic.png" />
+    <Content Include="contents\images\blog\s1.jpg" />
+    <Content Include="contents\images\blog\s2.jpg" />
+    <Content Include="contents\images\blog\sm1.jpg" />
+    <Content Include="contents\images\blog\sm2.jpg" />
+    <Content Include="contents\images\blog\sm3.jpg" />
+    <Content Include="contents\images\coming-soon.png" />
+    <Content Include="contents\images\courses\affiliation.jpg" />
+    <Content Include="contents\images\courses\apeapcet.jpg" />
+    <Content Include="contents\images\courses\apecet.jpg" />
+    <Content Include="contents\images\courses\appolycet.jpg" />
+    <Content Include="contents\images\courses\appolycet1.jpg" />
+    <Content Include="contents\images\courses\ccic.png" />
+    <Content Include="contents\images\courses\ccic1.jpg" />
+    <Content Include="contents\images\courses\certificateservices.jpg" />
+    <Content Include="contents\images\courses\college.jpg" />
+    <Content Include="contents\images\courses\dpharmacy.jpeg" />
+    <Content Include="contents\images\courses\engineer.jpg" />
+    <Content Include="contents\images\courses\examfeepayment.jpg" />
+    <Content Include="contents\images\courses\hallticket.png" />
+    <Content Include="contents\images\courses\industryconnect.jpg" />
+    <Content Include="contents\images\courses\ph.jpg" />
+    <Content Include="contents\images\courses\placements.jpg" />
+    <Content Include="contents\images\courses\procedure.jpg" />
+    <Content Include="contents\images\courses\questionpapers.jpg" />
+    <Content Include="contents\images\courses\results.jpg" />
+    <Content Include="contents\images\courses\students.jpg" />
+    <Content Include="contents\images\courses\syllabus.jpg" />
+    <Content Include="contents\images\courses\testimonials.jpg" />
+    <Content Include="contents\images\courses\timetables.jpg" />
+    <Content Include="contents\images\courses\tspolycet.png" />
+    <Content Include="contents\images\courses\typewriting.jpg" />
+    <Content Include="contents\images\fancybox\blank.gif" />
+    <Content Include="contents\images\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="contents\images\fancybox\fancybox_loading.gif" />
+    <Content Include="contents\images\fancybox\fancybox_overlay.png" />
+    <Content Include="contents\images\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="contents\images\fancybox\fancybox_sprite.png" />
+    <Content Include="contents\images\fancybox\new.gif" />
+    <Content Include="contents\images\faq.png" />
+    <Content Include="contents\images\favicon.png" />
+    <Content Include="contents\images\Folder-Icon.svg" />
+    <Content Include="contents\images\footer-logo.png" />
+    <Content Include="contents\images\footer.jpg" />
+    <Content Include="contents\images\gallery\1.jpeg" />
+    <Content Include="contents\images\gallery\1.jpg" />
+    <Content Include="contents\images\gallery\2.jpg" />
+    <Content Include="contents\images\gallery\3.jpg" />
+    <Content Include="contents\images\gallery\4.jpg" />
+    <Content Include="contents\images\gallery\5.jpg" />
+    <Content Include="contents\images\gallery\6.jpg" />
+    <Content Include="contents\images\gallery\7.jpg" />
+    <Content Include="contents\images\gallery\8.jpg" />
+    <Content Include="contents\images\index.html" />
+    <Content Include="contents\images\infracture\AcademicCalander.png" />
+    <Content Include="contents\images\infracture\DigitalClassRoom.png" />
+    <Content Include="contents\images\infracture\FDP.png" />
+    <Content Include="contents\images\infracture\IndustrialTraining.png" />
+    <Content Include="contents\images\infracture\industryconnect.jpg" />
+    <Content Include="contents\images\infracture\IndustryInteraction.png" />
+    <Content Include="contents\images\infracture\IPSGM.png" />
+    <Content Include="contents\images\infracture\Journal.png" />
+    <Content Include="contents\images\infracture\Lab.png" />
+    <Content Include="contents\images\infracture\LMS.png" />
+    <Content Include="contents\images\infracture\TECHFEST.png" />
+    <Content Include="contents\images\infracture\text.txt" />
+    <Content Include="contents\images\infracture\VirtualClassroom.png" />
+    <Content Include="contents\images\infracture\water_NS19961996-26-2.jpg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.17 PM.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.18 PM.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.19 PM %281%29.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.19 PM.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.20 PM.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.21 PM %281%29.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.21 PM %282%29.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.21 PM.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.22 PM %281%29.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.22 PM %282%29.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.22 PM.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.23 PM %281%29.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.23 PM %282%29.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.23 PM.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.24 PM %281%29.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.24 PM %282%29.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.24 PM.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.25 PM %281%29.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.25 PM.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.26 PM %281%29.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.26 PM %282%29.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.26 PM.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.27 PM %281%29.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.27 PM %282%29.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.27 PM.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.28 PM %281%29.jpeg" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM\WhatsApp Image 2022-04-24 at 3.30.28 PM.jpeg" />
+    <Content Include="contents\images\launch2.jpg" />
+    <Content Include="contents\images\launch_bg.jpg" />
+    <Content Include="contents\images\logo-2.png" />
+    <Content Include="contents\images\man.png" />
+    <Content Include="contents\images\newsletter.jpg" />
+    <Content Include="contents\images\preloader.gif" />
+    <Content Include="contents\images\Release.gif" />
+    <Content Include="contents\images\sbtet_ap2.png" />
+    <Content Include="contents\images\sbtet_ap_latest_logo.jpeg" />
+    <Content Include="contents\images\sbtet_ap_latest_logo.png" />
+    <Content Include="contents\images\sbtet_ap_logo.jpg" />
+    <Content Include="contents\images\sbtet_ap_logo_1.png" />
+    <Content Include="contents\images\slider\1.jpeg" />
+    <Content Include="contents\images\slider\2.jpeg" />
+    <Content Include="contents\images\slider\3.jpeg" />
+    <Content Include="contents\images\slider\pic_4.jpeg" />
+    <Content Include="contents\images\slider\pic_5.jpeg" />
+    <Content Include="contents\images\STATE BOARD OF TECHNICAL EDUCATION &amp; TRAINING.png" />
+    <Content Include="contents\images\students.png" />
+    <Content Include="contents\images\teachers\1.jpeg" />
+    <Content Include="contents\images\teachers\10.jpeg" />
+    <Content Include="contents\images\teachers\11.jpeg" />
+    <Content Include="contents\images\teachers\2.jpeg" />
+    <Content Include="contents\images\teachers\2.jpg" />
+    <Content Include="contents\images\teachers\3.jpeg" />
+    <Content Include="contents\images\teachers\4.jpeg" />
+    <Content Include="contents\images\teachers\5.jpeg" />
+    <Content Include="contents\images\teachers\6.jpeg" />
+    <Content Include="contents\images\teachers\7.jpeg" />
+    <Content Include="contents\images\teachers\8.jpeg" />
+    <Content Include="contents\images\teachers\8.jpg" />
+    <Content Include="contents\images\teachers\9.jpeg" />
+    <Content Include="contents\images\teachers\chairman.jpeg" />
+    <Content Include="contents\images\teachers\chairman.jpg" />
+    <Content Include="contents\images\teachers\chairman_2.jpg" />
+    <Content Include="contents\images\website_title_logo.png" />
+    <Content Include="contents\js\agency.min.js" />
+    <Content Include="contents\js\bootstrap-dropdownhover.min.js" />
+    <Content Include="contents\js\bootstrap-slider.js" />
+    <Content Include="contents\js\bootstrap.min.js" />
+    <Content Include="contents\js\classie.js" />
+    <Content Include="contents\js\css3-animate-it.js" />
+    <Content Include="contents\js\index.html" />
+    <Content Include="contents\js\isotope.js" />
+    <Content Include="contents\js\jquery-scrolltofixed-min.js" />
+    <Content Include="contents\js\jquery-ui.js" />
+    <Content Include="contents\js\jquery.googlemap.js" />
+    <Content Include="contents\js\jquery.js" />
+    <Content Include="contents\js\jquery.magnific-popup.min.js" />
+    <Content Include="contents\js\jquery.masonry.min.js" />
+    <Content Include="contents\js\jquery.scrollUp.js" />
+    <Content Include="contents\js\owl.carousel.min.js" />
+    <Content Include="contents\js\script.js" />
+    <Content Include="contents\js\stellar.js" />
+    <Content Include="contents\js\timepicker.js" />
+    <Content Include="contents\js\wow.min.js" />
+    <Content Include="contents\Videos\SBTET_AP_Presentation .mp4" />
+    <Content Include="CourseImages\Architectural.jpg" />
+    <Content Include="CourseImages\Automobile.jpg" />
+    <Content Include="CourseImages\Cheical.jpg" />
+    <Content Include="CourseImages\Civil.jpg" />
+    <Content Include="CourseImages\Computers.jpg" />
+    <Content Include="CourseImages\Electrical.jpg" />
+    <Content Include="CourseImages\Electronics.jpg" />
+    <Content Include="CourseImages\InformationTechnology.jpg" />
+    <Content Include="CourseImages\Mechanical.jpg" />
+    <Content Include="CourseImages\Metallurgical.jpg" />
+    <Content Include="CourseImages\Mining.jpg" />
+    <Content Include="CourseImages\Pharmacy.jpg" />
+    <Content Include="favicon.ico" />
+    <Content Include="Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="index.html" />
+    <Content Include="mongocrypt.dll" />
+    <Content Include="packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll" />
+    <Content Include="packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.pdb" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\Content\bootstrap-theme.css" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\Content\bootstrap-theme.min.css" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\Content\bootstrap.css" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\Content\bootstrap.min.css" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\Scripts\bootstrap.js" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\Scripts\bootstrap.min.js" />
+    <Content Include="packages\bootstrap.3.4.1\content\Content\bootstrap-theme.css" />
+    <Content Include="packages\bootstrap.3.4.1\content\Content\bootstrap-theme.min.css" />
+    <Content Include="packages\bootstrap.3.4.1\content\Content\bootstrap.css" />
+    <Content Include="packages\bootstrap.3.4.1\content\Content\bootstrap.min.css" />
+    <Content Include="packages\bootstrap.3.4.1\content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="packages\bootstrap.3.4.1\content\Scripts\bootstrap.js" />
+    <Content Include="packages\bootstrap.3.4.1\content\Scripts\bootstrap.min.js" />
+    <Content Include="packages\bootstrap.3.4.1\LICENSE.txt" />
+    <Content Include="bin\Polycet_Project.dll.config" />
+    <Content Include="bin\roslyn\csc.exe.config" />
+    <Content Include="bin\roslyn\csc.rsp" />
+    <Content Include="bin\roslyn\csi.exe.config" />
+    <Content Include="bin\roslyn\csi.rsp" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.Managed.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\roslyn\vbc.rsp" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="bin\WebApplication1.dll.config" />
+    <Content Include=".vs\SBTETAP\config\applicationhost.config" />
+    <None Include="contents\App_Data\PublishProfiles\sbtetapdemo - FTP.pubxml" />
+    <None Include="contents\App_Data\PublishProfiles\sbtetapdemo - Web Deploy.pubxml" />
+    <None Include="contents\App_Data\PublishProfiles\sbtetaporange - FTP.pubxml" />
+    <None Include="contents\App_Data\PublishProfiles\sbtetaporange - FTP1.pubxml" />
+    <None Include="contents\App_Data\PublishProfiles\sbtetaporange - FTP2.pubxml" />
+    <None Include="contents\App_Data\PublishProfiles\sbtetaporange - ReadOnly - FTP.pubxml" />
+    <None Include="contents\App_Data\PublishProfiles\sbtetaporange - ReadOnly - FTP1.pubxml" />
+    <None Include="contents\App_Data\PublishProfiles\sbtetaporange - ReadOnly - FTP2.pubxml" />
+    <None Include="contents\App_Data\PublishProfiles\sbtetaporange - Web Deploy.pubxml" />
+    <None Include="contents\App_Data\PublishProfiles\sbtetaporange - Web Deploy1.pubxml" />
+    <None Include="contents\App_Data\PublishProfiles\sbtetaporange - Web Deploy2.pubxml" />
+    <Content Include="contents\images\courses\engineer.webp" />
+    <Content Include="contents\images\teachers\staff.webp" />
+    <Content Include="contents\fonts\Flaticon.eot" />
+    <Content Include="contents\fonts\Flaticon.ttf" />
+    <Content Include="contents\fonts\Flaticon.woff" />
+    <Content Include="contents\fonts\fontawesome-webfont.eot" />
+    <Content Include="contents\fonts\fontawesome-webfont.ttf" />
+    <Content Include="contents\fonts\fontawesome-webfont.woff" />
+    <Content Include="contents\fonts\fontawesome-webfont.woff2" />
+    <Content Include="contents\fonts\FontAwesome.otf" />
+    <Content Include="contents\fonts\fonticon\et-line-font\et-line-font\.DS_Store" />
+    <Content Include="contents\fonts\fonticon\et-line-font\et-line-font\fonts\.DS_Store" />
+    <Content Include="contents\fonts\fonticon\et-line-font\et-line-font\fonts\et-line.eot" />
+    <Content Include="contents\fonts\fonticon\et-line-font\et-line-font\fonts\et-line.ttf" />
+    <Content Include="contents\fonts\fonticon\et-line-font\et-line-font\fonts\et-line.woff" />
+    <Content Include="contents\fonts\fonticon\et-line-font\__MACOSX\._et-line-font" />
+    <Content Include="contents\fonts\fonticon\et-line-font\__MACOSX\et-line-font\._.DS_Store" />
+    <Content Include="contents\fonts\fonticon\et-line-font\__MACOSX\et-line-font\._fonts" />
+    <Content Include="contents\fonts\fonticon\et-line-font\__MACOSX\et-line-font\fonts\._.DS_Store" />
+    <Content Include="contents\fonts\fonticon\et-line-font\__MACOSX\et-line-font\fonts\._et-line.eot" />
+    <Content Include="contents\fonts\fonticon\et-line-font\__MACOSX\et-line-font\fonts\._et-line.ttf" />
+    <Content Include="contents\fonts\fonticon\et-line-font\__MACOSX\et-line-font\fonts\._et-line.woff" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Desktop Font\Linearicons-Free.ttf" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Web Font\fonts\Linearicons-Free.eot" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Web Font\fonts\Linearicons-Free.ttf" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Web Font\fonts\Linearicons-Free.woff" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Web Font\fonts\Linearicons-Free.woff2" />
+    <Content Include="contents\fonts\fonticon\Linearicons-Free-v1.0.0\Linearicons-Free-v1.0.0\Web Font\selection.json" />
+    <Content Include="contents\fonts\icofont.eot" />
+    <Content Include="contents\fonts\icofont.ttf" />
+    <Content Include="contents\fonts\icofont.woff" />
+    <Content Include="contents\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="contents\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="contents\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="contents\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="contents\images\about\Affiliation.webp" />
+    <Content Include="libmongocrypt.so" />
+    <Content Include="libmongocrypt.dylib" />
+    <Content Include="Downloads\CitizenCharter.pdf" />
+    <Content Include="Downloads\RTIAct.pdf" />
+    <Content Include="contents\images\infracture\NEW UPDATED RESUME.pdf" />
+    <Content Include="contents\images\infracture\WhatsApp Unknown 2022-04-24 at 3.39.19 PM.zip" />
+    <None Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1-vsdoc.js" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.js" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.min.js" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="packages\jQuery.3.4.1\Tools\jquery-3.4.1.intellisense.js" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.xml" />
+    <Content Include="packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll" />
+    <Content Include="packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.xml" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\system.web.optimization.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\netstandard2.0\System.Net.Http.Formatting.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\netstandard2.0\System.Net.Http.Formatting.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\portable-wp8%252Bnetcore45%252Bnet45%252Bwp81%252Bwpa81\System.Net.Http.Formatting.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\portable-wp8%252Bnetcore45%252Bnet45%252Bwp81%252Bwpa81\System.Net.Http.Formatting.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.xml" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\Icon.png" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\LICENSE.TXT" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\version.txt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csi.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.AppContext.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Collections.Immutable.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Diagnostics.StackTrace.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.IO.FileSystem.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Reflection.Metadata.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\VBCSCompiler.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Win32.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.AppContext.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Collections.Immutable.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Console.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.StackTrace.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Globalization.Calendars.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.Compression.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.Compression.ZipFile.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.FileSystem.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Net.Http.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Net.Sockets.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Reflection.Metadata.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Text.Encoding.CodePages.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.ValueTuple.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.ReaderWriter.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XmlDocument.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XPath.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XPath.XDocument.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\VBCSCompiler.exe" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="packages\Modernizr.2.8.3\Content\Scripts\modernizr-2.8.3.js" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net20\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net20\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net35\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net35\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net40\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net40\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard1.0\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard1.0\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard1.3\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard1.3\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard2.0\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\portable-net40+sl5+win8+wp8+wpa81\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\portable-net40+sl5+win8+wp8+wpa81\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.xml" />
+    <Content Include="packages\RestSharp.106.6.10\lib\net452\RestSharp.dll" />
+    <Content Include="packages\RestSharp.106.6.10\lib\net452\RestSharp.xml" />
+    <Content Include="packages\RestSharp.106.6.10\lib\netstandard2.0\RestSharp.dll" />
+    <Content Include="packages\RestSharp.106.6.10\lib\netstandard2.0\RestSharp.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\net461\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\netstandard1.1\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\netstandard1.1\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\netstandard2.0\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\netstandard2.0\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\LICENSE.TXT" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\net45\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\net45\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\netstandard1.1\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\netstandard1.1\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\netstandard2.0\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\netstandard2.0\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Buffers.4.5.1\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Buffers.4.5.1\version.txt" />
+    <Content Include="packages\System.Memory.4.5.4\lib\net461\System.Memory.dll" />
+    <Content Include="packages\System.Memory.4.5.4\lib\net461\System.Memory.xml" />
+    <Content Include="packages\System.Memory.4.5.4\lib\netstandard1.1\System.Memory.dll" />
+    <Content Include="packages\System.Memory.4.5.4\lib\netstandard1.1\System.Memory.xml" />
+    <Content Include="packages\System.Memory.4.5.4\lib\netstandard2.0\System.Memory.dll" />
+    <Content Include="packages\System.Memory.4.5.4\lib\netstandard2.0\System.Memory.xml" />
+    <Content Include="packages\System.Memory.4.5.4\LICENSE.TXT" />
+    <Content Include="packages\System.Memory.4.5.4\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Memory.4.5.4\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Memory.4.5.4\version.txt" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netstandard1.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netstandard1.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netstandard2.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netstandard2.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\LICENSE.TXT" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\net45\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\net45\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\net46\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\net46\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netstandard1.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netstandard1.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netstandard2.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netstandard2.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\version.txt" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\Icon.png" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netcoreapp2.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netcoreapp2.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\LICENSE.TXT" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\net461\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\net461\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard1.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard2.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard2.1\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard2.1\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\version.txt" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\Icon.png" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\lib\net461\System.Text.Encodings.Web.dll" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\lib\net461\System.Text.Encodings.Web.xml" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\lib\netcoreapp3.0\System.Text.Encodings.Web.dll" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\lib\netcoreapp3.0\System.Text.Encodings.Web.xml" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\lib\netstandard1.0\System.Text.Encodings.Web.dll" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\lib\netstandard1.0\System.Text.Encodings.Web.xml" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\lib\netstandard2.0\System.Text.Encodings.Web.dll" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\lib\netstandard2.0\System.Text.Encodings.Web.xml" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\lib\netstandard2.1\System.Text.Encodings.Web.dll" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\lib\netstandard2.1\System.Text.Encodings.Web.xml" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\LICENSE.TXT" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\version.txt" />
+    <Content Include="packages\System.Text.Json.5.0.0\Icon.png" />
+    <Content Include="packages\System.Text.Json.5.0.0\lib\net461\System.Text.Json.dll" />
+    <Content Include="packages\System.Text.Json.5.0.0\lib\net461\System.Text.Json.xml" />
+    <Content Include="packages\System.Text.Json.5.0.0\lib\netcoreapp3.0\System.Text.Json.dll" />
+    <Content Include="packages\System.Text.Json.5.0.0\lib\netcoreapp3.0\System.Text.Json.xml" />
+    <Content Include="packages\System.Text.Json.5.0.0\lib\netstandard2.0\System.Text.Json.dll" />
+    <Content Include="packages\System.Text.Json.5.0.0\lib\netstandard2.0\System.Text.Json.xml" />
+    <Content Include="packages\System.Text.Json.5.0.0\LICENSE.TXT" />
+    <Content Include="packages\System.Text.Json.5.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Text.Json.5.0.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Text.Json.5.0.0\version.txt" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\lib\netstandard1.0\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\lib\netstandard1.0\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\lib\netstandard2.0\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\LICENSE.TXT" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\version.txt" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\portable-net40+sl4+win8+wp8\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\portable-net40+sl4+win8+wp8\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.5.0\LICENSE.TXT" />
+    <Content Include="packages\System.ValueTuple.4.5.0\ref\net461\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.5.0\ref\net47\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.5.0\ref\portable-net40+sl4+win8+wp8\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.5.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.ValueTuple.4.5.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.ValueTuple.4.5.0\version.txt" />
+    <Content Include="packages\WebGrease.1.6.0\lib\WebGrease.dll" />
+    <Content Include="packages\WebGrease.1.6.0\tools\WG.EXE" />
+    <Content Include="scripts\alasql%400.4.js" />
+    <Content Include="scripts\angular-animate.js" />
+    <Content Include="scripts\angular-animate.min.js" />
+    <Content Include="scripts\angular-datepicker.js" />
+    <Content Include="scripts\angular-material.min.js" />
+    <Content Include="scripts\angular-route.min.js" />
+    <Content Include="scripts\angular-sanitize.js" />
+    <Content Include="scripts\angular-ui-router.js" />
+    <Content Include="scripts\angular-ui-switch.min.js" />
+    <Content Include="scripts\angular.min.1.8.2.js" />
+    <Content Include="scripts\angular.min.js" />
+    <Content Include="scripts\angularjs-crypto.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\cryptojs\components\aes-min.js" />
+    <Content Include="scripts\cryptojs\components\aes.js" />
+    <Content Include="scripts\cryptojs\components\cipher-core-min.js" />
+    <Content Include="scripts\cryptojs\components\cipher-core.js" />
+    <Content Include="scripts\cryptojs\components\core-min.js" />
+    <Content Include="scripts\cryptojs\components\core.js" />
+    <Content Include="scripts\cryptojs\components\enc-base64-min.js" />
+    <Content Include="scripts\cryptojs\components\enc-base64.js" />
+    <Content Include="scripts\cryptojs\components\enc-utf16-min.js" />
+    <Content Include="scripts\cryptojs\components\enc-utf16.js" />
+    <Content Include="scripts\cryptojs\components\evpkdf-min.js" />
+    <Content Include="scripts\cryptojs\components\evpkdf.js" />
+    <Content Include="scripts\cryptojs\components\format-hex-min.js" />
+    <Content Include="scripts\cryptojs\components\format-hex.js" />
+    <Content Include="scripts\cryptojs\components\hmac-min.js" />
+    <Content Include="scripts\cryptojs\components\hmac.js" />
+    <Content Include="scripts\cryptojs\components\lib-typedarrays-min.js" />
+    <Content Include="scripts\cryptojs\components\lib-typedarrays.js" />
+    <Content Include="scripts\cryptojs\components\md5-min.js" />
+    <Content Include="scripts\cryptojs\components\md5.js" />
+    <Content Include="scripts\cryptojs\components\mode-cfb-min.js" />
+    <Content Include="scripts\cryptojs\components\mode-cfb.js" />
+    <Content Include="scripts\cryptojs\components\mode-ctr-gladman-min.js" />
+    <Content Include="scripts\cryptojs\components\mode-ctr-gladman.js" />
+    <Content Include="scripts\cryptojs\components\mode-ctr-min.js" />
+    <Content Include="scripts\cryptojs\components\mode-ctr.js" />
+    <Content Include="scripts\cryptojs\components\mode-ecb-min.js" />
+    <Content Include="scripts\cryptojs\components\mode-ecb.js" />
+    <Content Include="scripts\cryptojs\components\mode-ofb-min.js" />
+    <Content Include="scripts\cryptojs\components\mode-ofb.js" />
+    <Content Include="scripts\cryptojs\components\pad-ansix923-min.js" />
+    <Content Include="scripts\cryptojs\components\pad-ansix923.js" />
+    <Content Include="scripts\cryptojs\components\pad-iso10126-min.js" />
+    <Content Include="scripts\cryptojs\components\pad-iso10126.js" />
+    <Content Include="scripts\cryptojs\components\pad-iso97971-min.js" />
+    <Content Include="scripts\cryptojs\components\pad-iso97971.js" />
+    <Content Include="scripts\cryptojs\components\pad-nopadding-min.js" />
+    <Content Include="scripts\cryptojs\components\pad-nopadding.js" />
+    <Content Include="scripts\cryptojs\components\pad-zeropadding-min.js" />
+    <Content Include="scripts\cryptojs\components\pad-zeropadding.js" />
+    <Content Include="scripts\cryptojs\components\pbkdf2-min.js" />
+    <Content Include="scripts\cryptojs\components\pbkdf2.js" />
+    <Content Include="scripts\cryptojs\components\rabbit-legacy-min.js" />
+    <Content Include="scripts\cryptojs\components\rabbit-legacy.js" />
+    <Content Include="scripts\cryptojs\components\rabbit-min.js" />
+    <Content Include="scripts\cryptojs\components\rabbit.js" />
+    <Content Include="scripts\cryptojs\components\rc4-min.js" />
+    <Content Include="scripts\cryptojs\components\rc4.js" />
+    <Content Include="scripts\cryptojs\components\ripemd160-min.js" />
+    <Content Include="scripts\cryptojs\components\ripemd160.js" />
+    <Content Include="scripts\cryptojs\components\sha1-min.js" />
+    <Content Include="scripts\cryptojs\components\sha1.js" />
+    <Content Include="scripts\cryptojs\components\sha224-min.js" />
+    <Content Include="scripts\cryptojs\components\sha224.js" />
+    <Content Include="scripts\cryptojs\components\sha256-min.js" />
+    <Content Include="scripts\cryptojs\components\sha256.js" />
+    <Content Include="scripts\cryptojs\components\sha3-min.js" />
+    <Content Include="scripts\cryptojs\components\sha3.js" />
+    <Content Include="scripts\cryptojs\components\sha384-min.js" />
+    <Content Include="scripts\cryptojs\components\sha384.js" />
+    <Content Include="scripts\cryptojs\components\sha512-min.js" />
+    <Content Include="scripts\cryptojs\components\sha512.js" />
+    <Content Include="scripts\cryptojs\components\tripledes-min.js" />
+    <Content Include="scripts\cryptojs\components\tripledes.js" />
+    <Content Include="scripts\cryptojs\components\x64-core-min.js" />
+    <Content Include="scripts\cryptojs\components\x64-core.js" />
+    <Content Include="scripts\cryptojs\rollups\aes.js" />
+    <Content Include="scripts\cryptojs\rollups\hmac-md5.js" />
+    <Content Include="scripts\cryptojs\rollups\hmac-ripemd160.js" />
+    <Content Include="scripts\cryptojs\rollups\hmac-sha1.js" />
+    <Content Include="scripts\cryptojs\rollups\hmac-sha224.js" />
+    <Content Include="scripts\cryptojs\rollups\hmac-sha256.js" />
+    <Content Include="scripts\cryptojs\rollups\hmac-sha3.js" />
+    <Content Include="scripts\cryptojs\rollups\hmac-sha384.js" />
+    <Content Include="scripts\cryptojs\rollups\hmac-sha512.js" />
+    <Content Include="scripts\cryptojs\rollups\md5.js" />
+    <Content Include="scripts\cryptojs\rollups\pbkdf2.js" />
+    <Content Include="scripts\cryptojs\rollups\rabbit-legacy.js" />
+    <Content Include="scripts\cryptojs\rollups\rabbit.js" />
+    <Content Include="scripts\cryptojs\rollups\rc4.js" />
+    <Content Include="scripts\cryptojs\rollups\ripemd160.js" />
+    <Content Include="scripts\cryptojs\rollups\sha1.js" />
+    <Content Include="scripts\cryptojs\rollups\sha224.js" />
+    <Content Include="scripts\cryptojs\rollups\sha256.js" />
+    <Content Include="scripts\cryptojs\rollups\sha3.js" />
+    <Content Include="scripts\cryptojs\rollups\sha384.js" />
+    <Content Include="scripts\cryptojs\rollups\sha512.js" />
+    <Content Include="scripts\cryptojs\rollups\tripledes.js" />
+    <Content Include="scripts\dashboard\flex.js" />
+    <Content Include="scripts\dashboard\plugins\datatables\datatables-bs3.js" />
+    <Content Include="scripts\dashboard\plugins\datatables\jquery.dataTables.js" />
+    <Content Include="scripts\dashboard\plugins\moment\moment.min.js" />
+    <Content Include="scripts\dashboard\plugins\popupoverlay\defaults.js" />
+    <Content Include="scripts\dashboard\plugins\popupoverlay\jquery.popupoverlay.js" />
+    <Content Include="scripts\dashboard\plugins\popupoverlay\logout.js" />
+    <Content Include="scripts\date.js" />
+    <Content Include="scripts\datepick.js" />
+    <Content Include="scripts\datetime-picker.js" />
+    <Content Include="scripts\dirPagination.js" />
+    <Content Include="scripts\html2canvas.min.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
+    <Content Include="scripts\jquery-2.1.4.min.js" />
+    <Content Include="scripts\jquery-3.3.1.min.js" />
+    <Content Include="scripts\jquery-ui.js" />
+    <Content Include="scripts\jspdf.min.js" />
+    <Content Include="scripts\jspdf.plugin.autotable.js" />
+    <Content Include="scripts\Main.js" />
+    <Content Include="scripts\moment.js" />
+    <Content Include="scripts\moment.min.js" />
+    <Content Include="scripts\ngStorage.js" />
+    <Content Include="scripts\ng_only_number.js" />
+    <Content Include="scripts\pdf.js" />
+    <Content Include="scripts\pdf.min.js" />
+    <Content Include="scripts\pdfmake.js" />
+    <Content Include="scripts\pdfmake.min.js" />
+    <Content Include="scripts\require.js" />
+    <Content Include="scripts\require.min.js" />
+    <Content Include="scripts\Spinner\angular-loading-spinner.js" />
+    <Content Include="scripts\Spinner\angular-spinner.min.js" />
+    <Content Include="scripts\Spinner\spin.min.js" />
+    <Content Include="scripts\splitimage.js" />
+    <Content Include="scripts\syncfusion\scripts\angular-route.min.js" />
+    <Content Include="scripts\syncfusion\scripts\angular.min.js" />
+    <Content Include="scripts\syncfusion\scripts\bootstrap-notify.js" />
+    <Content Include="scripts\syncfusion\scripts\bootstrap.min.js" />
+    <Content Include="scripts\syncfusion\scripts\CodeMirror\clike.js" />
+    <Content Include="scripts\syncfusion\scripts\CodeMirror\codemirror.js" />
+    <Content Include="scripts\syncfusion\scripts\CodeMirror\codemirror.min.css" />
+    <Content Include="scripts\syncfusion\scripts\CodeMirror\css.js" />
+    <Content Include="scripts\syncfusion\scripts\CodeMirror\htmlmixed.js" />
+    <Content Include="scripts\syncfusion\scripts\CodeMirror\javascript.js" />
+    <Content Include="scripts\syncfusion\scripts\CodeMirror\xml.js" />
+    <Content Include="scripts\syncfusion\scripts\cultures\ej.culture.en-IN.js" />
+    <Content Include="scripts\syncfusion\scripts\cultures\globalize.culture.ar-AE.min.js" />
+    <Content Include="scripts\syncfusion\scripts\cultures\globalize.culture.de-DE.min.js" />
+    <Content Include="scripts\syncfusion\scripts\cultures\globalize.culture.en-US.min.js" />
+    <Content Include="scripts\syncfusion\scripts\cultures\globalize.culture.es-ES.min.js" />
+    <Content Include="scripts\syncfusion\scripts\cultures\globalize.culture.fr-FR.min.js" />
+    <Content Include="scripts\syncfusion\scripts\cultures\globalize.culture.vi-VN.min.js" />
+    <Content Include="scripts\syncfusion\scripts\cultures\globalize.culture.zh-CN.min.js" />
+    <Content Include="scripts\syncfusion\scripts\default.js" />
+    <Content Include="scripts\syncfusion\scripts\ej.core.min.js" />
+    <Content Include="scripts\syncfusion\scripts\ej.grid.min.js" />
+    <Content Include="scripts\syncfusion\scripts\ej.unobtrusive.min.js" />
+    <Content Include="scripts\syncfusion\scripts\ej.web.all.min.js" />
+    <Content Include="scripts\syncfusion\scripts\ej.widget.angular.min.js" />
+    <Content Include="scripts\syncfusion\scripts\ej.widget.ko.min.js" />
+    <Content Include="scripts\syncfusion\scripts\excanvas.min.js" />
+    <Content Include="scripts\syncfusion\scripts\jquery-1.11.3.min.js" />
+    <Content Include="scripts\syncfusion\scripts\jquery-2.1.4.min.js" />
+    <Content Include="scripts\syncfusion\scripts\jquery.easing.1.3.min.js" />
+    <Content Include="scripts\syncfusion\scripts\jquery.globalize.min.js" />
+    <Content Include="scripts\syncfusion\scripts\jquery.validate.min.js" />
+    <Content Include="scripts\syncfusion\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="scripts\syncfusion\scripts\jsondata.min.js" />
+    <Content Include="scripts\syncfusion\scripts\jsondatachart.js" />
+    <Content Include="scripts\syncfusion\scripts\jsongridmerge.js" />
+    <Content Include="scripts\syncfusion\scripts\jsonscheduledata.js" />
+    <Content Include="scripts\syncfusion\scripts\jsonTabWiz.min.js" />
+    <Content Include="scripts\syncfusion\scripts\jsrender.min.js" />
+    <Content Include="scripts\syncfusion\scripts\knockout.min.js" />
+    <Content Include="scripts\syncfusion\scripts\largedata.min.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\Africa.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\Asia.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\ContinentSalesData.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\Continent_CountriesData.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\Country_LatLongPoints.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\Europe.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\FlightRoutes.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\NorthAmerica.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\Oceania.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\ReadMe.txt" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\salesCountry.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\SouthAmerica.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\SyncfusionLocation.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\USA.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\USA_ElectionData.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\USA_State_PopulationData.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\weather.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\WorldMap.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\WorldPopulationData.js" />
+    <Content Include="scripts\syncfusion\scripts\MapsData\WorldSalesData.js" />
+    <Content Include="scripts\syncfusion\scripts\messages_ar.js" />
+    <Content Include="scripts\syncfusion\scripts\onlinedata.js" />
+    <Content Include="scripts\syncfusion\scripts\otherProducts.js" />
+    <Content Include="scripts\syncfusion\scripts\path.js" />
+    <Content Include="scripts\syncfusion\scripts\properties.js" />
+    <Content Include="scripts\syncfusion\scripts\rangeNavigatorSource.fr-FR.js" />
+    <Content Include="scripts\syncfusion\scripts\require.min.js" />
+    <Content Include="scripts\syncfusion\scripts\respond.js" />
+    <Content Include="scripts\syncfusion\scripts\sampleslist.js" />
+    <Content Include="scripts\syncfusion\scripts\templatelocaldata.js" />
+    <Content Include="scripts\syncfusion\scripts\treemapdata.js" />
+    <Content Include="scripts\syncfusion\scripts\xljsondata.js" />
+    <Content Include="scripts\syncfusion\scripts\ZeroClipboard.js" />
+    <Content Include="scripts\syncfusion\scripts\ZeroClipboard.swf" />
+    <Content Include="scripts\toaster.min.js" />
+    <Content Include="scripts\ui-bootstrap-tpls.js" />
+    <Content Include="scripts\ui-cropper.js" />
+    <Content Include="scripts\underscorejs.js" />
+    <Content Include="scripts\xlsx.core.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BLL\SystemUserauth.cs" />
+    <Compile Include="BLL\SystemUserBLL.cs" />
+    <Compile Include="Controllers\AdminService\AdminServiceController.cs" />
+    <Compile Include="Controllers\Common\BaseController.cs" />
+    <Compile Include="Controllers\Common\CommunicationController.cs" />
+    <Compile Include="Controllers\PaymentGateway\BillDeskController.cs" />
+    <Compile Include="Controllers\PreExamination\PreExaminationController.cs" />
+    <Compile Include="Controllers\Systemadministrator\SystemUserController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\person.cs" />
+    <Compile Include="Controllers\StudentRegistrationController.cs" />
+    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CommanMethods.cs" />
+    <Compile Include="Models\ExcelHelper.cs" />
+    <Compile Include="Models\HbException.cs" />
+    <Compile Include="Models\LogUtility.cs" />
+    <Compile Include="Models\MailRequest.cs" />
+    <Compile Include="Models\Security\AuthToken.cs" />
+    <Compile Include="Models\Security\HbCrypt.cs" />
+    <Compile Include="Models\Database\PolycetdbHandler.cs" />
+    <Compile Include="Models\Helper.cs" />
+    <Compile Include="Models\Security\SHA1.cs" />
+    <Compile Include="Models\Security\SystemUserAuth.cs" />
+    <Compile Include="Models\SendSmsInfo.cs" />
+    <Compile Include="Models\StdDetails.cs" />
+    <Compile Include="Models\SystemModules.cs" />
+    <Compile Include="Models\SystemResponse.cs" />
+    <Compile Include="Models\VerifyCasteInfo.cs" />
+    <Compile Include="Models\VerifySmsInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\SystemUserService.cs" />
+    <Compile Include="WebAPIConfig.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\cont\font\fontello.eot" />
+    <Content Include="assets\cont\font\fontello.ttf" />
+    <Content Include="assets\cont\font\fontello.woff" />
+    <Content Include="assets\cont\font\fontello.woff2" />
+    <Content Include="assets\fonts\ElegantIcons.eot" />
+    <Content Include="assets\fonts\ElegantIcons.ttf" />
+    <Content Include="assets\fonts\ElegantIcons.woff" />
+    <Content Include="assets\fonts\ElegantIconsd41d.eot" />
+    <Content Include="assets\fonts\fa-brands-400.eot" />
+    <Content Include="assets\fonts\fa-brands-400.ttf" />
+    <Content Include="assets\fonts\fa-brands-400.woff" />
+    <Content Include="assets\fonts\fa-brands-400.woff2" />
+    <Content Include="assets\fonts\fa-brands-400d41d.eot" />
+    <Content Include="assets\fonts\fa-regular-400.eot" />
+    <Content Include="assets\fonts\fa-regular-400.ttf" />
+    <Content Include="assets\fonts\fa-regular-400.woff" />
+    <Content Include="assets\fonts\fa-regular-400.woff2" />
+    <Content Include="assets\fonts\fa-regular-400d41d.eot" />
+    <Content Include="assets\fonts\fa-solid-900.eot" />
+    <Content Include="assets\fonts\fa-solid-900.ttf" />
+    <Content Include="assets\fonts\fa-solid-900.woff" />
+    <Content Include="assets\fonts\fa-solid-900.woff2" />
+    <Content Include="assets\fonts\fa-solid-900d41d.eot" />
+    <Content Include="assets\fonts\Flaticon.ttf" />
+    <Content Include="assets\fonts\Flaticon.woff" />
+    <Content Include="assets\fonts\fonts\fontawesome-webfont93e3.eot" />
+    <Content Include="assets\fonts\fonts\fontawesome-webfont93e3.ttf" />
+    <Content Include="assets\fonts\fonts\fontawesome-webfont93e3.woff" />
+    <Content Include="assets\fonts\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="assets\fonts\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\fonts\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assets\fonts\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="assets\fonts\fonts\ionicons28b5.ttf" />
+    <Content Include="assets\fonts\fonts\Simple-Line-Icons.woff" />
+    <Content Include="assets\img\yourTitle.pdf" />
+    <Content Include="assets\Mobileapp-icons\config.json" />
+    <Content Include="assets\Mobileapp-icons\font\fontello.eot" />
+    <Content Include="assets\Mobileapp-icons\font\fontello.ttf" />
+    <Content Include="assets\Mobileapp-icons\font\fontello.woff" />
+    <Content Include="assets\Mobileapp-icons\font\fontello.woff2" />
+    <Content Include="assets\site-fonts\Muli-Black.woff" />
+    <Content Include="assets\site-fonts\Muli-Black.woff2" />
+    <Content Include="assets\site-fonts\Muli-BlackItalic.woff" />
+    <Content Include="assets\site-fonts\Muli-BlackItalic.woff2" />
+    <Content Include="assets\site-fonts\Muli-Bold.woff" />
+    <Content Include="assets\site-fonts\Muli-Bold.woff2" />
+    <Content Include="assets\site-fonts\Muli-BoldItalic.woff" />
+    <Content Include="assets\site-fonts\Muli-BoldItalic.woff2" />
+    <Content Include="assets\site-fonts\Muli-ExtraBold.woff" />
+    <Content Include="assets\site-fonts\Muli-ExtraBold.woff2" />
+    <Content Include="assets\site-fonts\Muli-ExtraBoldItalic.woff" />
+    <Content Include="assets\site-fonts\Muli-ExtraBoldItalic.woff2" />
+    <Content Include="assets\site-fonts\Muli-ExtraLight.woff" />
+    <Content Include="assets\site-fonts\Muli-ExtraLight.woff2" />
+    <Content Include="assets\site-fonts\Muli-ExtraLightItalic.woff" />
+    <Content Include="assets\site-fonts\Muli-ExtraLightItalic.woff2" />
+    <Content Include="assets\site-fonts\Muli-Italic.woff" />
+    <Content Include="assets\site-fonts\Muli-Italic.woff2" />
+    <Content Include="assets\site-fonts\Muli-Light.woff" />
+    <Content Include="assets\site-fonts\Muli-Light.woff2" />
+    <Content Include="assets\site-fonts\Muli-LightItalic.woff" />
+    <Content Include="assets\site-fonts\Muli-LightItalic.woff2" />
+    <Content Include="assets\site-fonts\Muli-Regular.woff" />
+    <Content Include="assets\site-fonts\Muli-Regular.woff2" />
+    <Content Include="assets\site-fonts\Muli-SemiBold.woff" />
+    <Content Include="assets\site-fonts\Muli-SemiBold.woff2" />
+    <Content Include="assets\site-fonts\Muli-SemiBoldItalic.woff" />
+    <Content Include="assets\site-fonts\Muli-SemiBoldItalic.woff2" />
+    <Content Include="contents\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="contents\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="contents\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="contents\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="packages.config" />
+    <Content Include="packages\Antlr.3.5.0.2\.signature.p7s" />
+    <Content Include="packages\Antlr.3.5.0.2\Antlr.3.5.0.2.nupkg" />
+    <Content Include="packages\bootstrap.3.4.1\.signature.p7s" />
+    <Content Include="packages\bootstrap.3.4.1\bootstrap.3.4.1.nupkg" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\Content\bootstrap-theme.css.map" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\Content\bootstrap-theme.min.css.map" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\Content\bootstrap.css.map" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\Content\bootstrap.min.css.map" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="packages\bootstrap.3.4.1\content\Content\bootstrap-theme.css.map" />
+    <Content Include="packages\bootstrap.3.4.1\content\Content\bootstrap-theme.min.css.map" />
+    <Content Include="packages\bootstrap.3.4.1\content\Content\bootstrap.css.map" />
+    <Content Include="packages\bootstrap.3.4.1\content\Content\bootstrap.min.css.map" />
+    <Content Include="packages\bootstrap.3.4.1\content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages\bootstrap.3.4.1\content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="packages\bootstrap.3.4.1\content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="packages\bootstrap.3.4.1\content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="packages\jQuery.3.4.1\.signature.p7s" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.min.map" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="packages\jQuery.3.4.1\jQuery.3.4.1.nupkg" />
+    <Content Include="packages\jQuery.3.4.1\Tools\common.ps1" />
+    <Content Include="packages\jQuery.3.4.1\Tools\install.ps1" />
+    <Content Include="packages\jQuery.3.4.1\Tools\uninstall.ps1" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.7\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.7\Content\Web.config.install.xdt" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.7\Content\Web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.7\Microsoft.AspNet.Mvc.5.2.7.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Razor.3.2.7\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.Razor.3.2.7\Microsoft.AspNet.Razor.3.2.7.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\Microsoft.AspNet.Web.Optimization.1.1.3.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.5.2.7\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.5.2.7\Microsoft.AspNet.WebApi.5.2.7.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.7\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.7\Microsoft.AspNet.WebApi.Client.5.2.7.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Core.5.2.7\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Core.5.2.7\Content\web.config.transform" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Core.5.2.7\Microsoft.AspNet.WebApi.Core.5.2.7.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\ApiDescriptionExtensions.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\App_Start\HelpPageConfig.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Controllers\HelpController.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\HelpPage.css.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\HelpPageAreaRegistration.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\HelpPageConfigurationExtensions.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\ModelDescriptions\ModelDescription.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\ModelDescriptions\ParameterDescription.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Models\HelpPageApiModel.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\SampleGeneration\ImageSample.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\SampleGeneration\InvalidSample.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\SampleGeneration\ObjectGenerator.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\SampleGeneration\SampleDirection.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\SampleGeneration\TextSample.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\Api.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\Index.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Help\ResourceModel.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Shared\_Layout.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Web.config" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\_ViewStart.cshtml.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\XmlDocumentationProvider.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Microsoft.AspNet.WebApi.HelpPage.5.2.7.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\Microsoft.AspNet.WebApi.WebHost.5.2.7.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\Content\Web.config.install.xdt" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\Content\Web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\Microsoft.AspNet.WebPages.3.2.7.nupkg" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\Microsoft.Bcl.AsyncInterfaces.5.0.0.nupkg" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\.signature.p7s" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.props" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.props" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\app.config.install.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\app.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\web.config.install.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\app.config.install.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\app.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\web.config.install.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1.nupkg" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\net45\install.ps1" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\net45\uninstall.ps1" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csi.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CSharp.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\VBCSCompiler.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CSharp.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Managed.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\VBCSCompiler.exe.config" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\Microsoft.Web.Infrastructure.1.0.0.0.nupkg" />
+    <Content Include="packages\Modernizr.2.8.3\.signature.p7s" />
+    <Content Include="packages\Modernizr.2.8.3\Modernizr.2.8.3.nupkg" />
+    <Content Include="packages\Modernizr.2.8.3\Tools\common.ps1" />
+    <Content Include="packages\Modernizr.2.8.3\Tools\install.ps1" />
+    <Content Include="packages\Modernizr.2.8.3\Tools\uninstall.ps1" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\.signature.p7s" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\LICENSE.md" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\Newtonsoft.Json.12.0.2.nupkg" />
+    <Content Include="packages\RestSharp.106.6.10\.signature.p7s" />
+    <Content Include="packages\RestSharp.106.6.10\RestSharp.106.6.10.nupkg" />
+    <Content Include="packages\System.Buffers.4.5.1\.signature.p7s" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\netcoreapp2.0\_._" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\uap10.0.16299\_._" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\netcoreapp2.0\_._" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\uap10.0.16299\_._" />
+    <Content Include="packages\System.Buffers.4.5.1\System.Buffers.4.5.1.nupkg" />
+    <Content Include="packages\System.Memory.4.5.4\.signature.p7s" />
+    <Content Include="packages\System.Memory.4.5.4\lib\netcoreapp2.1\_._" />
+    <Content Include="packages\System.Memory.4.5.4\ref\netcoreapp2.1\_._" />
+    <Content Include="packages\System.Memory.4.5.4\System.Memory.4.5.4.nupkg" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\.signature.p7s" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\MonoAndroid10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\MonoTouch10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netcoreapp2.0\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\uap10.0.16299\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\xamarinios10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\xamarinmac20\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\xamarintvos10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\xamarinwatchos10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\MonoAndroid10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\MonoTouch10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netcoreapp2.0\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\uap10.0.16299\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\xamarinios10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\xamarinmac20\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\xamarintvos10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\xamarinwatchos10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\System.Numerics.Vectors.4.5.0.nupkg" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\.signature.p7s" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\System.Runtime.CompilerServices.Unsafe.5.0.0.nupkg" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\.signature.p7s" />
+    <Content Include="packages\System.Text.Encodings.Web.5.0.0\System.Text.Encodings.Web.5.0.0.nupkg" />
+    <Content Include="packages\System.Text.Json.5.0.0\.signature.p7s" />
+    <Content Include="packages\System.Text.Json.5.0.0\System.Text.Json.5.0.0.nupkg" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\.signature.p7s" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\lib\MonoAndroid10\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\lib\MonoTouch10\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\lib\netcoreapp2.1\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\lib\xamarinios10\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\lib\xamarinmac20\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\lib\xamarintvos10\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\lib\xamarinwatchos10\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\ref\MonoAndroid10\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\ref\MonoTouch10\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\ref\netcoreapp2.1\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\ref\xamarinios10\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\ref\xamarinmac20\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\ref\xamarintvos10\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\ref\xamarinwatchos10\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.5.4\System.Threading.Tasks.Extensions.4.5.4.nupkg" />
+    <Content Include="packages\System.ValueTuple.4.5.0\.signature.p7s" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\MonoAndroid10\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\MonoTouch10\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\netcoreapp2.0\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\netstandard2.0\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\uap10.0.16299\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\xamarinios10\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\xamarinmac20\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\xamarintvos10\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\xamarinwatchos10\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\ref\MonoAndroid10\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\ref\MonoTouch10\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\ref\netcoreapp2.0\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\ref\netstandard2.0\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\ref\uap10.0.16299\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\ref\xamarinios10\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\ref\xamarinmac20\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\ref\xamarintvos10\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\ref\xamarinwatchos10\_._" />
+    <Content Include="packages\System.ValueTuple.4.5.0\System.ValueTuple.4.5.0.nupkg" />
+    <Content Include="packages\WebGrease.1.6.0\.signature.p7s" />
+    <Content Include="packages\WebGrease.1.6.0\WebGrease.1.6.0.nupkg" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\PolycetDemo - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\PolycetDemo - FTP1.pubxml" />
+    <None Include="Properties\PublishProfiles\PolycetDemo - FTP2.pubxml" />
+    <None Include="Properties\PublishProfiles\PolycetDemo - FTP3.pubxml" />
+    <None Include="Properties\PublishProfiles\PolycetDemo - ReadOnly - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\PolycetDemo - ReadOnly - FTP1.pubxml" />
+    <None Include="Properties\PublishProfiles\PolycetDemo - ReadOnly - FTP2.pubxml" />
+    <None Include="Properties\PublishProfiles\PolycetDemo - ReadOnly - FTP3.pubxml" />
+    <None Include="Properties\PublishProfiles\PolycetDemo - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\PolycetDemo - Web Deploy1.pubxml" />
+    <None Include="Properties\PublishProfiles\PolycetDemo - Web Deploy2.pubxml" />
+    <None Include="Properties\PublishProfiles\PolycetDemo - Web Deploy3.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Production.config" />
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\SBTETAP\v16\" />
+    <Folder Include="contents\css\font-awesome\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1657</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44355/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('packages\MongoDB.Libmongocrypt.1.6.0\build\MongoDB.Libmongocrypt.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\MongoDB.Libmongocrypt.1.6.0\build\MongoDB.Libmongocrypt.targets'))" />
+  </Target>
+  <Import Project="packages\MongoDB.Libmongocrypt.1.6.0\build\MongoDB.Libmongocrypt.targets" Condition="Exists('packages\MongoDB.Libmongocrypt.1.6.0\build\MongoDB.Libmongocrypt.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

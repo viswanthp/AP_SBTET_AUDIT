@@ -1,0 +1,156 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/CollegePages/CollegeIndustryConnect.css" rel="stylesheet" />
+<script>
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+
+    });
+
+    $(function () {
+        $('#datepicker1').datepicker({
+            changeMonth: false,
+            changeYear: true,
+            showButtonPanel: false,
+            dateFormat: 'dd-mm-yyyy',
+
+            format: "dd-mm-yyyy", // Notice the Extra space at the beginning
+
+            autoclose: true,
+            onClose: function (dateText, inst) {
+                $(this).datepicker('setDate', new Date('2017'));
+            }
+        }).focus(function () {
+            $(".ui-datepicker-month").hide();
+            $(".ui-datepicker-calendar").hide();
+        });
+        $('#datepicker2').datepicker({
+            changeMonth: false,
+            changeYear: true,
+            showButtonPanel: false,
+            dateFormat: 'dd-mm-yyyy',
+
+            format: "dd-mm-yyyy", // Notice the Extra space at the beginning
+
+            autoclose: true,
+            onClose: function (dateText, inst) {
+                $(this).datepicker('setDate', new Date('2017'));
+            }
+        }).focus(function () {
+            $(".ui-datepicker-month").hide();
+            $(".ui-datepicker-calendar").hide();
+        });
+    });
+</script>
+<div ng-controller="CollegeIndustryConnectControlles">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">Industry Connect</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="pannel-bar"> Add Industry Connect</div>
+        <div class="card">
+            <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <label>Industry Name & Address</label>
+                        <div class="form-group">
+                            <textarea ng-model="IndustryName" maxlength="1000" type="text" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Services Offered</label>
+                        <div class="form-group">
+                            <textarea ng-model="ServicesOffered" maxlength="1000" type="text" class="form-control"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 pull-right" ng-show="AddDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddIndustryConnect()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pull-right" ng-show="UpdateDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="UpdateIndustryConnect()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container " ng-show="GetIndustryConnectList.length>0">
+            <div class="col-md-12">
+                <div class="cl-details">
+                    <h2>Industry Connect</h2>
+                </div>
+
+                <div class="table-responsive table-custom-tables-tb">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                            <tr class="cb-1">
+                                <th>S.No</th>
+                                <th class="text-center">Industry Name &Aacute; Address</th>
+                                <th class="text-center">Services Offered</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #fff!important;" ng-repeat="data in GetIndustryConnectList">
+                                <td class="text-left">{{$index + 1}}</td>
+                                <td class="text-left">{{data.IndustryName}}</td>
+                                <td class="text-left">{{data.ServicesOffered}}</td>
+                                <td class="text-center">
+                                    <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="GetIndustryConnectById(data.IndustryConnectID)">
+                                        Edit
+                                    </button>
+                                    <!--<button class="btn-xs btn btn-primary" style="width: 70px;" ng-show="!edit" ng-click="UpdateCollegeLab(data.IndustryInteractionID)">
+                                        Update
+                                    </button>-->
+                                    <button class="btn-xs btn btn-danger" style="width: 70px;" ng-click="DeleteIndustryConnectById(data.IndustryConnectID)">
+                                        Delete
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="" ng-show="GetIndustryInteractionList.length<1">
+            <div class="">
+                <h4 class="no-results text-center">No data Found</h4>
+            </div>
+        </div>
+    </div>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

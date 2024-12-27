@@ -1,0 +1,113 @@
+<style>
+    input[type=checkbox] {
+        margin: 4px 0 0;
+        width: 20px;
+        margin: 0px 10px !important;
+        padding: 0px 10px;
+        height: 20px;
+    }
+</style>
+<style>
+    .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+        z-index: 2;
+        margin-left: -1px;
+        padding: 9px 12px;
+    }
+</style>
+<!--<link href="../../../assets/css/bootstrap.min.css" rel="stylesheet" />-->
+<script type="text/javascript">
+    // When the document is ready
+    $(document).ready(function () {
+
+        $('#example1').datepicker({
+            minViewMode: 'years',
+            autoclose: true,
+            format: 'yyyy'
+        });
+        $('#example2').datepicker({
+            minViewMode: 1,
+            autoclose: true,
+            format: 'mm-yyyy'
+        });
+        $('.tabledate').datepicker({
+            //minViewMode: 1,
+            autoclose: true,
+            format: 'dd-mm-yyyy'
+        });
+        //$('#example4').datepicker({
+        //    //minViewMode: 1,
+        //    autoclose: true,
+        //    //format: 'dd-mm-yyyy'
+        //});
+    });
+</script>
+
+
+<div class="modal-content">
+    <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Edit Details</h2>
+        <button type="button" class="close" ng-click="closeModal()" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+
+        <form>
+
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Scheme :</label>
+                <select class="form-control" id="ExamMonthYears" ng-model="EditData[0].SchemeID"
+                        ng-options="data.SchemeID as data.Scheme for data in GetSchemesList">
+                    <option value="" selected>Select Scheme</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Branch:</label>
+                <select class="form-control" id="ExamMonthYears" ng-model="EditData[0].CourseID"
+                        ng-options="data.CourseID as data.CourseName for data in GetBranchsList">
+                    <option value="" selected>Select Branch</option>
+                </select>
+            </div>
+            <div class="form-group">
+
+                <label class="font-weight-bold"> Exam Month Years :</label>
+                <select class="form-control" id="ExamMonthYears" ng-model="EditData[0].ExamMonthYearID"
+                        ng-options="data.ExamMonthYearID as data.ExamMonthYear for data in EditExamMonthYearData">
+                    <option value="" selected>Select Subject Exam Month Year</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Question Papers Text</label>
+                <div class="form-group">
+                    <input ng-model="EditData[0].QuestionPaperText" maxlength="1000" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Upload File </label>
+                <input type="file" id="studentFile" ng-blur="ChangeFile()" ng-model="data.Url" onchange="angular.element(this).scope().uploadfiles(this, angular.element(this).scope().$index);" class="form-control">
+                <label1 ng-show="imgLabel">{{EditData[0].FileNmae}}</label1>
+            </div>
+
+            <div class="form-group">
+                <label for="date-picker-example"> Question Paper Date(dd/mm/yyyy):</label>
+                <p class="input-group">
+                    <input type="text" disabled show-weeks="false" class="form-control" id="datetimepicker" autocomplete="off" name="QuestionPaperDate" pattern="^(\d{1,2})\/(\d{1,2})\/(\d{4})$" datetime-picker="dd/MM/yyyy" ng-model="EditData[0].QuestionPaperDate | date:'dd-MM-yyyy'" is-open="showFlag3" required style=" margin-left: 0px; border-left-width: 0px; margin-top: 28px; margin-right: 0px; padding-right: 12px; padding-left: 12px; right: 205px;width:278px ">
+                    <span class="input-group-btn" style=" right: 248px; top: 14px;">
+                        <button type="button" class="btn btn-primary" ng-click="showFlag3 = true"><i class="fa fa-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+
+            <div class="col-md-1">
+                <label for="checkbox" class="col-form-label">Active:</label>
+
+                <input type="checkbox" ng-model="EditData[0].Active" />
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" ng-click="UpdateQuestionPaper(EditData[0])">Update</button>
+        <button type="button" class="btn btn-secondary" ng-click="closeModal()">Cancel</button>
+    </div>
+</div>
+

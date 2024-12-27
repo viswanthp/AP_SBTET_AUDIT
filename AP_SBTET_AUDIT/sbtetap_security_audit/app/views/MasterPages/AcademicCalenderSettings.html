@@ -1,0 +1,905 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/MasterPages/AcademicCalenderSettings.css" rel="stylesheet" />
+<script>
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+
+    });
+
+    $(function () {
+        $('#datepicker1').datepicker({
+            changeMonth: false,
+            changeYear: true,
+            showButtonPanel: false,
+            dateFormat: 'yyyy',
+
+            format: " yyyy", // Notice the Extra space at the beginning
+            viewMode: "years",
+            minViewMode: "years",
+            autoclose: true,
+            onClose: function (dateText, inst) {
+                $(this).datepicker('setDate', new Date('2017'));
+            }
+        }).focus(function () {
+            $(".ui-datepicker-month").hide();
+            $(".ui-datepicker-calendar").hide();
+        });
+    });
+</script>
+<link href="/contents/css/Pages/MasterPages/AdminFDP.css" rel="stylesheet" />
+<div ng-controller="AcademicCalenderSetingsController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">Academic Calender</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#Diploma">Diploma</a></li>
+            <li><a data-toggle="tab" href="#DPharmacy">D-PHARMACY</a></li>
+            <li><a data-toggle="tab" href="#IndTraining">Industrial Training</a></li>
+            <li><a data-toggle="tab" href="#UnitTests">Unit Tests</a></li>
+            <li><a data-toggle="tab" href="#Holidays">Holidays</a></li>
+            <li><a data-toggle="tab" href="#CalendarActivities">Activities</a></li>
+            <li><a data-toggle="tab" href="#CalendarNotes">Note</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="Diploma" class="tab-pane fade in active">
+                <div class="sm-spacer"></div>
+                <div class="pannel-bar"> Diploma</div>
+                <div class="card">
+                    <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Academic Year </label>
+                                    <select class="form-control " id="selSession" ng-model="AcademicYear" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetAcademicYearsList">
+                                        <option value="" selected>Select AcademicYear</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Courses</label>
+                                <div class="form-group">
+                                    <input ng-model="Courses" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>CommencementofClassWork</label>
+                                <div class="form-group">
+                                    <input ng-model="CommencementofClassWork" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>LastWorkingDay</label>
+                                <div class="form-group">
+                                    <input ng-model="LastWorkingDay" onkeypress="return /[0-9]/i.test(event.key)" maxlength="10" type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label>CommencementofExaminations</label>
+                                <div class="form-group">
+                                    <input ng-model="CommencementofExaminations" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group" ng-show="AddDetails1=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddUpdateDiplomaCalender(1)">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                                    </button>
+                                </div>
+                                <div class="form-group" ng-show="UpdateDetails1=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddUpdateDiplomaCalender(2)">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="sm-spacer"></div>
+                <div class="sm-spacer"></div>
+                <div ng-show="DiplomaAC.length>0">
+                    <div class="col-md-12">
+                        <div class="cl-details">
+                            <div class="pannel-bar1">Academic Calendar Diploma</div>
+                        </div>
+
+                        <div class="table-responsive table-custom-tables-tb">
+                            <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                                <thead>
+                                    <tr class="cb-1">
+                                        <th>S.No</th>
+                                        <th class="text-center">AcademicYear</th>
+                                        <th class="text-center">Courses</th>
+                                        <th class="text-center">Commencement of ClassWork</th>
+                                        <th class="text-center">Last Working Day</th>
+                                        <th class="text-center">Commencement of Examinations</th>
+                                        <th class="text-center">Status</th>
+                                        <th class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="background-color: #fff!important;" ng-repeat="data in DiplomaAC">
+                                        <td class="text-left">{{$index + 1}}</td>
+                                        <td class="text-left">{{data.AcademicYear}}</td>
+                                        <td class="text-left">{{data.Courses}}</td>
+                                        <td class="text-left">{{data.CommencementofClassWork}}</td>
+                                        <td class="text-left">{{data.LastWorkingDay}}</td>
+                                        <td class="text-left">{{data.CommencementofExaminations}}</td>
+                                        <td class="text-left">
+                                            <span class="text-success" ng-show="data.Active==true">Active </span>
+                                            <span class="text-danger" ng-show="data.Active==false"> InActive</span>
+                                        </td>
+
+                                        <td class="text-center">
+                                            <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="EditDiplomaAC(data.ACDiplomaID)">
+                                                Edit
+                                            </button>
+                                            <button class="btn-xs btn btn-danger" style="width: 70px;" ng-click="deleteDiplomaAC(data.ACDiplomaID)">
+                                                Delete
+                                            </button>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="" ng-show="DiplomaAC.length<1">
+                    <div class="">
+                        <h4 class="no-results text-center">No data Found</h4>
+                    </div>
+                </div>
+
+                <div class="sm-spacer"></div>
+
+                <div class="sm-spacer"></div>
+            </div>
+            <div id="DPharmacy" class="tab-pane fade">
+                <div class="sm-spacer"></div>
+                <div class="pannel-bar">
+                    D-PHARMACY
+                </div>
+                <div class="card">
+                    <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Academic Year </label>
+                                    <select class="form-control " id="selSession" ng-model="PAcademicYear" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetAcademicYearsList">
+                                        <option value="" selected>Select AcademicYear</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Courses</label>
+                                <div class="form-group">
+                                    <input ng-model="PCourses" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>CommencementofClassWork</label>
+                                <div class="form-group">
+                                    <input ng-model="PCommencementofClassWork" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>LastWorkingDay</label>
+                                <div class="form-group">
+                                    <input name="PLastWorkingDay" ng-model="PLastWorkingDay" type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label>CommencementofExaminations</label>
+                                <div class="form-group">
+                                    <input ng-model="PCommencementofExaminations" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group" ng-show="AddDetails2=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddUpdateDpharmCalender(1)">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                                    </button>
+                                </div>
+                                <div class="form-group" ng-show="UpdateDetails2=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="UpdateFDPCalender(2)">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="sm-spacer"></div>
+                <div class="sm-spacer"></div>
+                <div ng-show="DPharmacyAC.length>0">
+                    <div class="col-md-12">
+                        <div class="cl-details">
+                            <div class="pannel-bar1">FDP Attendees Entry</div>
+                        </div>
+
+                        <div class="table-responsive table-custom-tables-tb">
+                            <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                                <thead>
+                                    <tr class="cb-1">
+                                        <th>S.No</th>
+                                        <th class="text-center">AcademicYear</th>
+                                        <th class="text-center">Courses</th>
+                                        <th class="text-center">Commencement of ClassWork</th>
+                                        <th class="text-center">Last Working Day</th>
+                                        <th class="text-center">Commencement of Examinations</th>
+                                        <th class="text-center">Status</th>
+                                        <th class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="background-color: #fff!important;" ng-repeat="data in DPharmacyAC">
+                                        <td class="text-left">{{$index + 1}}</td>
+
+                                        <td class="text-left">{{data.AcademicYear}}</td>
+                                        <td class="text-left">{{data.Courses}}</td>
+                                        <td class="text-left">{{data.CommencementofClassWork}}</td>
+                                        <td class="text-left">{{data.LastWorkingDay}}</td>
+                                        <td class="text-left">{{data.CommencementofExaminations}}</td>
+                                        <td class="text-left">
+                                            <span class="text-success" ng-show="data.Active==true">Active </span>
+                                            <span class="text-danger" ng-show="data.Active==false"> InActive</span>
+                                        </td>
+
+                                        <td class="text-center">
+                                            <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="EditDPharmAC(data.ACDPharmacyID)">
+                                                Edit
+                                            </button>
+                                            <button class="btn-xs btn btn-danger" style="width: 70px;" ng-click="deleteDPharmAC(data.ACDPharmacyID)">
+                                                Delete
+                                            </button>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="" ng-show="DPharmacyAC.length<1">
+                    <div class="">
+                        <h4 class="no-results text-center">No data Found</h4>
+                    </div>
+                </div>
+
+                <div class="sm-spacer"></div>
+
+                <div class="sm-spacer"></div>
+            </div>
+            <div id="IndTraining" class="tab-pane fade">
+                <div class="sm-spacer"></div>
+                <div class="pannel-bar"> Industrial Training</div>
+                <div class="card">
+                    <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Academic Year </label>
+                                    <select class="form-control " id="selSession" ng-model="IAcademicYear" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetAcademicYearsList">
+                                        <option value="" selected>Select AcademicYear</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Remarks</label>
+                                <div class="form-group">
+                                    <input ng-model="IRemarks" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="form-group" ng-show="AddDetails4=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddUpdateIndustryCalender(1)">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                                    </button>
+                                </div>
+                                <div class="form-group" ng-show="UpdateDetails4=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddUpdateIndustryCalender(2)">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="sm-spacer"></div>
+                <div class="sm-spacer"></div>
+                <div ng-show="IndTrainingAC.length>0">
+                    <div class="col-md-12">
+                        <div class="cl-details">
+                            <div class="pannel-bar1">FDP Attendees Entry</div>
+                        </div>
+                        <div class="table-responsive table-custom-tables-tb">
+                            <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                                <thead>
+                                    <tr class="cb-1">
+                                        <th>S.No</th>
+                                        <th class="text-center">AcademicYear</th>
+                                        <th class="text-center">Remarks</th>
+                                        <th class="text-center">Status</th>
+                                        <th class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="background-color: #fff!important;" ng-repeat="data in IndTrainingAC">
+                                        <td class="text-left">{{$index + 1}}</td>
+                                        <td class="text-left">{{data.AcademicYear}}</td>
+                                        <td class="text-left">{{data.Remarks}}</td>
+                                        <td class="text-left">
+                                            <span class="text-success" ng-show="data.Active==true">Active </span>
+                                            <span class="text-danger" ng-show="data.Active==false"> InActive</span>
+                                        </td>
+
+                                        <td class="text-center">
+                                            <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="EditIndustrialTraining(data.ACIndTrainingID)">
+                                                Edit
+                                            </button>
+                                            <button class="btn-xs btn btn-danger" style="width: 70px;" ng-click="deleteIndustrialTraining(data.ACIndTrainingID)">
+                                                Delete
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="" ng-show="IndTrainingAC.length<1">
+                    <div class="">
+                        <h4 class="no-results text-center">No data Found</h4>
+                    </div>
+                </div>
+                <div class="sm-spacer"></div>
+                <div class="sm-spacer"></div>
+            </div>
+            <div id="UnitTests" class="tab-pane fade">
+                <div class="sm-spacer"></div>
+                <div class="pannel-bar"> Unit Tests</div>
+                <div class="card">
+                    <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Academic Year </label>
+                                    <select class="form-control " id="selSession" ng-model="UAcademicYear" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetAcademicYearsList">
+                                        <option value="" selected>Select AcademicYear</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Courses</label>
+                                <div class="form-group">
+                                    <input ng-model="UCourses" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Unit Test </label>
+                                <div class="form-group">
+                                    <input ng-model="UnitTest" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Unit Test From</label>
+                                <div class="form-group">
+                                    <input ng-model="UnitTestFrom" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Unit Test To</label>
+                                <div class="form-group">
+                                    <input ng-model="UnitTestTo" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group" ng-show="AddDetails6=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddUpdateUnitTest(1)">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                                    </button>
+                                </div>
+                                <div class="form-group" ng-show="UpdateDetails6=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddUpdateUnitTest(2)">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="sm-spacer"></div>
+                <div class="sm-spacer"></div>
+                <div ng-show="UnitTestsAC.length>0">
+                    <div class="col-md-12">
+                        <div class="cl-details">
+                            <div class="pannel-bar1">FDP Attendees Entry</div>
+                        </div>
+                        <div class="table-responsive table-custom-tables-tb">
+                            <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                                <thead>
+                                    <tr class="cb-1">
+                                        <th>S.No</th>
+                                        <th class="text-center">AcademicYear</th>
+                                        <th class="text-center">Courses</th>
+                                        <th class="text-center">Unit Test</th>
+                                        <th class="text-center">Unit Test From</th>
+                                        <th class="text-center">Unit Test To</th>
+                                        <th class="text-center">Status</th>
+                                        <th class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="background-color: #fff!important;" ng-repeat="data in UnitTestsAC">
+                                        <td class="text-left">{{$index + 1}}</td>
+                                        <td class="text-left">{{data.AcademicYear}}</td>
+                                        <td class="text-left">{{data.Courses}}</td>
+                                        <td class="text-left">{{data.UnitTest}}</td>
+                                        <td class="text-left">{{data.UnitTestFrom}}</td>
+                                        <td class="text-left">{{data.UnitTestTo}}</td>
+                                        <td class="text-left">
+                                            <span class="text-success" ng-show="data.Active==true">Active </span>
+                                            <span class="text-danger" ng-show="data.Active==false"> InActive</span>
+                                        </td>
+
+                                        <td class="text-center">
+                                            <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="EditUnitTests(data.ACUnitTestsID)">
+                                                Edit
+                                            </button>
+                                            <button class="btn-xs btn btn-danger" style="width: 70px;" ng-click="deleteUnitTests(data.ACUnitTestsID)">
+                                                Delete
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="" ng-show="UnitTestsAC.length<1">
+                    <div class="">
+                        <h4 class="no-results text-center">No data Found</h4>
+                    </div>
+                </div>
+                <div class="sm-spacer"></div>
+                <div class="sm-spacer"></div>
+            </div>
+
+            <div id="Holidays" class="tab-pane fade">
+                <div class="sm-spacer"></div>
+                <div class="pannel-bar"> Holidays</div>
+                <div class="card">
+                    <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Academic Year </label>
+                                    <select class="form-control " id="selSession" ng-model="HAcademicYear" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetAcademicYearsList">
+                                        <option value="" selected>Select AcademicYear</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Courses</label>
+                                <div class="form-group">
+                                    <input ng-model="HCourses" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Holidays From</label>
+                                <div class="form-group">
+                                    <input ng-model="HolidaysFrom" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Holidays To</label>
+                                <div class="form-group">
+                                    <input ng-model="HolidaysTo" onkeypress="return /[0-9]/i.test(event.key)" maxlength="10" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group" ng-show="AddDetails2=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddUpdateHolidaysCalender(1)">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                                    </button>
+                                </div>
+                                <div class="form-group" ng-show="UpdateDetails2=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddUpdateHolidaysCalender(2)">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="sm-spacer"></div>
+                <div class="sm-spacer"></div>
+                <div ng-show="DPharmacyAC.length>0">
+                    <div class="col-md-12">
+                        <div class="cl-details">
+                            <div class="pannel-bar1">FDP Attendees Entry</div>
+                        </div>
+
+                        <div class="table-responsive table-custom-tables-tb">
+                            <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                                <thead>
+                                    <tr class="cb-1">
+                                        <th>S.No</th>
+                                        <th class="text-center">AcademicYear</th>
+                                        <th class="text-center">Courses</th>
+                                        <th class="text-center">Holidays From</th>
+                                        <th class="text-center">Holidays To</th>
+                                        <th class="text-center">Status</th>
+                                        <th class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="background-color: #fff!important;" ng-repeat="data in HolidaysAC">
+                                        <td class="text-left">{{$index + 1}}</td>
+
+                                        <td class="text-left">{{data.AcademicYear}}</td>
+                                        <td class="text-left">{{data.Courses}}</td>
+                                        <td class="text-left">{{data.HolidayFrom}}</td>
+                                        <td class="text-left">{{data.HolidayTo}}</td>
+                                        <td class="text-left">
+                                            <span class="text-success" ng-show="data.Active==true">Active </span>
+                                            <span class="text-danger" ng-show="data.Active==false"> InActive</span>
+                                        </td>
+
+                                        <td class="text-center">
+                                            <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="EditHolidays(data.ACHolidaysID)">
+                                                Edit
+                                            </button>
+                                            <button class="btn-xs btn btn-danger" style="width: 70px;" ng-click="deleteHolidays(data.ACHolidaysID)">
+                                                Delete
+                                            </button>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="" ng-show="HolidaysAC.length<1">
+                    <div class="">
+                        <h4 class="no-results text-center">No data Found</h4>
+                    </div>
+                </div>
+                <div class="sm-spacer"></div>
+                <div class="sm-spacer"></div>
+            </div>
+            <div id="CalendarActivities" class="tab-pane fade">
+                <div class="sm-spacer"></div>
+                <div class="pannel-bar"> Calendar Activities</div>
+                <div class="card">
+                    <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Academic Year </label>
+                                    <select class="form-control " id="selSession" ng-model="CAAcademicYear" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetAcademicYearsList">
+                                        <option value="" selected>Select AcademicYear</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Subject</label>
+                                <div class="form-group">
+                                    <input ng-model="Subject" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Remarks</label>
+                                <div class="form-group">
+                                    <input ng-model="CARemarks" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group" ng-show="AddDetails7=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddUpdateCalenderActivities(1)">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                                    </button>
+                                </div>
+                                <div class="form-group" ng-show="UpdateDetails7=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddUpdateCalenderActivities(2)">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="sm-spacer"></div>
+                <div class="sm-spacer"></div>
+                <div ng-show="ActivitiesAC.length>0">
+                    <div class="col-md-12">
+                        <div class="cl-details">
+                            <div class="pannel-bar1">FDP Attendees Entry</div>
+                        </div>
+                        <div class="table-responsive table-custom-tables-tb">
+                            <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                                <thead>
+                                    <tr class="cb-1">
+                                        <th>S.No</th>
+                                        <th class="text-center">AcademicYear</th>
+                                        <th class="text-center">Remarks</th>
+                                        <th class="text-center">Status</th>
+                                        <th class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="background-color: #fff!important;" ng-repeat="data in ActivitiesAC">
+                                        <td class="text-left">{{$index + 1}}</td>
+                                        <td class="text-left">{{data.AcademicYear}}</td>
+                                        <td class="text-left">{{data.Remarks}}</td>
+                                        <td class="text-left">
+                                            <span class="text-success" ng-show="data.Active==true">Active </span>
+                                            <span class="text-danger" ng-show="data.Active==false"> InActive</span>
+                                        </td>
+
+                                        <td class="text-center">
+                                            <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="EditActivities(data.ACActivitiesID)">
+                                                Edit
+                                            </button>
+                                            <button class="btn-xs btn btn-danger" style="width: 70px;" ng-click="deleteActivities(data.ACActivitiesID)">
+                                                Delete
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="" ng-show="ActivitiesAC.length<1">
+                    <div class="">
+                        <h4 class="no-results text-center">No data Found</h4>
+                    </div>
+                </div>
+                <div class="sm-spacer"></div>
+                <div class="sm-spacer"></div>
+            </div>
+            <div id="CalendarNotes" class="tab-pane fade">
+                <div class="sm-spacer"></div>
+                <div class="pannel-bar"> Note</div>
+                <div class="card">
+                    <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Academic Year </label>
+                                    <select class="form-control " id="selSession" ng-model="CAcademicYear" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetAcademicYearsList">
+                                        <option value="" selected>Select AcademicYear</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Remarks</label>
+                                <div class="form-group">
+                                    <input ng-model="CRemarks" maxlength="1000" type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="form-group" ng-show="AddDetails5=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddUpdateCalendarNotes(1)">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                                    </button>
+                                </div>
+                                <div class="form-group" ng-show="UpdateDetails5=='1'">
+                                    <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddUpdateCalendarNotes(2)">
+                                        <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="sm-spacer"></div>
+                <div class="sm-spacer"></div>
+                <div ng-show="CalendarNotesAC.length>0">
+                    <div class="col-md-12">
+                        <div class="cl-details">
+                            <div class="pannel-bar1">Calendar Notes</div>
+                        </div>
+                        <div class="table-responsive table-custom-tables-tb">
+                            <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                                <thead>
+                                    <tr class="cb-1">
+                                        <th>S.No</th>
+                                        <th class="text-center">AcademicYear</th>
+                                        <th class="text-center">Remarks</th>
+                                        <th class="text-center">Status</th>
+                                        <th class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="background-color: #fff!important;" ng-repeat="data in CalendarNotesAC">
+                                        <td class="text-left">{{$index + 1}}</td>
+                                        <td class="text-left">{{data.AcademicYear}}</td>
+                                        <td class="text-left">{{data.Remarks}}</td>
+                                        <td class="text-left">
+                                            <span class="text-success" ng-show="data.Active==true">Active </span>
+                                            <span class="text-danger" ng-show="data.Active==false"> InActive</span>
+                                        </td>
+
+                                        <td class="text-center">
+                                            <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="EditNotes(data.ACNotesID)">
+                                                Edit
+                                            </button>
+                                            <button class="btn-xs btn btn-danger" style="width: 70px;" ng-click="deleteNotes(data.ACNotesID)">
+                                                Delete
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="" ng-show="CalendarNotesAC.length<1">
+                    <div class="">
+                        <h4 class="no-results text-center">No data Found</h4>
+                    </div>
+                </div>
+                <div class="sm-spacer"></div>
+                <div class="sm-spacer"></div>
+            </div>
+
+        </div>
+            <!--<div class="pannel-bar"> Add Academic Calender</div>
+    <div class="card">
+        <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label>Academic Year </label>
+                        <select class="form-control " id="selSession" ng-model="AcademicYear" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetAcademicYearsList">
+                            <option value="" selected>Select Academic Year</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label>Academic Calender Name</label>
+                    <div class="form-group">
+                        <input ng-model="Name" maxlength="1000" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label>Academic Calender Path</label>
+                    <div class="form-group">
+                        <input class="form-control" id="PdfFile" type="file" placeholder="" maxlength="10" onchange="angular.element(this).scope().uploadPdf()" accept=".doc,.docx,.pdf,.zip,.7zip,.rar,.RAR,.ZIP,.PDF,.DOC,.DOCX,.7ZIP" ng-model="Photo" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 pull-right" ng-show="AddDetails=='1'">
+                    <div class="form-group">
+                        <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddAcademicCalender()">
+                            <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-2 pull-right" ng-show="UpdateDetails=='1'">
+                    <div class="form-group">
+                        <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="UpdateAcademicCalender()">
+                            <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>-->
+
+
+            <div class="sm-spacer"></div>
+            <div class="sm-spacer"></div>
+            <!--<div class="container " ng-show="GetAcademicCalenderList.length > 0">
+                <div class="col-md-12">
+                    <div class="cl-details">
+                        <h2>Academic Calender</h2>
+                    </div>
+
+                    <div class="table-responsive table-custom-tables-tb">
+                        <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                            <thead>
+                                <tr class="cb-1">
+                                    <th>S.No</th>
+                                    <th class="text-center">Calendar Name</th>
+                                    <th class="text-center">Academic Year</th>
+                                    <th class="text-center">Path</th>
+                                    <th class="text-center">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background-color: #fff!important;" ng-repeat="data in GetAcademicCalenderList">
+                                    <td class="text-left">{{$index + 1}}</td>
+                                    <td class="text-left">{{data.CalendarName}}</td>
+                                    <td class="text-left">{{data.AcademicYear}}</td>
+                                    <td class="text-left">{{data.CalendarDownloadPath}}</td>
+
+                                    <td class="text-center">
+                                        <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="GetAcademicCalenderById(data.CalendarID)">
+                                            Edit
+                                        </button>
+                                        <button class="btn-xs btn btn-primary" style="width: 70px;" ng-show="!edit" ng-click="UpdateCollegeLab(data.CalendarID)">
+                                            Update
+                                        </button>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+            <div class="" ng-show="GetAcademicCalenderList.length<1">
+                <div class="">
+                    <h4 class="no-results text-center">No data Found</h4>
+                </div>
+            </div>-->
+        </div>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

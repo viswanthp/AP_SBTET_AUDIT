@@ -1,0 +1,114 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/MasterPages/LabSettings.css" rel="stylesheet" />
+<script>
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });</script>
+<div ng-controller="LabSettingsController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">Labs</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="pannel-bar"> Add Labs</div>
+        <div class="card">
+            <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Lab Name</label>
+                        <div class="form-group">
+                            <input ng-model="Lab" placeholder="Enter Lab Name" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-2" ng-show="AddDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddLab()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-2" ng-show="UpdateDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="UpdateLab()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container " ng-show="GetLabsList.length>0">
+            <div class="col-md-12">
+                <div class="cl-details">
+                    <h2>Labs</h2>
+                </div>
+
+                <div class="table-responsive table-custom-tables-tb">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                            <tr class="cb-1">
+                                <th>S.No</th>
+                                <th class="text-center">Lab Name</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #fff!important;" ng-repeat="data in GetLabsList">
+                                <td class="text-left">{{$index + 1}}</td>
+                                <td class="text-left">{{data.Lab}}</td>
+                                <td class="text-left">{{data.Active}}</td>
+                                <td class="text-center">
+                                    <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="GetLabById(data.Id)">
+                                        Edit
+                                    </button>
+                                    <button class="btn-xs btn btn-primary" style="width: 70px;" ng-show="!edit" ng-click="UpdateLab(data.Id)">
+                                        Update
+                                    </button>
+                                    <button class="btn-xs btn btn-danger" ng-show="data.Active==false" style="width: 70px;" ng-click="DeleteLabById(data.Id)">
+                                        InActive
+                                    </button>
+                                    <button class="btn-xs btn btn-success" ng-show="data.Active==true" style="width: 70px;" ng-click="DeleteLabById(data.Id)">
+                                        Active
+                                    </button>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="" ng-show="GetLabsList.length<1">
+            <div class="">
+                <h4 class="no-results text-center">No data Found</h4>
+            </div>
+        </div>
+    </div>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

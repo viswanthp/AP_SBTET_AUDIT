@@ -1,0 +1,33 @@
+
+form.white-popup-block .login-social {
+    padding: 25px;
+    padding-bottom: 220px;
+}
+
+form.white-popup-block label {
+    float: left;
+    color: #1F497D;
+    font-weight: bold;
+}
+
+.verify_margin {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.login-Sidepanel {
+    color: #1F497D;
+    background: linear-gradient(90deg, rgba(237,245,255,1) 0%, rgba(204,223,247,1) 100%);
+    /* background: linear-gradient(to bottom right, rgba(237,245,255,1), rgba(204,223,247,1));*/
+    padding: 30px;
+    padding-bottom: 375px;
+}
+
+.pol_reg {
+    color: #1F497D;
+}
+
+.link-top {
+    margin-bottom: 10px;
+    cursor: pointer;
+}

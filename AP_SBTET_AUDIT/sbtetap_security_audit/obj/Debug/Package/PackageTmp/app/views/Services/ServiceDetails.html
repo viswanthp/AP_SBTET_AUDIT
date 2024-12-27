@@ -1,0 +1,1328 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/Services/ServiceDetails.css" rel="stylesheet" />
+<div ng-controller="ServiceDetailsController">
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2>Service Details</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a> &gt; <a ui-sref="index.CollegesList">Colleges</a>&gt; <a ui-sref="index.CollegesList.DiplomaColleges">Diploma Colleges</a>&gt; <a ui-sref="index.CollegesList.ServiceDetails">Service Details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="xs-spacer"></div>
+
+    <div class="container">
+        <div class="col-md-12">
+            <!--<div class="col-md-3">
+                <div class="form-group">
+                    <label>Services</label>
+                    <select class="form-control" ng-model="Region" name="Semester" ng-change="GetDistricts()" required="">
+                        <option value="" selected="selected">Select Service</option>-->
+            <!-- ngRepeat: data in Shifts -->
+            <!--<option value="1" class="ng-binding ng-scope">
+                Student Services
+            </option>-->
+            <!-- end ngRepeat: data in Shifts -->
+            <!--<option value="1" class="ng-binding ng-scope">
+                College Services
+            </option>-->
+            <!-- end ngRepeat: data in Shifts -->
+            <!--</select>
+                </div>
+            </div>-->
+            <!--<div class="col-md-3">
+                <button class="btn btn-success" style=" margin-top: 30px; " ng-click="GetCollegeList()">Submit</button>
+            </div>-->
+        </div>
+        <div class="col-md-12">
+            <div class="irs-accordion-two">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
+                                    <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                    <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                    Interim Certificate
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne1">
+                            <div class="panel-body">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Procedure for Applying for Interim Certificate</span></u></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>:</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>A interim certificate is a certificate that educational institutions provide when a student leaves the organization after completed the diploma, student submit the same to the University authorities / Recruitment agencies for prosecuting higher studies /employment in other states /countries.</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>To get Interim Certificate,&nbsp;</span><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Submit &nbsp;an application downloaded from the button given below, fill it and address it to <strong>The Secretary, State Board of Technical Education and Training, #11-307, Garudadri KK &nbsp; Towers, Sri Lakshmi Narasimha Colony, Service Road, Mangalagiri, Guntur &ndash; 522503.</strong></span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Documents to be submitted&nbsp;</span></u></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>(either through post or in person)</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: decimal;margin-left:44px;">
+                                        <li class="txt_blt" class="myLst" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Filled in application form, which is downloaded from &nbsp;</span><a href="https://sbtetap.gov.in/Screens/EligibilityandForms.aspx"><span style='font-family:"Bookman Old Style",serif;'>https://sbtetap.gov.in/Screens/EligibilityandForms.aspx</span></a></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ol style="list-style-type: undefined;margin-left:44px;">
+                                    <li class="txt_blt" class="myLst"><span style="font-size:11.5pt;;">&nbsp; </span></li>
+                                </ol>
+                                <ol start="1" style="list-style-type: upper-alpha;">
+                                    <li class="txt_blt"><strong><u><span style='font-family:"Bookman Old Style",serif;font-size:11.5pt;'>Manual Procedure: &nbsp;(Attach Demand Draft)&nbsp;</span></u></strong></li>
+                                </ol>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'><span style="text-decoration:none;">&nbsp;</span></span></u></strong></p>
+                                <p style="margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Demand Draft &nbsp;drawn in favor of <strong>The SECRETARY, SBTET. ANDHRA PRADESH</strong>&nbsp; for&nbsp;</span><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Rs.600/-</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;for each migration certificate.</span></p>
+                                <p style="margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><em><span style='font-size:35px;font-family:"Bookman Old Style",serif;'>(or)</span></em></strong></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol start="2" style="margin-bottom:0cm;list-style-type: upper-alpha;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-family:"Bookman Old Style",serif;font-size:11.5pt;'>Online Payment Procedure: &nbsp;( Attach Online Fee Payment Receipt)&nbsp;</span></u></strong></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Open the link &nbsp;</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;"><a href="https://apsbtet.net/ONLINESERVICES"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>https://apsbtet.net/ONLINESERVICES</span></a></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;">
+                                        <span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Register Your PIN &nbsp;under Student Option. &nbsp;Through&nbsp;</span>
+                                        <ul style="margin-bottom:0cm;margin-top:0cm;" type="circle">
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on &nbsp;Student</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;Click Pin Registration&nbsp;</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>( Fill the Online form and Upload Photo )</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click &nbsp; Register.&nbsp;</span></li>
+                                        </ul>
+                                    </li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Services Tab&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Pay Fee</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Type Your Pin &nbsp;and click on Search</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Choose the service type &nbsp; as <strong><em>Interim Certificate</em></strong></span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Choose Exam held in month &amp; Year</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Write the Reason&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Continue</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Payment Summary Will be displayed.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Enter Captcha</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Proceed &nbsp;Payment&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Follow the Instructions of Bill Desk Payment Screen.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Download the Receipt &nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Attach the receipt.</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Photo copies of the All Diploma marks memos</span><span style='font-family:"Bookman Old Style",serif;'>.</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:55.5pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Note 1</span></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;Interim Certificate will be issued within two days with the availability of SBTET officers after submitting valid application.&nbsp;</span></p>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn"><a target="_blank" class="pay_btn" href="https://apsbtet.ap.gov.in/Student_Services/INTERIM_CERTIFICATE.doc">Download Application Form</a> </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn pull-right"><a target="_blank" class="pay_btn" href="https://apsbtet.net/onlineservices">Pay Fee>></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
+                                    <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                    <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                    Migration Certificate
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne2">
+                            <div class="panel-body">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Procedure for Applying for Migration &nbsp;Certificate</span></u></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>:</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>A migration certificate is a certificate that educational institutions provide when a student leaves the organization. When a student transfers from one institution to another or from one board to another for higher education, this certificate is necessary. Without it, student cannot continue their education beyond Diploma.</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>To get Migration Certificate,&nbsp;</span><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Submit &nbsp;an application downloaded from the button given below, fill it and address it to <strong>The Secretary, State Board of Technical Education and Training, #11-307, Garudadri KK &nbsp; Towers, Sri Lakshmi Narasimha Colony, Service Road, Mangalagiri, Guntur &ndash; 522503.</strong></span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Documents to be submitted&nbsp;</span></u></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>(either through post or in person)</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: decimal;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Filled in application form, which is downloaded from &nbsp;</span><a href="https://sbtetap.gov.in/Screens/EligibilityandForms.aspx"><span style='font-family:"Bookman Old Style",serif;'>https://sbtetap.gov.in/Screens/EligibilityandForms.aspx</span></a></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ol style="list-style-type: undefined;margin-left:44px;">
+                                    <li class="txt_blt"><span style="font-size:11.5pt;;">&nbsp;</span></li>
+                                </ol>
+                                <ol start="1" style="list-style-type: upper-alpha;">
+                                    <li class="txt_blt"><strong><u><span style='font-family:"Bookman Old Style",serif;font-size:11.5pt;'>Manual Procedure: &nbsp;(Attach Demand Draft)&nbsp;</span></u></strong></li>
+                                </ol>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:72.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'><span style="text-decoration:none;">&nbsp;</span></span></u></strong></p>
+                                <p style="margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Demand Draft &nbsp;drawn in favor of <strong>The SECRETARY, SBTET. ANDHRA PRADESH</strong>&nbsp; for&nbsp;</span><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Rs.800/-</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;for migration certificate.</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><em><span style='font-size:35px;font-family:"Bookman Old Style",serif;'>(or)</span></em></strong></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol start="2" style="margin-bottom:0cm;list-style-type: upper-alpha;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-family:"Bookman Old Style",serif;font-size:11.5pt;'>Online Payment Procedure: &nbsp;( Attach Online Fee Payment Receipt)&nbsp;</span></u></strong></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Open the link &nbsp;</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;"><a href="https://apsbtet.net/ONLINESERVICES"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>https://apsbtet.net/ONLINESERVICES</span></a></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;">
+                                        <span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Register Your PIN &nbsp;under Student Option. &nbsp;Through&nbsp;</span>
+                                        <ul style="margin-bottom:0cm;margin-top:0cm;" type="circle">
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on &nbsp;Student</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;Click Pin Registration&nbsp;</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>( Fill the Online form and Upload Photo )</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click &nbsp; Register.&nbsp;</span></li>
+                                        </ul>
+                                    </li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Services Tab&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Pay Fee</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Type Your Pin &nbsp;and click on Search</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Choose the service type &nbsp; as <strong><em>Migration Certificate</em></strong></span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Apply.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Continue</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Payment Summary Will be displayed.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Enter Captcha</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Proceed &nbsp;Payment&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Follow the Instructions of Bill Desk Payment Screen.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Download the Receipt &nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Attach the receipt.</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Photo copies of All Diploma marks memos</span><span style='font-family:"Bookman Old Style",serif;'>.</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:55.5pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Note 1</span></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;Migration Certificate will be issued within two days with the availability of SBTET officers after submitting valid application.</span></p>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn"><a target="_blank" class="pay_btn" href="https://apsbtet.ap.gov.in/Student_Services/MIGRATION_CERTIFICATE.doc">Download Application Form</a> </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn pull-right"><a target="_blank" class="pay_btn" href="https://apsbtet.net/onlineservices">Pay Fee>></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne3">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
+                                    <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                    <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                    Name Correction
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne3">
+                            <div class="panel-body">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Procedure for Applying for Full Name Correction/Father Name correction</span></u></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>:</span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>For Applying Full Name Correction/Father Name correction,&nbsp;</span><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Submit &nbsp;an application downloaded from the button given below, fill it and address it to <strong>The Secretary, State Board of Technical Education and Training, #11-307, Garudadri KK &nbsp; Towers, Sri Lakshmi Narasimha Colony, Service Road, Mangalagiri, Guntur &ndash; 522503.</strong></span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Documents to be submitted&nbsp;</span></u></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>(either through post or in person)</span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: decimal;margin-left:21.5px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Filled in application form, which is downloaded from &nbsp;</span><a href="https://sbtetap.gov.in/Screens/EligibilityandForms.aspx"><span style='font-family:"Bookman Old Style",serif;'>https://sbtetap.gov.in/Screens/EligibilityandForms.aspx</span></a></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:21.5px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">&nbsp;</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>A. Manual Procedure: &nbsp;(Attach Demand Draft)&nbsp;</span></u></strong></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:31.5pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Demand Draft &nbsp;drawn in favor of <strong>The SECRETARY, SBTET. ANDHRA PRADESH</strong> for&nbsp;</span><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Rs. 300/-</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;for&nbsp;</span><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Full Name Correction/Father Name correction.</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><em><span style='font-size:35px;font-family:"Bookman Old Style",serif;'>(or)</span></em></strong></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:31.5pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>B.Online Payment Procedure: &nbsp;( Attach Online Fee Payment Receipt)&nbsp;</span></u></strong></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Open the link &nbsp;</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;"><a href="https://apsbtet.net/ONLINESERVICES"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>https://apsbtet.net/ONLINESERVICES</span></a></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;">
+                                        <span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Register Your PIN &nbsp;under Student Option. &nbsp;Through&nbsp;</span>
+                                        <ul style="margin-bottom:0cm;margin-top:0cm;" type="circle">
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on &nbsp;Student</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;Click Pin Registration&nbsp;</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>( Fill the Online form and Upload Photo )</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click &nbsp; Register.&nbsp;</span></li>
+                                        </ul>
+                                    </li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Services Tab&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Pay Fee</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Type Your Pin &nbsp;and click on Search</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Choose the service type &nbsp; as <strong><em>Name correction</em></strong></span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Select the options &nbsp; Student or Father or Both</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Enter the details&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Continue</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Payment Summary Will be displayed.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Enter Captcha</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Proceed &nbsp;Payment&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Follow the Instructions of Bill Desk Payment Screen.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Download the Receipt &nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Attach the receipt.</span></li>
+                                </ul>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:21.5px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Photo copy of SSC certificate of the candidate.</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:21.5px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Copy of Admission register required only for full name correction.</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:21.5px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Copy of original Diploma certificate/Memorandum of marks.</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Note 1</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>:&nbsp;</span><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Full Name Correction/Father Name correction will be issued within two days with the availability of SBTET officers after submitting valid application.&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn"><a target="_blank" class="pay_btn" href="https://apsbtet.ap.gov.in/Student_Services/NAME_CORRECTION.doc">Download Application Form</a> </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn pull-right"><a target="_blank" class="pay_btn" href="https://apsbtet.net/onlineservices">Pay Fee>></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne4">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne4" aria-expanded="false" aria-controls="collapseOne4">
+                                    <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                    <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                    Transcripts
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne4">
+                            <div class="panel-body">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Procedure for Applying for Transcripts Certificate</span></u></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>:</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>A transcript certificate is nothing but a document that acts as proof of your educational qualifications. It includes the complete record of all the subjects studied by the students in his/her academic session along with marks or grades respectively.&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>To get Transcripts Certificate, Submit &nbsp;an application downloaded from the button given below, fill it and address it to <strong>The Secretary, State Board of Technical Education and Training, #11-307, Garudadri KK &nbsp; Towers Sri Lakshmi Narasimha Colony, Service Road,Mangalagiri,Guntur &ndash; 522503.</strong>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:10.0pt;margin-left:31.5pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Documents to be submitted&nbsp;</span></u></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>(either through post or in person).</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: decimal;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Filled in application form, which is downloaded from &nbsp;</span><a href="https://sbtetap.gov.in/Screens/EligibilityandForms.aspx"><span style='font-family:"Bookman Old Style",serif;'>https://sbtetap.gov.in/Screens/EligibilityandForms.aspx</span></a></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">I) &nbsp;To Collect transcripts by hand</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol start="1" style="margin-bottom:0cm;list-style-type: upper-alpha;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-family:"Bookman Old Style",serif;font-size:11.5pt;'>Manual Procedure: &nbsp;(Attach Demand Draft)&nbsp;</span></u></strong></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;text-indent:2.7pt;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Demand Draft &nbsp;drawn in favor of <strong>The SECRETARY, SBTET. ANDHRA PRADESH</strong>&nbsp; for&nbsp;</span><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Rs.3000/-</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;for&nbsp;</span><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Transcripts</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;for Universities for one set</span><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>.</span></p>
+                                <p style="margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:36.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><em><span style='font-size:35px;font-family:"Bookman Old Style",serif;'>(or)</span></em></strong></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol start="2" style="margin-bottom:0cm;list-style-type: upper-alpha;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-family:"Bookman Old Style",serif;font-size:11.5pt;'>Online Payment Procedure: &nbsp;( Attach Online Fee Payment Receipt)&nbsp;</span></u></strong></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Open the link &nbsp;</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;"><a href="https://apsbtet.net/ONLINESERVICES"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>https://apsbtet.net/ONLINESERVICES</span></a></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;">
+                                        <span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Register Your PIN &nbsp;under Student Option. &nbsp;Through&nbsp;</span>
+                                        <ul style="margin-bottom:0cm;margin-top:0cm;" type="circle">
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on &nbsp;Student</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;Click Pin Registration&nbsp;</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>( Fill the Online form and Upload Photo )</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click &nbsp; Register.&nbsp;</span></li>
+                                        </ul>
+                                    </li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Services Tab&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Pay Fee</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Type Your Pin &nbsp;and click on Search</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Choose the service type &nbsp; as Transcript</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Enter the details No. of Transcripts, Total Amount &amp; Required Transcripts</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Continue</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Payment Summary Will be displayed.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Enter Captcha</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Proceed &nbsp;Payment&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Follow the Instructions of Bill Desk Payment Screen.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Download the Receipt &nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Attach the receipt.</span></li>
+                                </ul>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Or</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp; &nbsp; &nbsp;II) &nbsp; &nbsp; To get the transcripts through post only manual payment is allowed.</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:10.0pt;margin-left:42.55pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Demand Draft &nbsp;drawn in favor of <strong>The SECRETARY, SBTET. ANDHRA PRADESH</strong> for Rs. <strong>Rs.4500/-</strong> for <strong>WES</strong> ( Rs.3000/- for Transcripts &nbsp;and Postal charges Rs.1500/-</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Photo copies of the Original Diploma Certificate</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Photo copies of the all Memorandum of marks. ( Passed or failed )</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Note 1:</span></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;Transcripts Certificate will be issued within two days with the availability of SBTET officers after submitting valid application.</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Note 2 :</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;The application along with necessary enclosures should submit to the Secretary, SBTET, Andhra Pradesh by the candidate or authorized &nbsp; person from candidate&rsquo;s family.</span><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Note 3 :</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;The Candidate should bring all original certificates and original marks memos and also has to submit color photo copies of certificates and marks memos preferably.</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn"><a target="_blank" class="pay_btn" href="https://apsbtet.ap.gov.in/Student_Services/TRANSCRIPTS.doc" ">Download Application Form</a> </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn pull-right"><a target="_blank" class="pay_btn" href="https://apsbtet.net/onlineservices">Pay Fee>></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne5">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne5" aria-expanded="false" aria-controls="collapseOne5">
+                                    <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                    <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                    Duplicate Marks Memo
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne5">
+                            <div class="panel-body">
+                                <p><strong>STATE BOARD OF TECHNICAL EDUCATION AND TRAINING</strong></p>
+                                <p><strong>ANDHRA PRADESH :: MANGALAGIRI</strong></p>
+                                <p>&nbsp;</p>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="3" width="637">
+                                                <p><strong>APPLICATION FOR THE ISSUE OF</strong></p>
+                                                <p><strong>&nbsp;&ldquo;DUPLICATE MARKS MEMOS/ DUPLICATE DIPLOMA CERTIFICATE&rdquo;</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="43">
+                                                <p>01</p>
+                                            </td>
+                                            <td width="324">
+                                                <p>Name of the Applicant</p>
+                                                <p>(IN BLOCK LETTERS)</p>
+                                            </td>
+                                            <td width="270">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="43">
+                                                <p>02</p>
+                                            </td>
+                                            <td width="324">
+                                                <p>Father&rsquo;s Name</p>
+                                            </td>
+                                            <td width="270">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="43">
+                                                <p>03</p>
+                                            </td>
+                                            <td width="324">
+                                                <p>Address of the Applicant</p>
+                                            </td>
+                                            <td width="270">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="43">
+                                                <p>04</p>
+                                            </td>
+                                            <td width="324">
+                                                <p>Mobile No</p>
+                                            </td>
+                                            <td width="270">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="43">
+                                                <p>05</p>
+                                            </td>
+                                            <td width="324">
+                                                <p>Polytechnic/Institute through which the applicant studied</p>
+                                            </td>
+                                            <td width="270">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="43">
+                                                <p>06</p>
+                                            </td>
+                                            <td width="324">
+                                                <p>Registration No. / PIN Number</p>
+                                            </td>
+                                            <td width="270">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="43">
+                                                <p>07</p>
+                                            </td>
+                                            <td width="324">
+                                                <p>Which of the following Certificates required</p>
+                                                <p>i.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Duplicate Diploma Certificate</p>
+                                                <p>&nbsp;</p>
+                                                <p>ii.&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Duplicate Marks Memos</p>
+                                            </td>
+                                            <td width="270">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="43">
+                                                <p>08</p>
+                                            </td>
+                                            <td width="324">
+                                                <p>Month &amp; Year he/she appeared for the examination</p>
+                                                <p><strong>(Note: Details are compulsory otherwise application will rejected and sent back to the candidate&rsquo;s address)&nbsp; </strong></p>
+                                            </td>
+                                            <td width="270">
+                                                <p>&nbsp;</p>
+                                                <p>&nbsp;</p>
+                                                <p>&nbsp;</p>
+                                                <p>&nbsp;</p>
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="43">
+                                                <p>09</p>
+                                            </td>
+                                            <td width="324">
+                                                <p>Reasons for which the application for the issue of Duplicate Diploma Certificate /Duplicate Marks memos</p>
+                                            </td>
+                                            <td width="270">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="43">
+                                                <p>10</p>
+                                            </td>
+                                            <td width="324">
+                                                <p>Whether any complaint was given to the Police about the loss of the Certificates and a certificate to that extent from the above authorities? If so enclose the same.</p>
+                                            </td>
+                                            <td width="270">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="43">
+                                                <p>11</p>
+                                            </td>
+                                            <td width="324">
+                                                <p>Whether the Affidavit made on a stamped paper worth Rs. 20/- regarding loss of the Original Diploma Certificate / Provisional Certificate and signed by the Magistrate / Notary is attached?</p>
+                                            </td>
+                                            <td width="270">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="43">
+                                                <p>12</p>
+                                            </td>
+                                            <td width="324">
+                                                <p>Whether the DD for Rs.______________ for Duplicate Original Certificate / Rs. __________ for Duplicate Provisional Certificate / Rs. ________ for duplicate Marks memos obtained towards fee from any Nationalized Bank for issue of the Duplicate Diploma Certificate / Duplicate Marks Memos.&nbsp; Furnish Bank Name, DD Number and Date.</p>
+                                            </td>
+                                            <td width="270">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="43">
+                                                <p>13</p>
+                                            </td>
+                                            <td width="324">
+                                                <p>Whether the Original Diploma Certificate /Consolidated Marks Memo / Marks Memos, has at any time been suspended or enclosed</p>
+                                            </td>
+                                            <td width="270">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="43">
+                                                <p>14</p>
+                                            </td>
+                                            <td width="324">
+                                                <p>Whether any Photo copies of the above is enclosed for ready reference.</p>
+                                            </td>
+                                            <td width="270">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p><strong>&nbsp;</strong></p>
+                                <p><strong>P.T.O.</strong></p>
+                                <p><strong><u>&nbsp;</u></strong></p>
+                                <p><strong><u>DECLARATION</u></strong></p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I solemnly declare that the particulars furnished above are true to the best of my knowledge and belief.</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>Date: _______________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <strong>SIGNATURE OF THE APPLICANT</strong></p>
+                                <p>&nbsp;</p>
+                                <p>Note:- Furnishing of inaccurate and false particulars will be viewed seriously besides withholding of the Duplicate Diploma Certificate and disciplinary action as may be called for or deemed fit by the <strong>Secretary, State Board of Technical Education and Training</strong>, <strong>Mangalagiri.</strong></p>
+                                <p>------------------------------------------------------------------------------------------------------------</p>
+                                <p><strong><u>IDENTIFICATION CERTIFICATE OF THE PRINCIPAL</u></strong></p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I certify that above particulars furnished by the candidate have been verified and found correct with reference to the records of the Institute / Polytechnic and the applicant Sri/Smt/Kum. _____________________________________________________________ (Name to be given) is the same person to whom the Original Diploma Certificate was issued and that the issue of Duplicate to the candidate is recommended.</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>Station:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>SIGNATURE OF THE PRINCIPAL</strong></p>
+                                <p>Dated:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>WITH SEAL</strong></p>
+                                <p>------------------------------------------------------------------------------------------------------------</p>
+                                <p><strong><u>DECLARATION</u></strong></p>
+                                <p><u>&nbsp;</u></p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I do hereby declare that my Original Pass Certificate / Consolidated Marks Diploma bearing Sl.No. ____________________with Regd.No./PIN_____________________ of _________________________________ issued by the State Board of Technical Education and Training, Andhra Pradesh, Mangalagiri is neither suspended nor cancelled by the competent authority.</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>Date: ____________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>SIGNATURE OF THE CANDIDATE</strong></p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p><strong><u>&nbsp;</u></strong></p>
+                                <p><strong><u>Note: - The following Certificates should be sent alongwith the application without fail.</u></strong></p>
+                                <p><strong><u>&nbsp;</u></strong></p>
+                                <ol>
+                                    <li>Bank Draft for <strong><u>3500/-</u></strong> for Duplicate Diploma Certificate &amp; for <strong><u>Rs.5000/</u></strong><strong>- </strong>for Triplicate Diploma Certificate for all schemes <strong><em>(OS/NC/C-90/C-96/C-00/ </em></strong></li>
+                                </ol>
+                                <p><strong><em>C-05/C-09/C-14/C-16/C-20/PH/ER-81/ER-91/ER-20)</em></strong></p>
+                                <ol start="2">
+                                    <li>An Affidavit in the prescribed proforma (copy enclosed) on stamped paper worth for <strong><em> 20/-</em></strong><strong><em> Certified by First Class Judicial Magistrate with the Seal of the court concerned / Notary</em></strong>.</li>
+                                    <li>A declaration by the candidate that the Original Certificate/Consolidated Marks was not suspended or cancelled by the competent authority.</li>
+                                    <li>An Identification certificate from the concerned Principal of the Institute/Polytechnic to the effect that the candidate is the same person to whom the Original Diploma Certificate was issued.</li>
+                                    <li>Police enquiry certificate in Original.</li>
+                                    <li>Photo copies of the Certificates if available.</li>
+                                    <li>Demand Draft should be drawn in favour of the<strong> SECRETARY, SBTET. ANDHRA PRADESH.</strong></li>
+                                </ol>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The application along with necessary enclosures should be forwarded to the Secretary, SBTET <strong>through the Principal of the concerned Polytechnic.</strong></p>
+                                <p><strong>&nbsp;</strong></p>
+                                <p><strong>Note:- No documents are required for issue of Duplicate Memo of marks. &nbsp;R</strong><strong>s.700/- </strong></p>
+                                <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fee</strong><strong> for</strong> <strong>each memo of marks)</strong><strong> &amp; Month/Year of passing the exam shall be</strong></p>
+                                <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><strong>&nbsp;clearly mentioned. </strong></p>
+                                <p>&nbsp;</p>
+                                <p><strong><u>&nbsp;</u></strong></p>
+                                <p><strong><u>&nbsp;</u></strong></p>
+                                <p><strong><u>&nbsp;</u></strong></p>
+                                <p><strong><u>A F F I D A V I T</u></strong></p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I ________________________________________________________________</p>
+                                <p>&nbsp;</p>
+                                <p>Son/Daughter of _______________________________________________________________</p>
+                                <p>&nbsp;</p>
+                                <p>Age _________ Occupation____________________________________________resident of</p>
+                                <p>&nbsp;</p>
+                                <p>________________________________________________________________________on solemnly oathand affirmation do are as under.</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <ol>
+                                    <li>That I have appeared for _______________________________________________________</li>
+                                </ol>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;Examination held in the month of _____________________________________________</p>
+                                <p>&nbsp;</p>
+                                <p>with Regd. No./PIN_____________________________________________________ through Polytechnic, ___________________________________________________________________.</p>
+                                <p>&nbsp;</p>
+                                <ol start="2">
+                                    <li>2. That the Original Diploma Certificate issued to me by the State Board of Technical Education and Training has been lost by me while _____________________________________________________________________________________</li>
+                                </ol>
+                                <p>&nbsp;</p>
+                                <p>_________________________________ (details) _______________________________________</p>
+                                <p>&nbsp;</p>
+                                <p>______________________________________________________________________________________</p>
+                                <p>&nbsp;</p>
+                                <p>_______________________ and in spite of my &nbsp;best efforts I am unable to trace it and it is lost beyond recovery.&nbsp; In case it is traced in future I shall submit it to the <strong><em>State Board of Technical Education and Training, Andhra Pradesh, Mangalagiri</em></strong> for cancellation.</p>
+                                <p>&nbsp;</p>
+                                <ol start="3">
+                                    <li>That I am in need of Duplicate copy of the said certificate for which purpose, I am hereby making this declaration as required by the <strong>Secretary</strong>, <strong><em>State Board of Technical Education and Training, Andhra Pradesh, Mangalagiri.</em></strong></li>
+                                </ol>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>SIGNATURE OF DEPONENT</strong></p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <strong>SWORN BEFORE ME</strong></p>
+                                <p>Date:</p>
+                                <p>&nbsp;</p>
+                                <p>(Court Seal)</p>
+                                <p>&nbsp;</p>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn"><a target="_blank" class="pay_btn" href="https://apsbtet.ap.gov.in/Student_Services/DIPLOMA Duplicate proforma.doc">Download Application Form</a> </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn pull-right"><a target="_blank" class="pay_btn" href="https://apsbtet.net/onlineservices">Pay Fee>></a> </button>
+                                </div>
+                            </div>
+                     
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne6">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne6" aria-expanded="false" aria-controls="collapseOne6">
+                                    <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                    <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                    Duplicate Diploma Certificate
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne6">
+                            <div class="panel-body">
+                                <div class="panel-body">
+                                    <p><strong>STATE BOARD OF TECHNICAL EDUCATION AND TRAINING</strong></p>
+                                    <p><strong>ANDHRA PRADESH :: MANGALAGIRI</strong></p>
+                                    <p>&nbsp;</p>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="3" width="637">
+                                                    <p><strong>APPLICATION FOR THE ISSUE OF</strong></p>
+                                                    <p><strong>&nbsp;&ldquo;DUPLICATE MARKS MEMOS/ DUPLICATE DIPLOMA CERTIFICATE&rdquo;</strong></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>01</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Name of the Applicant</p>
+                                                    <p>(IN BLOCK LETTERS)</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>02</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Father&rsquo;s Name</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>03</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Address of the Applicant</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>04</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Mobile No</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>05</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Polytechnic/Institute through which the applicant studied</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>06</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Registration No. / PIN Number</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>07</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Which of the following Certificates required</p>
+                                                    <p>i.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Duplicate Diploma Certificate</p>
+                                                    <p>&nbsp;</p>
+                                                    <p>ii.&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Duplicate Marks Memos</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>08</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Month &amp; Year he/she appeared for the examination</p>
+                                                    <p><strong>(Note: Details are compulsory otherwise application will rejected and sent back to the candidate&rsquo;s address)&nbsp; </strong></p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                    <p>&nbsp;</p>
+                                                    <p>&nbsp;</p>
+                                                    <p>&nbsp;</p>
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>09</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Reasons for which the application for the issue of Duplicate Diploma Certificate /Duplicate Marks memos</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>10</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Whether any complaint was given to the Police about the loss of the Certificates and a certificate to that extent from the above authorities? If so enclose the same.</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>11</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Whether the Affidavit made on a stamped paper worth Rs. 20/- regarding loss of the Original Diploma Certificate / Provisional Certificate and signed by the Magistrate / Notary is attached?</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>12</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Whether the DD for Rs.______________ for Duplicate Original Certificate / Rs. __________ for Duplicate Provisional Certificate / Rs. ________ for duplicate Marks memos obtained towards fee from any Nationalized Bank for issue of the Duplicate Diploma Certificate / Duplicate Marks Memos.&nbsp; Furnish Bank Name, DD Number and Date.</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>13</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Whether the Original Diploma Certificate /Consolidated Marks Memo / Marks Memos, has at any time been suspended or enclosed</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>14</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Whether any Photo copies of the above is enclosed for ready reference.</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p><strong>&nbsp;</strong></p>
+                                    <p><strong>P.T.O.</strong></p>
+                                    <p><strong><u>&nbsp;</u></strong></p>
+                                    <p><strong><u>DECLARATION</u></strong></p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I solemnly declare that the particulars furnished above are true to the best of my knowledge and belief.</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>Date: _______________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <strong>SIGNATURE OF THE APPLICANT</strong></p>
+                                    <p>&nbsp;</p>
+                                    <p>Note:- Furnishing of inaccurate and false particulars will be viewed seriously besides withholding of the Duplicate Diploma Certificate and disciplinary action as may be called for or deemed fit by the <strong>Secretary, State Board of Technical Education and Training</strong>, <strong>Mangalagiri.</strong></p>
+                                    <p>------------------------------------------------------------------------------------------------------------</p>
+                                    <p><strong><u>IDENTIFICATION CERTIFICATE OF THE PRINCIPAL</u></strong></p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I certify that above particulars furnished by the candidate have been verified and found correct with reference to the records of the Institute / Polytechnic and the applicant Sri/Smt/Kum. _____________________________________________________________ (Name to be given) is the same person to whom the Original Diploma Certificate was issued and that the issue of Duplicate to the candidate is recommended.</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>Station:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>SIGNATURE OF THE PRINCIPAL</strong></p>
+                                    <p>Dated:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>WITH SEAL</strong></p>
+                                    <p>------------------------------------------------------------------------------------------------------------</p>
+                                    <p><strong><u>DECLARATION</u></strong></p>
+                                    <p><u>&nbsp;</u></p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I do hereby declare that my Original Pass Certificate / Consolidated Marks Diploma bearing Sl.No. ____________________with Regd.No./PIN_____________________ of _________________________________ issued by the State Board of Technical Education and Training, Andhra Pradesh, Mangalagiri is neither suspended nor cancelled by the competent authority.</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>Date: ____________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>SIGNATURE OF THE CANDIDATE</strong></p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p><strong><u>&nbsp;</u></strong></p>
+                                    <p><strong><u>Note: - The following Certificates should be sent alongwith the application without fail.</u></strong></p>
+                                    <p><strong><u>&nbsp;</u></strong></p>
+                                    <ol>
+                                        <li>Bank Draft for <strong><u>3500/-</u></strong> for Duplicate Diploma Certificate &amp; for <strong><u>Rs.5000/</u></strong><strong>- </strong>for Triplicate Diploma Certificate for all schemes <strong><em>(OS/NC/C-90/C-96/C-00/ </em></strong></li>
+                                    </ol>
+                                    <p><strong><em>C-05/C-09/C-14/C-16/C-20/PH/ER-81/ER-91/ER-20)</em></strong></p>
+                                    <ol start="2">
+                                        <li>An Affidavit in the prescribed proforma (copy enclosed) on stamped paper worth for <strong><em> 20/-</em></strong><strong><em> Certified by First Class Judicial Magistrate with the Seal of the court concerned / Notary</em></strong>.</li>
+                                        <li>A declaration by the candidate that the Original Certificate/Consolidated Marks was not suspended or cancelled by the competent authority.</li>
+                                        <li>An Identification certificate from the concerned Principal of the Institute/Polytechnic to the effect that the candidate is the same person to whom the Original Diploma Certificate was issued.</li>
+                                        <li>Police enquiry certificate in Original.</li>
+                                        <li>Photo copies of the Certificates if available.</li>
+                                        <li>Demand Draft should be drawn in favour of the<strong> SECRETARY, SBTET. ANDHRA PRADESH.</strong></li>
+                                    </ol>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The application along with necessary enclosures should be forwarded to the Secretary, SBTET <strong>through the Principal of the concerned Polytechnic.</strong></p>
+                                    <p><strong>&nbsp;</strong></p>
+                                    <p><strong>Note:- No documents are required for issue of Duplicate Memo of marks. &nbsp;R</strong><strong>s.700/- </strong></p>
+                                    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fee</strong><strong> for</strong> <strong>each memo of marks)</strong><strong> &amp; Month/Year of passing the exam shall be</strong></p>
+                                    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><strong>&nbsp;clearly mentioned. </strong></p>
+                                    <p>&nbsp;</p>
+                                    <p><strong><u>&nbsp;</u></strong></p>
+                                    <p><strong><u>&nbsp;</u></strong></p>
+                                    <p><strong><u>&nbsp;</u></strong></p>
+                                    <p><strong><u>A F F I D A V I T</u></strong></p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I ________________________________________________________________</p>
+                                    <p>&nbsp;</p>
+                                    <p>Son/Daughter of _______________________________________________________________</p>
+                                    <p>&nbsp;</p>
+                                    <p>Age _________ Occupation____________________________________________resident of</p>
+                                    <p>&nbsp;</p>
+                                    <p>________________________________________________________________________on solemnly oathand affirmation do are as under.</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <ol>
+                                        <li>That I have appeared for _______________________________________________________</li>
+                                    </ol>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;Examination held in the month of _____________________________________________</p>
+                                    <p>&nbsp;</p>
+                                    <p>with Regd. No./PIN_____________________________________________________ through Polytechnic, ___________________________________________________________________.</p>
+                                    <p>&nbsp;</p>
+                                    <ol start="2">
+                                        <li>2. That the Original Diploma Certificate issued to me by the State Board of Technical Education and Training has been lost by me while _____________________________________________________________________________________</li>
+                                    </ol>
+                                    <p>&nbsp;</p>
+                                    <p>_________________________________ (details) _______________________________________</p>
+                                    <p>&nbsp;</p>
+                                    <p>______________________________________________________________________________________</p>
+                                    <p>&nbsp;</p>
+                                    <p>_______________________ and in spite of my &nbsp;best efforts I am unable to trace it and it is lost beyond recovery.&nbsp; In case it is traced in future I shall submit it to the <strong><em>State Board of Technical Education and Training, Andhra Pradesh, Mangalagiri</em></strong> for cancellation.</p>
+                                    <p>&nbsp;</p>
+                                    <ol start="3">
+                                        <li>That I am in need of Duplicate copy of the said certificate for which purpose, I am hereby making this declaration as required by the <strong>Secretary</strong>, <strong><em>State Board of Technical Education and Training, Andhra Pradesh, Mangalagiri.</em></strong></li>
+                                    </ol>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>SIGNATURE OF DEPONENT</strong></p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <strong>SWORN BEFORE ME</strong></p>
+                                    <p>Date:</p>
+                                    <p>&nbsp;</p>
+                                    <p>(Court Seal)</p>
+                                    <p>&nbsp;</p>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn"><a target="_blank" class="pay_btn" href="https://apsbtet.ap.gov.in/Student_Services/DIPLOMA Duplicate proforma.doc">Download Application Form</a> </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn pull-right"><a target="_blank" class="pay_btn" href="https://apsbtet.net/onlineservices">Pay Fee>></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne7">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne7" aria-expanded="false" aria-controls="collapseOne7">
+                                    <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                    <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                    Equivalence Certificate
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne7">
+                            <div class="panel-body">
+                                <div class="panel-body">
+                                    <p><strong>STATE BOARD OF TECHNICAL EDUCATION AND TRAINING</strong></p>
+                                    <p><strong>ANDHRA PRADESH :: MANGALAGIRI</strong></p>
+                                    <p>&nbsp;</p>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="3" width="637">
+                                                    <p><strong>APPLICATION FOR THE ISSUE OF</strong></p>
+                                                    <p><strong>&nbsp;&ldquo;DUPLICATE MARKS MEMOS/ DUPLICATE DIPLOMA CERTIFICATE&rdquo;</strong></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>01</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Name of the Applicant</p>
+                                                    <p>(IN BLOCK LETTERS)</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>02</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Father&rsquo;s Name</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>03</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Address of the Applicant</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>04</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Mobile No</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>05</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Polytechnic/Institute through which the applicant studied</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>06</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Registration No. / PIN Number</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>07</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Which of the following Certificates required</p>
+                                                    <p>i.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Duplicate Diploma Certificate</p>
+                                                    <p>&nbsp;</p>
+                                                    <p>ii.&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Duplicate Marks Memos</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>08</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Month &amp; Year he/she appeared for the examination</p>
+                                                    <p><strong>(Note: Details are compulsory otherwise application will rejected and sent back to the candidate&rsquo;s address)&nbsp; </strong></p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                    <p>&nbsp;</p>
+                                                    <p>&nbsp;</p>
+                                                    <p>&nbsp;</p>
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>09</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Reasons for which the application for the issue of Duplicate Diploma Certificate /Duplicate Marks memos</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>10</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Whether any complaint was given to the Police about the loss of the Certificates and a certificate to that extent from the above authorities? If so enclose the same.</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>11</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Whether the Affidavit made on a stamped paper worth Rs. 20/- regarding loss of the Original Diploma Certificate / Provisional Certificate and signed by the Magistrate / Notary is attached?</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>12</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Whether the DD for Rs.______________ for Duplicate Original Certificate / Rs. __________ for Duplicate Provisional Certificate / Rs. ________ for duplicate Marks memos obtained towards fee from any Nationalized Bank for issue of the Duplicate Diploma Certificate / Duplicate Marks Memos.&nbsp; Furnish Bank Name, DD Number and Date.</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>13</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Whether the Original Diploma Certificate /Consolidated Marks Memo / Marks Memos, has at any time been suspended or enclosed</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="43">
+                                                    <p>14</p>
+                                                </td>
+                                                <td width="324">
+                                                    <p>Whether any Photo copies of the above is enclosed for ready reference.</p>
+                                                </td>
+                                                <td width="270">
+                                                    <p>&nbsp;</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p><strong>&nbsp;</strong></p>
+                                    <p><strong>P.T.O.</strong></p>
+                                    <p><strong><u>&nbsp;</u></strong></p>
+                                    <p><strong><u>DECLARATION</u></strong></p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I solemnly declare that the particulars furnished above are true to the best of my knowledge and belief.</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>Date: _______________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <strong>SIGNATURE OF THE APPLICANT</strong></p>
+                                    <p>&nbsp;</p>
+                                    <p>Note:- Furnishing of inaccurate and false particulars will be viewed seriously besides withholding of the Duplicate Diploma Certificate and disciplinary action as may be called for or deemed fit by the <strong>Secretary, State Board of Technical Education and Training</strong>, <strong>Mangalagiri.</strong></p>
+                                    <p>------------------------------------------------------------------------------------------------------------</p>
+                                    <p><strong><u>IDENTIFICATION CERTIFICATE OF THE PRINCIPAL</u></strong></p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I certify that above particulars furnished by the candidate have been verified and found correct with reference to the records of the Institute / Polytechnic and the applicant Sri/Smt/Kum. _____________________________________________________________ (Name to be given) is the same person to whom the Original Diploma Certificate was issued and that the issue of Duplicate to the candidate is recommended.</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>Station:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>SIGNATURE OF THE PRINCIPAL</strong></p>
+                                    <p>Dated:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>WITH SEAL</strong></p>
+                                    <p>------------------------------------------------------------------------------------------------------------</p>
+                                    <p><strong><u>DECLARATION</u></strong></p>
+                                    <p><u>&nbsp;</u></p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I do hereby declare that my Original Pass Certificate / Consolidated Marks Diploma bearing Sl.No. ____________________with Regd.No./PIN_____________________ of _________________________________ issued by the State Board of Technical Education and Training, Andhra Pradesh, Mangalagiri is neither suspended nor cancelled by the competent authority.</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>Date: ____________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>SIGNATURE OF THE CANDIDATE</strong></p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p><strong><u>&nbsp;</u></strong></p>
+                                    <p><strong><u>Note: - The following Certificates should be sent alongwith the application without fail.</u></strong></p>
+                                    <p><strong><u>&nbsp;</u></strong></p>
+                                    <ol>
+                                        <li>Bank Draft for <strong><u>3500/-</u></strong> for Duplicate Diploma Certificate &amp; for <strong><u>Rs.5000/</u></strong><strong>- </strong>for Triplicate Diploma Certificate for all schemes <strong><em>(OS/NC/C-90/C-96/C-00/ </em></strong></li>
+                                    </ol>
+                                    <p><strong><em>C-05/C-09/C-14/C-16/C-20/PH/ER-81/ER-91/ER-20)</em></strong></p>
+                                    <ol start="2">
+                                        <li>An Affidavit in the prescribed proforma (copy enclosed) on stamped paper worth for <strong><em> 20/-</em></strong><strong><em> Certified by First Class Judicial Magistrate with the Seal of the court concerned / Notary</em></strong>.</li>
+                                        <li>A declaration by the candidate that the Original Certificate/Consolidated Marks was not suspended or cancelled by the competent authority.</li>
+                                        <li>An Identification certificate from the concerned Principal of the Institute/Polytechnic to the effect that the candidate is the same person to whom the Original Diploma Certificate was issued.</li>
+                                        <li>Police enquiry certificate in Original.</li>
+                                        <li>Photo copies of the Certificates if available.</li>
+                                        <li>Demand Draft should be drawn in favour of the<strong> SECRETARY, SBTET. ANDHRA PRADESH.</strong></li>
+                                    </ol>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The application along with necessary enclosures should be forwarded to the Secretary, SBTET <strong>through the Principal of the concerned Polytechnic.</strong></p>
+                                    <p><strong>&nbsp;</strong></p>
+                                    <p><strong>Note:- No documents are required for issue of Duplicate Memo of marks. &nbsp;R</strong><strong>s.700/- </strong></p>
+                                    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fee</strong><strong> for</strong> <strong>each memo of marks)</strong><strong> &amp; Month/Year of passing the exam shall be</strong></p>
+                                    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><strong>&nbsp;clearly mentioned. </strong></p>
+                                    <p>&nbsp;</p>
+                                    <p><strong><u>&nbsp;</u></strong></p>
+                                    <p><strong><u>&nbsp;</u></strong></p>
+                                    <p><strong><u>&nbsp;</u></strong></p>
+                                    <p><strong><u>A F F I D A V I T</u></strong></p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I ________________________________________________________________</p>
+                                    <p>&nbsp;</p>
+                                    <p>Son/Daughter of _______________________________________________________________</p>
+                                    <p>&nbsp;</p>
+                                    <p>Age _________ Occupation____________________________________________resident of</p>
+                                    <p>&nbsp;</p>
+                                    <p>________________________________________________________________________on solemnly oathand affirmation do are as under.</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <ol>
+                                        <li>That I have appeared for _______________________________________________________</li>
+                                    </ol>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;Examination held in the month of _____________________________________________</p>
+                                    <p>&nbsp;</p>
+                                    <p>with Regd. No./PIN_____________________________________________________ through Polytechnic, ___________________________________________________________________.</p>
+                                    <p>&nbsp;</p>
+                                    <ol start="2">
+                                        <li>2. That the Original Diploma Certificate issued to me by the State Board of Technical Education and Training has been lost by me while _____________________________________________________________________________________</li>
+                                    </ol>
+                                    <p>&nbsp;</p>
+                                    <p>_________________________________ (details) _______________________________________</p>
+                                    <p>&nbsp;</p>
+                                    <p>______________________________________________________________________________________</p>
+                                    <p>&nbsp;</p>
+                                    <p>_______________________ and in spite of my &nbsp;best efforts I am unable to trace it and it is lost beyond recovery.&nbsp; In case it is traced in future I shall submit it to the <strong><em>State Board of Technical Education and Training, Andhra Pradesh, Mangalagiri</em></strong> for cancellation.</p>
+                                    <p>&nbsp;</p>
+                                    <ol start="3">
+                                        <li>That I am in need of Duplicate copy of the said certificate for which purpose, I am hereby making this declaration as required by the <strong>Secretary</strong>, <strong><em>State Board of Technical Education and Training, Andhra Pradesh, Mangalagiri.</em></strong></li>
+                                    </ol>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>SIGNATURE OF DEPONENT</strong></p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <strong>SWORN BEFORE ME</strong></p>
+                                    <p>Date:</p>
+                                    <p>&nbsp;</p>
+                                    <p>(Court Seal)</p>
+                                    <p>&nbsp;</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn"><a class="pay_btn" href="https://apsbtet.ap.gov.in/Student_Services/EQULIENCY_CERTIFICATE.docx" download>Download Application Form</a> </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn pull-right"><a target="_blank" class="pay_btn" href="https://apsbtet.net/onlineservices">Pay Fee>></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-12" ng-show="Loading">
+            <!--  <div class="xs-spacer"></div>-->
+            <center><img class="LoadingImage" src="/contents/images/preloader.gif" /></center>
+        </div>
+        <div class="col-md-12">
+            <center ng-show="NoData"><h3 class="btn-danger NoDataCss">No Data Found</h3></center>
+        </div>
+    </div>
+</div>
+

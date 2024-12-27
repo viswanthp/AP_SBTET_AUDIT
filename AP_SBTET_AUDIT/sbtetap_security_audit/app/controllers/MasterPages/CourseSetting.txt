@@ -1,0 +1,194 @@
+
+CourseSetting.html=======
+
+
+
+
+
+<!--<style>
+
+</style>
+<style>
+
+</style>-->
+<link href="/contents/css/Pages/MasterPages/CourseSetting.css" rel="stylesheet" />
+<div ng-controller="CourseSettingController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">Course Settings</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="pannel-bar"> Add Course</div>
+        <div class="card">
+            <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                <div class="row">
+                    <div class="col-md-2">
+                        <label>Course Code</label>
+                        <div class="form-group">
+                            <input ng-model="CourseCode" type="text" maxlength="10" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Course Name</label>
+                        <div class="form-group">
+                            <input ng-model="CourseName" type="text" maxlength="100" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Course Short Description</label>
+                        <div class="form-group">
+                            <input ng-model="CourseShortDescription" type="text" maxlength="255" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Course Detailed Description</label>
+                        <div class="form-group">
+                            <textarea ng-model="CourseLongDescription" type="text" rows="4" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Course Photo  </label>
+                            <input class="" id="stdPhotoFile" type="file" placeholder="" maxlength="10" onchange="angular.element(this).scope().uploadPhoto()" accept="image/*" ng-model="Photo" />
+                            <img ng-src="{{userPhoto}}" class="" id="stdPhotoImg" />
+                        </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>
+                            Is Display in Website:
+                        </label>
+                        <select class="form-control" name="applicationForm.IsDisplayinWebsite" ng-model="IsDisplayinWebsite" >
+                            <option value="">Select Is Display in Website</option>
+                            <option value= "true">YES</option>
+                            <option value= "false">NO</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="Add()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="sm-spacer"></div>
+        <div ng-show="Loading">
+            <center><img class="img_loading" src="/contents/images/preloader.gif"></center>
+        </div>
+        <div class="sm-spacer"></div>
+        <div class="form-group">
+            <!--<label>Search</label>-->
+            <input type="text" ng-model="searching" class="form-control" placeholder="Search" style="width:311px">
+        </div>
+        <div class=" " ng-show="GetCoursesList.length>0">
+
+            <div class="cl-details">
+                <div class="pannel-bar1">Course Setting</div>
+            </div>
+
+            <div class="table-responsive table-custom-tables-tb">
+                <table class="table table-bordered table-hover table-striped table-rounded">
+                    <thead>
+                        <tr class="cb-1">
+                            <th>S.No</th>
+                            <th>Course Code</th>
+                            <th class="text-center">Course Name</th>
+                            <th class="text-center">Short Desscription</th>
+                            <!--  <th class="text-center">Long Description</th>-->
+                            <th class="text-center"> Photo</th>
+                            <th class="text-center">Status</th>
+                            <!--  <th>Added on</th>-->
+                            <th class="text-center">Is Display in Website</th>
+                            <th style="text-align:center;" width="10%">Action </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="data in GetCoursesList | filter : searching">
+                            <td>{{$index+1}}</td>
+                            <td>{{data.CourseCode}}</td>
+                            <td>{{data.CourseName}}</td>
+                            <td>{{data.CourseShortDescription}}</td>
+                            <!--  <td>{{data.CourseDetailedDescription}}</td>-->
+                            <td class="text-center"><img ng-src="{{data.CoursePhoto}}" style="border: 2px solid #ddd;" class="img_course" /></td>
+
+                            <td class="text-center"><span class="text-success" ng-if="data.Active== 1"><b>Yes</b></span><span ng-if="data.Active== 0" class="text-danger"><b>No</b></span></td>
+
+                            <td>
+                                <select class="form-control" name="applicationForm.IsDisplayinWebsite" ng-model="data.IsDisplayinWebsite">
+                                    <option value="">Select Is Display in Website</option>
+                                    <option value="Y">YES</option>
+                                    <option value="N">NO</option>
+                                </select>
+                                <!--<select class="form-control "  ng-model="data.IsDisplayinWebsite" ng-options="data.CourseID  as data.IsDisplayinWebsite   for data in WebsiteValues">
+                                    <option value="" selected>Select AcademicYear</option>
+                                </select>-->
+                            </td>
+                            <!-- <td>{{data.InsertedOn| date:'dd-MMM-yyyy'}}</td>-->
+                            <td style="text-align:center">
+                                <!-- <button class="btn-xs btn btn-success" ng-click="ViewCorousel(data.CourseID)" title="View"><i class="fa fa-eye"  aria-hidden="true"></i></button>-->
+                                <button class="btn-xs btn btn-info" ng-click="EditCourse(data.CourseID)"title="Edit"><i class="fa fa-pencil-square-o"   aria-hidden="true"></i></button>
+                                <!--<button class="btn-xs btn btn-danger" ng-click="DeleteCourse(data,data.CourseID)" title="Delete"><i class="fa fa-trash"  aria-hidden="true"></i></button>-->
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+    <div id="id01" class="modal">
+        <div class="container">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                <form class="modal-content modal_content">
+                    <div class="">
+                        <!-- <h2>Delete </h2>-->
+                        <h3>Are you sure you want to delete Course?</h3>
+                        <hr />
+
+                        <div><b>{{EditCourseName}}</b></div>
+                        <div><img ng-src="{{EditCoursePhoto}}" style="border: 2px solid #ddd;" class="img_course" /></div>
+                        <br />
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-success">Cancel</button>
+                            <button type="button" ng-click="DeleteCourseConfirm()" class="btn btn-danger pull-right">Delete</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

@@ -1,0 +1,60 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Edit Details</h2>
+        <button type="button" class="close" ng-click="closeModal()" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+
+        <form>
+
+            <!--<div class="form-group">
+        <label for="recipient-name" class="col-form-label">Link Date:</label>
+        <input type="text" class="form-control" ng-model="EditData.LinkDate">
+    </div>-->
+            <div class="form-group">
+                <div class="form-group required">
+                    <label for="date-picker-example">Start Date(dd/mm/yyyy):</label>
+                    <p class="input-group" style="top:27px;right:167px">
+                        <input type="text" show-weeks="false" class="form-control" id="datetimepicker1" placeholder="Please Enter StartDate" autocomplete="off" name="StartDate" pattern="^(\d{1,2})\/(\d{1,2})\/(\d{4})$" datetime-picker="dd/MM/yyyy" ng-model="EditData[0].LinkDate" is-open="showFlag1" required />
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="showFlag1 = true"><i class="fa fa-calendar"></i></button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="recipient-name" style="margin-top:25px" class="col-form-label">Link Name:</label>
+                <input type="text" class="form-control" ng-model="EditData[0].LinkName">
+            </div>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Link Text:</label>
+                <input type="text" class="form-control" ng-model="EditData[0].LinkText">
+            </div>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">File:</label>
+                <input class="form-control" id="Circular" type="file" placeholder="" maxlength="10" onchange="angular.element(this).scope().uploadfiles()" accept="application/pdf" ng-model="EditData.file" />
+                <label1 ng-show="imgLabel">{{EditData[0].FileNmae}}</label1>
+
+            </div>
+            <div class="form-group" ng-show="EditData[0].LinkFile">
+                <label for="recipient-name" class="col-form-label">File:</label>
+                <button ng-click="DownloadFile()" title="Click here to Download" class="btn btn-xs download_btn"> <i class="fa fa-download" aria-hidden="true"></i></button>
+            </div>
+
+
+            <div class="col-md-1">
+                <label for="checkbox" class="col-form-label">Active:</label>
+
+                <input type="checkbox" ng-model="EditData[0].Active" />
+            </div>
+            <!--</div>-->
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" ng-click="UpdateLink(EditData[0])">Update</button>
+        <button type="button" class="btn btn-secondary" ng-click="closeModal()">Cancel</button>
+    </div>
+</div>
+

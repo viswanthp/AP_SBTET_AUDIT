@@ -1,0 +1,156 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/Infracture/IndustryInteraction.css" rel="stylesheet" />
+<div ng-controller="IndustryInteractionController">
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2>Industry Interaction</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a> &gt; <a ui-sref="index.InfrastructureDetails">Infrastructure</a> &gt; <a ui-sref="index.IndustryInteraction">Industry Interaction</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="irs-courses-field irs-courses-single">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="irs-courses-col irs-courses-col-single">
+                        <div class="irs-courses-img">
+                            <img src="/contents/images/infracture/IndustryInteraction.png" alt="">
+                            <!--<div class="irs-time">
+                                <p>
+                                    <a href="#">10:00 pm - 4:00 pm</a>
+                                </p>
+                            </div>-->
+                            <div class="irs-courses-img-text">
+                                <ul class="clearfix">
+                                    <li>
+                                        <p><i class="zmdi zmdi-calendar-alt"></i> 3 years</p>
+                                    </li>
+                                    <li class="pull-right">
+                                        <!--  <p><i class="zmdi zmdi-money"></i> 290</p>-->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Region</label>
+                                    <select class="form-control" ng-model="Region" name="Semester" ng-change="GetDistricts()" required="">
+                                        <option value="" selected="selected">Select Region</option>
+                                        <!-- ngRepeat: data in Shifts -->
+                                        <option value="{{data.RegionID}}" ng-repeat="data in Regions" class="ng-binding ng-scope">
+                                            {{data.RegionName}}
+                                        </option><!-- end ngRepeat: data in Shifts -->
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>District</label>
+                                    <select class="form-control" ng-model="District" name="Semester" required="">
+                                        <option value="" selected="selected">Select District </option>
+                                        <!-- ngRepeat: data in Shifts -->
+                                        <option value="{{data.DistrictID}}" ng-repeat="data in Districts" class="ng-binding ng-scope">
+                                            {{data.DistrictName}}
+                                        </option><!-- end ngRepeat: data in Shifts -->
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>College Type</label>
+
+                                    <select class="form-control" ng-model="CollegeType" name="Semester" ng-change="FilterDigitalClassRooms()" required="">
+                                        <option value="" selected="selected">Select College Type{{CollegeType}} </option>
+                                        <!-- ngRepeat: data in Shifts -->
+                                        <option value="{{data.CollegeTypeID}}" ng-repeat="data in CollegeTypes" class="ng-binding ng-scope">
+                                            {{data.CollegeTypeName}}
+                                        </option><!-- end ngRepeat: data in Shifts -->
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-success" style=" margin-top: 30px; " ng-click="GetCollegeList()">Submit</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="irs-courses-content">
+                        <h4 class="Head_Infra">Industry Interaction</h4>
+                        <div>
+
+                            The purpose of industry interaction is to enhance the practical relevance and real-world applicability
+                            of academic programs, research, and student experiences. It provides opportunities for students,
+                            faculty, and institutions to interact with industry professionals, gain industry insights, and apply
+                            theoretical knowledge in practical settings. Similarly, industries benefit from this interaction by
+                            accessing new talent, research collaborations, and staying updated on the latest academic
+                            developments in their field.
+
+                            <br />
+
+                            Industry interaction facilitates the exchange of knowledge, fosters innovation, and promotes a
+                            practical understanding of industry requirements. It helps students develop industry-relevant skills,
+                            enhances their employability, and creates a mutually beneficial relationship between student and
+                            industries. With relevant skills and familiarity with the industry activities it would be very beneficial
+                            for students in real time and to acquire jobs.
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="panel-bar1 text-center" ng-show="CollegeList.length>0">INDUSTRY INTERACTION</div>
+                <table class="table" ng-show="CollegeList.length>0">
+                    <thead>
+
+                        <tr>
+                            <th>S.No</th>
+                            <th>College Name</th>
+                            <th>Industry Name</th>
+                            <th>N0 of MOU's</th>
+                            <th>Comitee Members</th>
+                            <th>Support Activity</th>
+                            <th>MOU From Date</th>
+                            <th>MOU To Date</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="data in CollegeList">
+                            <td>{{$index+1}}</td>
+                            <td>{{data.CollegeName}}</td>
+                            <td>{{data.IndustryName}}</td>
+                            <td>{{data.NoofMOUS}}</td>
+                            <td>{{data.ComitteMembers}}</td>
+                            <td>{{data.SupportActivitiesfromIndustry}}</td>
+                            <td>{{data.MOUValidFromDate}}</td>
+                            <td>{{data.MOUValidToDate}}</td>
+                            <td>{{data.Remarks}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-12" ng-show="CollegeList.length<1">
+                <center><h3 class="btn-danger NoDataCss">No Data Found</h3></center>
+            </div>
+        </div>
+    </section>
+</div>

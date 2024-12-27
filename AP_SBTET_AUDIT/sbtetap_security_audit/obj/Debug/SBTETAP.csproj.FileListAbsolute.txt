@@ -1,0 +1,1089 @@
+E:\New folder\SBTET-AP\bin\WebApplication1.dll.config
+E:\New folder\SBTET-AP\bin\WebApplication1.dll
+E:\New folder\SBTET-AP\bin\WebApplication1.pdb
+E:\New folder\SBTET-AP\bin\roslyn\csc.exe
+E:\New folder\SBTET-AP\bin\roslyn\csc.exe.config
+E:\New folder\SBTET-AP\bin\roslyn\csc.rsp
+E:\New folder\SBTET-AP\bin\roslyn\csi.exe
+E:\New folder\SBTET-AP\bin\roslyn\csi.exe.config
+E:\New folder\SBTET-AP\bin\roslyn\csi.rsp
+E:\New folder\SBTET-AP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\New folder\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\New folder\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\New folder\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\New folder\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\New folder\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\New folder\SBTET-AP\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\New folder\SBTET-AP\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\New folder\SBTET-AP\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\New folder\SBTET-AP\bin\roslyn\Microsoft.Managed.Core.targets
+E:\New folder\SBTET-AP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\New folder\SBTET-AP\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.AppContext.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.Collections.Immutable.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.Console.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.Globalization.Calendars.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.IO.Compression.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.IO.FileSystem.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.Net.Sockets.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.Reflection.Metadata.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.ValueTuple.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.Xml.XmlDocument.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.Xml.XPath.dll
+E:\New folder\SBTET-AP\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\New folder\SBTET-AP\bin\roslyn\vbc.exe
+E:\New folder\SBTET-AP\bin\roslyn\vbc.exe.config
+E:\New folder\SBTET-AP\bin\roslyn\vbc.rsp
+E:\New folder\SBTET-AP\bin\roslyn\VBCSCompiler.exe
+E:\New folder\SBTET-AP\bin\roslyn\VBCSCompiler.exe.config
+E:\New folder\SBTET-AP\bin\BouncyCastle.Crypto.dll
+E:\New folder\SBTET-AP\obj\Debug\SBTETAP.csproj.CoreCompileInputs.cache
+E:\New folder\SBTET-AP\obj\Debug\SBTETAP.csproj.CopyComplete
+E:\New folder\SBTET-AP\obj\Debug\WebApplication1.dll
+E:\New folder\SBTET-AP\obj\Debug\WebApplication1.pdb
+E:\New folder\SBTET-AP\bin\mongocrypt.dll
+E:\New folder\SBTET-AP\bin\DnsClient.dll
+E:\New folder\SBTET-AP\bin\DocumentFormat.OpenXml.dll
+E:\New folder\SBTET-AP\bin\Microsoft.Extensions.Logging.Abstractions.dll
+E:\New folder\SBTET-AP\bin\Microsoft.Win32.Registry.dll
+E:\New folder\SBTET-AP\bin\MongoDB.Bson.dll
+E:\New folder\SBTET-AP\bin\MongoDB.Driver.Core.dll
+E:\New folder\SBTET-AP\bin\MongoDB.Driver.dll
+E:\New folder\SBTET-AP\bin\MongoDB.Libmongocrypt.dll
+E:\New folder\SBTET-AP\bin\SharpCompress.dll
+E:\New folder\SBTET-AP\bin\Snappier.dll
+E:\New folder\SBTET-AP\bin\System.Security.AccessControl.dll
+E:\New folder\SBTET-AP\bin\System.Security.Principal.Windows.dll
+E:\New folder\SBTET-AP\bin\System.Text.Encoding.CodePages.dll
+E:\New folder\SBTET-AP\bin\ZstdSharp.dll
+E:\New folder\SBTET-AP\bin\DnsClient.xml
+E:\New folder\SBTET-AP\bin\DocumentFormat.OpenXml.xml
+E:\New folder\SBTET-AP\bin\Microsoft.Extensions.Logging.Abstractions.xml
+E:\New folder\SBTET-AP\bin\Microsoft.Win32.Registry.xml
+E:\New folder\SBTET-AP\bin\MongoDB.Bson.xml
+E:\New folder\SBTET-AP\bin\MongoDB.Driver.xml
+E:\New folder\SBTET-AP\bin\MongoDB.Driver.Core.xml
+E:\New folder\SBTET-AP\bin\Snappier.xml
+E:\New folder\SBTET-AP\bin\System.Security.AccessControl.xml
+E:\New folder\SBTET-AP\bin\System.Security.Principal.Windows.xml
+E:\New folder\SBTET-AP\bin\System.Text.Encoding.CodePages.xml
+E:\New folder\SBTET-AP\bin\MailKit.xml
+E:\New folder\SBTET-AP\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\New folder\SBTET-AP\bin\MimeKit.pdb
+E:\New folder\SBTET-AP\bin\MimeKit.xml
+E:\New folder\SBTET-AP\bin\Newtonsoft.Json.xml
+E:\New folder\SBTET-AP\bin\RestSharp.xml
+E:\New folder\SBTET-AP\bin\System.Buffers.xml
+E:\New folder\SBTET-AP\bin\System.Memory.xml
+E:\New folder\SBTET-AP\bin\System.Net.Http.Formatting.xml
+E:\New folder\SBTET-AP\bin\System.Numerics.Vectors.xml
+E:\New folder\SBTET-AP\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\New folder\SBTET-AP\bin\System.Threading.Tasks.Extensions.xml
+E:\New folder\SBTET-AP\bin\System.Web.Helpers.xml
+E:\New folder\SBTET-AP\bin\System.Web.Http.xml
+E:\New folder\SBTET-AP\bin\System.Web.Http.WebHost.xml
+E:\New folder\SBTET-AP\bin\System.Web.Mvc.xml
+E:\New folder\SBTET-AP\bin\System.Web.Razor.xml
+E:\New folder\SBTET-AP\bin\System.Web.WebPages.xml
+E:\New folder\SBTET-AP\bin\System.Web.WebPages.Deployment.xml
+E:\New folder\SBTET-AP\bin\System.Web.WebPages.Razor.xml
+E:\New folder\SBTET-AP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\New folder\SBTET-AP\obj\Debug\SBTETAP.csproj.AssemblyReference.cache
+D:\SBTET-AP\SBTET-AP\bin\mongocrypt.dll
+D:\SBTET-AP\SBTET-AP\bin\WebApplication1.dll.config
+D:\SBTET-AP\SBTET-AP\bin\WebApplication1.dll
+D:\SBTET-AP\SBTET-AP\bin\WebApplication1.pdb
+D:\SBTET-AP\SBTET-AP\bin\roslyn\csc.exe
+D:\SBTET-AP\SBTET-AP\bin\roslyn\csc.exe.config
+D:\SBTET-AP\SBTET-AP\bin\roslyn\csc.rsp
+D:\SBTET-AP\SBTET-AP\bin\roslyn\csi.exe
+D:\SBTET-AP\SBTET-AP\bin\roslyn\csi.exe.config
+D:\SBTET-AP\SBTET-AP\bin\roslyn\csi.rsp
+D:\SBTET-AP\SBTET-AP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\SBTET-AP\SBTET-AP\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\Microsoft.Managed.Core.targets
+D:\SBTET-AP\SBTET-AP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\SBTET-AP\SBTET-AP\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.AppContext.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.Collections.Immutable.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.Console.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.Globalization.Calendars.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.IO.Compression.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.IO.FileSystem.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.Net.Sockets.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.Reflection.Metadata.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.ValueTuple.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.Xml.XmlDocument.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.Xml.XPath.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\SBTET-AP\SBTET-AP\bin\roslyn\vbc.exe
+D:\SBTET-AP\SBTET-AP\bin\roslyn\vbc.exe.config
+D:\SBTET-AP\SBTET-AP\bin\roslyn\vbc.rsp
+D:\SBTET-AP\SBTET-AP\bin\roslyn\VBCSCompiler.exe
+D:\SBTET-AP\SBTET-AP\bin\roslyn\VBCSCompiler.exe.config
+D:\SBTET-AP\SBTET-AP\bin\BouncyCastle.Crypto.dll
+D:\SBTET-AP\SBTET-AP\bin\DnsClient.dll
+D:\SBTET-AP\SBTET-AP\bin\DocumentFormat.OpenXml.dll
+D:\SBTET-AP\SBTET-AP\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\SBTET-AP\SBTET-AP\bin\Microsoft.Win32.Registry.dll
+D:\SBTET-AP\SBTET-AP\bin\MongoDB.Bson.dll
+D:\SBTET-AP\SBTET-AP\bin\MongoDB.Driver.Core.dll
+D:\SBTET-AP\SBTET-AP\bin\MongoDB.Driver.dll
+D:\SBTET-AP\SBTET-AP\bin\MongoDB.Libmongocrypt.dll
+D:\SBTET-AP\SBTET-AP\bin\SharpCompress.dll
+D:\SBTET-AP\SBTET-AP\bin\Snappier.dll
+D:\SBTET-AP\SBTET-AP\bin\System.Security.AccessControl.dll
+D:\SBTET-AP\SBTET-AP\bin\System.Security.Principal.Windows.dll
+D:\SBTET-AP\SBTET-AP\bin\System.Text.Encoding.CodePages.dll
+D:\SBTET-AP\SBTET-AP\bin\ZstdSharp.dll
+D:\SBTET-AP\SBTET-AP\bin\DnsClient.xml
+D:\SBTET-AP\SBTET-AP\bin\DocumentFormat.OpenXml.xml
+D:\SBTET-AP\SBTET-AP\bin\MailKit.xml
+D:\SBTET-AP\SBTET-AP\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\SBTET-AP\SBTET-AP\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\SBTET-AP\SBTET-AP\bin\Microsoft.Win32.Registry.xml
+D:\SBTET-AP\SBTET-AP\bin\MimeKit.pdb
+D:\SBTET-AP\SBTET-AP\bin\MimeKit.xml
+D:\SBTET-AP\SBTET-AP\bin\MongoDB.Bson.xml
+D:\SBTET-AP\SBTET-AP\bin\MongoDB.Driver.xml
+D:\SBTET-AP\SBTET-AP\bin\MongoDB.Driver.Core.xml
+D:\SBTET-AP\SBTET-AP\bin\Newtonsoft.Json.xml
+D:\SBTET-AP\SBTET-AP\bin\RestSharp.xml
+D:\SBTET-AP\SBTET-AP\bin\Snappier.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Buffers.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Memory.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Net.Http.Formatting.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Numerics.Vectors.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Security.AccessControl.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Security.Principal.Windows.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Text.Encoding.CodePages.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Threading.Tasks.Extensions.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Web.Helpers.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Web.Http.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Web.Http.WebHost.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Web.Mvc.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Web.Razor.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Web.WebPages.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Web.WebPages.Deployment.xml
+D:\SBTET-AP\SBTET-AP\bin\System.Web.WebPages.Razor.xml
+D:\SBTET-AP\SBTET-AP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\SBTET-AP\SBTET-AP\obj\Debug\SBTETAP.csproj.AssemblyReference.cache
+D:\SBTET-AP\SBTET-AP\obj\Debug\SBTETAP.csproj.CoreCompileInputs.cache
+D:\SBTET-AP\SBTET-AP\obj\Debug\SBTETAP.csproj.CopyComplete
+D:\SBTET-AP\SBTET-AP\obj\Debug\WebApplication1.dll
+D:\SBTET-AP\SBTET-AP\obj\Debug\WebApplication1.pdb
+D:\SBTET-AP-Modified\SBTET-AP\bin\mongocrypt.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\WebApplication1.dll.config
+D:\SBTET-AP-Modified\SBTET-AP\bin\WebApplication1.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\WebApplication1.pdb
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\csc.exe
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\csc.exe.config
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\csc.rsp
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\csi.exe
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\csi.exe.config
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\csi.rsp
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.Managed.Core.targets
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.AppContext.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Collections.Immutable.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Console.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Globalization.Calendars.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.IO.Compression.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.IO.FileSystem.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Net.Sockets.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Reflection.Metadata.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.ValueTuple.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Xml.XmlDocument.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Xml.XPath.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\vbc.exe
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\vbc.exe.config
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\vbc.rsp
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\VBCSCompiler.exe
+D:\SBTET-AP-Modified\SBTET-AP\bin\roslyn\VBCSCompiler.exe.config
+D:\SBTET-AP-Modified\SBTET-AP\bin\BouncyCastle.Crypto.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\DnsClient.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\DocumentFormat.OpenXml.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\Microsoft.Win32.Registry.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\MongoDB.Bson.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\MongoDB.Driver.Core.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\MongoDB.Driver.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\MongoDB.Libmongocrypt.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\SharpCompress.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\Snappier.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Security.AccessControl.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Security.Principal.Windows.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Text.Encoding.CodePages.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\ZstdSharp.dll
+D:\SBTET-AP-Modified\SBTET-AP\bin\DnsClient.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\DocumentFormat.OpenXml.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\MailKit.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\Microsoft.Win32.Registry.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\MimeKit.pdb
+D:\SBTET-AP-Modified\SBTET-AP\bin\MimeKit.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\MongoDB.Bson.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\MongoDB.Driver.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\MongoDB.Driver.Core.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\Newtonsoft.Json.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\RestSharp.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\Snappier.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Buffers.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Memory.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Net.Http.Formatting.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Numerics.Vectors.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Security.AccessControl.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Security.Principal.Windows.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Text.Encoding.CodePages.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Threading.Tasks.Extensions.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Web.Helpers.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Web.Http.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Web.Http.WebHost.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Web.Mvc.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Web.Razor.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Web.WebPages.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Web.WebPages.Deployment.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\System.Web.WebPages.Razor.xml
+D:\SBTET-AP-Modified\SBTET-AP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\SBTET-AP-Modified\SBTET-AP\obj\Debug\SBTETAP.csproj.AssemblyReference.cache
+D:\SBTET-AP-Modified\SBTET-AP\obj\Debug\SBTETAP.csproj.CoreCompileInputs.cache
+D:\SBTET-AP-Modified\SBTET-AP\obj\Debug\SBTETAP.csproj.CopyComplete
+D:\SBTET-AP-Modified\SBTET-AP\obj\Debug\WebApplication1.dll
+D:\SBTET-AP-Modified\SBTET-AP\obj\Debug\WebApplication1.pdb
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\mongocrypt.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\WebApplication1.dll.config
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\WebApplication1.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\WebApplication1.pdb
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\csc.exe
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\csc.exe.config
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\csc.rsp
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\csi.exe
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\csi.exe.config
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\csi.rsp
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.Managed.Core.targets
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.AppContext.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Collections.Immutable.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Console.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Globalization.Calendars.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.IO.Compression.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.IO.FileSystem.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Net.Sockets.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Reflection.Metadata.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.ValueTuple.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Xml.XmlDocument.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Xml.XPath.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\vbc.exe
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\vbc.exe.config
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\vbc.rsp
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\VBCSCompiler.exe
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\roslyn\VBCSCompiler.exe.config
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\BouncyCastle.Crypto.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\DnsClient.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\DocumentFormat.OpenXml.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\Microsoft.Extensions.Logging.Abstractions.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\Microsoft.Win32.Registry.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\MongoDB.Bson.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\MongoDB.Driver.Core.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\MongoDB.Driver.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\MongoDB.Libmongocrypt.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\SharpCompress.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\Snappier.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Security.AccessControl.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Security.Principal.Windows.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Text.Encoding.CodePages.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\ZstdSharp.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\DnsClient.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\DocumentFormat.OpenXml.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\MailKit.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\Microsoft.Bcl.AsyncInterfaces.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\Microsoft.Extensions.Logging.Abstractions.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\Microsoft.Win32.Registry.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\MimeKit.pdb
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\MimeKit.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\MongoDB.Bson.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\MongoDB.Driver.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\MongoDB.Driver.Core.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\Newtonsoft.Json.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\RestSharp.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\Snappier.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Buffers.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Memory.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Net.Http.Formatting.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Numerics.Vectors.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Runtime.CompilerServices.Unsafe.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Security.AccessControl.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Security.Principal.Windows.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Text.Encoding.CodePages.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Threading.Tasks.Extensions.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Web.Helpers.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Web.Http.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Web.Http.WebHost.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Web.Mvc.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Web.Razor.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Web.WebPages.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Web.WebPages.Deployment.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\System.Web.WebPages.Razor.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\obj\Debug\SBTETAP.csproj.AssemblyReference.cache
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\obj\Debug\SBTETAP.csproj.CoreCompileInputs.cache
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\obj\Debug\SBTETAP.csproj.CopyComplete
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\obj\Debug\WebApplication1.dll
+F:\SBTET-AP-Modified\SBTET-AP-Modified\SBTET-AP\obj\Debug\WebApplication1.pdb
+C:\Projects\New folder\sbtetAppublish\bin\mongocrypt.dll
+C:\Projects\New folder\sbtetAppublish\bin\WebApplication1.dll.config
+C:\Projects\New folder\sbtetAppublish\bin\WebApplication1.dll
+C:\Projects\New folder\sbtetAppublish\bin\WebApplication1.pdb
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\csc.exe
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\csc.exe.config
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\csc.rsp
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\csi.exe
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\csi.exe.config
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\csi.rsp
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.AppContext.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.Console.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.Globalization.Calendars.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.IO.Compression.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.Net.Sockets.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.ValueTuple.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.Xml.XPath.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\vbc.exe
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\vbc.exe.config
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\vbc.rsp
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\VBCSCompiler.exe
+C:\Projects\New folder\sbtetAppublish\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\New folder\sbtetAppublish\bin\BouncyCastle.Crypto.dll
+C:\Projects\New folder\sbtetAppublish\bin\DnsClient.dll
+C:\Projects\New folder\sbtetAppublish\bin\DocumentFormat.OpenXml.dll
+C:\Projects\New folder\sbtetAppublish\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Projects\New folder\sbtetAppublish\bin\Microsoft.Win32.Registry.dll
+C:\Projects\New folder\sbtetAppublish\bin\MongoDB.Bson.dll
+C:\Projects\New folder\sbtetAppublish\bin\MongoDB.Driver.Core.dll
+C:\Projects\New folder\sbtetAppublish\bin\MongoDB.Driver.dll
+C:\Projects\New folder\sbtetAppublish\bin\MongoDB.Libmongocrypt.dll
+C:\Projects\New folder\sbtetAppublish\bin\SharpCompress.dll
+C:\Projects\New folder\sbtetAppublish\bin\Snappier.dll
+C:\Projects\New folder\sbtetAppublish\bin\System.Security.AccessControl.dll
+C:\Projects\New folder\sbtetAppublish\bin\System.Security.Principal.Windows.dll
+C:\Projects\New folder\sbtetAppublish\bin\System.Text.Encoding.CodePages.dll
+C:\Projects\New folder\sbtetAppublish\bin\ZstdSharp.dll
+C:\Projects\New folder\sbtetAppublish\bin\DnsClient.xml
+C:\Projects\New folder\sbtetAppublish\bin\DocumentFormat.OpenXml.xml
+C:\Projects\New folder\sbtetAppublish\bin\MailKit.xml
+C:\Projects\New folder\sbtetAppublish\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Projects\New folder\sbtetAppublish\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Projects\New folder\sbtetAppublish\bin\Microsoft.Win32.Registry.xml
+C:\Projects\New folder\sbtetAppublish\bin\MimeKit.pdb
+C:\Projects\New folder\sbtetAppublish\bin\MimeKit.xml
+C:\Projects\New folder\sbtetAppublish\bin\MongoDB.Bson.xml
+C:\Projects\New folder\sbtetAppublish\bin\MongoDB.Driver.xml
+C:\Projects\New folder\sbtetAppublish\bin\MongoDB.Driver.Core.xml
+C:\Projects\New folder\sbtetAppublish\bin\Newtonsoft.Json.xml
+C:\Projects\New folder\sbtetAppublish\bin\RestSharp.xml
+C:\Projects\New folder\sbtetAppublish\bin\Snappier.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Buffers.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Memory.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Net.Http.Formatting.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Numerics.Vectors.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Security.AccessControl.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Security.Principal.Windows.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Text.Encoding.CodePages.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Threading.Tasks.Extensions.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Web.Helpers.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Web.Http.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Web.Http.WebHost.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Web.Mvc.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Web.Razor.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Web.WebPages.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Web.WebPages.Deployment.xml
+C:\Projects\New folder\sbtetAppublish\bin\System.Web.WebPages.Razor.xml
+C:\Projects\New folder\sbtetAppublish\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\New folder\sbtetAppublish\obj\Debug\SBTETAP.csproj.AssemblyReference.cache
+C:\Projects\New folder\sbtetAppublish\obj\Debug\SBTETAP.csproj.CoreCompileInputs.cache
+C:\Projects\New folder\sbtetAppublish\obj\Debug\SBTETAP.csproj.CopyComplete
+C:\Projects\New folder\sbtetAppublish\obj\Debug\WebApplication1.dll
+C:\Projects\New folder\sbtetAppublish\obj\Debug\WebApplication1.pdb
+F:\J\sbtetAppublish\bin\mongocrypt.dll
+F:\J\sbtetAppublish\bin\WebApplication1.dll.config
+F:\J\sbtetAppublish\bin\WebApplication1.dll
+F:\J\sbtetAppublish\bin\WebApplication1.pdb
+F:\J\sbtetAppublish\bin\roslyn\csc.exe
+F:\J\sbtetAppublish\bin\roslyn\csc.exe.config
+F:\J\sbtetAppublish\bin\roslyn\csc.rsp
+F:\J\sbtetAppublish\bin\roslyn\csi.exe
+F:\J\sbtetAppublish\bin\roslyn\csi.exe.config
+F:\J\sbtetAppublish\bin\roslyn\csi.rsp
+F:\J\sbtetAppublish\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\J\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\J\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\J\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\J\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\J\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\J\sbtetAppublish\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\J\sbtetAppublish\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\J\sbtetAppublish\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\J\sbtetAppublish\bin\roslyn\Microsoft.Managed.Core.targets
+F:\J\sbtetAppublish\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\J\sbtetAppublish\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\J\sbtetAppublish\bin\roslyn\System.AppContext.dll
+F:\J\sbtetAppublish\bin\roslyn\System.Collections.Immutable.dll
+F:\J\sbtetAppublish\bin\roslyn\System.Console.dll
+F:\J\sbtetAppublish\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\J\sbtetAppublish\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\J\sbtetAppublish\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\J\sbtetAppublish\bin\roslyn\System.Globalization.Calendars.dll
+F:\J\sbtetAppublish\bin\roslyn\System.IO.Compression.dll
+F:\J\sbtetAppublish\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\J\sbtetAppublish\bin\roslyn\System.IO.FileSystem.dll
+F:\J\sbtetAppublish\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\J\sbtetAppublish\bin\roslyn\System.Net.Sockets.dll
+F:\J\sbtetAppublish\bin\roslyn\System.Reflection.Metadata.dll
+F:\J\sbtetAppublish\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\J\sbtetAppublish\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\J\sbtetAppublish\bin\roslyn\System.ValueTuple.dll
+F:\J\sbtetAppublish\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\J\sbtetAppublish\bin\roslyn\System.Xml.XmlDocument.dll
+F:\J\sbtetAppublish\bin\roslyn\System.Xml.XPath.dll
+F:\J\sbtetAppublish\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\J\sbtetAppublish\bin\roslyn\vbc.exe
+F:\J\sbtetAppublish\bin\roslyn\vbc.exe.config
+F:\J\sbtetAppublish\bin\roslyn\vbc.rsp
+F:\J\sbtetAppublish\bin\roslyn\VBCSCompiler.exe
+F:\J\sbtetAppublish\bin\roslyn\VBCSCompiler.exe.config
+F:\J\sbtetAppublish\bin\BouncyCastle.Crypto.dll
+F:\J\sbtetAppublish\bin\DnsClient.dll
+F:\J\sbtetAppublish\bin\DocumentFormat.OpenXml.dll
+F:\J\sbtetAppublish\bin\Microsoft.Extensions.Logging.Abstractions.dll
+F:\J\sbtetAppublish\bin\Microsoft.Win32.Registry.dll
+F:\J\sbtetAppublish\bin\MongoDB.Bson.dll
+F:\J\sbtetAppublish\bin\MongoDB.Driver.Core.dll
+F:\J\sbtetAppublish\bin\MongoDB.Driver.dll
+F:\J\sbtetAppublish\bin\MongoDB.Libmongocrypt.dll
+F:\J\sbtetAppublish\bin\SharpCompress.dll
+F:\J\sbtetAppublish\bin\Snappier.dll
+F:\J\sbtetAppublish\bin\System.Security.AccessControl.dll
+F:\J\sbtetAppublish\bin\System.Security.Principal.Windows.dll
+F:\J\sbtetAppublish\bin\System.Text.Encoding.CodePages.dll
+F:\J\sbtetAppublish\bin\ZstdSharp.dll
+F:\J\sbtetAppublish\bin\DnsClient.xml
+F:\J\sbtetAppublish\bin\DocumentFormat.OpenXml.xml
+F:\J\sbtetAppublish\bin\MailKit.xml
+F:\J\sbtetAppublish\bin\Microsoft.Bcl.AsyncInterfaces.xml
+F:\J\sbtetAppublish\bin\Microsoft.Extensions.Logging.Abstractions.xml
+F:\J\sbtetAppublish\bin\Microsoft.Win32.Registry.xml
+F:\J\sbtetAppublish\bin\MimeKit.pdb
+F:\J\sbtetAppublish\bin\MimeKit.xml
+F:\J\sbtetAppublish\bin\MongoDB.Bson.xml
+F:\J\sbtetAppublish\bin\MongoDB.Driver.xml
+F:\J\sbtetAppublish\bin\MongoDB.Driver.Core.xml
+F:\J\sbtetAppublish\bin\Newtonsoft.Json.xml
+F:\J\sbtetAppublish\bin\RestSharp.xml
+F:\J\sbtetAppublish\bin\Snappier.xml
+F:\J\sbtetAppublish\bin\System.Buffers.xml
+F:\J\sbtetAppublish\bin\System.Memory.xml
+F:\J\sbtetAppublish\bin\System.Net.Http.Formatting.xml
+F:\J\sbtetAppublish\bin\System.Numerics.Vectors.xml
+F:\J\sbtetAppublish\bin\System.Runtime.CompilerServices.Unsafe.xml
+F:\J\sbtetAppublish\bin\System.Security.AccessControl.xml
+F:\J\sbtetAppublish\bin\System.Security.Principal.Windows.xml
+F:\J\sbtetAppublish\bin\System.Text.Encoding.CodePages.xml
+F:\J\sbtetAppublish\bin\System.Threading.Tasks.Extensions.xml
+F:\J\sbtetAppublish\bin\System.Web.Helpers.xml
+F:\J\sbtetAppublish\bin\System.Web.Http.xml
+F:\J\sbtetAppublish\bin\System.Web.Http.WebHost.xml
+F:\J\sbtetAppublish\bin\System.Web.Mvc.xml
+F:\J\sbtetAppublish\bin\System.Web.Razor.xml
+F:\J\sbtetAppublish\bin\System.Web.WebPages.xml
+F:\J\sbtetAppublish\bin\System.Web.WebPages.Deployment.xml
+F:\J\sbtetAppublish\bin\System.Web.WebPages.Razor.xml
+F:\J\sbtetAppublish\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\J\sbtetAppublish\obj\Debug\SBTETAP.csproj.AssemblyReference.cache
+F:\J\sbtetAppublish\obj\Debug\SBTETAP.csproj.CoreCompileInputs.cache
+F:\J\sbtetAppublish\obj\Debug\SBTETAP.csproj.CopyComplete
+F:\J\sbtetAppublish\obj\Debug\WebApplication1.dll
+F:\J\sbtetAppublish\obj\Debug\WebApplication1.pdb
+C:\Users\Dell\Downloads\sbtetAppublish\bin\mongocrypt.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\WebApplication1.dll.config
+C:\Users\Dell\Downloads\sbtetAppublish\bin\WebApplication1.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\WebApplication1.pdb
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\csc.exe
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\csc.exe.config
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\csc.rsp
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\csi.exe
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\csi.exe.config
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\csi.rsp
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.AppContext.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.Console.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.IO.Compression.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.ValueTuple.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\vbc.exe
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\vbc.exe.config
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\vbc.rsp
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\VBCSCompiler.exe
+C:\Users\Dell\Downloads\sbtetAppublish\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Dell\Downloads\sbtetAppublish\bin\BouncyCastle.Crypto.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\DnsClient.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\DocumentFormat.OpenXml.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\Microsoft.Win32.Registry.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\MongoDB.Bson.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\MongoDB.Driver.Core.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\MongoDB.Driver.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\MongoDB.Libmongocrypt.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\SharpCompress.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\Snappier.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Security.AccessControl.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Security.Principal.Windows.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Text.Encoding.CodePages.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\ZstdSharp.dll
+C:\Users\Dell\Downloads\sbtetAppublish\bin\DnsClient.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\DocumentFormat.OpenXml.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\MailKit.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\Microsoft.Win32.Registry.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\MimeKit.pdb
+C:\Users\Dell\Downloads\sbtetAppublish\bin\MimeKit.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\MongoDB.Bson.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\MongoDB.Driver.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\MongoDB.Driver.Core.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\Newtonsoft.Json.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\RestSharp.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\Snappier.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Buffers.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Memory.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Net.Http.Formatting.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Numerics.Vectors.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Security.AccessControl.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Security.Principal.Windows.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Text.Encoding.CodePages.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Web.Helpers.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Web.Http.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Web.Http.WebHost.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Web.Mvc.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Web.Razor.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Web.WebPages.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dell\Downloads\sbtetAppublish\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Dell\Downloads\sbtetAppublish\obj\Debug\SBTETAP.csproj.AssemblyReference.cache
+C:\Users\Dell\Downloads\sbtetAppublish\obj\Debug\SBTETAP.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Downloads\sbtetAppublish\obj\Debug\SBTETAP.csproj.CopyComplete
+C:\Users\Dell\Downloads\sbtetAppublish\obj\Debug\WebApplication1.dll
+C:\Users\Dell\Downloads\sbtetAppublish\obj\Debug\WebApplication1.pdb
+C:\Projects\sbtetAppublish\bin\mongocrypt.dll
+C:\Projects\sbtetAppublish\bin\WebApplication1.dll.config
+C:\Projects\sbtetAppublish\bin\WebApplication1.dll
+C:\Projects\sbtetAppublish\bin\WebApplication1.pdb
+C:\Projects\sbtetAppublish\bin\roslyn\csc.exe
+C:\Projects\sbtetAppublish\bin\roslyn\csc.exe.config
+C:\Projects\sbtetAppublish\bin\roslyn\csc.rsp
+C:\Projects\sbtetAppublish\bin\roslyn\csi.exe
+C:\Projects\sbtetAppublish\bin\roslyn\csi.exe.config
+C:\Projects\sbtetAppublish\bin\roslyn\csi.rsp
+C:\Projects\sbtetAppublish\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\sbtetAppublish\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\sbtetAppublish\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\sbtetAppublish\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\sbtetAppublish\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Projects\sbtetAppublish\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\sbtetAppublish\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.AppContext.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.Console.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.Globalization.Calendars.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.IO.Compression.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.Net.Sockets.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.ValueTuple.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.Xml.XPath.dll
+C:\Projects\sbtetAppublish\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Projects\sbtetAppublish\bin\roslyn\vbc.exe
+C:\Projects\sbtetAppublish\bin\roslyn\vbc.exe.config
+C:\Projects\sbtetAppublish\bin\roslyn\vbc.rsp
+C:\Projects\sbtetAppublish\bin\roslyn\VBCSCompiler.exe
+C:\Projects\sbtetAppublish\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\sbtetAppublish\bin\BouncyCastle.Crypto.dll
+C:\Projects\sbtetAppublish\bin\DnsClient.dll
+C:\Projects\sbtetAppublish\bin\DocumentFormat.OpenXml.dll
+C:\Projects\sbtetAppublish\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Projects\sbtetAppublish\bin\Microsoft.Win32.Registry.dll
+C:\Projects\sbtetAppublish\bin\MongoDB.Bson.dll
+C:\Projects\sbtetAppublish\bin\MongoDB.Driver.Core.dll
+C:\Projects\sbtetAppublish\bin\MongoDB.Driver.dll
+C:\Projects\sbtetAppublish\bin\MongoDB.Libmongocrypt.dll
+C:\Projects\sbtetAppublish\bin\SharpCompress.dll
+C:\Projects\sbtetAppublish\bin\Snappier.dll
+C:\Projects\sbtetAppublish\bin\System.Security.AccessControl.dll
+C:\Projects\sbtetAppublish\bin\System.Security.Principal.Windows.dll
+C:\Projects\sbtetAppublish\bin\System.Text.Encoding.CodePages.dll
+C:\Projects\sbtetAppublish\bin\ZstdSharp.dll
+C:\Projects\sbtetAppublish\bin\DnsClient.xml
+C:\Projects\sbtetAppublish\bin\DocumentFormat.OpenXml.xml
+C:\Projects\sbtetAppublish\bin\MailKit.xml
+C:\Projects\sbtetAppublish\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Projects\sbtetAppublish\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Projects\sbtetAppublish\bin\Microsoft.Win32.Registry.xml
+C:\Projects\sbtetAppublish\bin\MimeKit.pdb
+C:\Projects\sbtetAppublish\bin\MimeKit.xml
+C:\Projects\sbtetAppublish\bin\MongoDB.Bson.xml
+C:\Projects\sbtetAppublish\bin\MongoDB.Driver.xml
+C:\Projects\sbtetAppublish\bin\MongoDB.Driver.Core.xml
+C:\Projects\sbtetAppublish\bin\Newtonsoft.Json.xml
+C:\Projects\sbtetAppublish\bin\RestSharp.xml
+C:\Projects\sbtetAppublish\bin\Snappier.xml
+C:\Projects\sbtetAppublish\bin\System.Buffers.xml
+C:\Projects\sbtetAppublish\bin\System.Memory.xml
+C:\Projects\sbtetAppublish\bin\System.Net.Http.Formatting.xml
+C:\Projects\sbtetAppublish\bin\System.Numerics.Vectors.xml
+C:\Projects\sbtetAppublish\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Projects\sbtetAppublish\bin\System.Security.AccessControl.xml
+C:\Projects\sbtetAppublish\bin\System.Security.Principal.Windows.xml
+C:\Projects\sbtetAppublish\bin\System.Text.Encoding.CodePages.xml
+C:\Projects\sbtetAppublish\bin\System.Threading.Tasks.Extensions.xml
+C:\Projects\sbtetAppublish\bin\System.Web.Helpers.xml
+C:\Projects\sbtetAppublish\bin\System.Web.Http.xml
+C:\Projects\sbtetAppublish\bin\System.Web.Http.WebHost.xml
+C:\Projects\sbtetAppublish\bin\System.Web.Mvc.xml
+C:\Projects\sbtetAppublish\bin\System.Web.Razor.xml
+C:\Projects\sbtetAppublish\bin\System.Web.WebPages.xml
+C:\Projects\sbtetAppublish\bin\System.Web.WebPages.Deployment.xml
+C:\Projects\sbtetAppublish\bin\System.Web.WebPages.Razor.xml
+C:\Projects\sbtetAppublish\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\sbtetAppublish\obj\Debug\SBTETAP.csproj.AssemblyReference.cache
+C:\Projects\sbtetAppublish\obj\Debug\SBTETAP.csproj.CoreCompileInputs.cache
+C:\Projects\sbtetAppublish\obj\Debug\SBTETAP.csproj.CopyComplete
+C:\Projects\sbtetAppublish\obj\Debug\WebApplication1.dll
+C:\Projects\sbtetAppublish\obj\Debug\WebApplication1.pdb
+D:\Projects\sbtetAppublish\bin\mongocrypt.dll
+D:\Projects\sbtetAppublish\bin\WebApplication1.dll.config
+D:\Projects\sbtetAppublish\bin\WebApplication1.dll
+D:\Projects\sbtetAppublish\bin\WebApplication1.pdb
+D:\Projects\sbtetAppublish\bin\roslyn\csc.exe
+D:\Projects\sbtetAppublish\bin\roslyn\csc.exe.config
+D:\Projects\sbtetAppublish\bin\roslyn\csc.rsp
+D:\Projects\sbtetAppublish\bin\roslyn\csi.exe
+D:\Projects\sbtetAppublish\bin\roslyn\csi.exe.config
+D:\Projects\sbtetAppublish\bin\roslyn\csi.rsp
+D:\Projects\sbtetAppublish\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Projects\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Projects\sbtetAppublish\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\sbtetAppublish\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\sbtetAppublish\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Projects\sbtetAppublish\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Projects\sbtetAppublish\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Projects\sbtetAppublish\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\sbtetAppublish\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.AppContext.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.Console.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.Globalization.Calendars.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.IO.Compression.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.IO.FileSystem.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.Net.Sockets.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.ValueTuple.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.Xml.XPath.dll
+D:\Projects\sbtetAppublish\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Projects\sbtetAppublish\bin\roslyn\vbc.exe
+D:\Projects\sbtetAppublish\bin\roslyn\vbc.exe.config
+D:\Projects\sbtetAppublish\bin\roslyn\vbc.rsp
+D:\Projects\sbtetAppublish\bin\roslyn\VBCSCompiler.exe
+D:\Projects\sbtetAppublish\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\sbtetAppublish\bin\BouncyCastle.Crypto.dll
+D:\Projects\sbtetAppublish\bin\DnsClient.dll
+D:\Projects\sbtetAppublish\bin\DocumentFormat.OpenXml.dll
+D:\Projects\sbtetAppublish\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Projects\sbtetAppublish\bin\Microsoft.Win32.Registry.dll
+D:\Projects\sbtetAppublish\bin\MongoDB.Bson.dll
+D:\Projects\sbtetAppublish\bin\MongoDB.Driver.Core.dll
+D:\Projects\sbtetAppublish\bin\MongoDB.Driver.dll
+D:\Projects\sbtetAppublish\bin\MongoDB.Libmongocrypt.dll
+D:\Projects\sbtetAppublish\bin\SharpCompress.dll
+D:\Projects\sbtetAppublish\bin\Snappier.dll
+D:\Projects\sbtetAppublish\bin\System.Security.AccessControl.dll
+D:\Projects\sbtetAppublish\bin\System.Security.Principal.Windows.dll
+D:\Projects\sbtetAppublish\bin\System.Text.Encoding.CodePages.dll
+D:\Projects\sbtetAppublish\bin\ZstdSharp.dll
+D:\Projects\sbtetAppublish\bin\DnsClient.xml
+D:\Projects\sbtetAppublish\bin\DocumentFormat.OpenXml.xml
+D:\Projects\sbtetAppublish\bin\MailKit.xml
+D:\Projects\sbtetAppublish\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Projects\sbtetAppublish\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Projects\sbtetAppublish\bin\Microsoft.Win32.Registry.xml
+D:\Projects\sbtetAppublish\bin\MimeKit.pdb
+D:\Projects\sbtetAppublish\bin\MimeKit.xml
+D:\Projects\sbtetAppublish\bin\MongoDB.Bson.xml
+D:\Projects\sbtetAppublish\bin\MongoDB.Driver.xml
+D:\Projects\sbtetAppublish\bin\MongoDB.Driver.Core.xml
+D:\Projects\sbtetAppublish\bin\Newtonsoft.Json.xml
+D:\Projects\sbtetAppublish\bin\RestSharp.xml
+D:\Projects\sbtetAppublish\bin\Snappier.xml
+D:\Projects\sbtetAppublish\bin\System.Buffers.xml
+D:\Projects\sbtetAppublish\bin\System.Memory.xml
+D:\Projects\sbtetAppublish\bin\System.Net.Http.Formatting.xml
+D:\Projects\sbtetAppublish\bin\System.Numerics.Vectors.xml
+D:\Projects\sbtetAppublish\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Projects\sbtetAppublish\bin\System.Security.AccessControl.xml
+D:\Projects\sbtetAppublish\bin\System.Security.Principal.Windows.xml
+D:\Projects\sbtetAppublish\bin\System.Text.Encoding.CodePages.xml
+D:\Projects\sbtetAppublish\bin\System.Threading.Tasks.Extensions.xml
+D:\Projects\sbtetAppublish\bin\System.Web.Helpers.xml
+D:\Projects\sbtetAppublish\bin\System.Web.Http.xml
+D:\Projects\sbtetAppublish\bin\System.Web.Http.WebHost.xml
+D:\Projects\sbtetAppublish\bin\System.Web.Mvc.xml
+D:\Projects\sbtetAppublish\bin\System.Web.Razor.xml
+D:\Projects\sbtetAppublish\bin\System.Web.WebPages.xml
+D:\Projects\sbtetAppublish\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\sbtetAppublish\bin\System.Web.WebPages.Razor.xml
+D:\Projects\sbtetAppublish\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\sbtetAppublish\obj\Debug\SBTETAP.csproj.AssemblyReference.cache
+D:\Projects\sbtetAppublish\obj\Debug\SBTETAP.csproj.CoreCompileInputs.cache
+D:\Projects\sbtetAppublish\obj\Debug\SBTETAP.csproj.CopyComplete
+D:\Projects\sbtetAppublish\obj\Debug\WebApplication1.dll
+D:\Projects\sbtetAppublish\obj\Debug\WebApplication1.pdb
+D:\Projects\sbtetap_security_audit\bin\mongocrypt.dll
+D:\Projects\sbtetap_security_audit\bin\WebApplication1.dll.config
+D:\Projects\sbtetap_security_audit\bin\WebApplication1.dll
+D:\Projects\sbtetap_security_audit\bin\WebApplication1.pdb
+D:\Projects\sbtetap_security_audit\bin\roslyn\csc.exe
+D:\Projects\sbtetap_security_audit\bin\roslyn\csc.exe.config
+D:\Projects\sbtetap_security_audit\bin\roslyn\csc.rsp
+D:\Projects\sbtetap_security_audit\bin\roslyn\csi.exe
+D:\Projects\sbtetap_security_audit\bin\roslyn\csi.exe.config
+D:\Projects\sbtetap_security_audit\bin\roslyn\csi.rsp
+D:\Projects\sbtetap_security_audit\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\sbtetap_security_audit\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Projects\sbtetap_security_audit\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\sbtetap_security_audit\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.AppContext.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.Console.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.Globalization.Calendars.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.IO.Compression.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.IO.FileSystem.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.Net.Sockets.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.ValueTuple.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.Xml.XPath.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Projects\sbtetap_security_audit\bin\roslyn\vbc.exe
+D:\Projects\sbtetap_security_audit\bin\roslyn\vbc.exe.config
+D:\Projects\sbtetap_security_audit\bin\roslyn\vbc.rsp
+D:\Projects\sbtetap_security_audit\bin\roslyn\VBCSCompiler.exe
+D:\Projects\sbtetap_security_audit\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\sbtetap_security_audit\bin\BouncyCastle.Crypto.dll
+D:\Projects\sbtetap_security_audit\bin\DnsClient.dll
+D:\Projects\sbtetap_security_audit\bin\DocumentFormat.OpenXml.dll
+D:\Projects\sbtetap_security_audit\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Projects\sbtetap_security_audit\bin\Microsoft.Win32.Registry.dll
+D:\Projects\sbtetap_security_audit\bin\MongoDB.Bson.dll
+D:\Projects\sbtetap_security_audit\bin\MongoDB.Driver.Core.dll
+D:\Projects\sbtetap_security_audit\bin\MongoDB.Driver.dll
+D:\Projects\sbtetap_security_audit\bin\MongoDB.Libmongocrypt.dll
+D:\Projects\sbtetap_security_audit\bin\SharpCompress.dll
+D:\Projects\sbtetap_security_audit\bin\Snappier.dll
+D:\Projects\sbtetap_security_audit\bin\System.Security.AccessControl.dll
+D:\Projects\sbtetap_security_audit\bin\System.Security.Principal.Windows.dll
+D:\Projects\sbtetap_security_audit\bin\System.Text.Encoding.CodePages.dll
+D:\Projects\sbtetap_security_audit\bin\ZstdSharp.dll
+D:\Projects\sbtetap_security_audit\bin\DnsClient.xml
+D:\Projects\sbtetap_security_audit\bin\DocumentFormat.OpenXml.xml
+D:\Projects\sbtetap_security_audit\bin\MailKit.xml
+D:\Projects\sbtetap_security_audit\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Projects\sbtetap_security_audit\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Projects\sbtetap_security_audit\bin\Microsoft.Win32.Registry.xml
+D:\Projects\sbtetap_security_audit\bin\MimeKit.pdb
+D:\Projects\sbtetap_security_audit\bin\MimeKit.xml
+D:\Projects\sbtetap_security_audit\bin\MongoDB.Bson.xml
+D:\Projects\sbtetap_security_audit\bin\MongoDB.Driver.xml
+D:\Projects\sbtetap_security_audit\bin\MongoDB.Driver.Core.xml
+D:\Projects\sbtetap_security_audit\bin\Newtonsoft.Json.xml
+D:\Projects\sbtetap_security_audit\bin\RestSharp.xml
+D:\Projects\sbtetap_security_audit\bin\Snappier.xml
+D:\Projects\sbtetap_security_audit\bin\System.Buffers.xml
+D:\Projects\sbtetap_security_audit\bin\System.Memory.xml
+D:\Projects\sbtetap_security_audit\bin\System.Net.Http.Formatting.xml
+D:\Projects\sbtetap_security_audit\bin\System.Numerics.Vectors.xml
+D:\Projects\sbtetap_security_audit\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Projects\sbtetap_security_audit\bin\System.Security.AccessControl.xml
+D:\Projects\sbtetap_security_audit\bin\System.Security.Principal.Windows.xml
+D:\Projects\sbtetap_security_audit\bin\System.Text.Encoding.CodePages.xml
+D:\Projects\sbtetap_security_audit\bin\System.Threading.Tasks.Extensions.xml
+D:\Projects\sbtetap_security_audit\bin\System.Web.Helpers.xml
+D:\Projects\sbtetap_security_audit\bin\System.Web.Http.xml
+D:\Projects\sbtetap_security_audit\bin\System.Web.Http.WebHost.xml
+D:\Projects\sbtetap_security_audit\bin\System.Web.Mvc.xml
+D:\Projects\sbtetap_security_audit\bin\System.Web.Razor.xml
+D:\Projects\sbtetap_security_audit\bin\System.Web.WebPages.xml
+D:\Projects\sbtetap_security_audit\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\sbtetap_security_audit\bin\System.Web.WebPages.Razor.xml
+D:\Projects\sbtetap_security_audit\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\sbtetap_security_audit\obj\Debug\SBTETAP.csproj.AssemblyReference.cache
+D:\Projects\sbtetap_security_audit\obj\Debug\SBTETAP.csproj.CoreCompileInputs.cache
+D:\Projects\sbtetap_security_audit\obj\Debug\SBTETAP.csproj.CopyComplete
+D:\Projects\sbtetap_security_audit\obj\Debug\WebApplication1.dll
+D:\Projects\sbtetap_security_audit\obj\Debug\WebApplication1.pdb
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\mongocrypt.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\WebApplication1.dll.config
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\WebApplication1.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\WebApplication1.pdb
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\csc.exe
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\csc.exe.config
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\csc.rsp
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\csi.exe
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\csi.exe.config
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\csi.rsp
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\Microsoft.Managed.Core.targets
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.AppContext.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.Collections.Immutable.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.Console.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.Globalization.Calendars.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.IO.Compression.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.IO.FileSystem.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.Net.Sockets.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.Reflection.Metadata.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.ValueTuple.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.Xml.XmlDocument.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.Xml.XPath.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\vbc.exe
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\vbc.exe.config
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\vbc.rsp
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\VBCSCompiler.exe
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\roslyn\VBCSCompiler.exe.config
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\BouncyCastle.Crypto.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\DnsClient.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\DocumentFormat.OpenXml.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\Microsoft.Win32.Registry.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\MongoDB.Bson.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\MongoDB.Driver.Core.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\MongoDB.Driver.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\MongoDB.Libmongocrypt.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\SharpCompress.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\Snappier.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Security.AccessControl.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Security.Principal.Windows.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Text.Encoding.CodePages.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\ZstdSharp.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\DnsClient.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\DocumentFormat.OpenXml.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\MailKit.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\Microsoft.Win32.Registry.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\MimeKit.pdb
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\MimeKit.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\MongoDB.Bson.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\MongoDB.Driver.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\MongoDB.Driver.Core.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\Newtonsoft.Json.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\RestSharp.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\Snappier.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Buffers.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Memory.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Net.Http.Formatting.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Numerics.Vectors.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Security.AccessControl.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Security.Principal.Windows.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Text.Encoding.CodePages.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Threading.Tasks.Extensions.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Web.Helpers.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Web.Http.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Web.Http.WebHost.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Web.Mvc.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Web.Razor.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Web.WebPages.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Web.WebPages.Deployment.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\System.Web.WebPages.Razor.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\obj\Debug\SBTETAP.csproj.AssemblyReference.cache
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\obj\Debug\SBTETAP.csproj.CoreCompileInputs.cache
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\obj\Debug\SBTETAP.csproj.Up2Date
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\obj\Debug\WebApplication1.dll
+D:\AP_SBTET_AUDIT\sbtetap_security_audit\obj\Debug\WebApplication1.pdb

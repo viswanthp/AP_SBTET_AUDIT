@@ -1,0 +1,135 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/Services/TimeTables.css" rel="stylesheet" />
+<script>
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });</script>
+<div ng-controller="TimeTablesController">
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2>Time Tables</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a>&gt; <a ui-sref="index.ServicesList">Service Types</a> &gt; <a ui-sref="index.SubServicesList">Services</a> &gt; <a ui-sref="index.DiplomaService">
+                                Diploma
+                                Service
+                            </a> &gt; <a ui-sref="index.TimeTables">Time Tables</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="xs-spacer"></div>
+    <div class="container">
+
+        <div class="col-md-12">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Scheme</label>
+                    <select class="form-control" ng-model="Scheme" name="Scheme" required="">
+                        <option value="" selected="selected">Select Scheme</option>
+                        <option value="-1">All</option>
+                        <option value="{{data.SchemeID}}" ng-repeat="data in GetSchemesList" class="ng-binding ng-scope">{{data.Scheme}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Academic Years</label>
+                    <select class="form-control" ng-model="AcademicYear" name="AcademicYear" required="">
+                        <option value="-1">All</option>
+                        <option value="" selected="selected">Select Academic Year</option>
+                        <option value="{{data.AcademicYearID}}" ng-repeat="data in GetAcademicYearsList" class="ng-binding ng-scope">{{data.AcademicYear}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Exam Month Years</label>
+                    <select class="form-control" ng-model="ExamMonthYear" name="ExamMonthYears" required="">
+                        <option value="" selected="selected">Select Exam Month Year</option>
+                        <option value="-1">All</option>
+                        <option value="{{data.ExamMonthYearID}}" ng-repeat="data in GetExamMonthYearsList" class="ng-binding ng-scope">{{data.ExamMonthYear}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-success" ng-click="GetTimeTableData()" style="margin-top:30px;">Submit</button>
+            </div>
+        </div>
+
+        <div class="xs-spacer"></div>
+        <div class="container">
+            <!--   <h2><span class="top_head"> Notifications</span></h2>-->
+            <table class="table table-striped table-hover">
+                <thead>
+
+                    <tr>
+                        <th class="id" custom-sort order="'id'" sort="sort"> </th>
+                        <th width="5%"></th>
+                        <!--<th class="name" custom-sort order="'name'" sort="sort">EventSubject&nbsp;</th>
+                        <th class="description" custom-sort order="'description'" sort="sort">EventText&nbsp;</th>-->
+                        <!--<th class="field3" custom-sort order="'field3'" sort="sort">Field 3&nbsp;</th>
+                        <th class="field4" custom-sort order="'field4'" sort="sort">Field 4&nbsp;</th>
+                        <th class="field5" custom-sort order="'field5'" sort="sort">Field 5&nbsp;</th>-->
+                    </tr>
+                </thead>
+
+                <!--<pre>pagedItems.length: {{pagedItems.length|json}}</pre>
+                <pre>currentPage: {{currentPage|json}}</pre>
+                <pre>currentPage: {{sort|json}}</pre>-->
+                <tbody>
+                    <tr ng-repeat="data in GetTimeTableList">
+                        <td>
+                            <div class="event-item">
+                                <div class="not_css">
+                                    <i>{{data.Scheme}} |</i>
+                                    <i>{{data.AcademicYear}} |</i>
+                                    <i>{{data.ExamMonthYear}} |</i>
+                                    <i class="cal_date">{{data.TimeTableText}}</i>
+                                    <br>
+                                </div>
+                            </div>
+                        </td>
+                        <td><a href="{{data.TimeTableFilePath}}" download><button class="btn download_file pull-right"><i class="fa fa-download" aria-hidden="true"></i></button></a></td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+
+            <!--<tfoot>
+            <td colspan="6">-->
+            <div class="pagination pull-right" ng-show="pagedItems.length>1">
+                <ul class="ul_page">
+                    <li class="page_li1" ng-class="{disabled: currentPage == 0}">
+
+                        <a class="page" ng-click="prevPage()">« Prev</a>
+
+                    </li>
+
+                    <li class="page_li" ng-repeat="n in range(pagedItems.length, currentPage, currentPage + gap) "
+                        ng-class="{active: n == currentPage}"
+                        ng-click="setPage()">
+                        <a class="page" ng-bind="n + 1">1</a>
+                    </li>
+
+                    <li class="page_li3" ng-class="{disabled: (currentPage) == pagedItems.length - 1}">
+                        <a class="page" ng-click="nextPage()">Next »</a>
+                    </li>
+                </ul>
+            </div>
+            <!--</td>
+            </tfoot>-->
+        </div>
+    </div>
+
+</div>

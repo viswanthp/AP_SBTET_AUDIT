@@ -1,0 +1,269 @@
+.l-news h2 {
+    border: 2px solid #5aa628;
+    background: #5aa628;
+    padding: 8px 20px;
+    float: left;
+    color: #fff;
+    font-size: 12px;
+    margin: 8px 10px 6px 0px;
+}
+
+.l-news h2 {
+    border: 2px solid #07294d;
+    background: #1e4167;
+    padding: 8px 10px;
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.test-scroll {
+    float: left;
+    width: 85%;
+    padding: 10px 0px 0px 0px;
+}
+
+.irs-quick-link ul li {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+    .irs-quick-link ul li:before {
+        content: "\eb88";
+        font-family: IcoFont;
+        color: yellow;
+        margin-right: 5px;
+        font-weight: 700;
+    }
+
+.irs-quick-link {
+    padding-top: 15px;
+    padding: 10px;
+    background: rgb(31,73,125);
+    background: linear-gradient(90deg, rgba(31,73,125,1) 0%, rgba(217,217,217,1) 100%);
+    background: linear-gradient(90deg, rgb(23 104 23) 60%, #74acd2 100%);
+    height: 447px !important;
+}
+
+.clr_yellow {
+    color: #fff;
+}
+
+    .clr_yellow:hover, .clr_yellow:focus, .clr_yellow:active {
+        font-weight: 600;
+        color: #ddd;
+    }
+
+.irs-quick-heading {
+    color: yellow;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.scrl-text {
+    color: darkgreen;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+    .scrl-text:hover, .scrl-text:focus {
+        color: darkgreen;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+.LoadingImage {
+    margin-top: 40px;
+    height: 70px;
+    width: 70px;
+}
+
+.NoDataCss {
+    padding: 5px;
+    font-weight: 600;
+    margin: 0px 15px;
+    margin-top: 40px;
+}
+
+.polycet_css {
+    color: #fff !important;
+}
+
+.bt_sub_marg {
+    margin-top: 30px;
+}
+
+h4.no-results.text-center {
+    padding: 10px 0px;
+    background-color: orangered;
+    color: #fff;
+    font-weight: 600;
+    border: dotted 2px;
+}
+
+.FeedCss {
+    position: fixed;
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+    right: -207px;
+    top: 30%;
+    height: 36px;
+    background-color: darkmagenta;
+    padding: 5px 7px !important;
+    font-size: 20px;
+    color: red;
+    text-transform: 90;
+    border-radius: 0px 0px 25px 5px;
+    z-index: 1000;
+}
+
+.Feed_clr {
+    color: yellow !important;
+}
+
+.poly_css {
+    color: yellow;
+    font-weight: 600;
+    font-size: 20px;
+}
+.marq_css {
+    color: #8b008b;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.btn_zoom {
+    margin: 2px 3px;
+    font-weight: 600;
+}
+
+.fa-wheelchair {
+    content: "\f193";
+    font-weight: 600;
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 3px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    /*min-width: 160px;*/
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 33px;
+    left: 31px;
+}
+.btn_wheel1 {
+    font-size: 23px;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 5px 10px;
+        text-decoration: none;
+        display: block;
+        border-bottom: 1px solid #ddd;
+        background-color: #ffffff;
+    }
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+@media only screen and (min-width:200px ) and (max-width:989px ) {
+    .navbar-brand {
+        display: none;
+    }
+
+    .home_logo1 {
+        display: none;
+    }
+
+    .irs-inner-page-heading {
+        margin-top: 0px;
+    }
+
+    .navbar-toggle {
+        font-size: 20px;
+        position: relative;
+        float: right;
+        padding: 0px 10px;
+        margin-top: 0px;
+        margin-right: 15px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    .section-content {
+        height: auto;
+        width: 100%;
+    }
+        .irs-inner-page-heading h2 {
+        font-size: 26px;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    a.read_more1.pull-right {
+       
+        font-size: 15px;
+    }
+
+    element.style {
+    }
+
+    .nav > li {
+        position: relative;
+        display: -webkit-box;
+    }
+
+    
+
+    ul.nav.navbar-nav.log_pannel {
+        margin-right: 10px;
+    }
+
+    .FeedCss {
+        right: -193px;
+    }
+    .irs-courses-col.animated.slow.card {
+        margin-top: 10px;
+    }
+}
+.visit_css{
+    color:#fff;
+}
+.vis_counter {
+    border: 2px solid #fff;
+    padding: 0px 10px;
+    border-radius: 5px 0px 5px 0px;
+    margin-left: 5px;
+}

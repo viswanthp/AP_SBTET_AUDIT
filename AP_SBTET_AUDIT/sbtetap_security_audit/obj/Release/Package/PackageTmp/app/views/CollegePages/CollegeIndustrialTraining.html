@@ -1,0 +1,154 @@
+﻿<div ng-controller="CollegeIndustrialTrainingController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">College Industrial Training</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="pannel-bar"> Add College Industrial Training</div>
+        <div class="card">
+            <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                <div class="row">
+
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>AcademicYear </label>
+                            <select class="form-control " id="selSession" ng-model="AcademicYear" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetAcademicYearsList">
+                                <option value="" selected>Select AcademicYear</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Spell </label>
+                            <select class="form-control " id="selSession" ng-model="Spell" ng-options="data.Id  as data.Name   for data in Spells">
+                                <option value="" selected>Select Spell</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Course </label>
+                            <select class="form-control " id="selSession" ng-model="Course" ng-options="data.CourseID  as data.CourseName   for data in GetBranchsList">
+                                <option value="" selected>Select Course</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>No of Trained</label>
+                        <div class="form-group">
+                            <input ng-model="NoofTrained" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Minimum Stipend</label>
+                        <div class="form-group">
+                            <input ng-model="MinimumStipend" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Maximum Stipend</label>
+                        <div class="form-group">
+                            <input ng-model="MaximumStipend" maxlength="10" type="text" onkeypress="return /[0-9]/i.test(event.key)" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>    Training Offered Industries</label>
+                        <div class="form-group">
+                            <textarea ng-model="TrainingOffered" maxlength="1000" rows="3" type="text" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-2" ng-show="AddDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddIndustrialTraining()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-2" ng-show="UpdateDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="UpdateIndustrialTraining()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container " ng-show="GetIndustrialTrainingList.length>0">
+            <div class="col-md-12">
+                <div class="cl-details">
+                    <h2>College Industrial Training</h2>
+                </div>
+
+                <div class="table-responsive table-custom-tables-tb">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                            <tr class="cb-1">
+                                <th>S.No</th>
+                                <th class="text-center">Academic Year</th>
+                                <th class="text-center">Spell</th>
+                                <th class="text-center">Course Name</th>
+                                <th class="text-center">NoofTrained</th>
+                                <th class="text-center">MinimumStipend</th>
+                                <th class="text-center">MaximumStipend</th>
+                                <th class="text-center">Training Offered Industries</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr style="background-color: #fff!important;" ng-repeat="data in GetIndustrialTrainingList">
+                                <td class="text-left">{{$index + 1}}</td>
+                                <td class="text-left">{{data.AcademicYear}}</td>
+                                <td class="text-left">{{data.Spell}}</td>
+                                <td class="text-left">{{data.CourseName}}</td>
+                                <td class="text-left">{{data.NoofTrained}}</td>
+                                <td class="text-left">{{data.MinimumStipend}}</td>
+                                <td class="text-left">{{data.MaximumStipend}}</td>
+                                <td class="text-left">{{data.TrainingOfferedIndustries}}</td>
+                                
+                                <td class="text-center">
+                                    <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="GetCollegeIndustrialTrainingById(data.CollegeIndustrialTrainingID)">
+                                        Edit
+                                    </button>
+                                    <button class="btn-xs btn btn-primary" style="width: 70px;" ng-show="!edit" ng-click="UpdateCollegeLab(data.CollegeLabID)">
+                                        Update
+                                    </button>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="" ng-show="GetIndustrialTrainingList.length<1">
+            <div class="">
+                <h4 class="no-results text-center">No data Found</h4>
+            </div>
+        </div>
+    </div>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

@@ -1,0 +1,749 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/Services/ServiceDetails.css" rel="stylesheet" />
+<div ng-controller="ServiceDetailsController">
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2>Service Details</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a> &gt; <a ui-sref="index.CollegesList">Colleges</a>&gt; <a ui-sref="index.CollegesList.DiplomaColleges">Diploma Colleges</a>&gt; <a ui-sref="index.CollegesList.ServiceDetails">Service Details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="xs-spacer"></div>
+
+    <div class="container">
+        <div class="col-md-12">
+            <!--<div class="col-md-3">
+                <div class="form-group">
+                    <label>Services</label>
+                    <select class="form-control" ng-model="Region" name="Semester" ng-change="GetDistricts()" required="">
+                        <option value="" selected="selected">Select Service</option>-->
+            <!-- ngRepeat: data in Shifts -->
+            <!--<option value="1" class="ng-binding ng-scope">
+                Student Services
+            </option>-->
+            <!-- end ngRepeat: data in Shifts -->
+            <!--<option value="1" class="ng-binding ng-scope">
+                College Services
+            </option>-->
+            <!-- end ngRepeat: data in Shifts -->
+            <!--</select>
+                </div>
+            </div>-->
+            <!--<div class="col-md-3">
+                <button class="btn btn-success" style=" margin-top: 30px; " ng-click="GetCollegeList()">Submit</button>
+            </div>-->
+        </div>
+        <div class="col-md-12">
+            <div class="irs-accordion-two">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
+                                    <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                    <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                    Interim Certificate
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne1">
+                            <div class="panel-body">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Procedure for Applying for Interim Certificate</span></u></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>:</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>A interim certificate is a certificate that educational institutions provide when a student leaves the organization after completed the diploma, student submit the same to the University authorities / Recruitment agencies for prosecuting higher studies /employment in other states /countries.</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>To get Interim Certificate,&nbsp;</span><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Submit &nbsp;an application downloaded from the button given below, fill it and address it to <strong>The Secretary, State Board of Technical Education and Training, #11-307, Garudadri KK &nbsp; Towers, Sri Lakshmi Narasimha Colony, Service Road, Mangalagiri, Guntur &ndash; 522503.</strong></span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Documents to be submitted&nbsp;</span></u></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>(either through post or in person)</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: decimal;margin-left:44px;">
+                                        <li class="txt_blt" class="myLst" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Filled in application form, which is downloaded from &nbsp;</span><a href="http://sbtetap.gov.in/Screens/EligibilityandForms.aspx"><span style='font-family:"Bookman Old Style",serif;'>http://sbtetap.gov.in/Screens/EligibilityandForms.aspx</span></a></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ol style="list-style-type: undefined;margin-left:44px;">
+                                    <li class="txt_blt" class="myLst"><span style="font-size:11.5pt;;">&nbsp; </span></li>
+                                </ol>
+                                <ol start="1" style="list-style-type: upper-alpha;">
+                                    <li class="txt_blt"><strong><u><span style='font-family:"Bookman Old Style",serif;font-size:11.5pt;'>Manual Procedure: &nbsp;(Attach Demand Draft)&nbsp;</span></u></strong></li>
+                                </ol>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'><span style="text-decoration:none;">&nbsp;</span></span></u></strong></p>
+                                <p style="margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Demand Draft &nbsp;drawn in favor of <strong>The SECRETARY, SBTET. ANDHRA PRADESH</strong>&nbsp; for&nbsp;</span><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Rs.600/-</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;for each migration certificate.</span></p>
+                                <p style="margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><em><span style='font-size:35px;font-family:"Bookman Old Style",serif;'>(or)</span></em></strong></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol start="2" style="margin-bottom:0cm;list-style-type: upper-alpha;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-family:"Bookman Old Style",serif;font-size:11.5pt;'>Online Payment Procedure: &nbsp;( Attach Online Fee Payment Receipt)&nbsp;</span></u></strong></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Open the link &nbsp;</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;"><a href="https://apsbtet.net/ONLINESERVICES"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>https://apsbtet.net/ONLINESERVICES</span></a></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;">
+                                        <span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Register Your PIN &nbsp;under Student Option. &nbsp;Through&nbsp;</span>
+                                        <ul style="margin-bottom:0cm;margin-top:0cm;" type="circle">
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on &nbsp;Student</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;Click Pin Registration&nbsp;</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>( Fill the Online form and Upload Photo )</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click &nbsp; Register.&nbsp;</span></li>
+                                        </ul>
+                                    </li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Services Tab&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Pay Fee</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Type Your Pin &nbsp;and click on Search</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Choose the service type &nbsp; as <strong><em>Interim Certificate</em></strong></span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Choose Exam held in month &amp; Year</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Write the Reason&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Continue</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Payment Summary Will be displayed.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Enter Captcha</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Proceed &nbsp;Payment&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Follow the Instructions of Bill Desk Payment Screen.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Download the Receipt &nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Attach the receipt.</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Photo copies of the All Diploma marks memos</span><span style='font-family:"Bookman Old Style",serif;'>.</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:55.5pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Note 1</span></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;Interim Certificate will be issued within two days with the availability of SBTET officers after submitting valid application.&nbsp;</span></p>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn"><a target="_blank" class="pay_btn" href="http://112.133.228.49/Student_Services/INTERIM_CERTIFICATE.doc">Download Application Form</a> </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn pull-right"><a target="_blank" class="pay_btn" href="https://apsbtet.net/onlineservices">Pay Fee>></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
+                                    <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                    <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                    Migration Certificate
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne2">
+                            <div class="panel-body">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Procedure for Applying for Migration &nbsp;Certificate</span></u></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>:</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>A migration certificate is a certificate that educational institutions provide when a student leaves the organization. When a student transfers from one institution to another or from one board to another for higher education, this certificate is necessary. Without it, student cannot continue their education beyond Diploma.</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>To get Migration Certificate,&nbsp;</span><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Submit &nbsp;an application downloaded from the button given below, fill it and address it to <strong>The Secretary, State Board of Technical Education and Training, #11-307, Garudadri KK &nbsp; Towers, Sri Lakshmi Narasimha Colony, Service Road, Mangalagiri, Guntur &ndash; 522503.</strong></span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Documents to be submitted&nbsp;</span></u></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>(either through post or in person)</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: decimal;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Filled in application form, which is downloaded from &nbsp;</span><a href="http://sbtetap.gov.in/Screens/EligibilityandForms.aspx"><span style='font-family:"Bookman Old Style",serif;'>http://sbtetap.gov.in/Screens/EligibilityandForms.aspx</span></a></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ol style="list-style-type: undefined;margin-left:44px;">
+                                    <li class="txt_blt"><span style="font-size:11.5pt;;">&nbsp;</span></li>
+                                </ol>
+                                <ol start="1" style="list-style-type: upper-alpha;">
+                                    <li class="txt_blt"><strong><u><span style='font-family:"Bookman Old Style",serif;font-size:11.5pt;'>Manual Procedure: &nbsp;(Attach Demand Draft)&nbsp;</span></u></strong></li>
+                                </ol>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:72.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'><span style="text-decoration:none;">&nbsp;</span></span></u></strong></p>
+                                <p style="margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Demand Draft &nbsp;drawn in favor of <strong>The SECRETARY, SBTET. ANDHRA PRADESH</strong>&nbsp; for&nbsp;</span><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Rs.800/-</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;for migration certificate.</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><em><span style='font-size:35px;font-family:"Bookman Old Style",serif;'>(or)</span></em></strong></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol start="2" style="margin-bottom:0cm;list-style-type: upper-alpha;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-family:"Bookman Old Style",serif;font-size:11.5pt;'>Online Payment Procedure: &nbsp;( Attach Online Fee Payment Receipt)&nbsp;</span></u></strong></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Open the link &nbsp;</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;"><a href="https://apsbtet.net/ONLINESERVICES"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>https://apsbtet.net/ONLINESERVICES</span></a></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;">
+                                        <span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Register Your PIN &nbsp;under Student Option. &nbsp;Through&nbsp;</span>
+                                        <ul style="margin-bottom:0cm;margin-top:0cm;" type="circle">
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on &nbsp;Student</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;Click Pin Registration&nbsp;</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>( Fill the Online form and Upload Photo )</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click &nbsp; Register.&nbsp;</span></li>
+                                        </ul>
+                                    </li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Services Tab&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Pay Fee</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Type Your Pin &nbsp;and click on Search</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Choose the service type &nbsp; as <strong><em>Migration Certificate</em></strong></span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Apply.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Continue</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Payment Summary Will be displayed.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Enter Captcha</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Proceed &nbsp;Payment&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Follow the Instructions of Bill Desk Payment Screen.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Download the Receipt &nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Attach the receipt.</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Photo copies of All Diploma marks memos</span><span style='font-family:"Bookman Old Style",serif;'>.</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:55.5pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Note 1</span></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;Migration Certificate will be issued within two days with the availability of SBTET officers after submitting valid application.</span></p>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn"><a target="_blank" class="pay_btn" href="http://112.133.228.49/Student_Services/MIGRATION_CERTIFICATE.doc">Download Application Form</a> </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn pull-right"><a target="_blank" class="pay_btn" href="https://apsbtet.net/onlineservices">Pay Fee>></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne3">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
+                                    <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                    <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                    Name Correction
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne3">
+                            <div class="panel-body">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Procedure for Applying for Full Name Correction/Father Name correction</span></u></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>:</span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>For Applying Full Name Correction/Father Name correction,&nbsp;</span><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Submit &nbsp;an application downloaded from the button given below, fill it and address it to <strong>The Secretary, State Board of Technical Education and Training, #11-307, Garudadri KK &nbsp; Towers, Sri Lakshmi Narasimha Colony, Service Road, Mangalagiri, Guntur &ndash; 522503.</strong></span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Documents to be submitted&nbsp;</span></u></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>(either through post or in person)</span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: decimal;margin-left:21.5px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Filled in application form, which is downloaded from &nbsp;</span><a href="http://sbtetap.gov.in/Screens/EligibilityandForms.aspx"><span style='font-family:"Bookman Old Style",serif;'>http://sbtetap.gov.in/Screens/EligibilityandForms.aspx</span></a></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:21.5px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">&nbsp;</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>A. Manual Procedure: &nbsp;(Attach Demand Draft)&nbsp;</span></u></strong></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:31.5pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Demand Draft &nbsp;drawn in favor of <strong>The SECRETARY, SBTET. ANDHRA PRADESH</strong> for&nbsp;</span><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Rs. 300/-</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;for&nbsp;</span><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Full Name Correction/Father Name correction.</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><em><span style='font-size:35px;font-family:"Bookman Old Style",serif;'>(or)</span></em></strong></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:31.5pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>B.Online Payment Procedure: &nbsp;( Attach Online Fee Payment Receipt)&nbsp;</span></u></strong></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Open the link &nbsp;</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;"><a href="https://apsbtet.net/ONLINESERVICES"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>https://apsbtet.net/ONLINESERVICES</span></a></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;">
+                                        <span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Register Your PIN &nbsp;under Student Option. &nbsp;Through&nbsp;</span>
+                                        <ul style="margin-bottom:0cm;margin-top:0cm;" type="circle">
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on &nbsp;Student</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;Click Pin Registration&nbsp;</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>( Fill the Online form and Upload Photo )</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click &nbsp; Register.&nbsp;</span></li>
+                                        </ul>
+                                    </li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Services Tab&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Pay Fee</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Type Your Pin &nbsp;and click on Search</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Choose the service type &nbsp; as <strong><em>Name correction</em></strong></span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Select the options &nbsp; Student or Father or Both</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Enter the details&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Continue</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Payment Summary Will be displayed.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Enter Captcha</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Proceed &nbsp;Payment&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Follow the Instructions of Bill Desk Payment Screen.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Download the Receipt &nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Attach the receipt.</span></li>
+                                </ul>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:21.5px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Photo copy of SSC certificate of the candidate.</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:21.5px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Copy of Admission register required only for full name correction.</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:21.5px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Copy of original Diploma certificate/Memorandum of marks.</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Note 1</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>:&nbsp;</span><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Full Name Correction/Father Name correction will be issued within two days with the availability of SBTET officers after submitting valid application.&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn"><a target="_blank" class="pay_btn" href="http://112.133.228.49/Student_Services/NAME_CORRECTION.doc">Download Application Form</a> </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn pull-right"><a target="_blank" class="pay_btn" href="https://apsbtet.net/onlineservices">Pay Fee>></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne4">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne4" aria-expanded="false" aria-controls="collapseOne4">
+                                    <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                    <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                    Transcripts
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne4">
+                            <div class="panel-body">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Procedure for Applying for Transcripts Certificate</span></u></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>:</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>A transcript certificate is nothing but a document that acts as proof of your educational qualifications. It includes the complete record of all the subjects studied by the students in his/her academic session along with marks or grades respectively.&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>To get Transcripts Certificate, Submit &nbsp;an application downloaded from the button given below, fill it and address it to <strong>The Secretary, State Board of Technical Education and Training, #11-307, Garudadri KK &nbsp; Towers Sri Lakshmi Narasimha Colony, Service Road,Mangalagiri,Guntur &ndash; 522503.</strong>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:10.0pt;margin-left:31.5pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Documents to be submitted&nbsp;</span></u></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>(either through post or in person).</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: decimal;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Filled in application form, which is downloaded from &nbsp;</span><a href="http://sbtetap.gov.in/Screens/EligibilityandForms.aspx"><span style='font-family:"Bookman Old Style",serif;'>http://sbtetap.gov.in/Screens/EligibilityandForms.aspx</span></a></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">I) &nbsp;To Collect transcripts by hand</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol start="1" style="margin-bottom:0cm;list-style-type: upper-alpha;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-family:"Bookman Old Style",serif;font-size:11.5pt;'>Manual Procedure: &nbsp;(Attach Demand Draft)&nbsp;</span></u></strong></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;text-indent:2.7pt;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Demand Draft &nbsp;drawn in favor of <strong>The SECRETARY, SBTET. ANDHRA PRADESH</strong>&nbsp; for&nbsp;</span><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Rs.3000/-</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;for&nbsp;</span><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Transcripts</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;for Universities for one set</span><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>.</span></p>
+                                <p style="margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:36.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><em><span style='font-size:35px;font-family:"Bookman Old Style",serif;'>(or)</span></em></strong></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol start="2" style="margin-bottom:0cm;list-style-type: upper-alpha;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-family:"Bookman Old Style",serif;font-size:11.5pt;'>Online Payment Procedure: &nbsp;( Attach Online Fee Payment Receipt)&nbsp;</span></u></strong></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Open the link &nbsp;</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;"><a href="https://apsbtet.net/ONLINESERVICES"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>https://apsbtet.net/ONLINESERVICES</span></a></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;">
+                                        <span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Register Your PIN &nbsp;under Student Option. &nbsp;Through&nbsp;</span>
+                                        <ul style="margin-bottom:0cm;margin-top:0cm;" type="circle">
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on &nbsp;Student</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;Click Pin Registration&nbsp;</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>( Fill the Online form and Upload Photo )</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click &nbsp; Register.&nbsp;</span></li>
+                                        </ul>
+                                    </li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Services Tab&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Pay Fee</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Type Your Pin &nbsp;and click on Search</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Choose the service type &nbsp; as Transcript</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Enter the details No. of Transcripts, Total Amount &amp; Required Transcripts</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Continue</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Payment Summary Will be displayed.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Enter Captcha</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Proceed &nbsp;Payment&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Follow the Instructions of Bill Desk Payment Screen.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Download the Receipt &nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Attach the receipt.</span></li>
+                                </ul>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Or</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp; &nbsp; &nbsp;II) &nbsp; &nbsp; To get the transcripts through post only manual payment is allowed.</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:10.0pt;margin-left:42.55pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Demand Draft &nbsp;drawn in favor of <strong>The SECRETARY, SBTET. ANDHRA PRADESH</strong> for Rs. <strong>Rs.4500/-</strong> for <strong>WES</strong> ( Rs.3000/- for Transcripts &nbsp;and Postal charges Rs.1500/-</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Photo copies of the Original Diploma Certificate</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Photo copies of the all Memorandum of marks. ( Passed or failed )</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Note 1:</span></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;Transcripts Certificate will be issued within two days with the availability of SBTET officers after submitting valid application.</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Note 2 :</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;The application along with necessary enclosures should submit to the Secretary, SBTET, Andhra Pradesh by the candidate or authorized &nbsp; person from candidate&rsquo;s family.</span><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Note 3 :</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;The Candidate should bring all original certificates and original marks memos and also has to submit color photo copies of certificates and marks memos preferably.</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:.2pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn"><a target="_blank" class="pay_btn" href="http://112.133.228.49/Student_Services/TRANSCRIPTS.doc" ">Download Application Form</a> </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn pull-right"><a target="_blank" class="pay_btn" href="https://apsbtet.net/onlineservices">Pay Fee>></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne5">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne5" aria-expanded="false" aria-controls="collapseOne5">
+                                    <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                    <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                    Duplicate Marks Memo
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne5">
+                            <div class="panel-body">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'><span style="text-decoration:none;">&nbsp;</span></span></u></strong></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Procedure for Applying for Duplicate Marks Memos</span></u></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>:</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>The duplicate Marks memo is issued only in case of the original Marks Memo(s) are lost or stolen.</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>To get a duplicate marks memo in the event of loss of original marks memo(s),&nbsp;</span><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Submit &nbsp;an application downloaded from the button given below, fill it and address it to <strong>The Secretary, State Board of Technical Education and Training, #11-307, Garudadri KK &nbsp; Towers, Sri Lakshmi Narasimha Colony, Service Road, Mangalagiri, Guntur &ndash; 522503.</strong></span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Documents to be submitted&nbsp;</span></u></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>(either through post or in person)</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: decimal;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Filled in application form, which is downloaded from &nbsp;</span><a href="http://sbtetap.gov.in/Screens/EligibilityandForms.aspx"><span style='font-family:"Bookman Old Style",serif;'>http://sbtetap.gov.in/Screens/EligibilityandForms.aspx</span></a></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ol style="list-style-type: undefined;margin-left:44px;">
+                                    <li class="txt_blt"><span style="font-size:11.5pt;;">&nbsp;</span></li>
+                                </ol>
+                                <ol start="1" style="list-style-type: upper-alpha;">
+                                    <li class="txt_blt"><strong><u><span style='font-family:"Bookman Old Style",serif;font-size:11.5pt;'>Manual Procedure: &nbsp;(Attach Demand Draft)&nbsp;</span></u></strong></li>
+                                </ol>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style="margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Demand Draft &nbsp;drawn in favor of <strong>The SECRETARY, SBTET. ANDHRA PRADESH</strong>&nbsp; for</span><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Rs.700/-</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;for each memo of marks.</span></p>
+                                <p style="margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><em><span style='font-size:35px;font-family:"Bookman Old Style",serif;'>(or)</span></em></strong></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><em><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></em></strong></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol start="2" style="margin-bottom:0cm;list-style-type: upper-alpha;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-family:"Bookman Old Style",serif;font-size:11.5pt;'>Online Payment Procedure: &nbsp;( Attach Online Fee Payment Receipt)&nbsp;</span></u></strong></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Open the link &nbsp;</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;"><a href="https://apsbtet.net/ONLINESERVICES"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>https://apsbtet.net/ONLINESERVICES</span></a></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;">
+                                        <span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Register Your PIN &nbsp;under Student Option. &nbsp;Through&nbsp;</span>
+                                        <ul style="margin-bottom:0cm;margin-top:0cm;" type="circle">
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on &nbsp;Student</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;Click Pin Registration&nbsp;</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>( Fill the Online form and Upload Photo )</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click &nbsp; Register.&nbsp;</span></li>
+                                        </ul>
+                                    </li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Services Tab&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Pay Fee</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Type Your Pin &nbsp;and click on Search</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Choose the service type &nbsp; as <strong><em>Duplicate memo</em></strong></span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Apply.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Choose Exams held in month &amp; Year</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Write the Reason&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Continue</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Payment Summary Will be displayed.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Enter Captcha</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Proceed &nbsp;Payment&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Follow the Instructions of Bill Desk Payment Screen.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Download the Receipt &nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Attach the receipt.</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style="margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Photo copies of the marks memo if available</span><span style='font-family:"Bookman Old Style",serif;'>.</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Note &nbsp;1:&nbsp;</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>For issue of Duplicate marks memo, month /Year of passing the exam shall be clearly mentioned.</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Note 2</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>: Duplicate marks memo will be issued within two weeks with the availability of SBTET officers after submitting valid application.&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:55.5pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn"><a target="_blank" class="pay_btn" href="http://112.133.228.49/Student_Services/DUPLICATE_MARKS_MEMOS.doc">Download Application Form</a> </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn pull-right"><a target="_blank" class="pay_btn" href="https://apsbtet.net/onlineservices">Pay Fee>></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne6">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne6" aria-expanded="false" aria-controls="collapseOne6">
+                                    <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                    <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                    Duplicate Diploma Certificate
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne6">
+                            <div class="panel-body">
+                                <p style='margin-top:0cm;margin-right:55.5pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:55.5pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Procedure for Applying for Duplicate Diploma Certificate</span></u></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>:</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:31.5pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>The duplicate Diploma certificate is issued only in case of the original Diploma certificate is lost or stolen.</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>To get a duplicate Diploma Certificate in the event of loss of original degree certificate, Submit &nbsp;an application downloaded from the button given below, fill it and address it to <strong>The Secretary, State Board of Technical Education and Training, #11-307, Garudadri KK &nbsp; Towers Sri Lakshmi Narasimha Colony, Service Road, Mangalagiri, Guntur &ndash; 522503.</strong></span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:31.5pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'><span style="text-decoration:none;">&nbsp;</span></span></u></strong></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Documents to be submitted&nbsp;</span></u></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>(either through post or in person)</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <ol style="margin-bottom:0cm;margin-top:0cm;" start="1" type="1">
+                                    <li class="txt_blt" style="margin-right:41.35pt;margin-bottom:.0001pt;text-align:justify;line-height:     normal;"><span style='font-size:15px;font-family:     "Bookman Old Style",serif;'>Filled in application form, which is downloaded from &nbsp;</span><a href="http://sbtetap.gov.in/Screens/EligibilityandForms.aspx"><span style='font-size:15px;font-family:"Bookman Old Style",serif;color:blue;'>http://sbtetap.gov.in/Screens/EligibilityandForms.aspx</span></a></li>
+                                </ol>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ol style="margin-bottom:0cm;margin-top:0cm;" start="2" type="1">
+                                    <li class="txt_blt" style='margin-top:0cm;margin-right:41.35pt;margin-bottom:     .0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></li>
+                                </ol>
+                                <ol style="margin-bottom:0cm;margin-top:0cm;" start="1" type="A">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;text-align:justify;line-height:normal;"><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;Manual Procedure: &nbsp;(Attach Demand Draft)&nbsp;</span></u></strong></li>
+                                </ol>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Demand Draft &nbsp;drawn in favor of <strong>The SECRETARY, SECRETARY, SBTET. ANDHRA PRADESH</strong> for</span><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Rs.3,500/-</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;for <strong>Duplicate Diploma Certificate</strong></span></p>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Or</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Demand Draft &nbsp;drawn in favor of <strong>The SECRETARY, SECRETARY, SBTET. ANDHRA PRADESH</strong> for</span><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Rs.5000/-&nbsp;</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>for <strong>Triplicate Diploma Certificate</strong></span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>For schemes &nbsp;<strong><em>(OS/NC/C-90, C-96, C-00, C-05, C-09 , C-14, C-16, C-20, &amp; ER-81&amp; 91PH,ER-2020)</em></strong></span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><em><span style='font-size:35px;font-family:"Bookman Old Style",serif;'>(or)</span></em></strong></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><em><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></em></strong></p>
+                                <ol style="margin-bottom:0cm;margin-top:0cm;" start="2" type="A">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;text-align:justify;line-height:normal;"><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Online Payment Procedure: &nbsp;( Attach Online Fee Payment Receipt)&nbsp;</span></u></strong></li>
+                                </ol>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Open the link &nbsp;</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;"><a href="https://apsbtet.net/ONLINESERVICES/"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>https://apsbtet.net/ONLINESERVICES/</span></a></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;">
+                                        <span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Register Your PIN &nbsp;under Student Option. &nbsp;Through&nbsp;</span>
+                                        <ul style="margin-bottom:0cm;margin-top:0cm;" type="circle">
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on &nbsp;Student</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;Click Pin Registration&nbsp;</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>( Fill the Online form and Upload Photo )</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click &nbsp; Register.&nbsp;</span></li>
+                                        </ul>
+                                    </li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Services Tab&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Pay Fee</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Type Your Pin &nbsp;and click on Search</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Choose the service type &nbsp; as <strong><em>Duplicate Diploma Certificate</em></strong></span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Apply.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Enter the Reason&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Continue</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Payment Summary Will be displayed.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Enter Captcha</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Proceed &nbsp;Payment&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Follow the Instructions of Bill Desk Payment Screen.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Download the Receipt &nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Attach the receipt.</span></li>
+                                </ul>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ol style="margin-bottom:0cm;margin-top:0cm;" start="3" type="1">
+                                    <li class="txt_blt" style='margin-top:0cm;margin-right:41.35pt;margin-bottom:     .0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>An Affidavit in the prescribed Proforma (copy is available &nbsp; &nbsp; &nbsp; &nbsp;with the downloaded application) &nbsp; &nbsp; &nbsp; &nbsp;on stamped paper worth for Rs. 20/- Certified by &nbsp;First Class Judicial Magistrate with the Seal of the court concerned / Notary.</span></li>
+                                </ol>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ol style="margin-bottom:0cm;margin-top:0cm;" start="4" type="1">
+                                    <li class="txt_blt" style='margin-top:0cm;margin-right:41.35pt;margin-bottom:     .0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>A declaration by the candidate stating that the Original Certificate/Consolidated Marks was not suspended or &nbsp; cancelled by the competent authority &nbsp;(copy is available &nbsp;with the downloaded application)</span></li>
+                                </ol>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ol style="margin-bottom:0cm;margin-top:0cm;" start="5" type="1">
+                                    <li class="txt_blt" style='margin-top:0cm;margin-right:41.35pt;margin-bottom:     .0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>An Identification certificate from the concerned Principal of the Institute/Polytechnic to the effect that the candidate is the same person to whom the Original Diploma Certificate was issued. authority &nbsp;(copy is available &nbsp;with the downloaded application)</span></li>
+                                </ol>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ol style="margin-bottom:0cm;margin-top:0cm;" start="6" type="1">
+                                    <li class="txt_blt" style='margin-top:0cm;margin-right:41.35pt;margin-bottom:     .0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Police enquiry certificate in Original.</span></li>
+                                </ol>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ol style="margin-bottom:0cm;margin-top:0cm;" start="7" type="1">
+                                    <li class="txt_blt" style='margin-top:0cm;margin-right:41.35pt;margin-bottom:     .0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Photo copies of the Certificates if available or Marks memos of all year /semesters.</span></li>
+                                </ol>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Note 1:</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;The application along with necessary enclosures should be forwarded to the Secretary, SBTET through the Principal of the concerned Polytechnic.</span></p>
+                                <p style='margin-top:0cm;margin-right:55.5pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Note 2:</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;Duplicate Diploma certificate will be issued within two Weeks with the availability of SBTET officers after submitting valid application.</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn"><a target="_blank" class="pay_btn" href="http://112.133.228.49/Student_Services/DUPLICATE_DIPLOMA_CERTIFICATES.doc">Download Application Form</a> </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn pull-right"><a target="_blank" class="pay_btn" href="https://apsbtet.net/onlineservices">Pay Fee>></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne7">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne7" aria-expanded="false" aria-controls="collapseOne7">
+                                    <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                    <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                    Equivalence Certificate
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne7">
+                            <div class="panel-body">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Procedure for Applying for Equivalency Certificate</span></u></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>:</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Equivalency certificate will be given to a student, who studied and completed diploma/equivalent course in the colleges affiliated to the Board of Technical Education &amp; Training in other states (not in Andhra Pradesh) of India.</span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>To get Equivalency Certificate,&nbsp;</span><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Submit &nbsp;an application downloaded from the button given below, fill it and address it to <strong>The Secretary, State Board of Technical Education and Training, #11-307, Garudadri KK &nbsp; Towers, Sri Lakshmi Narasimha Colony, Service Road, Mangalagiri, Guntur &ndash; 522503.</strong></span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Documents to be submitted&nbsp;</span></u></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>(either through post or in person)</span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></strong></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: decimal;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Filled in Download application form, which is downloaded from &nbsp;Do<u><span style="color:blue;">wnload Link &nbsp; &nbsp;( Place a link to equivalenacy application attached )&nbsp;</span></u></span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ol style="list-style-type: undefined;margin-left:44px;">
+                                    <li class="txt_blt"><span style="font-size:11.5pt;;">&nbsp;</span></li>
+                                </ol>
+                                <ol start="1" style="list-style-type: upper-alpha;">
+                                    <li class="txt_blt"><strong><u><span style='font-family:"Bookman Old Style",serif;font-size:11.5pt;'>Manual Procedure: &nbsp;(Attach Demand Draft)&nbsp;</span></u></strong></li>
+                                </ol>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;'><span style="text-decoration:none;">&nbsp;</span></span></u></strong></p>
+                                <p style="margin-top:0cm;margin-right:-6.9pt;margin-bottom:.0001pt;margin-left:36.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Demand Draft &nbsp;drawn in favor of <strong>The SECRETARY, SBTET. ANDHRA PRADESH</strong>&nbsp; for&nbsp;</span><strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Rs. 2,000/-</span></strong><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;for <strong>Equivalency certificate</strong>.</span></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><em><span style='font-size:35px;font-family:"Bookman Old Style",serif;'>(or)</span></em></strong></p>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><em><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></em></strong></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol start="2" style="margin-bottom:0cm;list-style-type: upper-alpha;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><u><span style='font-family:"Bookman Old Style",serif;font-size:11.5pt;'>Online Payment Procedure: &nbsp;( Attach Online Fee Payment Receipt)&nbsp;</span></u></strong></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Open the link &nbsp;</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;"><a href="https://apsbtet.net/ONLINESERVICES"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>https://apsbtet.net/ONLINESERVICES</span></a><u><span style='font-size:15px;font-family:"Bookman Old Style",serif;color:blue;'>/</span></u></p>
+                                <ul style="margin-bottom:0cm;margin-top:0cm;" type="disc">
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;">
+                                        <span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Register Your PIN &nbsp;under Student Option. &nbsp;Through&nbsp;</span>
+                                        <ul style="margin-bottom:0cm;margin-top:0cm;" type="circle">
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on &nbsp;Student</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;Click Pin Registration&nbsp;</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>( Fill the Online form and Upload Photo )</span></li>
+                                            <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click &nbsp; Register.&nbsp;</span></li>
+                                        </ul>
+                                    </li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Services Tab&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Choose <strong><em>Equivalency</em></strong></span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Fill the Application Form</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Apply.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Payment Summary Will be displayed.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Enter Captcha</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Click on Proceed &nbsp;Payment&nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Follow the Instructions of Bill Desk Payment Screen.</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Download the Receipt &nbsp;</span></li>
+                                    <li class="txt_blt" style="margin-bottom:.0001pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>Attach the receipt.</span></li>
+                                </ul>
+                                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style="margin-top:0cm;margin-right:41.35pt;margin-bottom:.0001pt;margin-left:54.0pt;text-align:justify;line-height:normal;"><span style='font-size:15px;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Photo Copies Of I,II,III or &nbsp;(All &nbsp;year marks memo&apos;s) and provisional/original diploma certificate.&nbsp;</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Syllabus to be enclosed if nomenclature of diploma of other state is not same as diploma offered by SBTET ,AP.</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Syllabus of university/deemed university which have AICTE/DEC approvals</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:44px;">
+                                        <li class="txt_blt" style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:11.5pt;;">Photo copies of the Original Diploma Certificate.</span></li>
+                                    </ol>
+                                </div>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:10.0pt;margin-left:36.0pt;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>&nbsp;</span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Note 1:&nbsp;</span></strong><span style='font-size:15px;line-height:115%;font-family:"Bookman Old Style",serif;'>Equivalency Certificate will be issued within two days with the availability of SBTET officers after submitting valid application.</span></p>
+                                <p style='margin-top:0cm;margin-right:-6.9pt;margin-bottom:10.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn"><a class="pay_btn" href="http://112.133.228.49/Student_Services/EQULIENCY_CERTIFICATE.docx" download>Download Application Form</a> </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn-success more_btn pull-right"><a target="_blank" class="pay_btn" href="https://apsbtet.net/onlineservices">Pay Fee>></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-12" ng-show="Loading">
+            <!--  <div class="xs-spacer"></div>-->
+            <center><img class="LoadingImage" src="/contents/images/preloader.gif" /></center>
+        </div>
+        <div class="col-md-12">
+            <center ng-show="NoData"><h3 class="btn-danger NoDataCss">No Data Found</h3></center>
+        </div>
+    </div>
+</div>
+

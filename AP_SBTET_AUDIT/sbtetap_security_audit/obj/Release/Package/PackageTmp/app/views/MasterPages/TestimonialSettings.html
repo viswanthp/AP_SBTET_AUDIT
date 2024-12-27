@@ -1,0 +1,252 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/MasterPages/TestimonialSettings.css" rel="stylesheet" />
+<script>
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+
+    });
+
+    $(function () {
+        $('#datepicker1').datepicker({
+            changeMonth: false,
+            changeYear: true,
+            showButtonPanel: false,
+            dateFormat: 'yyyy',
+
+            format: " yyyy", // Notice the Extra space at the beginning
+            viewMode: "years",
+            minViewMode: "years",
+            autoclose: true,
+            onClose: function (dateText, inst) {
+                $(this).datepicker('setDate', new Date('2017'));
+            }
+        }).focus(function () {
+            $(".ui-datepicker-month").hide();
+            $(".ui-datepicker-calendar").hide();
+        });
+        $('#datepicker2').datepicker({
+            changeMonth: false,
+            changeYear: true,
+            showButtonPanel: false,
+            dateFormat: 'yyyy',
+
+            format: " yyyy", // Notice the Extra space at the beginning
+            viewMode: "years",
+            minViewMode: "years",
+            autoclose: true,
+            onClose: function (dateText, inst) {
+                $(this).datepicker('setDate', new Date('2017'));
+            }
+        }).focus(function () {
+            $(".ui-datepicker-month").hide();
+            $(".ui-datepicker-calendar").hide();
+        });
+        $('#datepicker3').datepicker({
+            changeMonth: false,
+            changeYear: true,
+            showButtonPanel: false,
+            dateFormat: 'yyyy',
+
+            format: " yyyy", // Notice the Extra space at the beginning
+            viewMode: "years",
+            minViewMode: "years",
+            autoclose: true,
+            onClose: function (dateText, inst) {
+                $(this).datepicker('setDate', new Date('2017'));
+            }
+        }).focus(function () {
+            $(".ui-datepicker-month").hide();
+            $(".ui-datepicker-calendar").hide();
+        });
+    });
+</script>
+<div ng-controller="TestimonialSettingsController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">College Testimonial</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="pannel-bar"> Add Testimonial</div>
+        <div class="card">
+            <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label>PIN</label>
+                        <div class="form-group">
+                            <input ng-model="Pin" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Name</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="Name" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Year Of Appointment</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" autocomplete="off" id="datepicker1" ng-model="YearOfAppointment" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Mode Of Appointment</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="ModeOfAppointment" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Study From Year</label>
+                        <div class="form-group">
+
+                            <select class="form-control " id="selSession" ng-model="FromYear" ng-options="data.Year  as data.Year   for data in GetYearsList">
+                                <option value="" selected>Select Year</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Study To Year</label>
+                        <div class="form-group">
+
+                            <select class="form-control " id="selSession" ng-model="ToYear" ng-options="data.Year  as data.Year   for data in GetYearsList">
+                                <option value="" selected>Select Year</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label>PackageAmount</label>
+                        <div class="form-group">
+                            <input ng-model="PackageAmount" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>College Address</label>
+                        <div class="form-group">
+                            <textarea ng-model="CollegeAddress" rows="3" maxlength="1000" type="text" class="form-control"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label>Testimonial Details</label>
+                        <div class="form-group">
+                            <textarea ng-model="TestimonialDetails" rows="3" maxlength="1000" type="text" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Company Name Address</label>
+                        <div class="form-group">
+                            <textarea ng-model="CompanyNameAddress" maxlength="1000" type="text" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Photo</label>
+                        <div class="form-group">
+                            <input class="" id="stdPhotoFile" type="file" placeholder="" maxlength="10" onchange="angular.element(this).scope().uploadPhoto()" accept="image/*" ng-model="Photo" />
+                            <img ng-src="{{userPhoto}}" class="" id="stdPhotoImg" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 pull-right" ng-show="AddDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddTestimonial()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pull-right" ng-show="UpdateDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="UpdateTestimonial()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container " ng-show="GetTestimonialsList.length>0">
+            <div class="col-md-12">
+                <div class="cl-details">
+                    <h2>College Journal</h2>
+                </div>
+
+                <div class="table-responsive table-custom-tables-tb">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                            <tr class="cb-1">
+                                <th>S.No</th>
+                                <th class="text-center">PIN</th>
+                                <th class="text-center">Name</th>
+                                <th class="text-center">Year Of Appointment</th>
+                                <th class="text-center">Mode Of Appointment</th>
+                                <th class="text-center">From Year</th>
+                                <th class="text-center">To Year</th>
+                                <th class="text-center">College Address</th>
+                                <th class="text-center">Company Name Address</th>
+                                <th class="text-center">Package Amount</th>
+                                <th class="text-center">Testimonial Details</th>
+                                <th class="text-center">Photo</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #fff!important;" ng-repeat="data in GetTestimonialsList">
+                                <td class="text-left">{{$index + 1}}</td>
+                                <td class="text-left">{{data.PIN}}</td>
+                                <td class="text-left">{{data.Name}}</td>
+                                <td class="text-left">{{data.YearOfAppointment}}</td>
+                                <td class="text-left">{{data.ModeOfAppointment}}</td>
+                                <td class="text-left">{{data.FromYear}}</td>
+                                <td class="text-left">{{data.ToYear}}</td>
+                                <td class="text-left">{{data.CollegeAddress}}</td>
+                                <td class="text-left">{{data.CompanyNameAddress}}</td>
+                                <td class="text-left">{{data.PackageAmount}}</td>
+                                <td class="text-left">{{data.TestimonialDetails}}</td>
+                                <td class="text-left"><img ng-src="{{data.Photo}}" class="" id="stdPhotoImg" /></td>
+                                <td class="text-center">
+                                    <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="GetTestimonialById(data.TestimonialID)">
+                                        Edit
+                                    </button>
+                                    <button class="btn-xs btn btn-primary" style="width: 70px;" ng-show="!edit" ng-click="UpdateCollegeLab(data.TestimonialID)">
+                                        Update
+                                    </button>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="" ng-show="GetTestimonialsList.length<1">
+            <div class="">
+                <h4 class="no-results text-center">No data Found</h4>
+            </div>
+        </div>
+    </div>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

@@ -1,0 +1,168 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/Colleges/DiplomaColleges.css" rel="stylesheet" />
+<div ng-controller="DiplomaCollegesController">
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2>Diploma Colleges</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a> &gt; <a ui-sref="index.CollegesList">Colleges</a>&gt; <a ui-sref="index.CollegesList.DiplomaColleges">Diploma Colleges</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="xs-spacer"></div>
+
+    <div class="container">
+        <div class="col-md-12">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Region</label>
+                    <select class="form-control" ng-model="Region" name="Semester" ng-change="GetDistricts()" required="">
+                        <option value="" selected="selected">Select Region</option>
+                        <!-- ngRepeat: data in Shifts -->
+                        <option value="{{data.RegionID}}" ng-repeat="data in Regions" class="ng-binding ng-scope">
+                            {{data.RegionName}}
+                        </option><!-- end ngRepeat: data in Shifts -->
+
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>District</label>
+                    <select class="form-control" ng-model="District" name="Semester" required="">
+                        <option value="" selected="selected">Select District</option>
+                        <!-- ngRepeat: data in Shifts -->
+                        <option value="{{data.DistrictID}}" ng-repeat="data in Districts" class="ng-binding ng-scope">
+                            {{data.DistrictName}}
+                        </option><!-- end ngRepeat: data in Shifts -->
+
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>College Type</label>
+                    <select class="form-control" ng-model="CollegeType" name="Semester" ng-change="GetCollegeList()" required="">
+                        <option value="" selected="selected">Select College Type</option>
+                        <!-- ngRepeat: data in Shifts -->
+                        <option value="{{data.CollegeTypeID}}" ng-repeat="data in CollegeTypes" class="ng-binding ng-scope">
+                            {{data.CollegeTypeName}}
+                        </option><!-- end ngRepeat: data in Shifts -->
+
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-success" style=" margin-top: 30px; " ng-click="GetCollegeList()">Submit</button>
+            </div>
+        </div>
+        <div class="col-md-12" ng-show="Data">
+            <div class="irs-accordion-two">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default" ng-repeat="data in CollegeList">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne{{$index}}" aria-expanded="false" aria-controls="collapseOne{{$index}}">
+                                    <i class="fa fa-plus icon-2" aria-hidden="true"></i>
+                                    <i class="fa fa-minus icon-1" aria-hidden="true"></i>
+                                    {{data.CollegeCode}} - {{data.CollegeName}},{{data.CollegeAddress}}
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne{{$index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne{{$index}}">
+                            <div class="panel-body">
+
+                                <p>
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Course </th>
+                                                <th>Region</th>
+                                                <th>Type</th>
+                                                <th>Intake</th>
+
+
+                                                <!-- <th>Vacant</th>-->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-show="data.CollegeID==item.CollegeID" ng-repeat="item in CollegeListData">
+                                                <td><a class="hyperlink" ui-sref="index.CourseDetails">{{item.CourseCode}} - {{item.CourseName}}</a></td>
+                                                <td>{{item.RegionName}}</td>
+                                                <td>{{item.CollegeTypeName}}</td>
+                                                <td>{{item.Intake}}</td>
+
+
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                </p>
+                                <p>
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th class="head_color">Hostel Facility</th>
+                                                <th class="head_color">Boys Hostel</th>
+                                                <th class="head_color">Girls Hostel</th>
+                                                <th class="head_color">Boys Hostel Capacity</th>
+                                                <th class="head_color">Girls Hostel Capacity</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-show="data.CollegeID==dat.CollegeID" ng-repeat="dat in HostelData">
+                                                <td>
+                                                    <span class="text-success" ng-if="dat.HostelAvailable==true">Yes</span>
+                                                    <span class="text-danger" ng-if="dat.HostelAvailable==false">No</span>
+                                                </td>
+                                                <td>
+                                                    <span class="text-success" ng-if="dat.BoysHostel==1">Yes</span>
+                                                    <span class="text-danger" ng-if="dat.BoysHostel==0">No</span>
+                                                    <!--{{dat.BoysHostel}}-->
+                                                </td>
+
+                                                <td>
+                                                    <span class="text-success" ng-if="dat.GirlsHostel==1">Yes</span>
+                                                    <span class="text-danger" ng-if="dat.GirlsHostel==0">No</span>
+                                                    <!--{{dat.GirlsHostel}}-->
+                                                </td>
+                                                <td>{{dat.BoysHostelCapacity}}</td>
+                                                <td>{{dat.GirlsHostelCapacity}}</td>
+
+                                            </tr>
+                                            <!--  CollegeID":4,"CollegeCode":"011","HostelAvailable":true,"BoysHostel":false,"GirlsHostel":true,"BoysHostelCapacity":0,"GirlsHostelCapacity":300-->
+                                        </tbody>
+                                    </table>
+                                </p>
+                                <div class="col-md-12">
+                                    <button class="btn-success more_btn pull-right" ng-click="OpenPage(data.CollegeID)">More Details > ></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-12" ng-show="Loading">
+            <!--  <div class="xs-spacer"></div>-->
+            <center><img class="LoadingImage" src="/contents/images/preloader.gif" /></center>
+        </div>
+        <div class="col-md-12">
+            <center ng-show="NoData"><h3 class="btn-danger NoDataCss">No Data Found</h3></center>
+        </div>
+    </div>
+</div>
+

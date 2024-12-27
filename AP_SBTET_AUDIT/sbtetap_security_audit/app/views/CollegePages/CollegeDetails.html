@@ -1,0 +1,465 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/CollegePages/CollegeDetails.css" rel="stylesheet" />
+<script>
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });</script>
+<div ng-controller="CollegeDetailsController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">College Details</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="pannel-bar"> Add College Details</div>
+        <div class="card">
+            <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                <div class="row">
+                    <fieldset>
+                        <legend>College Details</legend>
+                        <div class="col-md-2">
+                            <label>College Code</label>
+                            <div class="form-group">
+                                <input ng-model="CollegeCode" maxlength="3" disabled type="text" onkeypress="return /[0-9]/i.test(event.key)" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <label>College Name</label>
+                            <div class="form-group">
+                                <input ng-model="CollegeName" maxlength="1000" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Village/Town</label>
+                            <div class="form-group">
+                                <input ng-model="Village" maxlength="1000" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>College Type </label>
+                                <select class="form-control " id="selSession" ng-model="CollegeType" ng-options="data.CollegeTypeID  as data.CollegeTypeName   for data in GetCollegeTypesList">
+                                    <option value="" selected>Select College Type</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Region</label>
+                                <select class="form-control " id="RegionID" ng-model="Region" ng-change="ChangeRegion(Region)"
+                                        ng-options="data.RegionID as data.RegionName for data in GetRegionsList">
+                                    <option value="" selected>Select Region</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>District</label>
+                                <select class="form-control" id="selSession" ng-model="District"
+                                        ng-options="data.DistrictID  as data.DistrictName for data in GetDistrictsList">
+                                    <option value="" selected>Select District Name</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Year of Establishment</label>
+                            <div class="form-group">
+                                <input ng-model="YearofEstablishment" onkeypress="return /[0-9]/i.test(event.key)" maxlength="4" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <!--<div class="col-md-3">
+                            <div class="form-group">
+                                <label>NBA Affiliated</label>
+                                <select class="form-control " id="GirlsHostel"   ng-model="NBAAffiliated"
+                                        ng-options="data.Id as data.Name for data in DataValues">
+                                    <option value="" selected>Select </option>
+                                </select>
+                            </div>
+                        </div>-->
+                        <div class="col-md-9">
+                            <label>College Address(Saperated with coma's)</label>
+                            <div class="form-group">
+                                <textarea ng-model="CollegeAddress" maxlength="1000" type="text" class="form-control"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label>Phone Number</label>
+                            <div class="form-group">
+                                <input ng-model="PhoneNumber" maxlength="10" onkeypress="return /[0-9]/i.test(event.key)" maxlength="1000" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Email</label>
+                            <div class="form-group">
+                                <input ng-model="Email" maxlength="1000" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label>College WebSite</label>
+                            <div class="form-group">
+                                <input ng-model="CollegeWebSite" maxlength="1000" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Principal Name</label>
+                            <div class="form-group">
+                                <input ng-model="PrinciaplName" maxlength="1000" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Hostel Details</legend>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>Hostel Available</label>
+                                <select class="form-control " id="HostelAvailable" ng-change="ChangeHostel(HostelAvailable)" ng-model="HostelAvailable"
+                                        ng-options="data.Id as data.Name for data in DataValues">
+                                    <option value="" selected>Select </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>Boys Hostel</label>
+                                <select class="form-control " ng-disabled="!HostelAvailable" id="BoysHostel" ng-change="ChangeHostel(HostelAvailable)" ng-model="BoysHostel"
+                                        ng-options="data.Id as data.Name for data in DataValues">
+                                    <option value="" selected>Select </option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <label> Capacity</label>
+                            <div class="form-group">
+                                <input ng-model="BoysHostelCapacity" ng-disabled="!BoysHostel" onkeypress="return /[0-9]/i.test(event.key)" maxlength="4" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>Girls Hostel</label>
+                                <select class="form-control " id="GirlsHostel" ng-disabled="!HostelAvailable" ng-change="ChangeHostel(HostelAvailable)" ng-model="GirlsHostel"
+                                        ng-options="data.Id as data.Name for data in DataValues">
+                                    <option value="" selected>Select </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                            <label>Capacity</label>
+                            <div class="form-group">
+                                <input ng-model="GirlsHostelCapacity" ng-disabled="!GirlsHostel" onkeypress="return /[0-9]/i.test(event.key)" maxlength="4" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Digital Classrooms Details</legend>
+                        <div class="col-md-3">
+                            <label>No Of Digital Classrooms</label>
+                            <div class="form-group">
+                                <select class="form-control " id="NoOfDigitalClassrooms" ng-model="NoOfDigitalClassrooms"
+                                        ng-options="data.Id as data.Name for data in DCno">
+                                    <option value="" selected>Select </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Major Equipment </label>
+                            <div class="form-group">
+                                <input ng-model="DigitalClassroomMajorEquipment" maxlength="1000" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Remarks</label>
+                            <div class="form-group">
+
+                                <input ng-model="DigitalClassromRemarks" maxlength="1000" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Virtual Classrooms Details</legend>
+                        <div class="col-md-3">
+                            <label> No Of Virtual Classrooms</label>
+                            <div class="form-group">
+                                <select class="form-control " id="NoOfVirtualClassrooms" ng-model="NoOfVirtualClassrooms"
+                                        ng-options="data.Id as data.Name for data in DCno">
+                                    <option value="" selected>Select </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Major Equipment </label>
+                            <div class="form-group">
+                                <input ng-model="VirtualClassroomMajorEquipment" maxlength="1000" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Remarks</label>
+                            <div class="form-group">
+                                <input ng-model="VirtualClassromRemarks" maxlength="1000" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Comitee Details</legend>
+                        <div class="col-md-6">
+                            <label>Anti Ragging Commitee </label>
+                            <div class="form-group">
+                                <textarea ng-model="AntiRaggingCommitee" maxlength="1000" type="text" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Parents Commitee</label>
+                            <div class="form-group">
+                                <textarea ng-model="ParentsCommitee" maxlength="1000" type="text" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Grievance Cell Commitee</label>
+                            <div class="form-group">
+                                <textarea ng-model="GrievanceCellCommitee" maxlength="1000" type="text" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Women Empowerment Cell Commitee</label>
+                            <div class="form-group">
+                                <textarea ng-model="WomenEmpowermentCellCommitee" maxlength="1000" type="text" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Industry Connect and Placement Cell</label>
+                            <div class="form-group">
+                                <textarea ng-model="IndustryConnectandPlacementCell" maxlength="1000" type="text" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>College Photo  </label>
+                            <input class="" id="stdPhotoFile" type="file" placeholder="" maxlength="10" onchange="angular.element(this).scope().uploadPhoto()" accept="image/*" ng-model="Photo" />
+                            <img ng-src="{{userPhoto}}" class="" id="stdPhotoImg" />
+                        </div>
+                    </div>
+                    <div class="col-md-8" ng-show="AddDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-right" ng-click="Add()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-8" ng-show="UpdateDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-right" ng-click="UpdateCollegeData()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container " ng-show="ReportFound">
+            <div class="col-md-12">
+                <div class="cl-details">
+                    <h2>College Details</h2>
+                </div>
+
+                <div class="table-responsive table-custom-tables-tb">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                            <tr class="cb-1">
+                                <th>S.No</th>
+                                <th class="text-center">Action</th>
+                                <th class="text-center">College Code</th>
+                                <th class="text-center">College Photo</th>
+                                <th class="text-center">College Name</th>
+                                <th class="text-center">Village</th>
+                                <th class="text-center">College Type</th>
+                                <th class="text-center">Region</th>
+                                <th class="text-center">District</th>
+                                <th class="text-center">Year of Establishment</th>
+                                <th class="text-center">College Address</th>
+                                <th class="text-center">Princiapl Name</th>
+                                <th class="text-center">Phone Number</th>
+                                <th class="text-center">Email</th>
+                                <th class="text-center">College WebSite</th>
+                                <th class="text-center">Hostel Available</th>
+                                <th class="text-center">Boys Hostel</th>
+                                <th class="text-center">Girls Hostel</th>
+                                <th class="text-center">Boys Hostel Capacity</th>
+                                <th class="text-center">Girls Hostel Capacity</th>
+                                <th class="text-center">No Of Digital Classrooms</th>
+                                <th class="text-center">Digital Classrooms Major Equipment</th>
+                                <th class="text-center"> Digital Classrom Remarks</th>
+                                <th class="text-center">No Of Virtual Classrooms</th>
+                                <th class="text-center"> Virtual Class Room Major Equipment</th>
+                                <th class="text-center"> Virtual Class Room Remarks</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #fff!important;" ng-repeat="data in GetCollegeDetailsLists">
+                                <td class="text-left">{{$index + 1}}</td>
+                                <td class="text-center">
+                                    <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit{{$index + 1}}" ng-click="Editsemesterdat(data,$index+1)">
+                                        Edit
+                                    </button>
+                                    <button class="btn-xs btn btn-primary" style="width: 70px;" ng-show="!edit{{$index + 1}}" ng-click="UpdateCollegeData(data,$index+1)">
+                                        Update
+                                    </button>
+
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <input autocomplete="off" placeholder="College Code" onkeypress="return /[0-9]/i.test(event.key)" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="text"
+                                           ng-model="data.CollegeCode" />
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+
+                                    <img ng-src="{{data.CollegePhoto}}" class="" id="stdPhotoImg" />
+                                </td>
+
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <input autocomplete="off" placeholder="College Name" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="text"
+                                           ng-model="data.CollegeName" />
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <input autocomplete="off" placeholder="Village/Town" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="text"
+                                           ng-model="data.Village_Town" />
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <select class="form-control tableinpt enabletable{{$index + 1}}" id="selSession" ng-model="data.CollegeTypeID" style="width: min-content;"
+                                            ng-options="data.CollegeTypeID  as data.CollegeTypeName   for data in GetCollegeTypesList">
+                                        <option value="" selected>Select College Type</option>
+                                    </select>
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <select class="form-control tableinpt enabletable{{$index + 1}}" id="RegionID" ng-model="data.RegionID" style="width: min-content;"
+                                            ng-options="data.RegionID as data.RegionName for data in GetRegionsList">
+                                        <option value="" selected>Select Region</option>
+                                    </select>
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <select class="form-control tableinpt enabletable{{$index + 1}}" id="selSession" ng-model="data.DistrictID" style="width: min-content;"
+                                            ng-options="data.DistrictID  as data.DistrictName for data in GetDistrictsList">
+                                        <option value="" selected>Select District Name</option>
+                                    </select>
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+
+                                    <input autocomplete="off" placeholder="Year Of Establishment" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="text"
+                                           ng-model="data.YearOfEstablishment" />
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <input autocomplete="off" placeholder="College Address" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="text"
+                                           ng-model="data.CollegeAddress" />
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <input autocomplete="off" placeholder="Principal Name" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="text"
+                                           ng-model="data.PrinciaplName" />
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <input autocomplete="off" placeholder="Phone Number" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="text"
+                                           ng-model="data.PhoneNumber" />
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <input autocomplete="off" placeholder="Email" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="text"
+                                           ng-model="data.CollegeEmail" />
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <input autocomplete="off" placeholder="College WebSite" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="text"
+                                           ng-model="data.CollegeWebSie" />
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <select class="form-control tableinpt enabletable{{$index + 1}}" id="selSession" ng-model="data.HostelAvailable" style="width: min-content;"
+                                            ng-options="data.Id  as data.Name for data in DataValues">
+                                        <option value="" selected>Select </option>
+                                    </select>
+
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <select class="form-control tableinpt enabletable{{$index + 1}}" id="selSession" ng-model="data.BoysHostel" style="width: min-content;"
+                                            ng-options="data.Id  as data.Name for data in DataValues">
+                                        <option value="" selected>Select </option>
+                                    </select>
+
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <select class="form-control tableinpt enabletable{{$index + 1}}" id="selSession" ng-model="data.GirlsHostel" style="width: min-content;"
+                                            ng-options="data.Id  as data.Name for data in DataValues">
+                                        <option value="" selected>Select </option>
+                                    </select>
+
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <input autocomplete="off" placeholder="Boys Hostel Capacity" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="text"
+                                           ng-model="data.BoysHostelCapacity" />
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <input autocomplete="off" placeholder="Girls Hostel Capacity" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="number"
+                                           ng-model="data.GirlsHostelCapacity" />
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <input autocomplete="off" placeholder="No Of Digital Classrooms" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="text"
+                                           ng-model="data.NoOfDigitalClassrooms" />
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <input autocomplete="off" placeholder="Digital Classrom Remarks" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="text"
+                                           ng-model="data.DCMajorEquipment" />
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <input autocomplete="off" placeholder="Digital Classrom Remarks" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="text"
+                                           ng-model="data.DigitalClassromRemarks" />
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <input autocomplete="off" placeholder="No Of Virtual Class rooms" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="text"
+                                           ng-model="data.NoOfVirtualClassrooms" />
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <input autocomplete="off" placeholder="Virtual Classrom Remarks" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="text"
+                                           ng-model="data.VCMajorEquipment" />
+                                </td>
+                                <td class="text-center pointer" style="padding: 3px;">
+                                    <input autocomplete="off" placeholder="Virtual Classrom Remarks" style="width: min-content;" class="form-control tableinpt enabletable{{$index + 1}}" type="text"
+                                           ng-model="data.VirtualClassromRemarks" />
+                                </td>
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="" ng-show="GetCollegeDetailsLists.length<1">
+            <div class="">
+                <h4 class="no-results text-center">No data Found</h4>
+            </div>
+        </div>
+    </div>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

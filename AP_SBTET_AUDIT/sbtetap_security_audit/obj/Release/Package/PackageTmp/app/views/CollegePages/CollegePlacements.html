@@ -1,0 +1,151 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/CollegePages/CollegePlacements.css" rel="stylesheet" />
+<script>
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });</script>
+<div ng-controller="CollegePlacementsController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">College Placements</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="pannel-bar"> Add College Placements</div>
+        <div class="card">
+            <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>AcademicYear </label>
+                            <select class="form-control " id="selSession" ng-model="AcademicYear" ng-options="data.AcademicYearID  as data.AcademicYear   for data in GetAcademicYearsList">
+                                <option value="" selected>Select AcademicYear</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Course </label>
+                            <select class="form-control " id="selSession" ng-model="Course" ng-options="data.CourseID  as data.CourseCode   for data in GetActiveCoursesList">
+                                <option value="" selected>Select Course</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>No of Placed</label>
+                        <div class="form-group">
+                            <input ng-model="NoofPlaced" maxlength="1000" type="text" class="form-control" onkeypress="return /[0-9]/i.test(event.key)">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Industry Name</label>
+                        <div class="form-group">
+                            <input ng-model="IndustryName" maxlength="10" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Minimum Package</label>
+                        <div class="form-group">
+                            <input ng-model="MinimumPackage" maxlength="1000" type="text" class="form-control" onkeypress="return /[0-9]/i.test(event.key)">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Maximum Package</label>
+                        <div class="form-group">
+                            <input ng-model="MaximumPackage" maxlength="10" type="text" onkeypress="return /[0-9]/i.test(event.key)" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" ng-show="AddDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddPlacements()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-2" ng-show="UpdateDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="UpdatePlacements()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container " ng-show="GetPlacementsList.length>0">
+            <div class="col-md-12">
+                <div class="cl-details">
+                    <h2>College Placements</h2>
+                </div>
+
+                <div class="table-responsive table-custom-tables-tb">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                            <tr class="cb-1">
+                                <th>S.No</th>
+                                <th class="text-center">Academic Year</th>
+                                <th class="text-center">Course Name</th>
+                                <th class="text-center">No of Placed</th>
+                                <th class="text-center">Industry Name</th>
+                                <th class="text-center">Minimum Package</th>
+                                <th class="text-center">Maximum Package</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #fff!important;" ng-repeat="data in GetPlacementsList">
+                                <td class="text-left">{{$index + 1}}</td>
+                                <td class="text-left">{{data.AcademicYear}}</td>
+                                <td class="text-left">{{data.CourseName}}</td>
+                                <td class="text-left">{{data.NoofPlaced}}</td>
+                                <td class="text-left">{{data.IndustryName}}</td>
+                                <td class="text-left">{{data.MinimumPackage}}</td>
+                                <td class="text-left">{{data.MaximumPackage}}</td>
+                                <td class="text-center">
+                                    <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="GetPlacementsById(data.CollegePlacementID)">
+                                        Edit
+                                    </button>
+                                    <button class="btn-xs btn btn-primary" style="width: 70px;" ng-show="!edit" ng-click="UpdateCollegeLab(data.CollegeLabID)">
+                                        Update
+                                    </button>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="" ng-show="GetPlacementsList.length<1">
+            <div class="">
+                <h4 class="no-results text-center">No data Found</h4>
+            </div>
+        </div>
+    </div>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

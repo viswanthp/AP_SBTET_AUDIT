@@ -1,0 +1,194 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/CollegePages/IndustryInteractions.css" rel="stylesheet" />
+<script>
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+
+    });
+
+    $(function () {
+        $('#datepicker1').datepicker({
+            changeMonth: false,
+            changeYear: true,
+            showButtonPanel: false,
+            dateFormat: 'dd-mm-yyyy',
+
+            format: "dd-mm-yyyy", // Notice the Extra space at the beginning
+
+            autoclose: true,
+            onClose: function (dateText, inst) {
+                $(this).datepicker('setDate', new Date('2017'));
+            }
+        }).focus(function () {
+            $(".ui-datepicker-month").hide();
+            $(".ui-datepicker-calendar").hide();
+        });
+        $('#datepicker2').datepicker({
+            changeMonth: false,
+            changeYear: true,
+            showButtonPanel: false,
+            dateFormat: 'dd-mm-yyyy',
+
+            format: "dd-mm-yyyy", // Notice the Extra space at the beginning
+
+            autoclose: true,
+            onClose: function (dateText, inst) {
+                $(this).datepicker('setDate', new Date('2017'));
+            }
+        }).focus(function () {
+            $(".ui-datepicker-month").hide();
+            $(".ui-datepicker-calendar").hide();
+        });
+    });
+</script>
+<div ng-controller="IndustryInteractionsController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">Industry Interaction</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="pannel-bar"> Add Industry Interactions</div>
+        <div class="card">
+            <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <label>Industry Name</label>
+                        <div class="form-group">
+                            <input ng-model="IndustryName" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>NoofMOUS</label>
+                        <div class="form-group">
+                            <input ng-model="NoofMOUS" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>ComitteMembers</label>
+                        <div class="form-group">
+                            <input ng-model="ComitteMembers" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>SupportActivitiesfromIndustry</label>
+                        <div class="form-group">
+                            <input ng-model="SupportActivitiesfromIndustry" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label>MOU Valid From Date</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" autocomplete="off" ng-model="MOUValidFromDate" id="datepicker1" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>MOU Valid To Date</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" autocomplete="off" ng-model="MOUValidToDate" id="datepicker2" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Remarks</label>
+                        <div class="form-group">
+                            <input ng-model="Remarks" maxlength="1000" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-2 pull-right" ng-show="AddDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="AddIndustryInteraction()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pull-right" ng-show="UpdateDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="UpdateIndustryInteraction()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container " ng-show="GetIndustryInteractionList.length>0">
+            <div class="col-md-12">
+                <div class="cl-details">
+                    <h2>Industry Interaction</h2>
+                </div>
+
+                <div class="table-responsive table-custom-tables-tb">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                            <tr class="cb-1">
+                                <th>S.No</th>
+                                <th class="text-center">IndustryName</th>
+                                <th class="text-center">NoofMOUS</th>
+                                <th class="text-center">ComitteMembers</th>
+                                <th class="text-center">SupportActivitiesfromIndustry</th>
+                                <th class="text-center">MOUValidFromDate</th>
+                                <th class="text-center">MOUValidToDate</th>
+                                <th class="text-center">Remarks</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #fff!important;" ng-repeat="data in GetIndustryInteractionList">
+                                <td class="text-left">{{$index + 1}}</td>
+                                <td class="text-left">{{data.IndustryName}}</td>
+                                <td class="text-left">{{data.NoofMOUS}}</td>
+                                <td class="text-left">{{data.ComitteMembers}}</td>
+                                <td class="text-left">{{data.SupportActivitiesfromIndustry}}</td>
+                                <td class="text-left">{{data.MOUValidFromDate}}</td>
+                                <td class="text-left">{{data.MOUValidToDate}}</td>
+                                <td class="text-left">{{data.Remarks}}</td>
+                                <td class="text-center">
+                                    <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit" ng-click="GetIndustryInteractionById(data.CollegeIndustryInteractionID)">
+                                        Edit
+                                    </button>
+                                    <button class="btn-xs btn btn-primary" style="width: 70px;" ng-show="!edit" ng-click="UpdateCollegeLab(data.IndustryInteractionID)">
+                                        Update
+                                    </button>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="" ng-show="GetIndustryInteractionList.length<1">
+            <div class="">
+                <h4 class="no-results text-center">No data Found</h4>
+            </div>
+        </div>
+    </div>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

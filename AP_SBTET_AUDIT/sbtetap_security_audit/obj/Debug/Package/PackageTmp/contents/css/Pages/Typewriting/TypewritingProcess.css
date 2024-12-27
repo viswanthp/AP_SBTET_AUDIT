@@ -1,0 +1,8 @@
+
+li.li_css {
+    list-style: inside;
+}
+
+li.myLst {
+    list-style: inherit;
+}

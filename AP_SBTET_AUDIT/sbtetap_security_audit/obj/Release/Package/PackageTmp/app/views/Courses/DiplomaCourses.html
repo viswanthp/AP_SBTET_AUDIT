@@ -1,0 +1,55 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/Courses/DiplomaCourses.css" rel="stylesheet" />
+<div ng-controller="DiplomaCoursesController">
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2>Diploma Courses</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a> &gt; <a ui-sref="index.CoursesList">Courses</a>&gt; <a ui-sref="index.DiplomaCourses">Diploma Courses</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="irs-courses-field">
+        <div class="container-fluid">
+            <div class="row animatedParent animateOnce">
+
+                <div class="col-md-3 col-sm-6" ng-repeat="data in GetCoursesList">
+                    <div class="irs-courses-col animated fadeInUpShort slow card" ng-click="OpenPage(data.CoursePhoto,data.CourseName,data.CourseDetailedDescription,data.CourseID)">
+                        <div class="irs-courses-img">
+                            <img src="{{data.CoursePhoto}}" alt="">
+                            <!-- <div class="irs-time">
+                                <p><a href="#">10:00 pm - 4:00 pm</a>
+                                </p>
+                            </div> -->
+                            <div class="irs-courses-img-text">
+                                <ul class="clearfix">
+                                    <!-- <li>
+                                        <p><i class="zmdi zmdi-calendar-alt"></i> 3 years</p>
+                                    </li>
+                                    <li class="pull-right">
+                                        <p><i class="zmdi zmdi-money"></i> 350</p>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="irs-courses-content1">
+                            <center><h4 class="c_head"><a class="content-head" href=""> {{data.CourseName}}</a></h4></center>
+                            <p class="infra_text">{{data.CourseShortDescription}}</p>
+                            <!--  <a class="btn btn-default irs-btn-transparent-two" href="" role="button">read more</a>-->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>

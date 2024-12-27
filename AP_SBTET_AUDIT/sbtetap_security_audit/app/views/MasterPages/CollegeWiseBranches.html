@@ -1,0 +1,173 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/MasterPages/TechFest.css" rel="stylesheet" />
+<script>
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+
+    });
+
+</script>
+<div ng-controller="CollegeWiseBranchesController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">College Wise Branches</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="pannel-bar"> College Wise Branches </div>
+        <div class="card">
+            <form novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+
+                <div class="row">
+                   
+
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label>Colleges </label>
+                            <select class="form-control " id="selSession" ng-model="College" ng-options="data  as data.CollegeName   for data in GetCollegesList" ng-change="getCollegeData(College)">
+                                <option value="" selected>Select College</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pull-right">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="getCollegeWiseCourses()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Submit
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pull-right" ng-show="UpdateDetails=='1'">
+                        <div class="form-group">
+                            <button style="margin-top:30px;" class="btn btn_submit pull-left" ng-click="UpdateTechFest()">
+                                <span class="fa fa-arrow-up heading_icon btn_icons"></span>  Update
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="sm-spacer"></div>
+        <div class="sm-spacer"></div>
+        <div class="container" >
+            <div class="col-md-12">
+                <div class="col-md-2 pull-right" style="bottom: 80px;right: 165px;" ng-show="CollegeWiseCourses.length>=0">
+                    <div class="form-group">
+                        <button style="margin-top:30px;" class="btn btn-success pull-left" ng-click="AddCourses()">
+                            <span class="fa fa-arrow-up heading_icon btn_icons"></span>  ADD COURSES
+
+                        </button>
+                    </div>
+                </div>
+                <div class="cl-details" ng-show="CollegeWiseCourses.length>0">
+                    <h2>College Wise Branches</h2>
+                </div>
+
+                <div class="table-responsive table-custom-tables-tb" ng-show="CollegeWiseCourses.length>0">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                            <tr class="cb-1">
+                                <th>S.No</th>
+
+                                <th class="text-center">Course</th>
+                                <th class="text-center">Intake</th>
+                                <th class="text-center">NBA</th>
+                                <th class="text-center">Action</th>
+                                <th class="text-center">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #fff!important;" ng-repeat="data in CollegeWiseCourses">
+                                <td class="text-left">{{$index + 1}}</td>
+
+                                <td class="text-left" disabled>{{data.Course}}</td>
+                                <td class="text-center">{{data.Intake}}</td>
+                                <td class="text-center">{{data.NBA== true ? "YES" : "NO"}}</td>
+
+                                <td class="text-center">
+
+                                    <button class="btn-xs btn btn-info" ng-click="GetCollegeCourseById(data.CollegeID,data.CourseID)" title="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+
+
+
+                                </td>
+                                <td class="text-center">{{data.Active== true ? "YES" : "NO"}}</td>
+                                <!--<td class="text-center">
+        <button class="btn-xs btn btn-danger" style="width: 70px;" ng-click="DeleteTechFest(data,data.TechFestDetailsID)">
+            Delete
+        </button>
+
+        <a href="" disabled class="btn btn-danger btn-xs" ng-click="DeleteCollegeCourseById(data,data.TechFestDetailsID)">
+            <i class="fa fa-trash-o" style="font-size:14px"></i>
+        </a>
+    </td>-->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="" ng-show="GetTechFestLis.length<1">
+            <div class="">
+                <h4 class="no-results text-center">No data Found</h4>
+            </div>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div id="id01" class="modal">
+        <div class="container">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                <form class="modal-content modal_content">
+                    <div class="">
+                        <!-- <h2>Delete </h2>-->
+                        <h3>Are you sure you want to delete Tech Fest?</h3>
+                        <hr />
+                        <div><b>{{CollegeName1}}</b> </div>
+                        <div> {{TechFestLevel1}} </div>
+                        <br />
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-success">Cancel</button>
+                            <button type="button" ng-click="DeleteTechFestConfirm()" class="btn btn-danger pull-right">Delete</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

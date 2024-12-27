@@ -1,0 +1,108 @@
+﻿<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/Infracture/AcademicYear.css" rel="stylesheet" />
+<div ng-controller="AcademicYearController">
+    <section class="irs-inner-page-heading irs-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-inner-heading">
+                        <h2>AcademicYear</h2>
+                        <i class="icofont icofont-education"></i>
+                        <p>
+                            <a ui-sref="index">HOME</a> &gt; <a ui-sref="index.InfrastructureDetails">Infrastructure</a> &gt; <a ui-sref="index.AcademicYear">AcademicYear</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="irs-courses-field irs-courses-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="irs-courses-col irs-courses-col-single">
+                        <div class="irs-courses-img">
+                            <img src="/contents/images/infracture/AcademicCalander.png" alt="">
+                            <!--<div class="irs-time">
+                                <p>
+                                    <a href="#">10:00 pm - 4:00 pm</a>
+                                </p>
+                            </div>-->
+                            <div class="irs-courses-img-text">
+                                <ul class="clearfix">
+                                    <li>
+                                        <p><i class="zmdi zmdi-calendar-alt"></i> 3 years</p>
+                                    </li>
+                                    <li class="pull-right">
+                                        <!--  <p><i class="zmdi zmdi-money"></i> 290</p>-->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel-bar1 text-center">ACADEMIC CALENDER</div>
+                        <table class="table" ng-show="Data">
+                            <thead>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Calender Name</th>
+                                    <th>Academic Year</th>
+                                    <th>File</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="data in GetAcademicCalenderList">
+                                    <td>{{$index+1}}</td>
+                                    <td>{{data.CalendarName}}</td>
+                                    <td>{{data.AcademicYear}}</td>
+                                    <td><a ng-href="{{data.CalendarDownloadPath}}" target="_blank" download> Download</a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div ng-show="NoData">
+                            <div class="">
+                                <h4 class="no-results text-center">No data Found</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="irs-courses-content">
+                        <h4 class="Head_Infra">Academic Year</h4>
+                        <div>
+
+                            These calendars provide a framework for planning and organizing academic activities,
+                            including class schedules, examinations, holidays, registration periods, and other significant
+                            events.
+
+                            <br />
+
+                            Academic calendars are typically published and distributed by the Diploma colleges well in
+                            advance, allowing students, faculty, and staff to plan their academic activities, vacations,
+                            and other commitments. It serves as a guide to ensure the smooth running of the academic
+                            year and to maintain consistency in scheduling across the year.
+
+                            <br />
+
+                            Academic calendars assist Polytechnics in planning and allocating resources effectively. By
+                            having a clear schedule of the academic year, Polytechnics can plan workload, and
+                            resources, coordinate support services, and ensure efficient use of facilities and equipment.
+
+                            <br />
+
+                            Academic calendars highlight important events and deadlines within the academic year.
+                            These may include faculty meetings, departmental seminars, conferences..etc.
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>

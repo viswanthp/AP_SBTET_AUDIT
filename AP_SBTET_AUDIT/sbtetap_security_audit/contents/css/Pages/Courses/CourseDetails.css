@@ -1,0 +1,81 @@
+.irs-courses-img img {
+    height: auto;
+}
+
+.irs-post {
+    margin-bottom: 0px;
+}
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+    color: #fff !important;
+    background-color: #1f497d;
+}
+
+.irs-accordion-two .panel-title a {
+    color: #fff;
+    font-weight: 400;
+}
+
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+}
+
+
+
+    .table > caption + thead > tr:first-child > td, .table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > td, .table > thead:first-child > tr:first-child > th {
+        border-top: 0;
+        background-color: #337ab7;
+        color: #fff;
+    }
+
+.irs-accordion-two .panel .panel-title a.collapsed .icon-2 {
+    color: #fff;
+    display: inline-block;
+}
+
+.irs-post {
+    margin-bottom: 0px;
+}
+
+.irs-sidebar-title {
+    margin-bottom: 0px;
+    border: 0px;
+}
+
+.myrow {
+    border-top: 1px solid #ddd;
+    padding: 0px;
+    padding-top: 10px;
+}
+
+.pad-0 {
+    padding-left: 0px;
+}
+
+.irs-courses-img {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.irs-courses-content {
+    padding: 0px !important;
+}
+
+.course_title {
+    color: #337ab7 !important;
+}
+
+.hyperlink:link, .hyperlink:hover, .hyperlink:visited {
+    color: #000;
+    color: #337ab7;
+    text-decoration: underline;
+}

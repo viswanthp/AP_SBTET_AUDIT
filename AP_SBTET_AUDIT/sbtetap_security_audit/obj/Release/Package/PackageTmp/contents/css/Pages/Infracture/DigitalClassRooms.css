@@ -1,0 +1,113 @@
+.irs-courses-content {
+    padding: 0px;
+}
+
+.irs-courses-img img {
+    height: 400px;
+    width: 100%;
+}
+
+.table {
+    /*margin-top: 30px;*/
+    border-top: 2px solid #ddd;
+}
+
+
+
+
+
+ul.ul_page {
+    list-style: none;
+    margin: 0;
+    display: inline-flex;
+    /*border: 1px solid #ddd;*/
+    /*border-radius: 3px;*/
+}
+
+li.page_li {
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    color: #1f497d;
+    border-radius: 1px;
+}
+
+li.page_li1 {
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    color: #1f497d;
+    border-radius: 5px 1px 1px 5px;
+}
+
+li.page_li3 {
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    color: #1f497d;
+    border-radius: 1px 5px 5px 1px;
+}
+
+a.page {
+    color: #1f497d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+li.page_li.ng-scope.active {
+    background-color: #ddd;
+    /* color: #fff; */
+    /* border: 1px solid #fff; */
+}
+
+.event-item {
+    border-bottom: 0px;
+    min-height: 60px;
+}
+
+.top_head {
+    border-bottom: 3px solid #1f497d;
+    color: #1f497d;
+}
+
+
+
+.fa-download:before {
+    content: "\f019";
+    color: #1f497d;
+}
+
+.irs-copyright-field {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.download_file {
+    border: 2px solid #1f497d;
+    margin-top: 15px;
+}
+/*.irs-inner-page-heading {*/
+/*padding: 120px 0;*/
+/*text-align: center;
+        background: url(/contents/images/bg/counter_bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }*/
+.event-item {
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+
+.irs-courses-img {
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+.table > thead:first-child > tr:first-child > th {
+    border-top: 0;
+    background-color: #337ab7;
+    color: #fff;
+}

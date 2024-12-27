@@ -1,0 +1,123 @@
+<!--<style>
+
+</style>-->
+<link href="/contents/css/Pages/CollegePages/OtherLinks.css" rel="stylesheet" />
+<script>
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+
+    });
+
+    //$(function () {
+    //    $('#datepicker1').datepicker({
+    //        changeMonth: false,
+    //        changeYear: true,
+    //        showButtonPanel: false,
+    //        dateFormat: 'dd-mm-yyyy',
+
+    //        format: "dd-mm-yyyy", // Notice the Extra space at the beginning
+
+    //        autoclose: true,
+    //        onClose: function (dateText, inst) {
+    //            $(this).datepicker('setDate', new Date('2017'));
+    //        }
+    //    }).focus(function () {
+    //        $(".ui-datepicker-month").hide();
+    //        $(".ui-datepicker-calendar").hide();
+    //    });
+    //    $('#datepicker2').datepicker({
+    //        changeMonth: false,
+    //        changeYear: true,
+    //        showButtonPanel: false,
+    //        dateFormat: 'dd-mm-yyyy',
+
+    //        format: "dd-mm-yyyy", // Notice the Extra space at the beginning
+
+    //        autoclose: true,
+    //        onClose: function (dateText, inst) {
+    //            $(this).datepicker('setDate', new Date('2017'));
+    //        }
+    //    }).focus(function () {
+    //        $(".ui-datepicker-month").hide();
+    //        $(".ui-datepicker-calendar").hide();
+    //    });
+    //});
+</script>
+<div ng-controller="OtherLinksController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5 class="header-text">Other Links</h5>
+
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn back_button" ng-click="GoBack()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</button>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="container " ng-show="GetLinksList.length>0">
+            <div class="col-md-12" ng-show="GetLinksList.length>0">
+                <div class="cl-details">
+                    <h2>Other Links</h2>
+                </div>
+
+                <div class="table-responsive table-custom-tables-tb" ng-show="GetLinksList.length>0">
+                    <table class="table table-bordered table-hover table-striped table-rounded custom-table-wdith">
+                        <thead>
+                            <tr class="cb-1">
+                                <th>S.No</th>
+                                <th class="text-center">Date</th>
+                                <!--<th class="text-center">Status</th>-->
+                                <th class="text-center">Link Description</th>
+                                <th class="text-center">Link</th>
+                                <th class="text-center">Instructions File</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #fff!important;" ng-repeat="data in GetLinksList">
+                                <td class="text-left">{{$index + 1}}</td>
+                                <td>{{data.LinkDate| date:'dd-MMM-yyyy'}}</td>
+                           <!--     <td class="text-left">{{data.Active == true ? "Active" : "Inactive"}}</td>-->
+                                <td class="text-left">{{data.LinkText}}</td>
+                                <td class="text-center"><a href="{{data.LinkName}}" target="_blank">{{data.LinkName}}</a></td>
+
+                                <td class="text-center">
+                                    <a href="{{data.LinkFile}}" ng-show="data.LinkFile" download> <button   title="Click here to Download" class="btn btn-xs download_btn"> <i class="fa fa-download" aria-hidden="true"></i></button></a>
+
+</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="" ng-show="GetLinksList.length<1">
+            <div class="">
+                <h4 class="no-results text-center">No data Found</h4>
+            </div>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <div class="sm-spacer"></div>
+    <div class="sm-spacer"></div>
+</div>

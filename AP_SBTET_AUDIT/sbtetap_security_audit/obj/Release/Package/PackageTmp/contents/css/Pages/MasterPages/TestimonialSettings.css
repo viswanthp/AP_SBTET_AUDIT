@@ -1,0 +1,117 @@
+ul.ul_page {
+    list-style: none;
+    margin: 0;
+    display: inline-flex;
+    /*border: 1px solid #ddd;*/
+    /*border-radius: 3px;*/
+}
+
+li.page_li {
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    color: #1f497d;
+    border-radius: 1px;
+}
+
+li.page_li1 {
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    color: #1f497d;
+    border-radius: 5px 1px 1px 5px;
+}
+
+li.page_li3 {
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    color: #1f497d;
+    border-radius: 1px 5px 5px 1px;
+}
+
+a.page {
+    color: #1f497d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+li.page_li.ng-scope.active {
+    background-color: #ddd;
+    /* color: #fff; */
+    /* border: 1px solid #fff; */
+}
+
+.event-item {
+    border-bottom: 0px;
+    /*min-height: 60px;*/
+}
+
+.top_head {
+    border-bottom: 3px solid #1f497d;
+    color: #1f497d;
+}
+
+.table-condensed > tbody > tr > td, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > td, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > thead > tr > th {
+    padding: 5px;
+    border-top: 0px;
+    border-bottom: 2px solid #ddd;
+    background-color: #fff;
+}
+
+.fa-download:before {
+    content: "\f019";
+    color: #1f497d;
+}
+
+.irs-copyright-field {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.download_file {
+    border: 2px solid #1f497d;
+    /*margin-top: 15px;*/
+}
+/*.irs-inner-page-heading {*/
+/*padding: 120px 0;*/
+/*text-align: center;
+        background: url(/contents/images/bg/counter_bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }*/
+.event-item {
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    padding: 20px;
+}
+
+.tableinpt {
+    width: 100%;
+    box-shadow: none;
+    border: 0;
+    pointer-events: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.table-condensed > tbody > tr > td {
+    padding: 5px;
+    display: inline-grid;
+    cursor: pointer;
+    overflow: auto;
+    max-height: 200px;
+}
+
+img#stdPhotoImg {
+    height: 150px;
+    width: 120px;
+}
